@@ -1,0 +1,602 @@
+<ParallaxScatters>
+    <CelestialBody name="Venus">
+        <Scatters>
+            <Scatter name="SmallSlabs">
+                <cullImmuneRadius>15</cullImmuneRadius>
+                <cullLimit>-5</cullLimit>
+                <maxObjects>7000</maxObjects>
+                <collisionLevel>1</collisionLevel>
+                <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/smallslab0lod0.fbx" castShadows="True">
+                    <_MainTex>Assets/Sergeaa/sandstone.dds</_MainTex>
+                    <_BumpMap>Assets/Sergeaa/sandstone_nrm.dds</_BumpMap>
+
+                    <_Metallic>0.15</_Metallic>
+                    <_Gloss>25</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>2</_FresnelPower>
+
+                    <_Color>0.43,0.39,0.35</_Color>
+                    <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                    <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.1</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>3</seed>
+                        <frequency>20000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>17</seed>
+                    <range>340</range>
+                    <minScale>3,3,3</minScale>
+                    <maxScale>5,5,5</maxScale>
+                    <sizeJitterAmount>0.7</sizeJitterAmount>
+                    <coverage>1</coverage>
+                    <minAltitude>-55000</minAltitude>
+                    <maxAltitude>55000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>1</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>25</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/smallslab0lod1.fbx" castShadows="True">
+                                <_MainTex>Assets/Sergeaa/sandstone.dds</_MainTex>
+                                <_BumpMap>Assets/Sergeaa/sandstone_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.43,0.39,0.35</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>70</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/smallslab0lod2.fbx" castShadows="True">
+                                <_MainTex>Assets/Sergeaa/sandstone.dds</_MainTex>
+                                <_BumpMap>Assets/Sergeaa/sandstone_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.43,0.39,0.35</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Default">
+                            <SubBiome name="X1" value="1" slope="0"/>
+                            <SubBiome name="X2" value="1" slope="0"/>
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+            <Scatter name="MedSlabs">
+                <cullImmuneRadius>20</cullImmuneRadius>
+                <cullLimit>-15</cullLimit>
+                <maxObjects>5000</maxObjects>
+                <collisionLevel>2</collisionLevel>
+                <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/medslabs1lod0.fbx" castShadows="True">
+                    <_MainTex>Assets/Sergeaa/sandstone.dds</_MainTex>
+                    <_BumpMap>Assets/Sergeaa/sandstone_nrm.dds</_BumpMap>
+
+                    <_Metallic>0.15</_Metallic>
+                    <_Gloss>25</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>2</_FresnelPower>
+
+                    <_Color>0.43,0.39,0.35</_Color>
+                    <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                    <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.05</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>3</seed>
+                        <frequency>20000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>15</seed>
+                    <range>700</range>
+                    <minScale>4,4,4</minScale>
+                    <maxScale>7,7,7</maxScale>
+                    <sizeJitterAmount>0.8</sizeJitterAmount>
+                    <coverage>0.7</coverage>
+                    <minAltitude>-55000</minAltitude>
+                    <maxAltitude>55000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>1</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>80</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/medslabs1lod1.fbx" castShadows="True">
+                                <_MainTex>Assets/Sergeaa/sandstone.dds</_MainTex>
+                                <_BumpMap>Assets/Sergeaa/sandstone_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.43,0.39,0.35</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>190</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/medslabs1lod2.fbx" castShadows="True">
+                                <_MainTex>Assets/Sergeaa/sandstone.dds</_MainTex>
+                                <_BumpMap>Assets/Sergeaa/sandstone_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.43,0.39,0.35</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Default">
+                            <SubBiome name="X1" value="1" slope="0"/>
+                            <SubBiome name="X2" value="1" slope="0"/>
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+            <Scatter name="HugeSlabs">
+                <cullImmuneRadius>27</cullImmuneRadius>
+                <cullLimit>-22</cullLimit>
+                <maxObjects>4000</maxObjects>
+                <collisionLevel>4</collisionLevel>
+                <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/hugeslabs1lod0.fbx" castShadows="True">
+                    <_MainTex>Assets/Sergeaa/sandstone.dds</_MainTex>
+                    <_BumpMap>Assets/Sergeaa/sandstone_nrm.dds</_BumpMap>
+
+                    <_Metallic>0.15</_Metallic>
+                    <_Gloss>25</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>2</_FresnelPower>
+
+                    <_Color>0.43,0.39,0.35</_Color>
+                    <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                    <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.01</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>35</seed>
+                        <frequency>20000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>18</seed>
+                    <range>1200</range>
+                    <minScale>7,7,7</minScale>
+                    <maxScale>11,11,11</maxScale>
+                    <sizeJitterAmount>0.7</sizeJitterAmount>
+                    <coverage>0.3</coverage>
+                    <minAltitude>-55000</minAltitude>
+                    <maxAltitude>55000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.7</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>125</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/hugeslabs1lod1.fbx" castShadows="True">
+                                <_MainTex>Assets/Sergeaa/sandstone.dds</_MainTex>
+                                <_BumpMap>Assets/Sergeaa/sandstone_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.43,0.39,0.35</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>220</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/hugeslabs1lod2.fbx" castShadows="True">
+                                <_MainTex>Assets/Sergeaa/sandstone.dds</_MainTex>
+                                <_BumpMap>Assets/Sergeaa/sandstone_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.43,0.39,0.35</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Default">
+                            <SubBiome name="X1" value="1" slope="0"/>
+                            <SubBiome name="X2" value="1" slope="0"/>
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <!-- Rocks -->
+
+
+            
+            <Scatter name="SmallRocks">
+                <cullImmuneRadius>7</cullImmuneRadius>
+                <cullLimit>-3</cullLimit>
+                <maxObjects>10000</maxObjects>
+                <collisionLevel>1</collisionLevel>
+                <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Rocks/smallrocks0lod0.fbx" castShadows="True">
+                    <_MainTex>Assets/Sergeaa/rocks_rough.dds</_MainTex>
+                    <_BumpMap>Assets/Sergeaa/rocks_rough_nrm.dds</_BumpMap>
+
+                    <_Metallic>0.15</_Metallic>
+                    <_Gloss>25</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>2</_FresnelPower>
+
+                    <_Color>0.43,0.39,0.35</_Color>
+                    <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                    <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>5.6</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>1</seed>
+                        <frequency>30000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>5</seed>
+                    <range>300</range>
+                    <minScale>0.1,0.1,0.1</minScale>
+                    <maxScale>0.5,0.5,0.5</maxScale>
+                    <sizeJitterAmount>0.7</sizeJitterAmount>
+                    <coverage>1</coverage>
+                    <minAltitude>-5000</minAltitude>
+                    <maxAltitude>5000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.4</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>20</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Rocks/smallrocks0lod1.fbx" castShadows="True">
+                                <_MainTex>Assets/Sergeaa/rocks_rough.dds</_MainTex>
+                                <_BumpMap>Assets/Sergeaa/rocks_rough_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.43,0.39,0.35</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>40</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Rocks/smallrocks0lod2.fbx" castShadows="True">
+                                <_MainTex>Assets/Sergeaa/rocks_rough.dds</_MainTex>
+                                <_BumpMap>Assets/Sergeaa/rocks_rough_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.43,0.39,0.35</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Default">
+                            <SubBiome name="X1" value="1" slope="0"/>
+                            <SubBiome name="X2" value="1" slope="0"/>
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+            <Scatter name="MedRocks">
+                <cullImmuneRadius>15</cullImmuneRadius>
+                <cullLimit>-5</cullLimit>
+                <maxObjects>10000</maxObjects>
+                <collisionLevel>2</collisionLevel>
+                <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Rocks/medrocks0lod0.fbx" castShadows="True">
+                    <_MainTex>Assets/Sergeaa/rocks_rough.dds</_MainTex>
+                    <_BumpMap>Assets/Sergeaa/rocks_rough_nrm.dds</_BumpMap>
+
+                    <_Metallic>0.15</_Metallic>
+                    <_Gloss>25</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>2</_FresnelPower>
+
+                    <_Color>0.43,0.39,0.35</_Color>
+                    <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                    <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.15</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>0</seed>
+                        <frequency>30000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>7</seed>
+                    <range>550</range>
+                    <minScale>0.7,0.7,0.7</minScale>
+                    <maxScale>1.0,1.0,1.0</maxScale>
+                    <sizeJitterAmount>0.7</sizeJitterAmount>
+                    <coverage>0.6</coverage>
+                    <minAltitude>-5000</minAltitude>
+                    <maxAltitude>5000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.6</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>40</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Rocks/medrocks0lod1.fbx" castShadows="True">
+                                <_MainTex>Assets/Sergeaa/rocks_rough.dds</_MainTex>
+                                <_BumpMap>Assets/Sergeaa/rocks_rough_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.43,0.39,0.35</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>120</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Rocks/medrocks0lod2.fbx" castShadows="True">
+                                <_MainTex>Assets/Sergeaa/rocks_rough.dds</_MainTex>
+                                <_BumpMap>Assets/Sergeaa/rocks_rough_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.43,0.39,0.35</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.2,0.2,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Default">
+                            <SubBiome name="X1" value="1" slope="0"/>
+                            <SubBiome name="X2" value="1" slope="0"/>
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <!-- Volcanic Slabs -->
+
+            <Scatter name="VolcanicSmallSlabs">
+                <cullImmuneRadius>15</cullImmuneRadius>
+                <cullLimit>-5</cullLimit>
+                <maxObjects>7000</maxObjects>
+                <collisionLevel>1</collisionLevel>
+                <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/smallslab0lod0.fbx" castShadows="True">
+                    <_MainTex>Assets/Nebra/slabs.dds</_MainTex>
+                        <_BumpMap>Assets/Nebra/slabs_nrm.dds</_BumpMap>
+
+                        <_Metallic>0.15</_Metallic>
+                        <_Gloss>25</_Gloss>
+                        <_Hapke>0.6</_Hapke>
+                        <_FresnelPower>2</_FresnelPower>
+
+                        <_Color>0.73,0.73,0.61</_Color>
+                        <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                        <_FresnelColor>0.16,0.16,0.16,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.1</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>22</seed>
+                        <frequency>80000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>51</seed>
+                    <range>340</range>
+                    <minScale>1,1,1</minScale>
+                    <maxScale>5,5,5</maxScale>
+                    <sizeJitterAmount>0.7</sizeJitterAmount>
+                    <coverage>0.5</coverage>
+                    <minAltitude>-10</minAltitude>
+                    <maxAltitude>55000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.34</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>25</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/smallslab0lod1.fbx" castShadows="True">
+                                <_MainTex>Assets/Nebra/slabs.dds</_MainTex>
+                                <_BumpMap>Assets/Nebra/slabs_nrm.dds</_BumpMap>
+                                
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.73,0.73,0.61</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.16,0.16,0.16,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>70</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/smallslab0lod2.fbx" castShadows="True">
+                                <_MainTex>Assets/Nebra/slabs.dds</_MainTex>
+                                <_BumpMap>Assets/Nebra/slabs_nrm.dds</_BumpMap>
+                                
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.73,0.73,0.61</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.16,0.16,0.16,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Default">
+                            <SubBiome name="X1" value="1" slope="0"/>
+                            <SubBiome name="X2" value="1" slope="0"/>
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+            <Scatter name="VolcanicMedSlabs">
+                <cullImmuneRadius>20</cullImmuneRadius>
+                <cullLimit>-15</cullLimit>
+                <maxObjects>5000</maxObjects>
+                <collisionLevel>2</collisionLevel>
+                <sharesNoiseWith>VolcanicSmallSlabs</sharesNoiseWith>
+                <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/largeslab0lod0.fbx" castShadows="True">
+                    <_MainTex>Assets/Nebra/slabs.dds</_MainTex>
+                        <_BumpMap>Assets/Nebra/slabs_nrm.dds</_BumpMap>
+                        
+
+                        <_Metallic>0.15</_Metallic>
+                        <_Gloss>25</_Gloss>
+                        <_Hapke>0.6</_Hapke>
+                        <_FresnelPower>2</_FresnelPower>
+
+                        <_Color>0.73,0.73,0.61</_Color>
+                        <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                        <_FresnelColor>0.16,0.16,0.16,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.1</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>16</seed>
+                        <frequency>80000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>26</seed>
+                    <range>700</range>
+                    <minScale>2,2,2</minScale>
+                    <maxScale>8,8,8</maxScale>
+                    <sizeJitterAmount>0.8</sizeJitterAmount>
+                    <coverage>0.35</coverage>
+                    <minAltitude>-10</minAltitude>
+                    <maxAltitude>55000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.23</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>80</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/largeslab0lod1.fbx" castShadows="True">
+                                <_MainTex>Assets/Nebra/slabs.dds</_MainTex>
+                                <_BumpMap>Assets/Nebra/slabs_nrm.dds</_BumpMap>
+                                
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.73,0.73,0.61</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.16,0.16,0.16,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>190</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV" mesh="Assets/Models/Ice/largeslab0lod2.fbx" castShadows="True">
+                                <_MainTex>Assets/Nebra/slabs.dds</_MainTex>
+                                <_BumpMap>Assets/Nebra/slabs_nrm.dds</_BumpMap>
+                                
+
+                                <_Metallic>0.15</_Metallic>
+                                <_Gloss>25</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>2</_FresnelPower>
+
+                                <_Color>0.73,0.73,0.61</_Color>
+                                <_MetallicTint>0.5,0.5,0.5,0</_MetallicTint>
+                                <_FresnelColor>0.16,0.16,0.16,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Default">
+                            <SubBiome name="X1" value="1" slope="0"/>
+                            <SubBiome name="X2" value="1" slope="0"/>
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+        </Scatters>
+    </CelestialBody>
+</ParallaxScatters>

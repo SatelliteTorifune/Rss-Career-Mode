@@ -1,0 +1,1328 @@
+<ParallaxScatters>
+    <CelestialBody name="Earth">
+        <Scatters>
+            <Scatter name="Grass">
+                <cullImmuneRadius>7</cullImmuneRadius>
+                <cullLimit>-3</cullLimit>
+                <maxObjects>20000</maxObjects>
+                <collisionLevel>-1</collisionLevel>
+                <Material shader="Custom/InstancedCutout" mesh="Assets/Models/Droo/Grass1.fbx"
+                    castShadows="False">
+                    <_MainTex>Assets/Droo/gradient.dds</_MainTex>
+                    <_BumpMap>Assets/_Common/_BumpMap.dds</_BumpMap>
+                    <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                    <_WaveSpeed>1</_WaveSpeed>
+                    <_WaveAmp>0.1</_WaveAmp>
+                    <_HeightCutoff>0.69</_HeightCutoff>
+                    <_HeightFactor>1.66</_HeightFactor>
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>1</_Hapke>
+                    <_Cutoff>0</_Cutoff>
+                    <_FresnelPower>1</_FresnelPower>
+                    <_Transmission>0.9</_Transmission>
+
+                    <_WindSpeed>25,25,25</_WindSpeed>
+
+                    <_Color>0.45,0.45,0.4</_Color>
+                    <_MetallicTint>0,0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.5</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>0</seed>
+                        <frequency>150000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>1</seed>
+                    <range>200</range>
+                    <minScale>0.21,0.14,0.21</minScale>
+                    <maxScale>0.36,0.24,0.36</maxScale>
+                    <sizeJitterAmount>0.5</sizeJitterAmount>
+                    <coverage>0.6</coverage>
+                    <minAltitude>0</minAltitude>
+                    <maxAltitude>20000</maxAltitude>
+                    <alignToTerrainNormal>False</alignToTerrainNormal>
+                    <maxNormalDeviance>1</maxNormalDeviance>
+                    <!-- This is an override, and not recommended to be used. By default it is 0.5 -->
+                    <biomeCutoff>0.3</biomeCutoff>
+                    <LODs>
+                        <LOD>
+                            <distance>20</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/Grass2.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/gradient.dds</_MainTex>
+                                <_BumpMap>Assets/_Common/_BumpMap.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>1</_WaveSpeed>
+                                <_WaveAmp>0.1</_WaveAmp>
+                                <_HeightCutoff>0.69</_HeightCutoff>
+                                <_HeightFactor>1.66</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0</_Cutoff>
+                                <_FresnelPower>1</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+
+                                <_WindSpeed>25,25,25</_WindSpeed>
+
+                                <_Color>0.45,0.45,0.4</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>30</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/Grass4.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/grass_lod2_fade.dds</_MainTex>
+                                <_BumpMap>Assets/_Common/_BumpMap.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>1</_WaveSpeed>
+                                <_WaveAmp>0.1</_WaveAmp>
+                                <_HeightCutoff>0.69</_HeightCutoff>
+                                <_HeightFactor>1.66</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0.55</_Cutoff>
+                                <_FresnelPower>1</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+
+                                <_WindSpeed>25,25,25</_WindSpeed>
+
+                                <_Color>0.45,0.45,0.4</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Trees">
+                            <SubBiome name="Trees1" value="1" slope="0" />
+                        </Biome>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="0.7" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <Scatter name="PinkFlower">
+                <cullImmuneRadius>15</cullImmuneRadius>
+                <cullLimit>-3</cullLimit>
+                <maxObjects>5000</maxObjects>
+                <collisionLevel>-1</collisionLevel>
+                <Material shader="Custom/InstancedCutout" mesh="Assets/Models/Droo/Flower1LOD0.fbx"
+                    castShadows="True">
+                    <_MainTex>Assets/Droo/flower1.dds</_MainTex>
+                    <_BumpMap>Assets/Droo/flower1_nrm.dds</_BumpMap>
+                    <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                    <_WaveSpeed>1</_WaveSpeed>
+                    <_WaveAmp>0.25</_WaveAmp>
+                    <_HeightCutoff>0</_HeightCutoff>
+                    <_HeightFactor>1</_HeightFactor>
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>1</_Hapke>
+                    <_Cutoff>0.4</_Cutoff>
+                    <_FresnelPower>2.1</_FresnelPower>
+                    <_Transmission>0.9</_Transmission>
+
+                    <_WindSpeed>9,9,9</_WindSpeed>
+
+                    <_Color>0.7,0.6,0.8</_Color>
+                    <_MetallicTint>0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>10</populationMultiplier>
+                    <spawnChance>1</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>2</seed>
+                        <frequency>40500</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>2</seed>
+                    <range>1000</range>
+                    <minScale>1.1,1.1,1.1</minScale>
+                    <maxScale>2,2,2</maxScale>
+                    <sizeJitterAmount>1</sizeJitterAmount>
+                    <coverage>0.3</coverage>
+                    <minAltitude>20</minAltitude>
+                    <maxAltitude>2000</maxAltitude>
+                    <alignToTerrainNormal>False</alignToTerrainNormal>
+                    <maxNormalDeviance>1</maxNormalDeviance>
+                    <!-- This is an override, and not recommended to be used. By default it is 0.5 -->
+                    <biomeCutoff>0.28</biomeCutoff>
+                    <LODs>
+                        <LOD>
+                            <distance>30</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/Flower1LOD1.fbx" castShadows="True">
+                                <_MainTex>Assets/Droo/flower1.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/flower1_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>1</_WaveSpeed>
+                                <_WaveAmp>0.25</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>1</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0.4</_Cutoff>
+                                <_FresnelPower>2.1</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+
+                                <_WindSpeed>9,9,9</_WindSpeed>
+
+                                <_Color>0.7,0.6,0.8</_Color>
+                                <_MetallicTint>0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>75</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/Flower1LOD2.fbx" castShadows="True">
+                                <_MainTex>Assets/Droo/flower1.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/flower1_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>1</_WaveSpeed>
+                                <_WaveAmp>0.25</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>1</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0.35</_Cutoff>
+                                <_FresnelPower>2.1</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+
+                                <_WindSpeed>9,9,9</_WindSpeed>
+
+                                <_Color>0.7,0.6,0.8</_Color>
+                                <_MetallicTint>0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Trees">
+                            <SubBiome name="Trees1" value="0.5" slope="0" />
+                        </Biome>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="0.7" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <!-- 'OAK' TREE TRUNK -->
+
+            <Scatter name="OakTrunk">
+                <cullImmuneRadius>150</cullImmuneRadius>
+                <cullLimit>-100</cullLimit>
+                <maxObjects>15000</maxObjects>
+                <collisionLevel>0</collisionLevel>
+                <Material shader="Custom/ParallaxInstancedUV"
+                    mesh="Assets/Models/Droo/Tree1TrunkLOD0.fbx" castShadows="True">
+                    <_MainTex>Assets/Droo/oak.dds</_MainTex>
+                    <_BumpMap>Assets/Droo/oak_nrm.dds</_BumpMap>
+
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>1</_Hapke>
+                    <_FresnelPower>2.1</_FresnelPower>
+
+                    <_Color>0.75,0.75,0.75</_Color>
+                    <_MetallicTint>0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>2</populationMultiplier>
+                    <spawnChance>0.02</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>PerlinFractal</noiseType>
+                        <seed>0</seed>
+                        <frequency>150000</frequency>
+                        <strength>1</strength>
+                        <octaves>5</octaves>
+                        <lacunarity>4</lacunarity>
+                        <gain>0.5</gain>
+                        <interpolation>Quintic</interpolation>
+                        <fractalType>FBM</fractalType>
+                        <ridgedNoise>False</ridgedNoise>
+                    </PersistentNoise>
+                    <seed>3</seed>
+                    <range>8000</range>
+                    <minScale>1.7,1.7,1.7</minScale>
+                    <maxScale>2.7,2.7,2.7</maxScale>
+                    <sizeJitterAmount>0.9</sizeJitterAmount>
+                    <coverage>0.5</coverage>
+                    <minAltitude>0</minAltitude>
+                    <maxAltitude>20000</maxAltitude>
+                    <alignToTerrainNormal>False</alignToTerrainNormal>
+                    <maxNormalDeviance>1</maxNormalDeviance>
+                    <!-- This is an override, and not recommended to be used. By default it is 0.5 -->
+                    <biomeCutoff>0.25</biomeCutoff>
+                    <LODs>
+                        <LOD>
+                            <distance>150</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV"
+                                mesh="Assets/Models/Droo/Tree1TrunkLOD1.fbx" castShadows="True">
+                                <_MainTex>Assets/Droo/oak.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/oak_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_FresnelPower>2.1</_FresnelPower>
+
+                                <_Color>0.75,0.75,0.75</_Color>
+                                <_MetallicTint>0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>2500</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutoutBillboard"
+                                mesh="Assets/Models/Droo/Tree1TrunkLOD2.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/oak_billboard.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/oak_billboard_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>0</_WaveSpeed>
+                                <_WaveAmp>0.04</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>1</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0.75</_Cutoff>
+                                <_FresnelPower>2.1</_FresnelPower>
+                                <_Transmission>0.0</_Transmission>
+
+                                <_WindSpeed>0,0,0</_WindSpeed>
+
+                                <_Color>0.54,0.54,0.56</_Color>
+                                <_MetallicTint>0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Trees">
+                            <SubBiome name="Trees1" value="0.5" slope="0" />
+                        </Biome>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="0.7" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <!-- 'OAK' TREE LEAVES -->
+
+            <Scatter name="OakLeaves">
+                <cullImmuneRadius>150</cullImmuneRadius>
+                <cullLimit>-100</cullLimit>
+                <inheritsFrom>OakTrunk</inheritsFrom>
+                <maxObjects>15000</maxObjects>
+                <collisionLevel>-2</collisionLevel>
+                <sharesNoiseWith>OakTrunk</sharesNoiseWith>
+                <Material shader="Custom/InstancedCutout"
+                    mesh="Assets/Models/Droo/Tree1LeavesLOD0.fbx" castShadows="True">
+                    <_MainTex>Assets/Droo/oak_leaves.dds</_MainTex>
+                    <_BumpMap>Assets/Droo/oak_leaves_nrm.dds</_BumpMap>
+                    <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                    <_WaveSpeed>7</_WaveSpeed>
+                    <_WaveAmp>0.25</_WaveAmp>
+                    <_HeightCutoff>0</_HeightCutoff>
+                    <_HeightFactor>0</_HeightFactor>
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>1</_Hapke>
+                    <_Cutoff>0.38</_Cutoff>
+                    <_FresnelPower>2.1</_FresnelPower>
+                    <_Transmission>1</_Transmission>
+
+                    <_WindSpeed>3,3,3</_WindSpeed>
+
+                    <_Color>0.5,0.544,0.555</_Color>
+                    <_MetallicTint>0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>2</populationMultiplier>
+                    <spawnChance>0.02</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>PerlinFractal</noiseType>
+                        <seed>0</seed>
+                        <frequency>150000</frequency>
+                        <strength>1</strength>
+                        <octaves>5</octaves>
+                        <lacunarity>4</lacunarity>
+                        <gain>0.5</gain>
+                        <interpolation>Quintic</interpolation>
+                        <fractalType>FBM</fractalType>
+                        <ridgedNoise>False</ridgedNoise>
+                    </PersistentNoise>
+                    <seed>3</seed>
+                    <range>8000</range>
+                    <minScale>1.7,1.7,1.7</minScale>
+                    <maxScale>2.7,2.7,2.7</maxScale>
+                    <sizeJitterAmount>0.9</sizeJitterAmount>
+                    <coverage>0.5</coverage>
+                    <minAltitude>0</minAltitude>
+                    <maxAltitude>20000</maxAltitude>
+                    <alignToTerrainNormal>False</alignToTerrainNormal>
+                    <maxNormalDeviance>1</maxNormalDeviance>
+                    <!-- This is an override, and not recommended to be used. By default it is 0.5 -->
+                    <biomeCutoff>0.25</biomeCutoff>
+                    <LODs>
+                        <LOD>
+                            <distance>150</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/Tree1LeavesLOD1.fbx" castShadows="True">
+                                <_MainTex>Assets/Droo/oak_leaves.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/oak_leaves_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>7</_WaveSpeed>
+                                <_WaveAmp>0.25</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>0</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0.38</_Cutoff>
+                                <_FresnelPower>2.1</_FresnelPower>
+                                <_Transmission>1</_Transmission>
+
+                                <_WindSpeed>3,3,3</_WindSpeed>
+
+                                <_Color>0.5,0.544,0.555</_Color>
+                                <_MetallicTint>0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>2500</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/Tree1LeavesLOD2.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/oak_top_billboard.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/oak_top_billboard_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>0</_WaveSpeed>
+                                <_WaveAmp>0.04</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>1</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0.85</_Cutoff>
+                                <_FresnelPower>2.1</_FresnelPower>
+                                <_Transmission>1</_Transmission>
+
+                                <_WindSpeed>0</_WindSpeed>
+
+                                <_Color>0.5,0.544,0.555</_Color>
+                                <_MetallicTint>0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Trees">
+                            <SubBiome name="Trees1" value="0.5" slope="0" />
+                        </Biome>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="0.7" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <!-- Desert shrub -->
+
+            <Scatter name="LargeCactiShrub">
+                <cullImmuneRadius>18</cullImmuneRadius>
+                <cullLimit>-20</cullLimit>
+                <maxObjects>3000</maxObjects>
+                <collisionLevel>-1</collisionLevel>
+                <Material shader="Custom/InstancedCutout"
+                    mesh="Assets/Models/Droo/CactiLarge0Shrub.fbx" castShadows="False">
+                    <_MainTex>Assets/Droo/shrub.dds</_MainTex>
+                    <_BumpMap>Assets/Droo/shrub_nrm.dds</_BumpMap>
+                    <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                    <_WaveSpeed>1</_WaveSpeed>
+                    <_WaveAmp>0.25</_WaveAmp>
+                    <_HeightCutoff>0</_HeightCutoff>
+                    <_HeightFactor>0</_HeightFactor>
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>1</_FresnelPower>
+                    <_Transmission>0.9</_Transmission>
+                    <_Cutoff>0.4</_Cutoff>
+
+                    <_WindSpeed>25,25,25</_WindSpeed>
+
+                    <_Color>1,0.91,0.91</_Color>
+                    <_MetallicTint>0,0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.0025</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>7</seed>
+                        <frequency>150000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>9</seed>
+                    <range>500</range>
+                    <minScale>0.7,0.7,0.7</minScale>
+                    <maxScale>1.1,1.1,1.1</maxScale>
+                    <sizeJitterAmount>0.8</sizeJitterAmount>
+                    <coverage>0.6</coverage>
+                    <minAltitude>0</minAltitude>
+                    <maxAltitude>2000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.4</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>75</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/CactiLarge0Shrub.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/shrub.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/shrub_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>1</_WaveSpeed>
+                                <_WaveAmp>0.25</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>0</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+                                <_Cutoff>0.4</_Cutoff>
+
+                                <_WindSpeed>25,25,25</_WindSpeed>
+
+                                <_Color>1,0.91,0.91</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>240</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/CactiLarge0Shrub.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/shrub.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/shrub_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>1</_WaveSpeed>
+                                <_WaveAmp>0.25</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>0</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+                                <_Cutoff>0.42</_Cutoff>
+
+                                <_WindSpeed>25,25,25</_WindSpeed>
+
+                                <_Color>1,0.91,0.91</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="0.7" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <Scatter name="SmallCactiShrub0">
+                <cullImmuneRadius>18</cullImmuneRadius>
+                <cullLimit>-20</cullLimit>
+                <maxObjects>3000</maxObjects>
+                <collisionLevel>-1</collisionLevel>
+                <sharesNoiseWith>LargeCactiShrub</sharesNoiseWith>
+                <Material shader="Custom/InstancedCutout"
+                    mesh="Assets/Models/Droo/CactiSmall0Shrub.fbx" castShadows="False">
+                    <_MainTex>Assets/Droo/shrub.dds</_MainTex>
+                    <_BumpMap>Assets/Droo/shrub_nrm.dds</_BumpMap>
+                    <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                    <_WaveSpeed>1</_WaveSpeed>
+                    <_WaveAmp>0.25</_WaveAmp>
+                    <_HeightCutoff>0</_HeightCutoff>
+                    <_HeightFactor>0</_HeightFactor>
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>1</_FresnelPower>
+                    <_Transmission>0.9</_Transmission>
+                    <_Cutoff>0.4</_Cutoff>
+
+                    <_WindSpeed>25,25,25</_WindSpeed>
+
+                    <_Color>1,0.91,0.91</_Color>
+                    <_MetallicTint>0,0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.005</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>7</seed>
+                        <frequency>150000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>2</seed>
+                    <range>500</range>
+                    <minScale>0.4,0.4,0.4</minScale>
+                    <maxScale>0.7,0.7,0.7</maxScale>
+                    <sizeJitterAmount>0.8</sizeJitterAmount>
+                    <coverage>0.44</coverage>
+                    <minAltitude>0</minAltitude>
+                    <maxAltitude>2000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.4</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>75</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/CactiSmall0Shrub.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/shrub.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/shrub_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>1</_WaveSpeed>
+                                <_WaveAmp>0.25</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>0</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+                                <_Cutoff>0.4</_Cutoff>
+
+                                <_WindSpeed>25,25,25</_WindSpeed>
+
+                                <_Color>1,0.91,0.91</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>240</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/CactiSmall0Shrub.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/shrub.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/shrub_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>1</_WaveSpeed>
+                                <_WaveAmp>0.25</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>0</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+                                <_Cutoff>0.42</_Cutoff>
+
+                                <_WindSpeed>25,25,25</_WindSpeed>
+
+                                <_Color>1,0.91,0.91</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="0.7" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <Scatter name="SmallCactiShrub1">
+                <cullImmuneRadius>18</cullImmuneRadius>
+                <cullLimit>-20</cullLimit>
+                <maxObjects>3000</maxObjects>
+                <collisionLevel>-1</collisionLevel>
+                <sharesNoiseWith>LargeCactiShrub</sharesNoiseWith>
+                <Material shader="Custom/InstancedCutout"
+                    mesh="Assets/Models/Droo/CactiSmall1Shrub.fbx" castShadows="False">
+                    <_MainTex>Assets/Droo/shrub.dds</_MainTex>
+                    <_BumpMap>Assets/Droo/shrub_nrm.dds</_BumpMap>
+                    <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                    <_WaveSpeed>1</_WaveSpeed>
+                    <_WaveAmp>0.25</_WaveAmp>
+                    <_HeightCutoff>0</_HeightCutoff>
+                    <_HeightFactor>0</_HeightFactor>
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>1</_FresnelPower>
+                    <_Transmission>0.9</_Transmission>
+                    <_Cutoff>0.4</_Cutoff>
+
+                    <_WindSpeed>25,25,25</_WindSpeed>
+
+                    <_Color>1,0.91,0.91</_Color>
+                    <_MetallicTint>0,0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.005</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>7</seed>
+                        <frequency>150000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>3</seed>
+                    <range>500</range>
+                    <minScale>0.5,0.5,0.5</minScale>
+                    <maxScale>0.9,0.9,0.9</maxScale>
+                    <sizeJitterAmount>0.8</sizeJitterAmount>
+                    <coverage>0.42</coverage>
+                    <minAltitude>0</minAltitude>
+                    <maxAltitude>2000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.4</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>75</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/CactiSmall1Shrub.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/shrub.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/shrub_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>1</_WaveSpeed>
+                                <_WaveAmp>0.25</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>0</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+                                <_Cutoff>0.4</_Cutoff>
+
+                                <_WindSpeed>25,25,25</_WindSpeed>
+
+                                <_Color>1,0.91,0.91</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>240</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/CactiSmall1Shrub.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/shrub.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/shrub_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>1</_WaveSpeed>
+                                <_WaveAmp>0.25</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>0</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+                                <_Cutoff>0.42</_Cutoff>
+
+                                <_WindSpeed>25,25,25</_WindSpeed>
+
+                                <_Color>1,0.91,0.91</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="0.7" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <!-- Savanna grass -->
+
+            <Scatter name="Savanna Grass">
+                <cullImmuneRadius>7</cullImmuneRadius>
+                <cullLimit>-3</cullLimit>
+                <maxObjects>20000</maxObjects>
+                <collisionLevel>-1</collisionLevel>
+                <Material shader="Custom/InstancedCutout" mesh="Assets/Models/Droo/TripleGrass1.fbx"
+                    castShadows="False">
+                    <_MainTex>Assets/Droo/gradient.dds</_MainTex>
+                    <_BumpMap>Assets/_Common/_BumpMap.dds</_BumpMap>
+                    <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                    <_WaveSpeed>2</_WaveSpeed>
+                    <_WaveAmp>0.1</_WaveAmp>
+                    <_HeightCutoff>0.69</_HeightCutoff>
+                    <_HeightFactor>1.66</_HeightFactor>
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>1</_Hapke>
+                    <_Cutoff>0</_Cutoff>
+                    <_FresnelPower>8</_FresnelPower>
+                    <_Transmission>0.9</_Transmission>
+
+                    <_WindSpeed>40,40,40</_WindSpeed>
+
+                    <_Color>0.92,0.71,0.9</_Color>
+                    <_MetallicTint>0,0,0,0</_MetallicTint>
+                    <_FresnelColor>0.2,0.18,0.18,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.2</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>0</seed>
+                        <frequency>150000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>1</seed>
+                    <range>200</range>
+                    <minScale>0.25,0.25,0.25</minScale>
+                    <maxScale>0.5,0.5,0.5</maxScale>
+                    <sizeJitterAmount>1</sizeJitterAmount>
+                    <coverage>0.55</coverage>
+                    <minAltitude>0</minAltitude>
+                    <maxAltitude>5000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>1</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>20</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/TripleGrass2.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/gradient.dds</_MainTex>
+                                <_BumpMap>Assets/_Common/_BumpMap.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>2</_WaveSpeed>
+                                <_WaveAmp>0.1</_WaveAmp>
+                                <_HeightCutoff>0.69</_HeightCutoff>
+                                <_HeightFactor>1.66</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0</_Cutoff>
+                                <_FresnelPower>8</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+
+                                <_WindSpeed>40,40,40</_WindSpeed>
+
+                                <_Color>0.92,0.71,0.9</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.18,0.18,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>55</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutout"
+                                mesh="Assets/Models/Droo/TripleGrass2.fbx" castShadows="False">
+                                <_MainTex>Assets/Droo/grass_lod2_fade.dds</_MainTex>
+                                <_BumpMap>Assets/_Common/_BumpMap.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>2</_WaveSpeed>
+                                <_WaveAmp>0.1</_WaveAmp>
+                                <_HeightCutoff>0.69</_HeightCutoff>
+                                <_HeightFactor>1.66</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0.45</_Cutoff>
+                                <_FresnelPower>8</_FresnelPower>
+                                <_Transmission>0.9</_Transmission>
+
+                                <_WindSpeed>40,40,40</_WindSpeed>
+
+                                <_Color>0.92,0.71,0.9</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0.2,0.18,0.18,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="0.7" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <!-- Desert/Beach rocks -->
+
+            <Scatter name="TinyDesertRocks">
+                <cullImmuneRadius>5</cullImmuneRadius>
+                <cullLimit>-2</cullLimit>
+                <maxObjects>10000</maxObjects>
+                <collisionLevel>0</collisionLevel>
+                <Material shader="Custom/ParallaxInstancedUV"
+                    mesh="Assets/Models/Rocks/tinyrocks0lod0.fbx" castShadows="True">
+                    <_MainTex>Assets/Luna/rocks.dds</_MainTex>
+                    <_BumpMap>Assets/Luna/rocks_nrm.dds</_BumpMap>
+
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>1</_FresnelPower>
+
+                    <_Color>1,0.91,0.85</_Color>
+                    <_MetallicTint>0,0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.01</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>8</seed>
+                        <frequency>50000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>1</seed>
+                    <range>150</range>
+                    <minScale>0.5,0.5,0.5</minScale>
+                    <maxScale>1,1,1</maxScale>
+                    <sizeJitterAmount>0.7</sizeJitterAmount>
+                    <coverage>0.9</coverage>
+                    <minAltitude>0</minAltitude>
+                    <maxAltitude>225</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.4</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>13</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV"
+                                mesh="Assets/Models/Rocks/tinyrocks0lod1.fbx" castShadows="True">
+                                <_MainTex>Assets/Luna/rocks.dds</_MainTex>
+                                <_BumpMap>Assets/Luna/rocks_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+
+                                <_Color>1,0.91,0.85</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>29</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV"
+                                mesh="Assets/Models/Rocks/tinyrocks0lod2.fbx" castShadows="False">
+                                <_MainTex>Assets/Luna/rocks.dds</_MainTex>
+                                <_BumpMap>Assets/Luna/rocks_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+
+                                <_Color>1,0.91,0.85</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Fertile">
+                            <SubBiome name="Fertile1" value="0" slope="0" />
+                            <SubBiome name="Fertile2" value="0.7" slope="0" />
+                        </Biome>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="0.7" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <Scatter name="SmallDesertRocks">
+                <cullImmuneRadius>7</cullImmuneRadius>
+                <cullLimit>-3</cullLimit>
+                <maxObjects>10000</maxObjects>
+                <collisionLevel>1</collisionLevel>
+                <sharesNoiseWith>TinyDesertRocks</sharesNoiseWith>
+                <Material shader="Custom/ParallaxInstancedUV"
+                    mesh="Assets/Models/Rocks/smallrocks0lod0.fbx" castShadows="True">
+                    <_MainTex>Assets/Luna/rocks.dds</_MainTex>
+                    <_BumpMap>Assets/Luna/rocks_nrm.dds</_BumpMap>
+
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>1</_FresnelPower>
+
+                    <_Color>1,0.91,0.85</_Color>
+                    <_MetallicTint>0,0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.01</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>7</seed>
+                        <frequency>30000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>8</seed>
+                    <range>300</range>
+                    <minScale>0.7,0.7,0.7</minScale>
+                    <maxScale>1.3,1.3,1.3</maxScale>
+                    <sizeJitterAmount>0.7</sizeJitterAmount>
+                    <coverage>0.5</coverage>
+                    <minAltitude>0</minAltitude>
+                    <maxAltitude>2000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.4</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>30</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV"
+                                mesh="Assets/Models/Rocks/smallrocks0lod1.fbx" castShadows="True">
+                                <_MainTex>Assets/Luna/rocks.dds</_MainTex>
+                                <_BumpMap>Assets/Luna/rocks_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+
+                                <_Color>1,0.91,0.85</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>80</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV"
+                                mesh="Assets/Models/Rocks/smallrocks0lod2.fbx" castShadows="True">
+                                <_MainTex>Assets/Luna/rocks.dds</_MainTex>
+                                <_BumpMap>Assets/Luna/rocks_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+
+                                <_Color>1,0.91,0.85</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Fertile">
+                            <SubBiome name="Fertile1" value="0" slope="0" />
+                            <SubBiome name="Fertile2" value="0.7" slope="0" />
+                        </Biome>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="1" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+            <Scatter name="MedDesertRocks">
+                <cullImmuneRadius>15</cullImmuneRadius>
+                <cullLimit>-5</cullLimit>
+                <maxObjects>10000</maxObjects>
+                <collisionLevel>2</collisionLevel>
+                <sharesNoiseWith>TinyDesertRocks</sharesNoiseWith>
+                <Material shader="Custom/ParallaxInstancedUV"
+                    mesh="Assets/Models/Rocks/medrocks0lod0.fbx" castShadows="True">
+                    <_MainTex>Assets/Luna/rocks.dds</_MainTex>
+                    <_BumpMap>Assets/Luna/rocks_nrm.dds</_BumpMap>
+
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>0.6</_Hapke>
+                    <_FresnelPower>1</_FresnelPower>
+
+                    <_Color>1,0.91,0.85</_Color>
+                    <_MetallicTint>0,0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>1</populationMultiplier>
+                    <spawnChance>0.004</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>24</seed>
+                        <frequency>30000</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>12</seed>
+                    <range>550</range>
+                    <minScale>0.7,0.7,0.7</minScale>
+                    <maxScale>1.3,1.3,1.3</maxScale>
+                    <sizeJitterAmount>0.7</sizeJitterAmount>
+                    <coverage>0.3</coverage>
+                    <minAltitude>0</minAltitude>
+                    <maxAltitude>2000</maxAltitude>
+                    <alignToTerrainNormal>True</alignToTerrainNormal>
+                    <maxNormalDeviance>0.6</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>70</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV"
+                                mesh="Assets/Models/Rocks/medrocks0lod1.fbx" castShadows="True">
+                                <_MainTex>Assets/Luna/rocks.dds</_MainTex>
+                                <_BumpMap>Assets/Luna/rocks_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+
+                                <_Color>1,0.91,0.85</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>140</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV"
+                                mesh="Assets/Models/Rocks/medrocks0lod2.fbx" castShadows="True">
+                                <_MainTex>Assets/Luna/rocks.dds</_MainTex>
+                                <_BumpMap>Assets/Luna/rocks_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>0.6</_Hapke>
+                                <_FresnelPower>1</_FresnelPower>
+
+                                <_Color>1,0.91,0.85</_Color>
+                                <_MetallicTint>0,0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Fertile">
+                            <SubBiome name="Fertile1" value="0" slope="0" />
+                            <SubBiome name="Fertile2" value="0.5" slope="0" />
+                        </Biome>
+                        <Biome name="Arid">
+                            <SubBiome name="Arid1" value="0" slope="0" />
+                            <SubBiome name="Arid2" value="1" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+            <Scatter name="AcaciaTrunk">
+                <cullImmuneRadius>150</cullImmuneRadius>
+                <cullLimit>-100</cullLimit>
+                <maxObjects>15000</maxObjects>
+                <collisionLevel>0</collisionLevel>
+                <Material shader="Custom/ParallaxInstancedUV"
+                    mesh="Assets/Models/Droo/AcaciaTreeTrunkLOD0.fbx" castShadows="True">
+                    <_MainTex>Assets/Droo/oak.dds</_MainTex>
+                    <_BumpMap>Assets/Droo/oak_nrm.dds</_BumpMap>
+
+                    <_Metallic>0.0001</_Metallic>
+                    <_Gloss>72</_Gloss>
+                    <_Hapke>1</_Hapke>
+                    <_FresnelPower>2.1</_FresnelPower>
+
+                    <_Color>0.9,0.9,0.9</_Color>
+                    <_MetallicTint>0,0,0</_MetallicTint>
+                    <_FresnelColor>0,0,0</_FresnelColor>
+                </Material>
+                <Distribution>
+                    <populationMultiplier>2</populationMultiplier>
+                    <spawnChance>0.07</spawnChance>
+                    <PersistentNoise>
+                        <name>CubeNoise</name>
+                        <noiseType>Perlin</noiseType>
+                        <seed>0</seed>
+                        <frequency>12500</frequency>
+                        <strength>1</strength>
+                        <interpolation>Quintic</interpolation>
+                    </PersistentNoise>
+                    <seed>3</seed>
+                    <range>8000</range>
+                    <minScale>1.7,1.7,1.7</minScale>
+                    <maxScale>2.7,2.7,2.7</maxScale>
+                    <sizeJitterAmount>0.9</sizeJitterAmount>
+                    <coverage>0.37</coverage>
+                    <minAltitude>25</minAltitude>
+                    <maxAltitude>2000</maxAltitude>
+                    <alignToTerrainNormal>False</alignToTerrainNormal>
+                    <maxNormalDeviance>1</maxNormalDeviance>
+                    <LODs>
+                        <LOD>
+                            <distance>150</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/ParallaxInstancedUV"
+                                mesh="Assets/Models/Droo/AcaciaTreeTrunkLOD1.fbx" castShadows="True">
+                                <_MainTex>Assets/Droo/oak.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/oak_nrm.dds</_BumpMap>
+
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0</_Cutoff>
+                                <_FresnelPower>2.1</_FresnelPower>
+
+                                <_Color>0.9,0.9,0.9</_Color>
+                                <_MetallicTint>0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                        <LOD>
+                            <distance>2500</distance>
+                            <mesh>Assets/_Common/Cube.obj</mesh>
+                            <Material shader="Custom/InstancedCutoutBillboard"
+                                mesh="Assets/Models/Droo/AcaciaTreeTrunkLOD2.fbx"
+                                castShadows="False">
+                                <_MainTex>Assets/Droo/acacia_billboard.dds</_MainTex>
+                                <_BumpMap>Assets/Droo/acacia_billboard_nrm.dds</_BumpMap>
+                                <_WindMap>Assets/_Common/wind.png</_WindMap>
+
+                                <_WaveSpeed>0</_WaveSpeed>
+                                <_WaveAmp>0.04</_WaveAmp>
+                                <_HeightCutoff>0</_HeightCutoff>
+                                <_HeightFactor>1</_HeightFactor>
+                                <_Metallic>0.0001</_Metallic>
+                                <_Gloss>72</_Gloss>
+                                <_Hapke>1</_Hapke>
+                                <_Cutoff>0.65</_Cutoff>
+                                <_FresnelPower>2.1</_FresnelPower>
+                                <_Transmission>0.0</_Transmission>
+
+                                <_WindSpeed>0,0,0</_WindSpeed>
+
+                                <_Color>0.52,0.52,0.54</_Color>
+                                <_MetallicTint>0,0,0</_MetallicTint>
+                                <_FresnelColor>0,0,0</_FresnelColor>
+                            </Material>
+                        </LOD>
+                    </LODs>
+                    <Biomes>
+                        <Biome name="Fertile">
+                            <SubBiome name="Fertile1" value="0" slope="0" />
+                            <SubBiome name="Fertile2" value="0.5" slope="0" />
+                        </Biome>
+                    </Biomes>
+                </Distribution>
+            </Scatter>
+
+            <!-- Acacia TREE LEAVES -->
+
+           
+        </Scatters>
+    </CelestialBody>
+</ParallaxScatters>
+
+
+<!-- 
+<Modifier type="VertexData.VertexDataNoise" enabled="true" name="Noise" container="Scatter Noise"
+basicView="true" pass="Height" noiseType="Perlin" maskDataIndex="-1" seed="0" lockSeed="false"
+frequency="1500" strength="1" interpolation="Quintic" dataIndex="7" />
+<Modifier type="VertexData.CustomData.UpdateCustomDataFloat" enabled="true" name="Update Custom
+Data (Float)" container="Scatter Noise" pass="Height" customDataId="DummyScatter_Noise_Vertex"
+dataIndex="7" />
+-->
