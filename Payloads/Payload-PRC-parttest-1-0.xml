@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+   <DesignerPart name="YF-1 Engine" category="Payloads" description="Test" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="2" partType="Fuselage1" position="2.384186E-07,-0.7499986,-2.842171E-14" rotation="1.605289E-06,180,180" name="YF1TEST" materials="0,4,4,0,0" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="5.156762,5.156762,2.798301,0.7539729,5.157078,5.157078" area="6.703781,6.703781,2.798301,0.7539729,6.703781,6.703781" />
+          <Config centerOfMass="2.960038E-08,3.632428E-08,4.052175E-08" heatShieldScale="0" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.112778,1.112778" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.055125E-07,1.5,1.47127E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="1.112778,1.112778" volume="11.5376043" volumeInner="11.3945646" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <FuelTank capacity="9999999" fuel="9999999" subPriority="1" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <FlightProgram powerConsumptionPerInstruction="0" broadcastPowerConsumptionPerByte="0" inspectorEnabled="false" partPropertiesEnabled="false">
+            <Program name="New Program">
+              <Variables>
+                <Variable name="ProgramStates" number="0" />
+                <Variable name="thr" number="0" />
+                <Variable name="EngineThrust" number="0" />
+                <Variable name="CE" number="0" />
+                <Variable name="c1" number="0" />
+                <Variable name="fakethr " number="0" />
+                <Variable name="flag" number="0" />
+                <Variable name="c2" number="0" />
+                <Variable name="alphbet">
+                  <Items />
+                </Variable>
+              </Variables>
+              <Instructions>
+                <Event event="FlightStart" id="0" style="flight-start" pos="1103.291,-995.3879" />
+                <While id="1" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <If id="2" style="if">
+                      <Comparison op="=" style="op-eq">
+                        <Variable list="false" local="false" variableName="flag" />
+                        <Constant number="0" />
+                      </Comparison>
+                      <Instructions>
+                        <SetVariable id="3" style="set-variable">
+                          <Variable list="false" local="false" variableName="EngineThrust" />
+                          <CraftProperty property="Performance.CurrentEngineThrust" style="prop-performance" />
+                        </SetVariable>
+                      </Instructions>
+                    </If>
+                    <ElseIf id="4" style="else">
+                      <Constant bool="true" />
+                      <Instructions>
+                        <SetVariable id="5" style="set-variable">
+                          <Variable list="false" local="false" variableName="EngineThrust" />
+                          <Constant text="NaN" />
+                        </SetVariable>
+                      </Instructions>
+                    </ElseIf>
+                    <WaitSeconds id="6" style="wait-seconds">
+                      <Constant text="0" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <Event event="ReceiveMessage" id="7" style="receive-msg" pos="1236.805,-1410.732">
+                  <Constant canReplace="false" text="makesomemess" />
+                </Event>
+                <While id="8" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <SetVariable id="9" style="set-variable">
+                      <Variable list="false" local="false" variableName="thr" />
+                      <BinaryOp op="rand" style="op-rand">
+                        <Constant text="0" />
+                        <Constant text="1" />
+                      </BinaryOp>
+                    </SetVariable>
+                    <WaitSeconds id="10" style="wait-seconds">
+                      <Constant text="0.1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="11" style="flight-start" pos="13.32031,358.3831" />
+                <SetVariable id="12" style="set-variable">
+                  <Variable list="false" local="false" variableName="c2" />
+                  <Constant text="green" />
+                </SetVariable>
+                <SetVariable id="13" style="set-variable">
+                  <Variable list="false" local="false" variableName="c1" />
+                  <Constant text="green" />
+                </SetVariable>
+                <SetVariable id="14" style="set-variable">
+                  <Variable list="false" local="false" variableName="ProgramStates" />
+                  <Constant text="&lt;color=yellow&gt;Progame Self Check Completed,Ready to execute&lt;/color&gt;" />
+                </SetVariable>
+                <SetVariable id="15" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <Constant text="&lt;color=yellow&gt;Engine Stand by&lt;/color&gt;" />
+                </SetVariable>
+                <WaitUntil id="16" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="YF-1" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant style="true" bool="true" />
+                  </Comparison>
+                </WaitUntil>
+                <While id="17" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <DisplayMessage id="18" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;size=175%&gt;&lt;color=blue&gt;YF-1 Engine Testing Fire Monitor Program V 1.35&lt;/color&gt;&lt;/size&gt;" />
+                        <Constant text="&lt;br&gt;" />
+                        <Constant text="" />
+                        <Constant text="" />
+                        <Constant text="Program State:" />
+                        <Variable list="false" local="false" variableName="ProgramStates" />
+                        <Constant text="&lt;br&gt;" />
+                        <Constant text="Engine Thrust=" />
+                        <StringOp op="join" style="join">
+                          <StringOp op="join" style="join">
+                            <Constant text="&lt;color=" />
+                            <Variable list="false" local="false" variableName="c2" />
+                            <Constant text="&gt;" />
+                            <StringOp op="format" style="format">
+                              <Constant text="{0:n2}" />
+                              <Variable list="false" local="false" variableName="EngineThrust" />
+                              <Constant text="" />
+                            </StringOp>
+                            <Constant text="" />
+                          </StringOp>
+                          <Constant text=" N" />
+                          <Constant text="&lt;/color&gt;" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="&lt;br&gt;" />
+                        <Constant text="Engine Throttle:" />
+                        <StringOp op="join" style="join">
+                          <StringOp op="join" style="join">
+                            <Constant text="&lt;color=" />
+                            <Variable list="false" local="false" variableName="c1" />
+                            <Constant text="&gt;" />
+                            <Constant text="" />
+                          </StringOp>
+                          <StringOp op="format" style="format">
+                            <Constant text="{0:n2}" />
+                            <Variable list="false" local="false" variableName="fakethr " />
+                            <Constant text="" />
+                          </StringOp>
+                          <Constant text="&lt;/color&gt;" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="&lt;br&gt;" />
+                        <Constant text="Current Progress :" />
+                        <Variable list="false" local="false" variableName="CE" />
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="19" style="flight-start" pos="1104.204,-534.5298" />
+                <WaitUntil id="20" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="YF-1" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant style="true" bool="true" />
+                  </Comparison>
+                </WaitUntil>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="21" style="flight-start" pos="349.5464,-388.193" />
+                <SetVariable id="22" style="set-variable" pos="352.0518,-447.5233">
+                  <Variable list="false" local="false" variableName="flag" />
+                  <Constant number="0" />
+                </SetVariable>
+                <WaitUntil id="23" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="YF-1" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant style="true" bool="true" />
+                  </Comparison>
+                </WaitUntil>
+                <SetVariable id="24" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <Constant text="&lt;color=green&gt;Engine Starting Up&lt;/color&gt;" />
+                </SetVariable>
+                <WaitSeconds id="25" style="wait-seconds">
+                  <Constant text="2" />
+                </WaitSeconds>
+                <SetVariable id="26" style="set-variable">
+                  <Variable list="false" local="false" variableName="ProgramStates" />
+                  <Constant text="&lt;color=green&gt;Running&lt;/color&gt;" />
+                </SetVariable>
+                <WaitSeconds id="27" style="wait-seconds">
+                  <Constant text="2" />
+                </WaitSeconds>
+                <Repeat id="28" style="repeat">
+                  <Constant text="100" />
+                  <Instructions>
+                    <SetVariable id="29" style="set-variable">
+                      <Variable list="false" local="false" variableName="CE" />
+                      <Constant text="&lt;color=green&gt;Engine Thrust Initializing&lt;/color&gt;" />
+                    </SetVariable>
+                    <ChangeVariable id="30" style="change-variable">
+                      <Variable list="false" local="false" variableName="fakethr " />
+                      <Constant text="0.01" />
+                    </ChangeVariable>
+                    <ChangeVariable id="31" style="change-variable">
+                      <Variable list="false" local="false" variableName="thr" />
+                      <Constant text="0.01" />
+                    </ChangeVariable>
+                    <WaitSeconds id="32" style="wait-seconds">
+                      <Constant text="0.05" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <SetVariable id="33" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <Constant text="&lt;color=green&gt;Engine Full Thrust Running&lt;/color&gt;" />
+                </SetVariable>
+                <WaitSeconds id="34" style="wait-seconds">
+                  <Constant text="6" />
+                </WaitSeconds>
+                <SetVariable id="35" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <Constant text="&lt;color=green&gt;Engine Throttle Down&lt;/color&gt;" />
+                </SetVariable>
+                <Repeat id="36" style="repeat">
+                  <Constant text="50" />
+                  <Instructions>
+                    <ChangeVariable id="37" style="change-variable">
+                      <Variable list="false" local="false" variableName="fakethr " />
+                      <Constant text="-0.01" />
+                    </ChangeVariable>
+                    <ChangeVariable id="38" style="change-variable">
+                      <Variable list="false" local="false" variableName="thr" />
+                      <Constant text="-0.01" />
+                    </ChangeVariable>
+                    <WaitSeconds id="39" style="wait-seconds">
+                      <Constant text="0.1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <WaitSeconds id="40" style="wait-seconds">
+                  <Constant text="4" />
+                </WaitSeconds>
+                <SetVariable id="41" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <Constant text="&lt;color=green&gt;Engine Throttle Up&lt;/color&gt;" />
+                </SetVariable>
+                <Repeat id="42" style="repeat">
+                  <Constant text="50" />
+                  <Instructions>
+                    <ChangeVariable id="43" style="change-variable">
+                      <Variable list="false" local="false" variableName="thr" />
+                      <Constant text="0.02" />
+                    </ChangeVariable>
+                    <ChangeVariable id="44" style="change-variable">
+                      <Variable list="false" local="false" variableName="fakethr " />
+                      <Constant text="0.02" />
+                    </ChangeVariable>
+                    <WaitSeconds id="45" style="wait-seconds">
+                      <Constant text="0.1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <WaitSeconds id="46" style="wait-seconds">
+                  <BinaryOp op="rand" style="op-rand">
+                    <Constant text="2" />
+                    <Constant text="4" />
+                  </BinaryOp>
+                </WaitSeconds>
+                <SetVariable id="47" style="set-variable">
+                  <Variable list="false" local="false" variableName="c2" />
+                  <Constant text="yellow" />
+                </SetVariable>
+                <SetVariable id="48" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <Constant text="&lt;color=red&gt;Engine Combustion Unstable!&lt;/color&gt;" />
+                </SetVariable>
+                <WaitSeconds id="49" style="wait-seconds">
+                  <BinaryOp op="rand" style="op-rand">
+                    <Constant text="1" />
+                    <Constant text="3" />
+                  </BinaryOp>
+                </WaitSeconds>
+                <SetVariable id="50" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <Constant text="&lt;color=red&gt;Engine Regenerative Cooling Error!&lt;/color&gt;" />
+                </SetVariable>
+                <WaitSeconds id="51" style="wait-seconds">
+                  <BinaryOp op="rand" style="op-rand">
+                    <Constant text="2" />
+                    <Constant text="3" />
+                  </BinaryOp>
+                </WaitSeconds>
+                <SetVariable id="52" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <Constant text="&lt;color=red&gt;Engine Overheating Detected!&lt;/color&gt;" />
+                </SetVariable>
+                <WaitSeconds id="53" style="wait-seconds">
+                  <Constant text="2" />
+                </WaitSeconds>
+                <BroadcastMessage global="false" local="true" id="54" style="broadcast-msg">
+                  <Constant text="makesomemess" />
+                  <Constant number="0" />
+                </BroadcastMessage>
+                <SetVariable id="55" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <StringOp op="join" style="join" pos="580.7651,-1752.093">
+                    <Constant text="&lt;color=red&gt;" />
+                    <StringOp op="join" style="join" pos="740.7308,-1836.43">
+                      <ListOp op="get" style="list-get">
+                        <Variable list="true" local="false" variableName="alphbet" />
+                        <BinaryOp op="rand" style="op-rand">
+                          <Constant text="1" />
+                          <ListOp op="length" style="list-length">
+                            <Variable list="true" local="false" variableName="alphbet" />
+                          </ListOp>
+                        </BinaryOp>
+                      </ListOp>
+                      <ListOp op="get" style="list-get">
+                        <Variable list="true" local="false" variableName="alphbet" />
+                        <BinaryOp op="rand" style="op-rand">
+                          <Constant text="1" />
+                          <ListOp op="length" style="list-length">
+                            <Variable list="true" local="false" variableName="alphbet" />
+                          </ListOp>
+                        </BinaryOp>
+                      </ListOp>
+                      <ListOp op="get" style="list-get">
+                        <Variable list="true" local="false" variableName="alphbet" />
+                        <BinaryOp op="rand" style="op-rand">
+                          <Constant text="1" />
+                          <ListOp op="length" style="list-length">
+                            <Variable list="true" local="false" variableName="alphbet" />
+                          </ListOp>
+                        </BinaryOp>
+                      </ListOp>
+                      <ListOp op="get" style="list-get">
+                        <Variable list="true" local="false" variableName="alphbet" />
+                        <BinaryOp op="rand" style="op-rand">
+                          <Constant text="1" />
+                          <ListOp op="length" style="list-length">
+                            <Variable list="true" local="false" variableName="alphbet" />
+                          </ListOp>
+                        </BinaryOp>
+                      </ListOp>
+                      <ListOp op="get" style="list-get">
+                        <Variable list="true" local="false" variableName="alphbet" />
+                        <BinaryOp op="rand" style="op-rand">
+                          <Constant text="1" />
+                          <ListOp op="length" style="list-length">
+                            <Variable list="true" local="false" variableName="alphbet" />
+                          </ListOp>
+                        </BinaryOp>
+                      </ListOp>
+                      <ListOp op="get" style="list-get">
+                        <Variable list="true" local="false" variableName="alphbet" />
+                        <BinaryOp op="rand" style="op-rand">
+                          <Constant text="1" />
+                          <ListOp op="length" style="list-length">
+                            <Variable list="true" local="false" variableName="alphbet" />
+                          </ListOp>
+                        </BinaryOp>
+                      </ListOp>
+                      <ListOp op="get" style="list-get">
+                        <Variable list="true" local="false" variableName="alphbet" />
+                        <BinaryOp op="rand" style="op-rand">
+                          <Constant text="1" />
+                          <ListOp op="length" style="list-length">
+                            <Variable list="true" local="false" variableName="alphbet" />
+                          </ListOp>
+                        </BinaryOp>
+                      </ListOp>
+                      <ListOp op="get" style="list-get">
+                        <Variable list="true" local="false" variableName="alphbet" />
+                        <BinaryOp op="rand" style="op-rand">
+                          <Constant text="1" />
+                          <ListOp op="length" style="list-length">
+                            <Variable list="true" local="false" variableName="alphbet" />
+                          </ListOp>
+                        </BinaryOp>
+                      </ListOp>
+                      <Constant text="" />
+                    </StringOp>
+                    <Constant text="&lt;/color&gt;" />
+                    <Constant text="" />
+                  </StringOp>
+                </SetVariable>
+                <SetVariable id="56" style="set-variable">
+                  <Variable list="false" local="false" variableName="ProgramStates" />
+                  <Constant text="&lt;color=red&gt;Warning:Engine Thrust is Unstable!&lt;/color&gt;" />
+                </SetVariable>
+                <SetVariable id="57" style="set-variable">
+                  <Variable list="false" local="false" variableName="c2" />
+                  <Constant text="red" />
+                </SetVariable>
+                <WaitSeconds id="58" style="wait-seconds">
+                  <Constant text="3" />
+                </WaitSeconds>
+                <SetVariable id="59" style="set-variable">
+                  <Variable list="false" local="false" variableName="ProgramStates" />
+                  <Constant text="&lt;color=yellow&gt;Attempt Override Engine Throttle&lt;/color&gt;" />
+                </SetVariable>
+                <SetVariable id="60" style="set-variable">
+                  <Variable list="false" local="false" variableName="c1" />
+                  <Constant text="yellow" />
+                </SetVariable>
+                <SetVariable id="61" style="set-variable">
+                  <Variable list="false" local="false" variableName="fakethr " />
+                  <Constant text="0.3" />
+                </SetVariable>
+                <WaitSeconds id="62" style="wait-seconds">
+                  <Constant text="4" />
+                </WaitSeconds>
+                <SetVariable id="63" style="set-variable">
+                  <Variable list="false" local="false" variableName="ProgramStates" />
+                  <Constant text="&lt;color=red&gt;Engine Throttle Override Failed!&lt;/color&gt;" />
+                </SetVariable>
+                <SetVariable id="64" style="set-variable">
+                  <Variable list="false" local="false" variableName="c1" />
+                  <Constant text="red" />
+                </SetVariable>
+                <SetVariable id="65" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <Constant text="&lt;color=red&gt;Emergency Abort!&lt;/color&gt;" />
+                </SetVariable>
+                <SetVariable id="66" style="set-variable">
+                  <Variable list="false" local="false" variableName="fakethr " />
+                  <Constant text="0" />
+                </SetVariable>
+                <SetVariable id="67" style="set-variable">
+                  <Variable list="false" local="false" variableName="ProgramStates" />
+                  <Constant text="&lt;color=red&gt;Attempt Engine Shutting Down!&lt;/color&gt;" />
+                </SetVariable>
+                <WaitSeconds id="68" style="wait-seconds">
+                  <Constant text="5" />
+                </WaitSeconds>
+                <SetVariable id="69" style="set-variable">
+                  <Variable list="false" local="false" variableName="fakethr " />
+                  <Constant text="NaN" />
+                </SetVariable>
+                <SetVariable id="70" style="set-variable">
+                  <Variable list="false" local="false" variableName="ProgramStates" />
+                  <Constant text="&lt;color=red&gt;Engine Throttle Control Lost!&lt;/color&gt;" />
+                </SetVariable>
+                <WaitSeconds id="71" style="wait-seconds">
+                  <Constant text="5" />
+                </WaitSeconds>
+                <SetVariable id="72" style="set-variable">
+                  <Variable list="false" local="false" variableName="ProgramStates" />
+                  <Constant text="&lt;color=red&gt;Error! Thrust Tracking Failed&lt;/color&gt;" />
+                </SetVariable>
+                <SetVariable id="73" style="set-variable">
+                  <Variable list="false" local="false" variableName="flag" />
+                  <Constant text="1" />
+                </SetVariable>
+                <WaitSeconds id="74" style="wait-seconds">
+                  <Constant text="4" />
+                </WaitSeconds>
+                <SetVariable id="75" style="set-variable">
+                  <Variable list="false" local="false" variableName="ProgramStates" />
+                  <Constant text="&lt;color=red&gt;Crital Error! &lt;/color&gt;" />
+                </SetVariable>
+                <SetVariable id="76" style="set-variable">
+                  <Variable list="false" local="false" variableName="CE" />
+                  <Constant text="&lt;color=red&gt;Engine is Unstable!&lt;/color&gt;" />
+                </SetVariable>
+                <WaitSeconds id="77" style="wait-seconds">
+                  <Constant text="5" />
+                </WaitSeconds>
+                <SetCraftProperty property="Part.SetExplode" id="78" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="YF-1" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <WaitSeconds id="79" style="wait-seconds">
+                  <Constant text="4" />
+                </WaitSeconds>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="80" style="flight-start" pos="2220.227,-110.9236" />
+                <SetList op="add" id="81" style="list-add" pos="577.5396,-282.2523">
+                  <Variable list="true" local="false" variableName="alphbet" pos="515.1199,-377.7886" />
+                  <Constant text="a" />
+                </SetList>
+                <SetList op="add" id="82" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="b" />
+                </SetList>
+                <SetList op="add" id="83" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="c" />
+                </SetList>
+                <SetList op="add" id="84" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="d" />
+                </SetList>
+                <SetList op="add" id="85" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="e" />
+                </SetList>
+                <SetList op="add" id="86" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="f" />
+                </SetList>
+                <SetList op="add" id="87" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="g" />
+                </SetList>
+                <SetList op="add" id="88" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="h" />
+                </SetList>
+                <SetList op="add" id="89" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="i" />
+                </SetList>
+                <SetList op="add" id="90" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="j" />
+                </SetList>
+                <SetList op="add" id="91" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="k" />
+                </SetList>
+                <SetList op="add" id="92" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="l" />
+                </SetList>
+                <SetList op="add" id="93" style="list-add" pos="2027.551,-48.62198">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="y" />
+                </SetList>
+                <SetList op="add" id="94" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="z" />
+                </SetList>
+                <SetList op="add" id="95" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="!" />
+                </SetList>
+                <SetList op="add" id="96" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="@" />
+                </SetList>
+                <SetList op="add" id="97" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="?" />
+                </SetList>
+                <SetList op="add" id="98" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="#" />
+                </SetList>
+                <SetList op="add" id="99" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="$" />
+                </SetList>
+                <SetList op="add" id="100" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="%" />
+                </SetList>
+                <SetList op="add" id="101" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="^" />
+                </SetList>
+                <SetList op="add" id="102" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="A" />
+                </SetList>
+                <SetList op="add" id="103" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="F" />
+                </SetList>
+                <SetList op="add" id="104" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="V" />
+                </SetList>
+                <SetList op="add" id="105" style="list-add" pos="1725.022,-44.86385">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="m" />
+                </SetList>
+                <SetList op="add" id="106" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="n" />
+                </SetList>
+                <SetList op="add" id="107" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="o" />
+                </SetList>
+                <SetList op="add" id="108" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="p" />
+                </SetList>
+                <SetList op="add" id="109" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="q" />
+                </SetList>
+                <SetList op="add" id="110" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="r" />
+                </SetList>
+                <SetList op="add" id="111" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="s" />
+                </SetList>
+                <SetList op="add" id="112" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="t" />
+                </SetList>
+                <SetList op="add" id="113" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="u" />
+                </SetList>
+                <SetList op="add" id="114" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="v" />
+                </SetList>
+                <SetList op="add" id="115" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="w" />
+                </SetList>
+                <SetList op="add" id="116" style="list-add">
+                  <Variable list="true" local="false" variableName="alphbet" />
+                  <Constant text="x" />
+                </SetList>
+              </Instructions>
+              <Expressions />
+            </Program>
+          </FlightProgram>
+          <FuelTank capacity="1" fuel="1" autoFuelType="false" fuelType="Battery" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="3" partType="RocketEngine1" position="-2.384186E-07,0.7499981,9.536743E-07" rotation="-1.034754E-05,180,180" name="YF-1" activationStage="0" materials="0,1,2,3,4" partConnectionsEnabled="false" partStyleEnabled="false" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="1.2113,1.231016,0.4619075,0,1.407633,1.410018" area="1.677647,1.677647,1.047445,0,1.91538,1.91538" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="Payload" supportsTransparency="false" partPropertiesEnabled="false" />
+          <RocketEngine nozzleSize="1.02" nozzleThroatSize="1" nozzleTypeId="Delta" size="0.8" massFlowRateOverride="70" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="-1" ignitionsUsed="0" heatTransferOverride="1" overexpansionDamage="0" exhaustColor="#FF455480" exhaustColorExpanded="Default" exhaustColorShock="#3633FF80" exhaustColorFlame="#FF0059FF" nozzleDiscStrength="0" mass="8.013129" price="1712158" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController input="YF1TEST.VZ.thr" inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <Payload payloadId="Payload-PRC-parttest-1-0" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="3" partB="2" attachPointsA="0" attachPointsB="1" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+ <DesignerPart name="SM" category="Payloads" description="TODO" order="3" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="1079" partType="Fuselage1" position="-3.814697E-06,-0.3680382,1.907349E-06" rotation="-3.415094E-06,-1.593863E-06,-1.580944E-12" name="Bruno Service Module" materials="17,17,17,17,17" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee" texture="Fuselage3" textureTiling="1,0.05">
+          <Drag drag="10.10787,8.482758,0,0,6.313727,10.10196" area="12.04443,9.786098,0,0,7.527766,12.04443" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="4.214327E-14,-1.772255,-2.518526E-13" rotation="90,0,0" scale="2.792848" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-4.214327E-14,1.772255,2.518526E-13" rotation="-90,180,0" scale="2.792848" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,1.95" rotation="0,0,0" scale="2.66252136" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-4.214327E-14,1.772255,2.518526E-13" rotation="-90,180,0" scale="2.792848" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="4.214327E-14,-1.772255,-2.518526E-13" rotation="90,0,0" scale="2.792848" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="5.906133E-09,-3.897905E-08,3.203758E-08" fuelLine="true" />
+          <Fuselage bottomScale="1.95,1.95" deformations="0,0,0" depthCurve="0" offset="-4.214327E-14,1.772255,2.518526E-13" shellDensityOverride="-1" topScale="1.95,1.95" volume="41.860363" volumeInner="41.52574" version="3" />
+          <FuelTank capacity="23288.3125" fuel="23288.3125" />
+        </Part>
+        <Part id="1081" partType="Fuselage1" position="-3.814697E-06,-1.543049,0" rotation="-3.415094E-06,-1.593863E-06,-1.580944E-12" name="Bruno Service Module Radiator" materials="0,7,7,7,7" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee" mirrored="true" texture="Fuselage7" textureTiling="0.05,20" textureOffset="0.5000001,0">
+          <Drag drag="0.03321072,1.733599,0.07166878,0,3.712958,0" area="1.129164,3.387493,0.07166878,0,4.516658,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="1.636262E-15,-0.4672546,-1.328018E-14" rotation="90,0,0" scale="2.8" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-1.636262E-15,0.4672546,1.328018E-14" rotation="-90,180,0" scale="2.8" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,1.96" rotation="0,0,0" scale="0.9345092" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-1.636262E-15,0.4672546,1.328018E-14" rotation="-90,180,0" scale="2.8" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="1.636262E-15,-0.4672546,-1.328018E-14" rotation="90,0,0" scale="2.8" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-9.048525E-09,5.01272E-09,-1.065169E-08" fuelLine="true" symmetryId="4c0f2b87-1452-4390-a392-ceba16e46b77" />
+          <Fuselage bottomScale="1.96,1.96" clampDistances="-1,1,-0.8660254,0.8660254,-1,1,-0.8660254,0.8660254" deformations="0,0,0" depthCurve="0" offset="-1.636262E-15,0.4672546,1.328018E-14" shellDensityOverride="-1" topScale="1.96,1.96" volume="10.5423441" volumeInner="10.372962" symmetryId="01052869-2668-4f19-b7bd-77674077ddef" version="3" />
+          <FuelTank autoFuelType="false" capacity="6203.09375" fuel="6203.09375" fuelType="None" subPriority="-11" symmetryId="1897ab66-ef73-4bc1-901c-d1db21dfdfb1" />
+        </Part>
+        <Part id="1082" partType="Detacher1" position="-3.814697E-06,-2.240219,0" rotation="1.707547E-06,180,180" name="Service Module Interstage" activationStage="7" stageOverride="true" materials="17,17,17,17,17" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee" style="Interstage-1" texture="Fuselage3" textureTiling="1,0.6499999">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="1" position="7.199816E-21,-0.1,4.263278E-14" rotation="90,0,0" scale="2.792848" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="4.923067E-08,2.455421E-08,6.624185E-08" />
+          <Fuselage bottomScale="1.95,1.95" deformations="0,0,0" depthCurve="0" meshMassMultiplier="1.5" offset="-7.199816E-21,0.1,-4.263278E-14" shellDensityOverride="-1" toolSupportsAddSection="true" topScale="1.950001,1.950001" volume="2.361984" volumeInner="2.23166728" version="3" />
+          <Detacher version="2" />
+          <CoverEngine />
+          <CrossFeed />
+        </Part>
+        <Part id="1083" partType="Fuselage1" position="-3.814697E-06,-2.259079,0" rotation="1.195283E-05,180,6.83019E-06" name="Bruno Service Module " materials="3,3,3,3,3" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="1" position="3.265448E-14,-0.1188393,-5.387513E-11" rotation="90,0,0" scale="2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,1.025" rotation="0,0,0" scale="0.2376786" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-3.265448E-14,0.1188393,5.387513E-11" rotation="-90,180,0" scale="2.04939" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="3.265448E-14,-0.1188393,-5.387513E-11" rotation="90,0,0" scale="2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-5.13846E-08,0.003108652,4.864592E-08" fuelLine="true" />
+          <Fuselage bottomScale="1.4,1" cornerRadiuses="0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2" deformations="0,0,0" depthCurve="0" offset="-3.265448E-14,0.1188393,5.387513E-11" shellDensityOverride="-1" topScale="1.5,1.05" volume="1.37840235" volumeInner="1.30867708" version="3" />
+          <FuelTank autoFuelType="false" capacity="743.98974609375" fuel="743.98974609375" fuelType="Monopropellant" subPriority="-18" />
+          <Payload payloadId="SM" />
+        </Part>
+        <Part id="1084" partType="RocketEngine1" position="-3.814697E-06,-1.739269,0" rotation="-6.830189E-06,180,1.707547E-06" name="PBnJ-10" activationStage="9" stageOverride="true" materials="18,18,18,18,18" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension2">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="270,180,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config fuelLine="true" supportsTransparency="false" />
+          <RocketEngine engineSubTypeId="Staged1" nozzleSize="1.5999999" nozzleThroatSize="1" size="0.5" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="-1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="12.2463875" price="3510901" />
+        </Part>
+        <Part id="1100" partType="Fuselage1" position="-1.943192,0.8199577,0" rotation="270,89.99995,0" name="Bruno Monopropellant Pod" materials="2,2,2,2,2" symmetryId="4f01dd1d-d3f3-4a77-badb-e47bd81fa192" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee" texture="Default">
+          <Drag drag="0.3734361,0.3734361,0.07110668,0,0,0" area="0.3763881,0.3763881,0.07883566,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="1" position="-8.630886E-07,-0.2094991,0" rotation="90,0,0" scale="0.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="8.630886E-07,0.2094991,0" rotation="-90,180,0" scale="0.3" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-8.630886E-07,-0.2094991,0" rotation="90,0,0" scale="0.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-1.579088E-07,-0.03936896,1.530691E-08" symmetryId="162855a0-0af8-4dd0-98ec-2ae401902103" />
+          <Fuselage bottomScale="0.2,0.45" cornerRadiuses="0,0,0,0,0,0,0,0" deformations="0,0,0" depthCurve="0" offset="8.630886E-07,0.2094991,0" shellDensityOverride="-1" topScale="0.15,0.25" volume="0.104051217" volumeInner="0.09692241" symmetryId="f87d8f36-8445-47b7-8060-2d1119932c4b" version="3" />
+          <FuelTank autoFuelType="false" capacity="57.228172302246094" fuel="57.228172302246094" fuelType="Monopropellant" subPriority="11" symmetryId="4607d65d-0f78-423d-adf6-01dbb7e1ec79" />
+        </Part>
+        <Part id="1101" partType="RCSNozzle2" position="-2.15263,0.819973,7.629395E-06" rotation="270,89.99995,0" activationGroup="10" materials="18,18,18,2,18" symmetryId="b20433b5-2fdc-4d1d-93c0-56578fccc4a4" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee">
+          <Drag drag="0,0,0.0228778,0,0,0" area="0,0,0.03583439,0,0,0" />
+          <Config supportsTransparency="false" symmetryId="bb9eae43-b4f2-47ba-98a1-fdf607b554c9" />
+          <ReactionControlNozzle powerScale="0.7" scale="1.80000007" symmetryId="dad45a3b-28e5-4af4-8c1d-b067615ab2c1" />
+        </Part>
+        <Part id="1102" partType="Fuselage1" position="-3.814697E-06,0.8199577,1.943186" rotation="270,180,0" name="Bruno Monopropellant Pod" materials="2,2,2,2,2" symmetryId="4f01dd1d-d3f3-4a77-badb-e47bd81fa192" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee" texture="Default">
+          <Drag drag="0,0,0.07757092,0,0.3734361,0.3734361" area="0,0,0.08600254,0,0.3763881,0.3763881" />
+          <AttachPoints>
+            <AttachPoint id="1" position="-8.630886E-07,-0.2094991,0" rotation="90,0,0" scale="0.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="8.630886E-07,0.2094991,0" rotation="-90,180,0" scale="0.3" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-8.630886E-07,-0.2094991,0" rotation="90,0,0" scale="0.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-1.579088E-07,-0.03936896,1.530691E-08" symmetryId="162855a0-0af8-4dd0-98ec-2ae401902103" />
+          <Fuselage bottomScale="0.2,0.45" cornerRadiuses="0,0,0,0,0,0,0,0" deformations="0,0,0" depthCurve="0" offset="8.630886E-07,0.2094991,0" shellDensityOverride="-1" topScale="0.15,0.25" volume="0.104051217" volumeInner="0.09692241" symmetryId="f87d8f36-8445-47b7-8060-2d1119932c4b" version="3" />
+          <FuelTank autoFuelType="false" capacity="57.026836395263672" fuel="57.026836395263672" fuelType="Monopropellant" subPriority="11" symmetryId="4607d65d-0f78-423d-adf6-01dbb7e1ec79" />
+        </Part>
+        <Part id="1103" partType="RCSNozzle2" position="3.814697E-06,0.819973,2.15263" rotation="270,180,0" activationGroup="10" materials="18,18,18,2,18" symmetryId="b20433b5-2fdc-4d1d-93c0-56578fccc4a4" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee">
+          <Drag drag="0,0,0.02415659,0,0,0" area="0,0,0.03583439,0,0,0" />
+          <Config supportsTransparency="false" symmetryId="bb9eae43-b4f2-47ba-98a1-fdf607b554c9" />
+          <ReactionControlNozzle powerScale="0.7" scale="1.80000007" symmetryId="dad45a3b-28e5-4af4-8c1d-b067615ab2c1" />
+        </Part>
+        <Part id="1104" partType="Fuselage1" position="1.94318,0.8199577,0" rotation="270,269.9999,0" name="Bruno Monopropellant Pod" materials="2,2,2,2,2" symmetryId="4f01dd1d-d3f3-4a77-badb-e47bd81fa192" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee" texture="Default">
+          <Drag drag="0.3734361,0.3734361,0.07110668,0,0,0" area="0.3763881,0.3763881,0.07883566,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="1" position="-8.630886E-07,-0.2094991,0" rotation="90,0,0" scale="0.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="8.630886E-07,0.2094991,0" rotation="-90,180,0" scale="0.3" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-8.630886E-07,-0.2094991,0" rotation="90,0,0" scale="0.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-1.579088E-07,-0.03936896,1.530691E-08" symmetryId="162855a0-0af8-4dd0-98ec-2ae401902103" />
+          <Fuselage bottomScale="0.2,0.45" cornerRadiuses="0,0,0,0,0,0,0,0" deformations="0,0,0" depthCurve="0" offset="8.630886E-07,0.2094991,0" shellDensityOverride="-1" topScale="0.15,0.25" volume="0.104051217" volumeInner="0.09692241" symmetryId="f87d8f36-8445-47b7-8060-2d1119932c4b" version="3" />
+          <FuelTank autoFuelType="false" capacity="57.228172302246094" fuel="57.228172302246094" fuelType="Monopropellant" subPriority="11" symmetryId="4607d65d-0f78-423d-adf6-01dbb7e1ec79" />
+        </Part>
+        <Part id="1105" partType="RCSNozzle2" position="2.152622,0.819973,-5.722046E-06" rotation="270,269.9999,0" activationGroup="10" materials="18,18,18,2,18" symmetryId="b20433b5-2fdc-4d1d-93c0-56578fccc4a4" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee">
+          <Drag drag="0,0,0.02294806,0,0,0" area="0,0,0.03583439,0,0,0" />
+          <Config supportsTransparency="false" symmetryId="bb9eae43-b4f2-47ba-98a1-fdf607b554c9" />
+          <ReactionControlNozzle powerScale="0.7" scale="1.80000007" symmetryId="dad45a3b-28e5-4af4-8c1d-b067615ab2c1" />
+        </Part>
+        <Part id="1106" partType="Fuselage1" position="-3.814697E-06,0.8199577,-1.943186" rotation="270,-4.747574E-05,0" name="Bruno Monopropellant Pod" materials="2,2,2,2,2" symmetryId="4f01dd1d-d3f3-4a77-badb-e47bd81fa192" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee" texture="Default">
+          <Drag drag="0,0,0.07110668,0,0.3734361,0.3734361" area="0,0,0.07883566,0,0.3763881,0.3763881" />
+          <AttachPoints>
+            <AttachPoint id="1" position="-8.630886E-07,-0.2094991,0" rotation="90,0,0" scale="0.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="8.630886E-07,0.2094991,0" rotation="-90,180,0" scale="0.3" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-8.630886E-07,-0.2094991,0" rotation="90,0,0" scale="0.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-1.579088E-07,-0.03936896,1.530691E-08" symmetryId="162855a0-0af8-4dd0-98ec-2ae401902103" />
+          <Fuselage bottomScale="0.2,0.45" cornerRadiuses="0,0,0,0,0,0,0,0" deformations="0,0,0" depthCurve="0" offset="8.630886E-07,0.2094991,0" shellDensityOverride="-1" topScale="0.15,0.25" volume="0.104051217" volumeInner="0.09692241" symmetryId="f87d8f36-8445-47b7-8060-2d1119932c4b" version="3" />
+          <FuelTank autoFuelType="false" capacity="57.228172302246094" fuel="57.228172302246094" fuelType="Monopropellant" subPriority="11" symmetryId="4607d65d-0f78-423d-adf6-01dbb7e1ec79" />
+        </Part>
+        <Part id="1107" partType="RCSNozzle2" position="-1.144409E-05,0.819973,-2.152626" rotation="270,-4.747574E-05,0" activationGroup="10" materials="18,18,18,2,18" symmetryId="b20433b5-2fdc-4d1d-93c0-56578fccc4a4" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee">
+          <Drag drag="0,0,0.02299022,0,0,0" area="0,0,0.03583439,0,0,0" />
+          <Config supportsTransparency="false" symmetryId="bb9eae43-b4f2-47ba-98a1-fdf607b554c9" />
+          <ReactionControlNozzle powerScale="0.7" scale="1.80000007" symmetryId="dad45a3b-28e5-4af4-8c1d-b067615ab2c1" />
+        </Part>
+        <Part id="1078" partType="Detacher1" position="-3.814697E-06,1.589916,1.907349E-06" rotation="6.830189E-06,-1.593863E-06,-5.021126E-13" name="Juno Module-Bruno Capsule Interstage" activationStage="13" stageOverride="true" materials="17,17,17,17,17" groupId="bb4ab26b-b666-4456-bf85-24a62b6b4dee" style="Interstage-1" texture="Fuselage7" textureTiling="5,16.9">
+          <Drag drag="1.263483,1.263483,0,0,1.262745,1.262745" area="1.505552,1.505552,0,0,1.505552,1.505552" />
+          <Config centerOfMass="3.120954E-08,3.93744E-08,5.62681E-08" />
+          <Fuselage bottomScale="1.95,1.95" deformations="0,0,0" depthCurve="0" meshMassMultiplier="1.5" offset="-7.199816E-21,0.1856978,-4.263278E-14" shellDensityOverride="-1" toolSupportsAddSection="true" topScale="1.950001,1.950001" volume="4.38615274" volumeInner="4.24536657" version="3" />
+          <Detacher version="2" />
+          <CoverEngine />
+          <CrossFeed />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="1081" partB="1079" attachPointsA="3" attachPointsB="0" />
+        <Connection partA="1082" partB="1079" attachPointsA="0" attachPointsB="5" />
+        <Connection partA="1083" partB="1079" attachPointsA="2" attachPointsB="1" />
+        <Connection partA="1084" partB="1079" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="1100" partB="1079" attachPointsA="3" attachPointsB="0" symmetryId="396d4448-db51-4ca8-a5d5-e41bd3fe7e8c" />
+        <Connection partA="1102" partB="1079" attachPointsA="3" attachPointsB="0" symmetryId="396d4448-db51-4ca8-a5d5-e41bd3fe7e8c" />
+        <Connection partA="1104" partB="1079" attachPointsA="3" attachPointsB="0" symmetryId="396d4448-db51-4ca8-a5d5-e41bd3fe7e8c" />
+        <Connection partA="1106" partB="1079" attachPointsA="3" attachPointsB="0" symmetryId="396d4448-db51-4ca8-a5d5-e41bd3fe7e8c" />
+        <Connection partA="1079" partB="1078" attachPointsA="2,4" attachPointsB="1,0" />
+        <Connection partA="1101" partB="1100" attachPointsA="0" attachPointsB="2" symmetryId="3c5c84aa-0b41-41bb-a11e-91dcee924e97" />
+        <Connection partA="1103" partB="1102" attachPointsA="0" attachPointsB="2" symmetryId="3c5c84aa-0b41-41bb-a11e-91dcee924e97" />
+        <Connection partA="1105" partB="1104" attachPointsA="0" attachPointsB="2" symmetryId="3c5c84aa-0b41-41bb-a11e-91dcee924e97" />
+        <Connection partA="1107" partB="1106" attachPointsA="0" attachPointsB="2" symmetryId="3c5c84aa-0b41-41bb-a11e-91dcee924e97" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

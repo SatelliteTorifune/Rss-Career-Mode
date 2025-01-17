@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Contracts>
+  <ContractTemplate>
+      <Params>
+         <Expression name="Probability1" value="NumCompletions > 10 ? 0 : 100" />
+         <Expression name="Probability" value="@Probability1 = 100 ? 0 : 100" />
+         <Expression name="Index" value="NumCompletions" />
+         <Expression name="Index2" value="@Index + 1" />
+         <Random name="Error" min="-4" max="4" round="2" />
+         <Random name="OrbitIndex" min="0" max="7" round="1" />
+         <Random name="OrbitOffset" min="0" max="10e3" round="1000" />
+         <Random name="OrbitOffset2" min="0" max="10e3" round="1000" />
+         <List name="StartNum" index="@Index" values="10;18;26;34;42;46;50;54;58;64" />
+         <Expression name="Starlinknum" value="@StartNum + @Error" />
+         <List name="OrbitHeight" index="@OrbitIndex" values="550e3;514e3;570e3;530e3;559e3;525e3;279e3;540e3" />
+         <Expression name="Ap" value="@OrbitHeight + @OrbitOffset" />
+         <Expression name="Pe" value="@Ap-@OrbitOffset2" />
+         <Random name="I" min="0" max="90" round="0.5" />
+         <List name="LongDes" index="@Index" values="0;1;2;3;4;5;6;7;8;9" />
+         <Expression name="Money" value="(@Starlinknum * 1e3) + (@OrbitHeight * 1e3) + (1e2 * @Error)" />
+      </Params>
+      <Prereqs techNodes="test" />
+      <Contract customer="spacex" id="starlink-v1" money="@Money" name="StarLink V1-@Index2" priority="5" probability="100" difficulty="2" flairText="StarLink V1">
+         <Description
+            short="Bring @Starlinknum StarLinks to Orbit" 
+            long="@LongDes" />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+             <PartCount op="greater" num="1" payloadId="StarLink Adp" description="Launch with StarLink Adapter."  visibility="HiddenWhenPassed" />
+             <PartCount op="greater" num="@Starlinknum" payloadId="StarLinkV1" description="Launch with @Starlinknum StarLinks."  >
+              <Orbit tolerance="3" property="inclination" value="@I" alwaysEvaluateChildren="true">
+                <Orbit tolerance="10000" property="apoapsis" value="@Ap" alwaysEvaluateChildren="true">
+                  <Orbit tolerance="10000" property="periapsis" value="@Pe">
+                   <PartCount num="0" payloadId="StarLinkV1" description="Detach the StarLinks" showValue="false" />
+                   <Timer min="25" description="Wait Until StarLinks Deploy" listedInMenu="false"/>
+                  </Orbit>
+                 </Orbit>
+               </Orbit>             
+             </PartCount>
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+</Contracts>

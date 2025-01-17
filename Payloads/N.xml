@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Nell" category="Payloads" description="TODO" order="9" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="2399" partType="Eva" position="0,0,0" rotation="0,0,0" name="Drood" commandPodId="2399" materials="15,16,17,18,19" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" priceScale="0" />
+          <CommandPod activationGroupNames=",,,,,,,Landing Gear,Solar Panels,RCS" activationGroupStates="false,false,false,false,false,false,false,true,false,true" pidPitch="10,0,0" pidRoll="0.6,0,0" stageCalculationVersion="2" partPropertiesEnabled="false">
+            <Controls />
+          </CommandPod>
+          <Eva crewName="Nell Armstrong" partPropertiesEnabled="false" />
+          <CameraVantage nightVisionColor="#80FF8080" />
+          <FuelTank />
+          <Payload payloadId="Nell" />
+        </Part>
+      </Parts>
+      <Connections />
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

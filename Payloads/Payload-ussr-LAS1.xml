@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Test Space Pod" category="Payloads" description="The LAS you need t0 test" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="13" partType="DetacherSide1" position="0,-2.390198,0.0428791" rotation="0,90,90" name="LAS &amp; pod" activationStage="0" stageOverride="true" materials="0,1,2,3,4">
+          <Drag drag="0,0,0.008890754,0,0.01421677,0.02236345" area="0,0,0.009563482,0,0.02036671,0.0285134" />
+          <Config heatShieldScale="0" priceScale="0" />
+          <Detacher inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <CrossFeed inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="14" partType="Fuselage1" position="-9.536743E-07,0.2307854,-0.003121614" rotation="3.415094E-06,7.782361E-06,7.24451E-06" name="LAS mian" materials="5,4,4,0,0" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" texture="Default">
+          <Drag drag="1.961331,1.817309,0.01882811,0,1.72375,1.842996" area="2.582512,2.382916,0.01882811,0,2.537705,2.70064" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-2.5,0" rotation="90,0,0" scale="0.70978" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,2.5,0" rotation="-90,180,0" scale="0.70978" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.35489" rotation="0,0,0" scale="0.70978" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,2.5,0" rotation="-90,180,0" scale="0.70978" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-2.5,0" rotation="90,0,0" scale="0.70978" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="9.58729E-09,4.523647E-09,1.236563E-08" heatShieldScale="0" ignoreValidation="true" priceScale="0" />
+          <Fuselage bottomScale="0.35489,0.35489" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,2.5,0" toolIgnore="true" topScale="0.35489,0.35489" volume="1.95584786" volumeInner="1.89634943" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <FuelTank capacity="1075.71630859375" fuel="1075.71630859375" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <Payload payloadId="Payload-ussr-LAS1" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1" inspectorEnabled="false" partPropertiesEnabled="false">
+            <Program name="New Program">
+              <Variables />
+              <Instructions>
+                <Event event="PartExplode" id="0" style="part-explode" pos="357.5284,-22.04908" />
+                <BroadcastMessage global="false" local="true" id="1" style="broadcast-msg">
+                  <Constant text="hey" />
+                  <Constant number="0" />
+                </BroadcastMessage>
+              </Instructions>
+              <Instructions>
+                <Event event="ReceiveMessage" id="2" style="receive-msg" pos="-65.58759,-204.5771">
+                  <Constant canReplace="false" text="hey" />
+                </Event>
+                <If id="3" style="if">
+                  <Comparison op="=" style="op-eq">
+                    <VectorOp op="length" style="vec-op-1">
+                      <CraftProperty property="Part.Position" style="part">
+                        <CraftProperty property="Part.NameToID" style="part-id">
+                          <Constant text="LAS &amp; pod" />
+                        </CraftProperty>
+                      </CraftProperty>
+                    </VectorOp>
+                    <Constant number="0" />
+                  </Comparison>
+                  <Instructions>
+                    <DisplayMessage id="4" style="display">
+                      <Constant text="&lt;size=3&gt;&lt;color=red&gt;Abort Failed!&lt;/size&gt;" />
+                      <Constant number="7" />
+                    </DisplayMessage>
+                  </Instructions>
+                </If>
+                <BroadcastMessage global="false" local="false" id="5" style="broadcast-msg-craft">
+                  <Constant text="abort" />
+                  <Constant number="0" />
+                </BroadcastMessage>
+              </Instructions>
+              <Instructions>
+                <Event event="ReceiveMessage" id="6" style="receive-msg" pos="-2.338272,-457.5744">
+                  <Constant canReplace="false" text="abort" />
+                </Event>
+                <SetTargetHeading property="pitch" id="7" style="set-heading">
+                  <Constant text="90" />
+                </SetTargetHeading>
+                <SetInput input="throttle" id="8" style="set-input">
+                  <Constant number="0" />
+                </SetInput>
+                <SetCraftProperty property="Part.SetActivated" id="9" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="command pod seperation" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <For var="i" id="10" style="for">
+                  <Constant number="1" />
+                  <Constant text="4" />
+                  <Constant number="1" />
+                  <Instructions>
+                    <SetCraftProperty property="Part.SetActivated" id="11" style="set-part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <StringOp op="join" style="join">
+                          <Constant text="LAS c motor-" />
+                          <Variable list="false" local="true" variableName="i" />
+                          <Constant text="" />
+                        </StringOp>
+                      </CraftProperty>
+                      <Constant text="1" />
+                    </SetCraftProperty>
+                    <SetCraftProperty property="Part.SetActivated" id="12" style="set-part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <StringOp op="join" style="join">
+                          <Constant text="LAS main motor-" />
+                          <Variable list="false" local="true" variableName="i" />
+                          <Constant text="" />
+                        </StringOp>
+                      </CraftProperty>
+                      <Constant text="1" />
+                    </SetCraftProperty>
+                  </Instructions>
+                </For>
+                <WaitSeconds id="13" style="wait-seconds">
+                  <Constant text="2" />
+                </WaitSeconds>
+                <WaitUntil id="14" style="wait-until">
+                  <Comparison op="l" style="op-lt">
+                    <CraftProperty property="Vel.Acceleration" style="prop-velocity" />
+                    <Constant text="60" />
+                  </Comparison>
+                </WaitUntil>
+                <BroadcastMessage global="false" local="false" id="15" style="broadcast-msg-craft">
+                  <Constant text="anrinima" />
+                  <Constant number="0" />
+                </BroadcastMessage>
+                <SetCraftProperty property="Part.SetActivated" id="16" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="LAS &amp; pod" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="17" style="flight-start" pos="-104.7226,150.8912" />
+                <For var="i" id="18" style="for">
+                  <Constant number="1" />
+                  <Constant text="4" />
+                  <Constant number="1" />
+                  <Instructions>
+                    <SetCraftProperty property="Part.SetActivated" id="19" style="set-part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <StringOp op="join" style="join">
+                          <Constant text="LAS c motor-" />
+                          <Variable list="false" local="true" variableName="i" />
+                          <Constant text="" />
+                        </StringOp>
+                      </CraftProperty>
+                      <Constant text="0" />
+                    </SetCraftProperty>
+                  </Instructions>
+                </For>
+                <WaitUntil id="20" style="wait-until">
+                  <ActivationGroup style="activation-group">
+                    <Constant number="1" />
+                  </ActivationGroup>
+                </WaitUntil>
+                <BroadcastMessage global="false" local="true" id="21" style="broadcast-msg">
+                  <Constant text="hey" />
+                  <Constant number="0" />
+                </BroadcastMessage>
+              </Instructions>
+              <Expressions>
+                <Constant style="true" pos="-127.9297,-1011.574" bool="true" />
+              </Expressions>
+            </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="15" partType="Fuselage1" position="0,-1.031702,0.4291472" rotation="24.99999,180,-4.522868E-06" name="LAS mian" materials="5,4,4,0,0" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" texture="Default">
+          <Drag drag="0.4330203,0,0.09218161,0,0.4586906,0.4382919" area="0.5784146,0,0.2812252,0,0.5865613,0.558048" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-2.109785,-1.24676E-08" rotation="90,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,2.109785,1.24676E-08" rotation="-90,180,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.599205" rotation="0,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,2.109785,1.24676E-08" rotation="-90,180,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-2.109785,-1.24676E-08" rotation="90,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="3.325903E-09,1.553722E-08,3.001058E-08" heatShieldScale="0" massScale="0" partScale="0.4,0.4,0.4" priceScale="0" symmetryId="265fbb93-bdbb-4a5c-b9b7-f0c33f0774be" />
+          <Fuselage bottomScale="0.599205,0.599205" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,2.109785,1.24676E-08" toolIgnore="true" topScale="0.599205,0.599205" volume="4.70540047" volumeInner="4.615042" symmetryId="5bfba926-76ba-43bd-b9ae-6d655671a91a" version="3" />
+          <FuelTank capacity="1882.1600341796875" fuel="1882.1600341796875" fuelType="Solid" subPriority="-12" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="2dcbec81-ac43-491f-850f-a42e49d5df9c" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1" symmetryId="399e5083-373e-404c-be14-247dafbda6fa">
+            <Program name="New Program">
+            <Variables />
+            <Instructions>
+              <Event event="FlightStart" id="0" style="flight-start" pos="-10,-20" />
+            </Instructions>
+            <Expressions />
+          </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="16" partType="RocketEngine1" position="0,-1.796541,0.7857962" rotation="24.99998,180,-6.858582E-06" name="LAS main motor-1" activationStage="0" stageOverride="true" materials="0,1,2,3,4" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.4151934,0,0.1850836,0.1145015,0.4147463,0.4138519" area="0.6110012,0,0.3556407,0.2136833,0.558048,0.558048" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.45,0.45,0.45" priceScale="0" supportsTransparency="false" symmetryId="66b7a4b7-87fe-43c2-9bf5-29b0f4619905" />
+          <RocketEngine chamberPressure="0.68" engineSubTypeId="Booster" engineTypeId="Solid" fuelType="Solid" gimbalRange="0" nozzleSize="0.58" nozzleThroatSize="0.5" fuelGrain="DoubleAnchor" size="0.95" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="1.55183065" price="861410" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="6e39fd34-6a8b-4fcc-ade5-5cf184349805" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="e3c39c18-55a5-4c72-aa3c-b3bd6b884504" />
+        </Part>
+        <Part id="17" partType="Fuselage1" position="-9.536743E-07,3.195357,-0.003121138" rotation="3.415094E-06,7.782361E-06,7.24451E-06" name="LAS mian" materials="5,4,4,0,0" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" texture="Default">
+          <Drag drag="0.2525793,0.2525793,0.1363278,0,0.249065,0.249065" area="0.3503075,0.3503075,0.3726756,0,0.3503075,0.3503075" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.4645896,0" rotation="90,0,0" scale="0.70978" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,0.4645896,0" rotation="0,180,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.177445" rotation="0,0,0" scale="0.35489" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0.4645896,0" rotation="0,180,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-0.4645896,0" rotation="90,0,0" scale="0.70978" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="5.537992E-10,-0.3097264,9.518669E-09" heatShieldScale="0" priceScale="0" />
+          <Fuselage bottomScale="0.35489,0.35489" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.4645896,0" topScale="0,0" volume="0.121155523" volumeInner="0.113676742" version="3" />
+          <FuelTank capacity="66.635536193847656" fuel="66.635536193847656" subPriority="29" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1">
+            <Program name="New Program">
+            <Variables />
+            <Instructions>
+              <Event event="FlightStart" id="0" style="flight-start" pos="-10,-20" />
+            </Instructions>
+            <Expressions />
+          </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="18" partType="Fuselage1" position="0.4322767,-1.031702,-0.003121614" rotation="25,270,-1.507256E-05" name="LAS mian" materials="5,4,4,0,0" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" texture="Default">
+          <Drag drag="0.4360555,0.490271,0.09225714,0,0,0.4518378" area="0.5539747,0.6191478,0.2886966,0,0,0.6680277" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-2.109785,-1.24676E-08" rotation="90,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,2.109785,1.24676E-08" rotation="-90,180,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.599205" rotation="0,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,2.109785,1.24676E-08" rotation="-90,180,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-2.109785,-1.24676E-08" rotation="90,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="3.325903E-09,1.553722E-08,3.001058E-08" heatShieldScale="0" massScale="0" partScale="0.4,0.4,0.4" priceScale="0" partPropertiesEnabled="false" symmetryId="265fbb93-bdbb-4a5c-b9b7-f0c33f0774be" />
+          <Fuselage bottomScale="0.599205,0.599205" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,2.109785,1.24676E-08" toolIgnore="true" topScale="0.599205,0.599205" volume="4.70540047" volumeInner="4.615042" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="5bfba926-76ba-43bd-b9ae-6d655671a91a" version="3" />
+          <FuelTank capacity="1882.1600341796875" fuel="1882.1600341796875" fuelType="Solid" subPriority="-12" symmetryId="2dcbec81-ac43-491f-850f-a42e49d5df9c" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1" symmetryId="399e5083-373e-404c-be14-247dafbda6fa">
+            <Program name="New Program">
+            <Variables />
+            <Instructions>
+              <Event event="FlightStart" id="0" style="flight-start" pos="-10,-20" />
+            </Instructions>
+            <Expressions />
+          </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="19" partType="RocketEngine1" position="0.7889299,-1.796541,-0.003121614" rotation="25,270,-2.072477E-05" name="LAS main motor-2" activationStage="0" stageOverride="true" materials="0,1,2,3,4" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.3165547,0.3165068,0.1342654,0.07440175,0,0.3216504" area="0.4236279,0.4236279,0.2632937,0.1404632,0,0.4888015" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.4,0.4,0.4" priceScale="0" supportsTransparency="false" symmetryId="66b7a4b7-87fe-43c2-9bf5-29b0f4619905" />
+          <RocketEngine chamberPressure="0.68" engineSubTypeId="Booster" engineTypeId="Solid" fuelType="Solid" gimbalRange="0" nozzleSize="0.58" nozzleThroatSize="0.5" fuelGrain="DoubleAnchor" size="0.95" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="1.55183065" price="861410" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="6e39fd34-6a8b-4fcc-ade5-5cf184349805" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="e3c39c18-55a5-4c72-aa3c-b3bd6b884504" />
+        </Part>
+        <Part id="20" partType="Fuselage1" position="-9.536743E-07,-1.031702,-0.4353893" rotation="25.00001,1.402378E-05,5.130185E-06" name="LAS mian" materials="5,4,4,0,0" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" texture="Default">
+          <Drag drag="0,0.4792487,0.09212594,0,0.4582273,0.4377647" area="0,0.6395144,0.2810757,0,0.5865613,0.558048" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-2.109785,-1.24676E-08" rotation="90,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,2.109785,1.24676E-08" rotation="-90,180,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.599205" rotation="0,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,2.109785,1.24676E-08" rotation="-90,180,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-2.109785,-1.24676E-08" rotation="90,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="3.325903E-09,1.553722E-08,3.001058E-08" heatShieldScale="0" massScale="0" partScale="0.4,0.4,0.4" priceScale="0" symmetryId="265fbb93-bdbb-4a5c-b9b7-f0c33f0774be" />
+          <Fuselage bottomScale="0.599205,0.599205" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,2.109785,1.24676E-08" toolIgnore="true" topScale="0.599205,0.599205" volume="4.70540047" volumeInner="4.615042" symmetryId="5bfba926-76ba-43bd-b9ae-6d655671a91a" version="3" />
+          <FuelTank capacity="1882.1600341796875" fuel="1882.1600341796875" fuelType="Solid" subPriority="-12" symmetryId="2dcbec81-ac43-491f-850f-a42e49d5df9c" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1" symmetryId="399e5083-373e-404c-be14-247dafbda6fa">
+            <Program name="New Program">
+            <Variables />
+            <Instructions>
+              <Event event="FlightStart" id="0" style="flight-start" pos="-10,-20" />
+            </Instructions>
+            <Expressions />
+          </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="21" partType="RocketEngine1" position="-9.536743E-07,-1.796541,-0.7920387" rotation="25.00003,8.497008E-06,2.794473E-06" name="LAS main motor-4" activationStage="0" stageOverride="true" materials="0,1,2,3,4" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0,0.4267106,0.1851704,0.1145009,0.4108328,0.4107369" area="0,0.6232212,0.3556407,0.2136833,0.5539747,0.5539747" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.45,0.45,0.45" priceScale="0" supportsTransparency="false" symmetryId="66b7a4b7-87fe-43c2-9bf5-29b0f4619905" />
+          <RocketEngine chamberPressure="0.68" engineSubTypeId="Booster" engineTypeId="Solid" fuelType="Solid" gimbalRange="0" nozzleSize="0.58" nozzleThroatSize="0.5" fuelGrain="DoubleAnchor" size="0.95" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="1.55183065" price="861410" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="6e39fd34-6a8b-4fcc-ade5-5cf184349805" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="e3c39c18-55a5-4c72-aa3c-b3bd6b884504" />
+        </Part>
+        <Part id="22" partType="Fuselage1" position="-0.4322767,-1.031702,-0.003120661" rotation="25,90,0" name="LAS mian" materials="5,4,4,0,0" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" texture="Default">
+          <Drag drag="0.4230687,0.4774599,0.09216241,0,0.4960855,0" area="0.5376814,0.6028545,0.2883978,0,0.7250542,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-2.109785,-1.24676E-08" rotation="90,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,2.109785,1.24676E-08" rotation="-90,180,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.599205" rotation="0,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,2.109785,1.24676E-08" rotation="-90,180,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-2.109785,-1.24676E-08" rotation="90,0,0" scale="1.19841" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="3.325903E-09,1.553722E-08,3.001058E-08" heatShieldScale="0" massScale="0" partScale="0.4,0.4,0.4" priceScale="0" partPropertiesEnabled="false" symmetryId="265fbb93-bdbb-4a5c-b9b7-f0c33f0774be" />
+          <Fuselage bottomScale="0.599205,0.599205" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,2.109785,1.24676E-08" toolIgnore="true" topScale="0.599205,0.599205" volume="4.70540047" volumeInner="4.615042" symmetryId="5bfba926-76ba-43bd-b9ae-6d655671a91a" version="3" />
+          <FuelTank capacity="1882.1600341796875" fuel="1882.1600341796875" fuelType="Solid" subPriority="-12" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="2dcbec81-ac43-491f-850f-a42e49d5df9c" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1" symmetryId="399e5083-373e-404c-be14-247dafbda6fa">
+            <Program name="New Program">
+            <Variables />
+            <Instructions>
+              <Event event="FlightStart" id="0" style="flight-start" pos="-10,-20" />
+            </Instructions>
+            <Expressions />
+          </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="23" partType="RocketEngine1" position="-0.7889309,-1.796541,-0.003120661" rotation="25.00001,90,1.318849E-05" name="LAS main motor-3" activationStage="0" stageOverride="true" materials="0,1,2,3,4" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.4046987,0.4047466,0.1838162,0.1148778,0.4255764,0" area="0.5539747,0.5539747,0.3547442,0.2130856,0.6110012,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.45,0.45,0.45" priceScale="0" supportsTransparency="false" symmetryId="66b7a4b7-87fe-43c2-9bf5-29b0f4619905" />
+          <RocketEngine chamberPressure="0.68" engineSubTypeId="Booster" engineTypeId="Solid" fuelType="Solid" gimbalRange="0" nozzleSize="0.58" nozzleThroatSize="0.5" fuelGrain="DoubleAnchor" size="0.95" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="1.55183065" price="861410" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="6e39fd34-6a8b-4fcc-ade5-5cf184349805" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="e3c39c18-55a5-4c72-aa3c-b3bd6b884504" />
+        </Part>
+        <Part id="49" partType="RocketEngine1" position="-0.01599979,2.569222,-0.003120661" rotation="270,270,0" name="LAS c motor-4" stageOverride="true" materials="0,1,2,3,4" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.01095809,0.01095809,0.01600654,0,0.01121367,0" area="0.01629337,0.01629337,0.02092011,0,0.03258674,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.15,0.15,0.15" priceScale="0" stageActivationType="None" supportsTransparency="false" symmetryId="9a738a4d-0485-4188-abb9-d303a5861aa0" />
+          <RocketEngine engineSubTypeId="PressureFed" gimbalRange="0" nozzleSize="0.98999995" nozzleThroatSize="0.5" fuelGrain="MultiFin" size="2" massFlowRateOverride="0" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" overexpansionDamage="0" mass="0.8759364" price="68691" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="76582c75-791e-44c0-848e-81d3abceb1eb" />
+          <InputController input="Yaw" inputId="Throttle" symmetryId="d46d8be5-d573-4634-8c7d-af3a58c86fae" />
+        </Part>
+        <Part id="50" partType="RocketEngine1" position="-9.536743E-07,2.569222,0.01311636" rotation="270,-1.065961E-05,0" name="LAS c motor-1" stageOverride="true" materials="0,1,2,3,4" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.0005590863,0,0.01652924,0,0.02039866,0.01880127" area="0.008146686,0,0.02166726,0,0.0285134,0.02444006" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.15,0.15,0.15" priceScale="0" stageActivationType="None" supportsTransparency="false" symmetryId="9a738a4d-0485-4188-abb9-d303a5861aa0" />
+          <RocketEngine engineSubTypeId="PressureFed" gimbalRange="0" nozzleSize="0.98999995" nozzleThroatSize="0.5" fuelGrain="MultiFin" size="2" massFlowRateOverride="0" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" overexpansionDamage="0" mass="0.8759364" price="68691" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="76582c75-791e-44c0-848e-81d3abceb1eb" />
+          <InputController input="-Pitch" inputId="Throttle" symmetryId="d46d8be5-d573-4634-8c7d-af3a58c86fae" />
+        </Part>
+        <Part id="51" partType="RocketEngine1" position="0.01599979,2.569222,-0.003120661" rotation="270,89.99998,0" name="LAS c motor-3" stageOverride="true" materials="0,1,2,3,4" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.02151684,0.02151684,0.01598719,0,0,0.009760048" area="0.03258674,0.03258674,0.02092011,0,0,0.02444006" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.15,0.15,0.15" priceScale="0" stageActivationType="None" supportsTransparency="false" symmetryId="9a738a4d-0485-4188-abb9-d303a5861aa0" />
+          <RocketEngine engineSubTypeId="PressureFed" gimbalRange="0" nozzleSize="0.98999995" nozzleThroatSize="0.5" fuelGrain="MultiFin" size="2" massFlowRateOverride="0" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" overexpansionDamage="0" mass="0.8759364" price="68691" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="76582c75-791e-44c0-848e-81d3abceb1eb" />
+          <InputController input="-Yaw" inputId="Throttle" symmetryId="d46d8be5-d573-4634-8c7d-af3a58c86fae" />
+        </Part>
+        <Part id="52" partType="RocketEngine1" position="-9.536743E-07,2.569363,-0.01854038" rotation="270,180,0" name="LAS c motor-2" stageOverride="true" materials="0,1,2,3,4" groupId="64ec90c5-8bb8-4af9-b1b1-c6b4cf49031c" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0,0.001469598,0.01659136,0,0.02043061,0.01883322" area="0,0.01222003,0.02181669,0,0.0285134,0.02444006" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.15,0.15,0.15" priceScale="0" stageActivationType="None" supportsTransparency="false" symmetryId="9a738a4d-0485-4188-abb9-d303a5861aa0" />
+          <RocketEngine engineSubTypeId="PressureFed" gimbalRange="0" nozzleSize="0.98999995" nozzleThroatSize="0.5" fuelGrain="MultiFin" size="2" massFlowRateOverride="0" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" overexpansionDamage="0" mass="0.8759364" price="68691" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="76582c75-791e-44c0-848e-81d3abceb1eb" />
+          <InputController input="Pitch" inputId="Throttle" symmetryId="d46d8be5-d573-4634-8c7d-af3a58c86fae" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="14" partB="13" attachPointsA="1" attachPointsB="1" />
+        <Connection partA="15" partB="14" attachPointsA="3" attachPointsB="0" symmetryId="b197e04e-ee55-49ca-8b79-c5730190935b" />
+        <Connection partA="17" partB="14" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="18" partB="14" attachPointsA="3" attachPointsB="0" symmetryId="b197e04e-ee55-49ca-8b79-c5730190935b" />
+        <Connection partA="20" partB="14" attachPointsA="3" attachPointsB="0" symmetryId="b197e04e-ee55-49ca-8b79-c5730190935b" />
+        <Connection partA="22" partB="14" attachPointsA="3" attachPointsB="0" symmetryId="b197e04e-ee55-49ca-8b79-c5730190935b" />
+        <Connection partA="49" partB="14" attachPointsA="0" attachPointsB="0" symmetryId="770bec3f-1b4e-4ff7-8d00-05df7c538879" />
+        <Connection partA="50" partB="14" attachPointsA="0" attachPointsB="0" symmetryId="770bec3f-1b4e-4ff7-8d00-05df7c538879" />
+        <Connection partA="51" partB="14" attachPointsA="0" attachPointsB="0" symmetryId="770bec3f-1b4e-4ff7-8d00-05df7c538879" />
+        <Connection partA="52" partB="14" attachPointsA="0" attachPointsB="0" symmetryId="770bec3f-1b4e-4ff7-8d00-05df7c538879" />
+        <Connection partA="16" partB="15" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="19" partB="18" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="21" partB="20" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="23" partB="22" attachPointsA="0" attachPointsB="1" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

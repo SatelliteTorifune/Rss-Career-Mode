@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Discoverer-1" category="Payloads" description="the satellite for this mission" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="1" partType="Detacher1" position="9.536743E-07,-0.9727607,-2.384186E-07" rotation="0,0,0" name="Discoverer-1 Payload" activationStage="0" materials="0,3,4,2,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="2.411452,2.413497,0.004938463,0.00459691,2.405948,2.405527" area="3.127894,3.127894,0.01321199,0.01321199,3.127894,3.127894" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,-1,0" rotation="90,0,0" scale="1.52" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-1,0" rotation="90,0,0" scale="1.52" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,1,0" rotation="-90,180,0" scale="1.52" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Rigid" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0" rotation="270,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Rigid" connectionType="Legacy" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" priceScale="0" stageActivationType="Payload" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.76,0.76" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="1.5" offset="0,1,0" toolAutoAdaptTop="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeTop="false" topScale="0.76,0.76" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <Detacher force="0.09375" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <CoverEngine partPropertiesEnabled="false" />
+          <CrossFeed inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="2" partType="Fuselage1" position="9.536743E-07,-0.6227612,-2.384186E-07" rotation="0,0,1.707547E-06" materials="0,4,4,0,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Payload payloadId="Payload-us-discoverer-1" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-3.197442E-14,-0.4000006,0" rotation="90,0,0" scale="1.00000024" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="3.197442E-14,0.4000006,0" rotation="-90,180,0" scale="1.00000024" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.5000001" rotation="0,0,0" scale="0.8000012" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="3.197442E-14,0.4000006,0" rotation="-90,180,0" scale="1.00000024" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-3.197442E-14,-0.4000006,0" rotation="90,0,0" scale="1.00000024" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" />
+          <Fuselage bottomScale="0.5000001,0.5000001" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="3.197442E-14,0.4000006,0" topScale="0.5000001,0.5000001" version="2" />
+          <FuelTank capacity="345.57586669921875" subPriority="3" />
+        </Part>
+        <Part id="3" partType="Fuselage1" position="9.536743E-07,-0.8228364,-2.384186E-07" rotation="0,0,1.707547E-06" materials="4,4,4,0,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.02499998,0" rotation="90,0,0" scale="1.02000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,0.02499998,0" rotation="-90,180,0" scale="1.02000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.5100001" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0.02499998,0" rotation="-90,180,0" scale="1.02000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-0.02499998,0" rotation="90,0,0" scale="1.02000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" />
+          <Fuselage bottomScale="0.5100001,0.5100001" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="0,0.02499998,0" topScale="0.5100001,0.5100001" version="2" />
+          <FuelTank autoFuelType="false" capacity="22.47102165222168" fuelType="None" subPriority="1" />
+        </Part>
+        <Part id="4" partType="Fuselage1" position="9.536743E-07,-0.4228382,-2.384186E-07" rotation="0,0,1.707547E-06" materials="4,4,4,0,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.02499998,0" rotation="90,0,0" scale="1.02000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,0.02499998,0" rotation="-90,180,0" scale="1.02000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.5100001" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0.02499998,0" rotation="-90,180,0" scale="1.02000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-0.02499998,0" rotation="90,0,0" scale="1.02000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" />
+          <Fuselage bottomScale="0.5100001,0.5100001" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0.8" offset="0,0.02499998,0" topScale="0.5100001,0.5100001" version="2" />
+          <FuelTank capacity="22.47102165222168" fuel="17.976817589652796" subPriority="5" />
+        </Part>
+        <Part id="5" partType="Fuselage1" position="9.536743E-07,-1.02776,-2.384186E-07" rotation="0,0,1.707547E-06" materials="0,4,4,0,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-3.197442E-14,-0.005,0" rotation="90,0,0" scale="1.10000014" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="3.197442E-14,0.005,0" rotation="-90,180,0" scale="1.10000014" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.5500001" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="3.197442E-14,0.005,0" rotation="-90,180,0" scale="1.10000014" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-3.197442E-14,-0.005,0" rotation="90,0,0" scale="1.10000014" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="e04a38ad-0dad-4e6d-91a7-d047dc82dae4" />
+          <Fuselage bottomScale="0.5500001,0.5500001" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="3.197442E-14,0.005,0" topScale="0.5500001,0.5500001" symmetryId="55c458d1-cc45-48c7-9347-20dfe34e6743" version="2" />
+          <FuelTank capacity="5.2268276214599609" fuel="5.2268276214599609" symmetryId="0600926a-a5ed-4d9b-89cc-54d3ed8bdcb0" />
+        </Part>
+        <Part id="12" partType="RocketEngine1" position="9.536743E-07,-0.7627611,-2.384186E-07" rotation="9.23246E-06,1.031808E-13,1.28066E-06" name="Goblin Solid Motor" activationStage="0" stageOverride="true" materials="2,2,2,2,2" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension2">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="Payload" symmetryId="b92d0991-425a-4108-9d5d-61132f27d771" />
+          <RocketEngine engineSubTypeId="PressureFed" gimbalRange="0" nozzleSize="2" nozzleThroatSize="0.5" fuelGrain="Star" size="0.5" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="0.09977751" price="18493" symmetryId="745af8be-92c5-4481-b7eb-8594e9918514" />
+          <InputController inputId="Throttle" symmetryId="ef8227bf-e03f-4e7c-bd87-10f8fa7863f8" />
+        </Part>
+        <Part id="13" partType="Ball1" position="0.2742009,-1.147759,-0.2117956" rotation="0,0,0" materials="2,2,2,2,2" symmetryId="6d08777f-f585-415a-9d88-eb0e69e58de1" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="2dbb0791-1e25-4301-9367-c7cc7546cfb7" />
+          <GenericPart scale="0.5" symmetryId="c1080eb7-3740-4098-9bce-6df1e191cfb5" />
+        </Part>
+        <Part id="14" partType="Ball1" position="-0.320519,-1.147759,-0.1315668" rotation="-1.478779E-06,120,-2.561321E-06" materials="2,2,2,2,2" symmetryId="6d08777f-f585-415a-9d88-eb0e69e58de1" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="2dbb0791-1e25-4301-9367-c7cc7546cfb7" />
+          <GenericPart scale="0.5" symmetryId="c1080eb7-3740-4098-9bce-6df1e191cfb5" />
+        </Part>
+        <Part id="15" partType="Ball1" position="0.04632092,-1.147759,0.3433616" rotation="1.478779E-06,240,-2.56132E-06" materials="2,2,2,2,2" symmetryId="6d08777f-f585-415a-9d88-eb0e69e58de1" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="2dbb0791-1e25-4301-9367-c7cc7546cfb7" />
+          <GenericPart scale="0.5" symmetryId="c1080eb7-3740-4098-9bce-6df1e191cfb5" />
+        </Part>
+        <Part id="16" partType="Fuselage1" position="9.536743E-07,-0.09776258,-2.384186E-07" rotation="0,0,1.707547E-06" materials="0,4,4,0,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.775558E-14,-0.125,0" rotation="90,0,0" scale="1.00000024" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="2.775558E-14,0.125,0" rotation="-90,180,0" scale="1.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.6" rotation="0,0,0" scale="0.25" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="2.775558E-14,0.125,0" rotation="-90,180,0" scale="1.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-2.775558E-14,-0.125,0" rotation="90,0,0" scale="1.00000024" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="1.359455E-15,0.02448978,0" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" />
+          <Fuselage bottomScale="0.5000001,0.5000001" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="2.775558E-14,0.125,0" topScale="0.7,0.7" version="2" />
+          <FuelTank capacity="156.94876098632813" subPriority="8" />
+        </Part>
+        <Part id="17" partType="Fuselage1" position="9.536743E-07,0.6272345,-2.384186E-07" rotation="0,0,1.707547E-06" materials="0,4,4,0,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="1.09402,1.057142,0.0002359287,0,1.009861,1.009861" area="1.420939,1.379148,0.0002359287,0,1.253775,1.253775" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.930989E-14,-0.6,0" rotation="90,0,0" scale="1.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="2.930989E-14,0.6,0" rotation="-90,180,0" scale="1.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.7" rotation="0,0,0" scale="1.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="2.930989E-14,0.6,0" rotation="-90,180,0" scale="1.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-2.930989E-14,-0.6,0" rotation="90,0,0" scale="1.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" />
+          <Fuselage bottomScale="0.7,0.7" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="2.930989E-14,0.6,0" topScale="0.7,0.7" version="2" />
+          <FuelTank capacity="1015.9911499023438" subPriority="15" />
+        </Part>
+        <Part id="18" partType="Fuselage1" position="9.536743E-07,0.0572381,-2.384186E-07" rotation="0,0,1.707547E-06" materials="4,4,4,0,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0.06906085,0.06906085,0,0,0.06907426,0.06907426" area="0.08890767,0.08890767,0,0,0.08890767,0.08890767" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-3.53606E-14,-0.03000021,0" rotation="90,0,0" scale="1.52000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="3.53606E-14,0.03000021,0" rotation="-90,180,0" scale="1.52000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.7600001" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="3.53606E-14,0.03000021,0" rotation="-90,180,0" scale="1.52000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-3.53606E-14,-0.03000021,0" rotation="90,0,0" scale="1.52000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" />
+          <Fuselage bottomScale="0.7600001,0.7600001" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="3.53606E-14,0.03000021,0" topScale="0.7600001,0.7600001" version="2" />
+          <FuelTank capacity="59.881698608398438" subPriority="10" />
+        </Part>
+        <Part id="19" partType="Fuselage1" position="9.536743E-07,1.197233,-2.384186E-07" rotation="0,0,1.707547E-06" materials="4,4,4,0,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0.06906085,0.06906085,0.2719528,0,0.06907426,0.06907426" area="0.08890767,0.08890767,0.2719528,0,0.08890767,0.08890767" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-3.53606E-14,-0.03000021,0" rotation="90,0,0" scale="1.52000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="3.53606E-14,0.03000021,0" rotation="-90,180,0" scale="1.52000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.7600001" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="3.53606E-14,0.03000021,0" rotation="-90,180,0" scale="1.52000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-3.53606E-14,-0.03000021,0" rotation="90,0,0" scale="1.52000022" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" />
+          <Fuselage bottomScale="0.7600001,0.7600001" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="3.53606E-14,0.03000021,0" topScale="0.7600001,0.7600001" version="2" />
+          <FuelTank capacity="59.881698608398438" subPriority="21" />
+        </Part>
+        <Part id="26" partType="Fuselage1" position="9.536743E-07,1.397233,-2.384186E-07" rotation="0,0,0" materials="2,0,0,2,2" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" style="Solid-2" texture="Default">
+          <Drag drag="0.3401961,0.3401961,0.114015,0,0.3401902,0.3401902" area="0.4566991,0.4566991,0.403796,0,0.4566991,0.4566991" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.1700003,0" rotation="90,0,0" scale="1.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,0.1700003,0" rotation="-90,180,0" scale="1.20000017" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.65" rotation="0,0,0" scale="0.3400006" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0.1700003,0" rotation="-90,180,0" scale="1.20000017" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-0.1700003,0" rotation="90,0,0" scale="1.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="0,-0.01804084,0" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="886e0dc9-ba8a-4598-ad0e-b68b61e58d79" />
+          <Fuselage bottomScale="0.7,0.7" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.1700003,0" topScale="0.6000001,0.6000001" symmetryId="5fbba724-5903-46e3-be5a-48043c56a528" version="2" />
+          <FuelTank capacity="248.69940185546875" fuel="248.69940185546875" subPriority="23" symmetryId="1e76d2c1-730a-48fe-9d35-c27f0c046fb9" />
+        </Part>
+        <Part id="27" partType="Fuselage1" position="9.536743E-07,2.067232,-2.384186E-07" rotation="0,0,0" materials="0,4,4,0,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0.665474,0.665474,0.2399368,0,0.665486,0.665486" area="0.8936105,0.8936105,0.8384198,0,0.8955101,0.8955101" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.5,0" rotation="90,0,0" scale="1.20000017" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,0.5,0" rotation="-90,180,0" scale="0.6000002" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.4500001" rotation="0,0,0" scale="0.9000002" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0.5,0" rotation="-90,180,0" scale="0.6000002" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-0.5,0" rotation="90,0,0" scale="1.20000017" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="0,-0.15,0" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" />
+          <Fuselage bottomScale="0.6000001,0.6000001" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.5,0" topScale="0.3000001,0.3000001" version="2" />
+          <FuelTank capacity="362.85409545898438" fuel="362.85409545898438" fuelType="None" subPriority="30" />
+        </Part>
+        <Part id="28" partType="NoseCone1" position="9.536743E-07,2.692239,-2.384186E-07" rotation="-1.024528E-05,5.008957E-06,-4.478356E-13" name="Hemisphere" materials="4,4,4,0,0" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" style="NoseCone-Round-2" texture="Default">
+          <Drag drag="0.07467516,0.07467516,0.1965413,0,0.07469305,0.07469305" area="0.1177839,0.1177839,0.2796574,0,0.1177839,0.1177839" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-4.726454E-17,-0.1249928,1.22391E-12" rotation="90,0,0" scale="0.6000002" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-4.726454E-17,-0.1249928,1.22391E-12" rotation="90,0,0" scale="0.6000002" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-4.726182E-18,-0.04999712,1.22384E-13" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" />
+          <Fuselage bottomScale="0.3000001,0.3000001" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" meshMassMultiplier="1.5" offset="4.726454E-17,0.1249928,-1.22391E-12" topScale="0,0" version="2" />
+          <FuelTank capacity="12.958334922790527" fuelType="None" subPriority="36" />
+        </Part>
+        <Part id="20" partType="Fuselage1" position="0.710011,0.6251588,-2.384186E-07" rotation="2.088932E-06,270,1.526666E-12" materials="4,4,4,0,0" symmetryId="2c9f03f6-3f05-40ca-bcf5-4457387129f6" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0.05629915,0.05629915,0,0,0,0.03318946" area="0.06269114,0.06269114,0,0,0,0.08358838" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.05" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="0,0,0.02625" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="17af646a-b2bd-48d4-95a7-eb1d566a58ad" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" offset="-8.740339E-09,0.545,9.941191E-08" topScale="0.05,0.05" symmetryId="ae2c8f13-724b-4cea-9509-58caa7bf46b0" version="2" />
+          <FuelTank capacity="2.3542311191558838" fuel="2.3542311191558838" fuelType="None" subPriority="15" symmetryId="303d35e5-817e-4aa1-ab2e-ef41c2dcc22e" />
+        </Part>
+        <Part id="21" partType="Fuselage1" position="0.3550062,0.6251588,-0.614887" rotation="1.235159E-06,330,1.478781E-06" materials="4,4,4,0,0" symmetryId="2c9f03f6-3f05-40ca-bcf5-4457387129f6" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0.05023487,0,0,0,0.0826869" area="0,0.06269114,0,0,0,0.08358838" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.05" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="0,0,0.02625" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="17af646a-b2bd-48d4-95a7-eb1d566a58ad" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" offset="-8.740339E-09,0.545,9.941191E-08" topScale="0.05,0.05" symmetryId="ae2c8f13-724b-4cea-9509-58caa7bf46b0" version="2" />
+          <FuelTank capacity="2.3542311191558838" fuel="2.3542311191558838" fuelType="None" subPriority="15" symmetryId="303d35e5-817e-4aa1-ab2e-ef41c2dcc22e" />
+        </Part>
+        <Part id="22" partType="Fuselage1" position="-0.3550043,0.6251588,-0.614887" rotation="-4.723886E-07,30,1.478781E-06" materials="4,4,4,0,0" symmetryId="2c9f03f6-3f05-40ca-bcf5-4457387129f6" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0.05023487,0,0,0.08268689,0" area="0,0.06269114,0,0,0.08358838,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.05" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="0,0,0.02625" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="17af646a-b2bd-48d4-95a7-eb1d566a58ad" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" offset="-8.740339E-09,0.545,9.941191E-08" topScale="0.05,0.05" symmetryId="ae2c8f13-724b-4cea-9509-58caa7bf46b0" version="2" />
+          <FuelTank capacity="2.3542311191558838" fuel="2.3542311191558838" fuelType="None" subPriority="15" symmetryId="303d35e5-817e-4aa1-ab2e-ef41c2dcc22e" />
+        </Part>
+        <Part id="23" partType="Fuselage1" position="-0.7100096,0.6251588,-2.384186E-07" rotation="-1.326162E-06,90,1.882888E-12" materials="4,4,4,0,0" symmetryId="2c9f03f6-3f05-40ca-bcf5-4457387129f6" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0.05629915,0.05629915,0,0,0.03318946,0" area="0.06269114,0.06269114,0,0,0.08358838,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.05" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="0,0,0.02625" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="17af646a-b2bd-48d4-95a7-eb1d566a58ad" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" offset="-8.740339E-09,0.545,9.941191E-08" topScale="0.05,0.05" symmetryId="ae2c8f13-724b-4cea-9509-58caa7bf46b0" version="2" />
+          <FuelTank capacity="2.3542311191558838" fuel="2.3542311191558838" fuelType="None" subPriority="15" symmetryId="303d35e5-817e-4aa1-ab2e-ef41c2dcc22e" />
+        </Part>
+        <Part id="24" partType="Fuselage1" position="-0.3550043,0.6251588,0.6148872" rotation="-4.723885E-07,150,-1.478777E-06" materials="4,4,4,0,0" symmetryId="2c9f03f6-3f05-40ca-bcf5-4457387129f6" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0.03556597,0,0,0,0.08268689,0" area="0.0417941,0,0,0,0.08358838,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.05" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="0,0,0.02625" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="17af646a-b2bd-48d4-95a7-eb1d566a58ad" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" offset="-8.740339E-09,0.545,9.941191E-08" topScale="0.05,0.05" symmetryId="ae2c8f13-724b-4cea-9509-58caa7bf46b0" version="2" />
+          <FuelTank capacity="2.3542311191558838" fuel="2.3542311191558838" fuelType="None" subPriority="15" symmetryId="303d35e5-817e-4aa1-ab2e-ef41c2dcc22e" />
+        </Part>
+        <Part id="25" partType="Fuselage1" position="0.3550057,0.6251588,0.6148872" rotation="1.235158E-06,210,-1.478778E-06" materials="4,4,4,0,0" symmetryId="2c9f03f6-3f05-40ca-bcf5-4457387129f6" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0.03556597,0,0,0,0,0.08268689" area="0.0417941,0,0,0,0,0.08358838" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.05" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-8.740339E-09,0.545,9.941191E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="8.740339E-09,-0.545,-9.941191E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="0,0,0.02625" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="17af646a-b2bd-48d4-95a7-eb1d566a58ad" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" offset="-8.740339E-09,0.545,9.941191E-08" topScale="0.05,0.05" symmetryId="ae2c8f13-724b-4cea-9509-58caa7bf46b0" version="2" />
+          <FuelTank capacity="2.3542311191558838" fuel="2.3542311191558838" fuelType="None" subPriority="15" symmetryId="303d35e5-817e-4aa1-ab2e-ef41c2dcc22e" />
+        </Part>
+        <Part id="8" partType="Fuselage1" position="0.4287181,-0.6027613,-0.2475021" rotation="4.0775E-06,300,8.537729E-07" materials="0,4,4,0,0" symmetryId="66d9639d-d658-4541-be4e-27560ed0b89d" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.04499998" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-7.267288E-09,-0.06120024,0.02357851" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="669e6f1f-f651-4a12-9f3e-9290e697f3d0" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" fuelPercentage="0" offset="5.937304E-08,0.4249997,1.164418E-08" topScale="0.03999995,0.03999995" symmetryId="6f7e71ec-dd32-4eaf-8bb8-0dd6f643b323" version="2" />
+          <FuelTank capacity="1.4931702613830566" fuelType="None" subPriority="3" symmetryId="70c3c8f9-de27-4a0f-9e3e-4dcbd1694366" />
+        </Part>
+        <Part id="6" partType="Fuselage1" position="-1.478195E-05,-0.6027613,0.4950309" rotation="2.598721E-06,180,-1.707548E-06" materials="0,4,4,0,0" symmetryId="66d9639d-d658-4541-be4e-27560ed0b89d" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.04499998" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-7.267288E-09,-0.06120024,0.02357851" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="669e6f1f-f651-4a12-9f3e-9290e697f3d0" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" fuelPercentage="0" offset="5.937304E-08,0.4249997,1.164418E-08" topScale="0.03999995,0.03999995" symmetryId="6f7e71ec-dd32-4eaf-8bb8-0dd6f643b323" version="2" />
+          <FuelTank capacity="1.4931702613830566" fuelType="None" subPriority="3" symmetryId="70c3c8f9-de27-4a0f-9e3e-4dcbd1694366" />
+        </Part>
+        <Part id="7" partType="Fuselage1" position="0.4287028,-0.6027613,0.247529" rotation="4.0775E-06,240,-8.537745E-07" materials="0,4,4,0,0" symmetryId="66d9639d-d658-4541-be4e-27560ed0b89d" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.04499998" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-7.267288E-09,-0.06120024,0.02357851" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="669e6f1f-f651-4a12-9f3e-9290e697f3d0" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" fuelPercentage="0" offset="5.937304E-08,0.4249997,1.164418E-08" topScale="0.03999995,0.03999995" symmetryId="6f7e71ec-dd32-4eaf-8bb8-0dd6f643b323" version="2" />
+          <FuelTank capacity="1.4931702613830566" fuelType="None" subPriority="3" symmetryId="70c3c8f9-de27-4a0f-9e3e-4dcbd1694366" />
+        </Part>
+        <Part id="9" partType="Fuselage1" position="1.66893E-05,-0.6027613,-0.4950311" rotation="2.598721E-06,6.830189E-06,1.707546E-06" materials="0,4,4,0,0" symmetryId="66d9639d-d658-4541-be4e-27560ed0b89d" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.04499998" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-7.267288E-09,-0.06120024,0.02357851" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="669e6f1f-f651-4a12-9f3e-9290e697f3d0" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" fuelPercentage="0" offset="5.937304E-08,0.4249997,1.164418E-08" topScale="0.03999995,0.03999995" symmetryId="6f7e71ec-dd32-4eaf-8bb8-0dd6f643b323" version="2" />
+          <FuelTank capacity="1.4931702613830566" fuelType="None" subPriority="3" symmetryId="70c3c8f9-de27-4a0f-9e3e-4dcbd1694366" />
+        </Part>
+        <Part id="10" partType="Fuselage1" position="-0.4287009,-0.6027613,-0.2475295" rotation="1.119942E-06,60.00001,8.537723E-07" materials="0,4,4,0,0" symmetryId="66d9639d-d658-4541-be4e-27560ed0b89d" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.04499998" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-7.267288E-09,-0.06120024,0.02357851" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="669e6f1f-f651-4a12-9f3e-9290e697f3d0" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" fuelPercentage="0" offset="5.937304E-08,0.4249997,1.164418E-08" topScale="0.03999995,0.03999995" symmetryId="6f7e71ec-dd32-4eaf-8bb8-0dd6f643b323" version="2" />
+          <FuelTank capacity="1.4931702613830566" fuelType="None" subPriority="3" symmetryId="70c3c8f9-de27-4a0f-9e3e-4dcbd1694366" />
+        </Part>
+        <Part id="11" partType="Fuselage1" position="-0.4287162,-0.6027613,0.2475019" rotation="1.119942E-06,120,-8.537748E-07" materials="0,4,4,0,0" symmetryId="66d9639d-d658-4541-be4e-27560ed0b89d" groupId="2ee28a4b-944f-43a0-8522-ffd85fc762c5" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.04499998" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="5.937304E-08,0.4249997,1.164418E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-5.937304E-08,-0.4249997,-1.164418E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-7.267288E-09,-0.06120024,0.02357851" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" symmetryId="669e6f1f-f651-4a12-9f3e-9290e697f3d0" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="1,0,1" depthCurve="0" fuelPercentage="0" offset="5.937304E-08,0.4249997,1.164418E-08" topScale="0.03999995,0.03999995" symmetryId="6f7e71ec-dd32-4eaf-8bb8-0dd6f643b323" version="2" />
+          <FuelTank capacity="1.4931702613830566" fuelType="None" subPriority="3" symmetryId="70c3c8f9-de27-4a0f-9e3e-4dcbd1694366" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="2" partB="1" attachPointsA="5" attachPointsB="2" />
+        <Connection partA="3" partB="2" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="4" partB="2" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="5" partB="2" attachPointsA="2" attachPointsB="0" symmetryId="95d1cdb4-5aea-4b91-ae05-130f2486ef54" />
+        <Connection partA="16" partB="2" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="8" partB="2" attachPointsA="3" attachPointsB="0" symmetryId="26561799-3dae-4bac-975d-7755996c7f4a" />
+        <Connection partA="6" partB="2" attachPointsA="3" attachPointsB="0" symmetryId="26561799-3dae-4bac-975d-7755996c7f4a" />
+        <Connection partA="7" partB="2" attachPointsA="3" attachPointsB="0" symmetryId="26561799-3dae-4bac-975d-7755996c7f4a" />
+        <Connection partA="9" partB="2" attachPointsA="3" attachPointsB="0" symmetryId="26561799-3dae-4bac-975d-7755996c7f4a" />
+        <Connection partA="10" partB="2" attachPointsA="3" attachPointsB="0" symmetryId="26561799-3dae-4bac-975d-7755996c7f4a" />
+        <Connection partA="11" partB="2" attachPointsA="3" attachPointsB="0" symmetryId="26561799-3dae-4bac-975d-7755996c7f4a" />
+        <Connection partA="4" partB="3" attachPointsA="5" attachPointsB="4" />
+        <Connection partA="12" partB="5" attachPointsA="0" attachPointsB="1" symmetryId="a7d82385-dd16-4d7a-a404-cff3314ca10f" />
+        <Connection partA="13" partB="5" attachPointsA="0" attachPointsB="0" symmetryId="143eaba0-f15f-4df1-bfb6-1acd5de22fe4" />
+        <Connection partA="14" partB="5" attachPointsA="0" attachPointsB="0" symmetryId="143eaba0-f15f-4df1-bfb6-1acd5de22fe4" />
+        <Connection partA="15" partB="5" attachPointsA="0" attachPointsB="0" symmetryId="143eaba0-f15f-4df1-bfb6-1acd5de22fe4" />
+        <Connection partA="17" partB="16" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="18" partB="17" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="20" partB="17" attachPointsA="3" attachPointsB="0" symmetryId="bf1bb484-d2a8-4f94-97d4-a6b177dd8513" />
+        <Connection partA="21" partB="17" attachPointsA="3" attachPointsB="0" symmetryId="bf1bb484-d2a8-4f94-97d4-a6b177dd8513" />
+        <Connection partA="22" partB="17" attachPointsA="3" attachPointsB="0" symmetryId="bf1bb484-d2a8-4f94-97d4-a6b177dd8513" />
+        <Connection partA="23" partB="17" attachPointsA="3" attachPointsB="0" symmetryId="bf1bb484-d2a8-4f94-97d4-a6b177dd8513" />
+        <Connection partA="24" partB="17" attachPointsA="3" attachPointsB="0" symmetryId="bf1bb484-d2a8-4f94-97d4-a6b177dd8513" />
+        <Connection partA="25" partB="17" attachPointsA="3" attachPointsB="0" symmetryId="bf1bb484-d2a8-4f94-97d4-a6b177dd8513" />
+        <Connection partA="19" partB="18" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="26" partB="19" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="27" partB="26" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="28" partB="27" attachPointsA="1,2" attachPointsB="2,4" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

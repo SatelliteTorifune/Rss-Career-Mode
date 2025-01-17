@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Contracts>
+  <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="NumCompletions > 0 ? 0 : 100" />
+      </Params>
+      <Prereqs techNodes="USA" />
+      <Contract customer="naca" id="usa-0" money="10000" name="You choosed USA" unlockLocations="&lt;color=#25A1FF&gt;LC 26A" priority="5" probability="@Probability" difficulty="2" flairText="Progression">
+         <Description
+            short=""
+            long="launch anything from the &quot;Very Start &quot; to process " />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+             <Tutorial description="Save and Exit for Process" visibility="HiddenWhenPassed" listedInMenu="false">
+               <Button highlight="false" stepText="You have chosen the USA side" />
+            </Tutorial>
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="NumCompletions > 1 ? 0 : 100" />     
+      </Params>
+      <Prereqs techNodes="test" />
+      <Contract customer="nasa" id="mannd-2" money="100" name="We Chose to go to the Moon!" priority="20" probability="@Probability" difficulty="3" flairText="&lt;color=#FF3030&gt;PROGRESSION">
+         <Description
+            short="Manned Moon Landing"
+            long="&lt;size=19&gt;There is no strife, no prejudice, no national conflict in outer space as yet. Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation may never come again.But why, some say, the Moon? Why choose this as our goal? And they may well ask, why climb the highest mountain? Why, 35 years ago, fly the Atlantic? Why does Rice play Texas?&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;size=23&gt;&lt;color=#FF6600&gt;We choose to go to the Moon! We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard; because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one we intend to win, and the others, too." />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" visibility="HiddenWhenPassed" />
+             <Expression expression="Grounded" description="Start Grounded." displayExpression="AltitudeAGL" displayFormat="distance" visibility="HiddenWhenPassed" />
+             <Any num="1" visibility="Hidden">
+                <PartCount op="greater" num="1" partId="Eva" description="Remember to bring at least a Crew with you." visibility="HiddenWhenPassed" >
+                 <PartCount num="1" payloadId="firstStage" listedInMenu="false" visibility="HiddenWhenPassed" />
+                 <PartCount num="1" payloadId="secondStage" listedInMenu="false" visibility="HiddenWhenPassed" />
+                 <PartCount num="1" payloadId="thirdStage" listedInMenu="false" visibility="HiddenWhenPassed"  />
+                 <PartCount num="1" payloadId="adp" listedInMenu="false" visibility="HiddenWhenPassed" />
+                 <PartCount num="1" payloadId="SM" listedInMenu="false" visibility="HiddenWhenPassed" />
+                 <PartCount num="1" payloadId="CM" listedInMenu="false" visibility="HiddenWhenPassed" />
+                 <PartCount num="1" payloadId="LAS" listedInMenu="false" visibility="HiddenWhenPassed" />
+                 <Planet name="Moon" description="Get in Moon's SOI." listedInMenu="true" visibility="HiddenWhenPassed" >
+                  <Expression expression="Grounded" description="Land on the Moon." displayExpression="AltitudeAGL" displayFormat="distance" />
+                  <Timer min="30"  description="Stay on the surface of the Moon for 30 seconds." visibility="HiddenWhenPassed"/>
+                 </Planet>
+                 <Planet name="Earth" description="get back to Earth." listedInMenu="true" visibility="HiddenWhenPassed" >
+                   <Expression expression="Grounded" description="make sure your crew is grounded." displayExpression="AltitudeAGL" displayFormat="distance" />
+                 </Planet>
+                </PartCount>
+                <PartCount op="greater" num="1" partId="Eva" description="Remember to bring at least a Crew with you." visibility="HiddenWhenPassed" >
+                  <Planet name="Moon" description="Get in Moon's SOI." listedInMenu="true" visibility="HiddenWhenPassed" >
+                  <Expression expression="Grounded" description="Land on the Moon." displayExpression="AltitudeAGL" displayFormat="distance" />
+                 </Planet>
+                 <Planet name="Earth" description="get back to Earth." listedInMenu="true" visibility="HiddenWhenPassed" >
+                   <Expression expression="Grounded" description="make sure your crew is grounded." displayExpression="AltitudeAGL" displayFormat="distance" />
+                   <Timer min="30"  description="Stay on the surface of the Moon for 30 seconds." visibility="HiddenWhenPassed"/>
+                 </Planet>
+                </PartCount>                       
+             </Any>
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+</Contracts>

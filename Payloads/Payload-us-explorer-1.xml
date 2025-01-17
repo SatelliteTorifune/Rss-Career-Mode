@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Explorer" category="Payloads" description="the satellite into orbit which made in USA" order="0" showInDesigner="true" snapshotPartRotation="-45,45,0" snapshotDistanceScaler="2">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="13" partType="Detacher1" position="0,-0.8560629,4.768372E-07" rotation="1.024528E-05,-5.008957E-06,-8.549465E-13" name="deployer" activationStage="0" materials="0,3,4,2,0" groupId="405c30ae-8875-4127-a877-ff1199e213fc" style="Interstage-4">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config ignoreValidation="true" autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" partSelectionEnabled="true" priceScale="0" stageActivationType="Payload" supportsActivation="true" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.1040382,0.1040382" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.3" offset="1.776829E-16,0.2499851,-3.552714E-15" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.07360785,0.07360785" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <Detacher force="0.5" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <CoverEngine partPropertiesEnabled="false" />
+          <CrossFeed inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="14" partType="Fuselage1" position="0,-0.4756174,-4.768372E-07" rotation="0,0,0" materials="0,4,4,0,0" groupId="405c30ae-8875-4127-a877-ff1199e213fc" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.076,0.076" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.1398217,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.076,0.076" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="2.0297455787658691" fuel="2.0297455787658691" fuelType="Solid" subPriority="3" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="15" partType="RocketEngine1" position="0,-0.5841904,-4.768372E-07" rotation="0,270,0" name="deployer soild engine" activationGroup="12" materials="0,1,2,3,4" groupId="405c30ae-8875-4127-a877-ff1199e213fc" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config ignoreValidation="true" autoActivateIfNoStageOrActivationGroup="true" heatShieldScale="0" partSelectionEnabled="false" priceScale="0" stageActivationType="None" supportsActivation="true" partPropertiesEnabled="false" />
+          <RocketEngine engineSubTypeId="Model" engineTypeId="Solid" fuelType="Solid" nozzleThroatSize="0.85" nozzleTypeId="Cone" wattsPerFuelFlowOverride="0" heatTransferOverride="1" mass="0.01833593" price="1137" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="16" partType="Fuselage1" position="0,-0.3191662,-4.768372E-07" rotation="0,0,0" materials="0,4,4,0,0" groupId="405c30ae-8875-4127-a877-ff1199e213fc" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+		  <Payload payloadId="Payload-us-explorer-1" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.0895344,0.0895344" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.01662958,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.0895344,0.0895344" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="0.3350432813167572" fuel="0.3350432813167572" fuelType="Solid" subPriority="5" />
+        </Part>
+        <Part id="17" partType="Fuselage1" position="0,-0.2859068,-4.768372E-07" rotation="0,0,0" materials="0,4,4,0,0" groupId="405c30ae-8875-4127-a877-ff1199e213fc" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.08274968,0.08274968" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.01662958,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.08274968,0.08274968" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank autoFuelType="false" capacity="0.28618955612182617" fuel="0.28618955612182617" fuelType="Solid" subPriority="5" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="18" partType="Fuselage1" position="0,0.0387249,-4.768372E-07" rotation="0,0,0" materials="0,4,4,0,0" groupId="405c30ae-8875-4127-a877-ff1199e213fc" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.07540746,0.07540746" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.3080024,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.07540746,0.07540746" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="4.4017210006713867" fuel="4.4017210006713867" fuelType="Solid" subPriority="8" />
+        </Part>
+        <Part id="19" partType="Fuselage1" position="0,0.3567162,-4.768372E-07" rotation="0,0,0" materials="3,4,4,0,0" groupId="405c30ae-8875-4127-a877-ff1199e213fc" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.07540746,0.07540746" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.009988189,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.07540746,0.07540746" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank autoFuelType="false" capacity="489.65898792659573" fuel="489.65898792659573" fuelType="Battery" subPriority="12" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="20" partType="Fuselage1" position="0,0.4091778,-4.768372E-07" rotation="0,0,0" materials="4,4,4,0,0" groupId="405c30ae-8875-4127-a877-ff1199e213fc" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.07540746,0.07540746" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.04247355,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.07540746,0.07540746" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank autoFuelType="false" capacity="2082.2150699449994" fuel="2082.2150699449994" fuelType="Battery" subPriority="12" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="21" partType="Fuselage1" position="0,0.6703625,-4.768372E-07" rotation="0,0,0" materials="18,4,4,0,0" groupId="405c30ae-8875-4127-a877-ff1199e213fc" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.07540746,0.07540746" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.2187111,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.07540746,0.07540746" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank autoFuelType="false" capacity="10722.050692601479" fuel="10722.050692601479" fuelType="Battery" subPriority="15" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="22" partType="NoseCone1" position="0,1.045959,-4.768372E-07" rotation="-1.024529E-05,5.008957E-06,-4.478358E-13" materials="18,4,4,0,0" groupId="405c30ae-8875-4127-a877-ff1199e213fc" style="NoseCone-Round-2" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="-1.539077E-16,-0.06275492,8.918039E-16" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.076,0.076" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" meshMassMultiplier="1.5" offset="1.22626E-15,0.1568873,-7.105449E-15" supportsXZOffset="false" toolAutoAdaptBottom="false" toolIgnore="true" toolResizeBottom="false" toolShapeBottom="false" toolShapeTop="false" topScale="0,0" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="1.0438456535339355" fuelType="None" subPriority="19" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="13" partB="14" attachPointsA="2" attachPointsB="5">
+          <BodyJoint body="3" connectedBody="2" breakTorque="1E+07" breakForce="0" jointType="Normal" position="-5.960464E-08,-0.8080668,1.192093E-06" connectedPosition="0,0.2999252,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="15" partB="14" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="16" partB="14" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="17" partB="16" attachPointsA="1,3,5" attachPointsB="2,0,4" />
+        <Connection partA="18" partB="17" attachPointsA="1,3,5" attachPointsB="2,0,4" />
+        <Connection partA="19" partB="18" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="20" partB="18" attachPointsA="3" attachPointsB="0" />
+        <Connection partA="20" partB="19" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="21" partB="20" attachPointsA="1,3,5" attachPointsB="2,0,4" />
+        <Connection partA="22" partB="21" attachPointsA="1,2" attachPointsB="2,4" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

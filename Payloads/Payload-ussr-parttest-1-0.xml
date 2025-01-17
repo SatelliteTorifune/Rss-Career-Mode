@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="DrogueChute" category="Payloads" description="Bring this" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="8" partType="Parachute1" position="0,0,0" rotation="0,0,0" name="Drogue Chute" activationStage="0" materials="16,15,15,17,15" partConnectionsEnabled="false" partStyleEnabled="false" baseStyle="Small">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="90,0,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="true" jointType="Rigid" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" priceScale="0" />
+          <Parachute autocutASL="-1" autocutDensity="0.5" baseSize="0.5" chuteHeight="1" chuteRadius="2" chuteRadiusDeflated="0.5" cordLength="5" deploymentASL="16081.6133" deploymentDensity="0.15" inflationASL="10205.9043" inflationDensity="0.3" maxDeploymentSpeed="1000" referenceDensity="1.2" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <Payload payloadId="Payload-ussr-parttest-1-0" />
+        </Part>
+      </Parts>
+      <Connections />
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

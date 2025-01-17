@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="LAS" category="Payloads" description="TODO" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="396" partType="Fairing1" position="4.196167E-05,-4.416138,1.907349E-06" rotation="0.0005760804,270,5.754941E-05" name="Capsule Shroud" materials="0,17,17,17,17" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage3" textureTiling="0.5,0.1">
+          <Drag drag="5.415561,5.415561,3.691231,0,5.408181,5.408181" area="7.527766,7.527766,8.879861,0,7.527766,7.527766" />
+          <Config centerOfMass="4.587801E-08,-0.7481481,3.089998E-08" heatShield="679.6139" heatShieldMass="1.69903469" heatShieldScale="1" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.922,1.922001" deformations="0,0,0" depthCurve="0" flattenNormals="Top" meshMassMultiplier="0.8" offset="1.027538E-08,1.572346,-4.521758E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.4814008,0.4814008" volume="15.793314" volumeInner="15.6023254" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+          <Payload payloadId="LAS" />
+        </Part>
+        <Part id="393" partType="FairingBase1" position="6.29425E-05,-6.222763,2.861023E-06" rotation="-0.0005771412,90.00008,-6.856187E-05" name="Capsule Shroud" materials="0,17,17,17,17" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage3" textureTiling="0.5,0.9">
+          <Drag drag="1.222892,0.8627406,0.2257568,0,1.219202,0.8620026" area="1.505552,1.129164,0.4515131,0,1.505552,1.129164" />
+          <Config centerOfMass="5.029451E-09,-0.001507921,3.836477E-08" heatShield="582.0806" heatShieldMass="1.45520151" heatShieldScale="1" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.95,1.95" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.8" offset="4.439627E-08,0.2345979,-6.611543E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="1.922,1.922001" volume="5.46198" volumeInner="5.31705761" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+        </Part>
+        <Part id="172" partType="Inlet1" position="1.335144E-05,-0.03562164,0" rotation="-1.28078E-05,0.0003141886,0.0005968453" name="Engine Shroud" materials="0,0,0,0,0" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage3" textureTiling="0.75,0.3999999">
+          <Drag drag="0.7313738,0.7313739,0.9975553,0,0.7321119,0.7321119" area="1.129164,1.129164,1.763049,0,1.129164,1.129164" />
+          <Config centerOfMass="-6.965836E-08,-0.1148749,9.077207E-08" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.8682002,0.8682002" deformations="0,0,0" depthCurve="0" offset="2.270918E-07,0.3522415,-1.62292E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.3855,0.3855" volume="0.902239859" volumeInner="0.871502936" partPropertiesEnabled="false" version="3" />
+          <Inlet partPropertiesEnabled="false" />
+        </Part>
+        <Part id="14" partType="Fuselage1" position="-2.670288E-05,2.667068,0" rotation="5.378783E-05,180,-0.0006062374" name="Launch Escape Tower  Fuel Tank" materials="0,0,0,0,0" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="3.385279,3.385279,0.01433376,0,3.385279,3.385279" area="4.140269,4.140269,0.01433376,0,4.140269,4.140269" />
+          <AttachPoints>
+            <AttachPoint id="3" position="0,0,0.3855" rotation="0,0,0" scale="0.771" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="1.142724E-09,5.203271E-08,6.235878E-09" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.3855,0.3855" deformations="0,0,0" depthCurve="0" offset="-1.529315E-09,2.350981,4.337181E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.3855,0.3855" volume="2.17022848" volumeInner="2.10883021" partPropertiesEnabled="false" version="3" />
+          <FuelTank autoFuelType="false" capacity="878.08740234375" fuel="878.08740234375" fuelType="Solid" subPriority="70" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="108" partType="Fuselage1" position="-7.629395E-06,0.2280045,-0.225872" rotation="30.0002,0.0007093909,0.0007078252" name="Launch Escape Motor Joint" materials="0,0,2,3,4" symmetryId="bdf586a8-143d-4b18-9e06-e4f587c7456e" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0.004848182,0,0,0" area="0,0,0.007166878,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.104775E-07,-0.2584122,8.940617E-08" rotation="90,0,0" scale="0.396081" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="2.104775E-07,0.2584122,-8.940617E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.1188212" rotation="0,0,0" scale="0.237642467" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="2.104775E-07,0.2584122,-8.940617E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-2.104775E-07,-0.2584122,8.940617E-08" rotation="90,0,0" scale="0.396081" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-1.04109E-07,-0.1333804,5.429971E-08" fuelLine="true" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="f76b69ef-1237-4896-9c15-b52ce830d908" />
+          <Fuselage autoResize="false" bottomScale="0.1980405,0.1980405" deformations="0,0,0" depthCurve="0" offset="2.104775E-07,0.2584122,-8.940617E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.03960197,0.03960197" volume="0.0260203946" volumeInner="0.0233763438" partPropertiesEnabled="false" symmetryId="a63a6966-ba80-4506-a454-6c06c6bd53a9" version="3" />
+          <FuelTank autoFuelType="false" capacity="10.528007507324219" fuel="10.528007507324219" fuelType="Solid" subPriority="46" partPropertiesEnabled="false" symmetryId="780efa8c-1fe9-4d7b-bcfe-1b7fa79558b9" />
+        </Part>
+        <Part id="173" partType="RocketEngine1" position="-7.629395E-06,-0.001396179,-0.3444691" rotation="329.9995,180.0002,-0.0006332257" name="Launch Escape Motor 4" activationStage="4" stageOverride="true" materials="0,0,0,0,3" symmetryId="73e18664-6957-4942-b99f-aab758f20e4d" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="0,0.1874561,0.0187182,0,0.1712197,0.1712197" area="0,0.3763881,0.02866751,0,0.1881941,0.1881941" />
+          <Config ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="5424bfc1-e928-4996-99ba-f02e3c80ca67" />
+          <RocketEngine engineSubTypeId="Booster" engineTypeId="Solid" fuelType="Solid" gimbalRange="0" nozzleSize="0.45" nozzleThroatSize="0.7" nozzleTypeId="Cone" fuelGrain="DoubleAnchor" size="0.35" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="-1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="0.5422028" price="225353" partPropertiesEnabled="false" symmetryId="3cc15e26-f478-4eb8-b24f-5b2c8b19072f" />
+        </Part>
+        <Part id="147" partType="Fuselage1" position="-0.2258778,0.2280045,5.722046E-06" rotation="29.99968,90.00027,-6.013683E-05" name="Launch Escape Motor Joint" materials="0,0,2,3,4" symmetryId="bdf586a8-143d-4b18-9e06-e4f587c7456e" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0.004918446,0,0,0" area="0,0,0.007166878,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.104775E-07,-0.2584122,8.940617E-08" rotation="90,0,0" scale="0.396081" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="2.104775E-07,0.2584122,-8.940617E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.1188212" rotation="0,0,0" scale="0.237642467" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="2.104775E-07,0.2584122,-8.940617E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-2.104775E-07,-0.2584122,8.940617E-08" rotation="90,0,0" scale="0.396081" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-1.04109E-07,-0.1333804,5.429971E-08" fuelLine="true" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="f76b69ef-1237-4896-9c15-b52ce830d908" />
+          <Fuselage autoResize="false" bottomScale="0.1980405,0.1980405" deformations="0,0,0" depthCurve="0" offset="2.104775E-07,0.2584122,-8.940617E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.03960197,0.03960197" volume="0.0260203946" volumeInner="0.0233763438" partPropertiesEnabled="false" symmetryId="a63a6966-ba80-4506-a454-6c06c6bd53a9" version="3" />
+          <FuelTank autoFuelType="false" capacity="10.528007507324219" fuel="10.528007507324219" fuelType="Solid" subPriority="46" partPropertiesEnabled="false" symmetryId="780efa8c-1fe9-4d7b-bcfe-1b7fa79558b9" />
+        </Part>
+        <Part id="152" partType="RocketEngine1" position="-0.3444767,-0.001396179,7.629395E-06" rotation="330,269.9999,0.0001261892" name="Launch Escape Motor 3" activationStage="4" stageOverride="true" materials="0,0,0,0,3" symmetryId="73e18664-6957-4942-b99f-aab758f20e4d" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="0.1726957,0.1726957,0.0187182,0,0.1874561,0" area="0.1881941,0.1881941,0.02866751,0,0.3763881,0" />
+          <Config ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="5424bfc1-e928-4996-99ba-f02e3c80ca67" />
+          <RocketEngine engineSubTypeId="Booster" engineTypeId="Solid" fuelType="Solid" gimbalRange="0" nozzleSize="0.45" nozzleThroatSize="0.7" nozzleTypeId="Cone" fuelGrain="DoubleAnchor" size="0.35" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="-1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="0.5422028" price="225353" partPropertiesEnabled="false" symmetryId="3cc15e26-f478-4eb8-b24f-5b2c8b19072f" />
+        </Part>
+        <Part id="149" partType="Fuselage1" position="1.907349E-06,0.2280045,0.2258749" rotation="30.0003,180,-0.0007013583" name="Launch Escape Motor Joint" materials="0,0,2,3,4" symmetryId="bdf586a8-143d-4b18-9e06-e4f587c7456e" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0.00987905,0,0,0" area="0,0,0.01433376,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.104775E-07,-0.2584122,8.940617E-08" rotation="90,0,0" scale="0.396081" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="2.104775E-07,0.2584122,-8.940617E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.1188212" rotation="0,0,0" scale="0.237642467" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="2.104775E-07,0.2584122,-8.940617E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-2.104775E-07,-0.2584122,8.940617E-08" rotation="90,0,0" scale="0.396081" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-1.04109E-07,-0.1333804,5.429971E-08" fuelLine="true" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="f76b69ef-1237-4896-9c15-b52ce830d908" />
+          <Fuselage autoResize="false" bottomScale="0.1980405,0.1980405" deformations="0,0,0" depthCurve="0" offset="2.104775E-07,0.2584122,-8.940617E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.03960197,0.03960197" volume="0.0260203946" volumeInner="0.0233763438" partPropertiesEnabled="false" symmetryId="a63a6966-ba80-4506-a454-6c06c6bd53a9" version="3" />
+          <FuelTank autoFuelType="false" capacity="10.528007507324219" fuel="10.528007507324219" fuelType="Solid" subPriority="46" partPropertiesEnabled="false" symmetryId="780efa8c-1fe9-4d7b-bcfe-1b7fa79558b9" />
+        </Part>
+        <Part id="174" partType="RocketEngine1" position="1.335144E-05,-0.001396179,0.344471" rotation="329.9993,-0.0004861029,0.0007717425" name="Launch Escape Motor 2" activationStage="4" stageOverride="true" materials="0,0,0,0,3" symmetryId="73e18664-6957-4942-b99f-aab758f20e4d" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="0.1874561,0,0.01873225,0,0.1726957,0.1726957" area="0.3763881,0,0.02866751,0,0.1881941,0.1881941" />
+          <Config ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="5424bfc1-e928-4996-99ba-f02e3c80ca67" />
+          <RocketEngine engineSubTypeId="Booster" engineTypeId="Solid" fuelType="Solid" gimbalRange="0" nozzleSize="0.45" nozzleThroatSize="0.7" nozzleTypeId="Cone" fuelGrain="DoubleAnchor" size="0.35" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="-1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="0.5422028" price="225353" partPropertiesEnabled="false" symmetryId="3cc15e26-f478-4eb8-b24f-5b2c8b19072f" />
+        </Part>
+        <Part id="151" partType="Fuselage1" position="0.225872,0.2280045,-1.907349E-06" rotation="30.00086,270.0003,5.520824E-05" name="Launch Escape Motor Joint" materials="0,0,2,3,4" symmetryId="bdf586a8-143d-4b18-9e06-e4f587c7456e" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.104775E-07,-0.2584122,8.940617E-08" rotation="90,0,0" scale="0.396081" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="2.104775E-07,0.2584122,-8.940617E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.1188212" rotation="0,0,0" scale="0.237642467" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="2.104775E-07,0.2584122,-8.940617E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-2.104775E-07,-0.2584122,8.940617E-08" rotation="90,0,0" scale="0.396081" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-1.04109E-07,-0.1333804,5.429971E-08" fuelLine="true" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="f76b69ef-1237-4896-9c15-b52ce830d908" />
+          <Fuselage autoResize="false" bottomScale="0.1980405,0.1980405" deformations="0,0,0" depthCurve="0" offset="2.104775E-07,0.2584122,-8.940617E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.03960197,0.03960197" volume="0.0260203946" volumeInner="0.0233763438" partPropertiesEnabled="false" symmetryId="a63a6966-ba80-4506-a454-6c06c6bd53a9" version="3" />
+          <FuelTank autoFuelType="false" capacity="10.528007507324219" fuel="10.528007507324219" fuelType="Solid" subPriority="46" partPropertiesEnabled="false" symmetryId="780efa8c-1fe9-4d7b-bcfe-1b7fa79558b9" />
+        </Part>
+        <Part id="175" partType="RocketEngine1" position="0.3444729,-0.001396179,-3.814697E-06" rotation="329.9988,90.00004,2.168902E-05" name="Launch Escape Motor 1" activationStage="4" stageOverride="true" materials="0,0,0,0,3" symmetryId="73e18664-6957-4942-b99f-aab758f20e4d" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="0.1719577,0.1719577,0.0187182,0,0,0.1874561" area="0.1881941,0.1881941,0.02866751,0,0,0.3763881" />
+          <Config ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="5424bfc1-e928-4996-99ba-f02e3c80ca67" />
+          <RocketEngine engineSubTypeId="Booster" engineTypeId="Solid" fuelType="Solid" gimbalRange="0" nozzleSize="0.45" nozzleThroatSize="0.7" nozzleTypeId="Cone" fuelGrain="DoubleAnchor" size="0.35" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="-1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="0.5422028" price="225353" partPropertiesEnabled="false" symmetryId="3cc15e26-f478-4eb8-b24f-5b2c8b19072f" />
+        </Part>
+        <Part id="12" partType="Detacher1" position="1.335144E-05,-1.605362,9.536743E-07" rotation="3.07359E-05,180,180" name="Launch Escape Jettison" activationStage="4" stageOverride="true" materials="0,0,0,0,0" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" style="Interstage-4">
+          <Drag drag="0.1955742,0.2110726,0.07945397,0,0.2893023,0.4118129" area="0.5645822,0.5645822,0.08600254,0,0.5645822,0.5645822" />
+          <AttachPoints>
+            <AttachPoint id="0" position="6.628497E-08,-2.122116,-2.641409E-07" rotation="90,0,0" scale="0.7936" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0" rotation="270,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Rigid" connectionType="Legacy" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-2.113437E-09,0.5869071,6.755268E-08" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.3968,0.3968" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.3" offset="-6.628497E-08,2.122116,2.641409E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.7735,0.7735" volume="4.669353" volumeInner="4.579518" partPropertiesEnabled="false" version="3" />
+          <Detacher partPropertiesEnabled="false" version="2" />
+          <CoverEngine partPropertiesEnabled="false" />
+          <CrossFeed partPropertiesEnabled="false" />
+        </Part>
+        <Part id="398" partType="Fuselage1" position="-4.768372E-05,5.481537,-3.814697E-06" rotation="5.378783E-05,180,-0.0006062374" name="Launch Escape Tower  Fuel Tank" materials="0,0,0,0,2" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0.2442833,0.2442833,0.11096,0,0.2435453,0.2435453" area="0.3763881,0.3763881,0.3726776,0,0.3763881,0.3763881" />
+          <AttachPoints>
+            <AttachPoint id="3" position="0,0,0.272" rotation="0,0,0" scale="0.5439999" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-3.827578E-10,-0.1626561,4.379698E-08" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.3855,0.3855" deformations="0,0,0" depthCurve="0" offset="4.391745E-08,0.4639788,-8.965225E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.1584999,0.1584999" volume="0.225603446" volumeInner="0.214769408" partPropertiesEnabled="false" version="3" />
+          <FuelTank autoFuelType="false" capacity="91.280517578125" fuel="91.280517578125" fuelType="Solid" subPriority="98" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="399" partType="NoseCone1" position="-5.722046E-05,5.969933,-3.814697E-06" rotation="-4.012735E-05,0.0001058677,0.0006062368" name="Launch Escape Tower Nose Cone" materials="17,17,17,17,17" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" style="NoseCone-Round-1" texture="Default">
+          <Drag drag="0,0,0.04513728,0,0,0" area="0,0,0.05733502,0,0,0" />
+          <Config centerOfMass="-2.659688E-08,-0.03080918,7.312282E-08" heatShield="11.0537329" heatShieldMass="0.027634332" heatShieldScale="0.199999988" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.1715,0.1715" deformations="0,0,0" depthCurve="0" fuelPercentage="1" offset="1.05081E-09,0.089569,-2.057784E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolResizeBottom="false" toolResizeHeight="false" toolShapeBottom="false" toolShapeTop="false" topScale="0,0" volume="0.01069893" volumeInner="0.009305732" partPropertiesEnabled="false" version="3" />
+          <FuelTank autoFuelType="false" capacity="2.20701003074646" fuel="2.20701003074646" fuelType="Solid" subPriority="103" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="397" partType="FairingNoseCone1" position="2.288818E-05,-2.745178,0" rotation="-0.0005823265,90.00008,-4.164332E-05" name="Capsule Shroud" materials="0,17,17,17,17" groupId="a46e631c-8727-4502-99a0-d68171453854" partConnectionsEnabled="false" partStyleEnabled="false" style="FairingNoseCone-6" texture="Default">
+          <Drag drag="0.3048006,0.3048006,0,0,0.3048006,0.3048006" area="0.3763881,0.3763881,0,0,0.3763881,0.3763881" />
+          <Config centerOfMass="-3.99903E-08,-0.06638645,-1.093514E-08" heatShield="155.064743" heatShieldMass="0.387661844" heatShieldScale="1" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.5,0.5" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="1.5" offset="-3.843283E-09,0.1929998,-1.028865E-11" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolResizeBottom="false" toolResizeHeight="false" toolShapeBottom="false" toolShapeTop="false" topScale="0,0" volume="0.195952654" volumeInner="0.185486168" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="396" partB="393" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="397" partB="396" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="393" partB="172" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="172" partB="14" attachPointsA="1" attachPointsB="5" />
+        <Connection partA="108" partB="14" attachPointsA="3" attachPointsB="0" symmetryId="4a9052db-a09f-4392-924e-9c027ed66882" />
+        <Connection partA="147" partB="14" attachPointsA="3" attachPointsB="0" symmetryId="4a9052db-a09f-4392-924e-9c027ed66882" />
+        <Connection partA="149" partB="14" attachPointsA="3" attachPointsB="0" symmetryId="4a9052db-a09f-4392-924e-9c027ed66882" />
+        <Connection partA="151" partB="14" attachPointsA="3" attachPointsB="0" symmetryId="4a9052db-a09f-4392-924e-9c027ed66882" />
+        <Connection partA="14" partB="12" attachPointsA="1" attachPointsB="1" />
+        <Connection partA="398" partB="14" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="173" partB="108" attachPointsA="0" attachPointsB="1" symmetryId="fe7c629d-17aa-4e31-ba77-1dcdf16b9677" />
+        <Connection partA="152" partB="147" attachPointsA="0" attachPointsB="1" symmetryId="fe7c629d-17aa-4e31-ba77-1dcdf16b9677" />
+        <Connection partA="174" partB="149" attachPointsA="0" attachPointsB="1" symmetryId="fe7c629d-17aa-4e31-ba77-1dcdf16b9677" />
+        <Connection partA="175" partB="151" attachPointsA="0" attachPointsB="1" symmetryId="fe7c629d-17aa-4e31-ba77-1dcdf16b9677" />
+        <Connection partA="399" partB="398" attachPointsA="1,2" attachPointsB="2,4" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

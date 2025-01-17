@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FlightState xmlVersion="3" time="0" totalFlightTimeInRealtimeSeconds="0" playerNodeId="1" minNodeId="1">
+  <PlanetarySystem hash="0863353f-9782-b56e-5e4a-621ea4d6b53b" />
+  <Nodes />
+  <MapView />
+</FlightState>

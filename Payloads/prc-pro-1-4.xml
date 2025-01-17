@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Souding Equipment" category="Payloads" description="TODO" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="5" partType="Block1" position="-5.960464E-08,-2.384186E-07,-1.788139E-07" rotation="342.7665,57.7139,3.57562E-06" name="Souding Equipment" materials="0,1,2,3,4" partStyleEnabled="false">
+          <Drag drag="0.04095282,0.02841625,0.03979883,0.03979883,0.03384877,0" area="0.05328046,0.03044598,0.03979883,0.03979883,0.04566897,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <GenericPart scale="1.4" partPropertiesEnabled="false" />
+          <FlightProgram partPropertiesEnabled="false">
+            <Program name="shabichengxu2">
+              <Variables>
+                <Variable name="targetAGL" number="0" />
+                <Variable name="text" number="0" />
+                <Variable name="time" number="0" />
+                <Variable name="loadingtime" number="0" />
+                <Variable name="version" number="0" />
+                <Variable name="loadingtime2" number="0" />
+              </Variables>
+              <Instructions>
+                <CustomInstruction callFormat="display (0) (1) (2) " format="display |size| |color| |text| " name="display" id="0" style="custom-instruction" pos="-197.247,258.0743" />
+                <DisplayMessage id="1" style="display">
+                  <StringOp op="join" style="join">
+                    <Constant text="&lt;size=" />
+                    <Variable list="false" local="true" variableName="size" />
+                    <Constant text="00%&gt;" />
+                    <Constant text="&lt;color=" />
+                    <Variable list="false" local="true" variableName="color" />
+                    <Constant text="&gt;" />
+                    <Variable list="false" local="true" variableName="text" />
+                    <Constant text="" />
+                  </StringOp>
+                  <Constant number="7" />
+                </DisplayMessage>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="2" style="flight-start" pos="-117.1537,5.672695" />
+                <SetVariable id="3" style="set-variable">
+                  <Variable list="false" local="false" variableName="targetAGL" />
+                  <Constant text="1000000" />
+                </SetVariable>
+                <SetVariable id="4" style="set-variable">
+                  <Variable list="false" local="false" variableName="version" />
+                  <Constant text="1.63" />
+                </SetVariable>
+                <SetVariable id="5" style="set-variable" pos="317.0287,-490.5748">
+                  <Variable list="false" local="false" variableName="loadingtime" />
+                  <Constant text="90" />
+                </SetVariable>
+                <SetVariable id="6" style="set-variable" pos="332.4865,-537.1624">
+                  <Variable list="false" local="false" variableName="loadingtime2" pos="16.7603,-1081.383" />
+                  <Constant text="30" />
+                </SetVariable>
+                <While id="7" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <CallCustomInstruction call="display" id="8" style="call-custom-instruction">
+                      <Constant text="2" />
+                      <Constant text="#0052cc" />
+                      <Variable list="false" local="false" variableName="text" />
+                    </CallCustomInstruction>
+                    <SetVariable id="9" style="set-variable">
+                      <Variable list="false" local="false" variableName="text" />
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;b&gt;&lt;i&gt;" />
+                        <StringOp op="join" style="join">
+                          <Constant text="Sounding Program V " />
+                          <Variable list="false" local="false" variableName="version" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/i&gt;&lt;/color&gt;&lt;color=#e68a00&gt;&lt;/size&gt;&lt;size=125%&gt;" />
+                        <StringOp op="friendly" subOp="distance" style="friendly">
+                          <BinaryOp op="-" style="op-sub">
+                            <CraftProperty property="Altitude.AGL" style="prop-altitude" />
+                            <Variable list="false" local="false" variableName="targetAGL" />
+                          </BinaryOp>
+                        </StringOp>
+                        <Constant text=" To Target Height" />
+                        <Constant text="&lt;b&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;&lt;/size&gt;&lt;color=#b266ff&gt;Target Height :" />
+                        <BinaryOp op="/" style="op-div">
+                          <Variable list="false" local="false" variableName="targetAGL" />
+                          <Constant text="1000" />
+                        </BinaryOp>
+                        <Constant text="Km" />
+                        <Constant text="" />
+                      </StringOp>
+                    </SetVariable>
+                    <If id="10" style="if">
+                      <Comparison op="ge" style="op-gte">
+                        <CraftProperty property="Altitude.AGL" style="prop-altitude" />
+                        <Variable list="false" local="false" variableName="targetAGL" />
+                      </Comparison>
+                      <Instructions>
+                        <BroadcastMessage global="false" local="true" id="11" style="broadcast-msg">
+                          <Constant text="go" />
+                          <Constant number="0" />
+                        </BroadcastMessage>
+                        <Break id="12" style="break" />
+                      </Instructions>
+                    </If>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <Event event="ReceiveMessage" id="13" style="receive-msg" pos="-97.18594,-1102.962">
+                  <Constant canReplace="false" text="send" />
+                </Event>
+                <SetVariable id="14" style="set-variable" pos="-105.8955,-1175.22">
+                  <Variable list="false" local="false" variableName="time" />
+                  <CraftProperty property="Time.TotalTime" style="prop-time" />
+                </SetVariable>
+                <While id="15" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <SetTimeMode mode="Normal" id="16" style="set-time-mode" />
+                    <SetVariable id="17" style="set-variable">
+                      <Variable list="false" local="false" variableName="text" />
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;b&gt;&lt;i&gt;" />
+                        <StringOp op="join" style="join">
+                          <Constant text="Sounding Program V " />
+                          <Variable list="false" local="false" variableName="version" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="&lt;br&gt;&lt;/b&gt;&lt;/i&gt;&lt;/color&gt;&lt;color=#e68a00&gt;&lt;/size&gt;&lt;size=125%&gt;" />
+                        <Constant text="Transmitting Science Data" />
+                        <Constant text=":" />
+                        <Constant text="" />
+                        <Constant text="" />
+                        <Constant text="" />
+                        <Constant text="" />
+                        <Constant text="" />
+                        <Constant text="" />
+                        <Constant text="" />
+                        <Constant text="&lt;color=#2eb82e&gt;&lt;i&gt;&lt;/size&gt;&lt;size=175%&gt;   " />
+                        <Conditional style="conditional">
+                          <Comparison op="l" style="op-lt">
+                            <BinaryOp op="-" style="op-sub">
+                              <CraftProperty property="Time.TotalTime" style="prop-time" />
+                              <Variable list="false" local="false" variableName="time" />
+                            </BinaryOp>
+                            <Variable list="false" local="false" variableName="loadingtime2" pos="2541.109,-1268.46" />
+                          </Comparison>
+                          <StringOp op="join" style="join">
+                            <StringOp op="format" style="format">
+                              <Constant text="{0:n3}" />
+                              <BinaryOp op="*" style="op-mul">
+                                <BinaryOp op="/" style="op-div">
+                                  <BinaryOp op="-" style="op-sub">
+                                    <CraftProperty property="Time.TotalTime" style="prop-time" />
+                                    <Variable list="false" local="false" variableName="time" />
+                                  </BinaryOp>
+                                  <Variable list="false" local="false" variableName="loadingtime2" pos="3279.203,-1261.791" />
+                                </BinaryOp>
+                                <Constant text="100" />
+                              </BinaryOp>
+                              <Constant text="" />
+                            </StringOp>
+                            <Constant text="%" />
+                            <Constant text="" />
+                          </StringOp>
+                          <Constant text="100%" />
+                        </Conditional>
+                        <Constant text="" />
+                      </StringOp>
+                    </SetVariable>
+                    <CallCustomInstruction call="display" id="18" style="call-custom-instruction" pos="-165.9361,-1228.586">
+                      <Constant text="2" />
+                      <Constant text="#0052cc" />
+                      <Variable list="false" local="false" variableName="text" />
+                    </CallCustomInstruction>
+                    <If id="19" style="if">
+                      <Comparison op="l" style="op-lt">
+                        <Variable list="false" local="false" variableName="loadingtime2" pos="-69.63852,-1365.539" />
+                        <BinaryOp op="-" style="op-sub">
+                          <CraftProperty property="Time.TotalTime" style="prop-time" />
+                          <Variable list="false" local="false" variableName="time" />
+                        </BinaryOp>
+                      </Comparison>
+                      <Instructions>
+                        <WaitSeconds id="20" style="wait-seconds">
+                          <Constant text="1" />
+                        </WaitSeconds>
+                        <CallCustomInstruction call="display" id="21" style="call-custom-instruction">
+                          <Constant text="2" />
+                          <Constant text="#0052cc" />
+                          <StringOp op="join" style="join">
+                            <Constant text="&lt;b&gt;&lt;i&gt;" />
+                            <StringOp op="join" style="join">
+                              <Constant text="Sounding Program V " />
+                              <Variable list="false" local="false" variableName="version" />
+                              <Constant text="" />
+                            </StringOp>
+                            <Constant text="&lt;br&gt;&lt;/b&gt;&lt;/i&gt;&lt;/color&gt;&lt;color=#e68a00&gt;&lt;/size&gt;&lt;size=125%&gt;" />
+                            <Constant text="Transmission Completed!" />
+                            <Constant text="" />
+                          </StringOp>
+                        </CallCustomInstruction>
+                        <Break id="22" style="break" />
+                      </Instructions>
+                    </If>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <Event event="ReceiveMessage" id="23" style="receive-msg" pos="-102.9664,-559.9284">
+                  <Constant canReplace="false" text="go" />
+                </Event>
+                <SetVariable id="24" style="set-variable" pos="-128.1274,-622.5094">
+                  <Variable list="false" local="false" variableName="time" />
+                  <CraftProperty property="Time.TotalTime" style="prop-time" />
+                </SetVariable>
+                <While id="25" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <SetTimeMode mode="Normal" id="26" style="set-time-mode" />
+                    <SetVariable id="27" style="set-variable">
+                      <Variable list="false" local="false" variableName="text" />
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;b&gt;&lt;i&gt;" />
+                        <StringOp op="join" style="join">
+                          <Constant text="Sounding Program V " />
+                          <Variable list="false" local="false" variableName="version" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="&lt;br&gt;&lt;/b&gt;&lt;/i&gt;&lt;/color&gt;&lt;color=#e68a00&gt;&lt;/size&gt;&lt;size=125%&gt;" />
+                        <Constant text="Target Height Reached! Science Research Starting Up" />
+                        <Constant text="&lt;/color&gt;&lt;br&gt;&lt;color=#1affc6&gt;" />
+                        <Constant text="Current Temperature: &lt;color=#FF8000&gt;" />
+                        <StringOp op="friendly" subOp="temperature" style="friendly">
+                          <CraftProperty property="Atmosphere.Temperature" style="prop-atmosphere" />
+                        </StringOp>
+                        <Constant text=" &lt;/color&gt; " />
+                        <Constant text="Current Radiation Energy:&lt;color=#99e600&gt;" />
+                        <StringOp op="format" style="format">
+                          <Constant text="{0:n2}" />
+                          <BinaryOp op="rand" style="op-rand">
+                            <Constant text="6" />
+                            <Constant text="8" />
+                          </BinaryOp>
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="MeV&lt;/color&gt; &lt;br&gt;&lt;b&gt;&lt;color=#0040ff&gt;" />
+                        <Constant text="Processing Collected Data:" />
+                        <Constant text="&lt;color=#2eb82e&gt;&lt;i&gt;&lt;/size&gt;&lt;size=175%&gt;   " />
+                        <Conditional style="conditional">
+                          <Comparison op="l" style="op-lt">
+                            <BinaryOp op="-" style="op-sub">
+                              <CraftProperty property="Time.TotalTime" style="prop-time" />
+                              <Variable list="false" local="false" variableName="time" />
+                            </BinaryOp>
+                            <Variable list="false" local="false" variableName="loadingtime" />
+                          </Comparison>
+                          <StringOp op="join" style="join">
+                            <StringOp op="format" style="format">
+                              <Constant text="{0:n3}" />
+                              <BinaryOp op="*" style="op-mul">
+                                <BinaryOp op="/" style="op-div">
+                                  <BinaryOp op="-" style="op-sub">
+                                    <CraftProperty property="Time.TotalTime" style="prop-time" />
+                                    <Variable list="false" local="false" variableName="time" />
+                                  </BinaryOp>
+                                  <Variable list="false" local="false" variableName="loadingtime" />
+                                </BinaryOp>
+                                <Constant text="100" />
+                              </BinaryOp>
+                              <Constant text="" />
+                            </StringOp>
+                            <Constant text="%" />
+                            <Constant text="" />
+                          </StringOp>
+                          <Constant text="100%" />
+                        </Conditional>
+                        <Constant text="" />
+                      </StringOp>
+                    </SetVariable>
+                    <CallCustomInstruction call="display" id="28" style="call-custom-instruction">
+                      <Constant text="2" />
+                      <Constant text="#0052cc" />
+                      <Variable list="false" local="false" variableName="text" />
+                    </CallCustomInstruction>
+                    <If id="29" style="if">
+                      <Comparison op="l" style="op-lt">
+                        <Variable list="false" local="false" variableName="loadingtime" />
+                        <BinaryOp op="-" style="op-sub">
+                          <CraftProperty property="Time.TotalTime" style="prop-time" />
+                          <Variable list="false" local="false" variableName="time" />
+                        </BinaryOp>
+                      </Comparison>
+                      <Instructions>
+                        <BroadcastMessage global="false" local="true" id="30" style="broadcast-msg">
+                          <Constant text="send" />
+                          <Constant number="0" />
+                        </BroadcastMessage>
+                        <WaitSeconds id="31" style="wait-seconds">
+                          <Constant text="1" />
+                        </WaitSeconds>
+                        <Break id="32" style="break" />
+                      </Instructions>
+                    </If>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Expressions />
+            </Program>            
+          </FlightProgram>
+          <Payload payloadId="prc-pro-1-4" />
+        </Part>
+      </Parts>
+      <Connections />
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

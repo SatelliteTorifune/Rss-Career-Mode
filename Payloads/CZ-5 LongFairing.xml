@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Long Fairing For CZ-5" category="Payloads" description="Larger Fairing For Space Station Modules" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="7862" partType="FairingBase1" position="-6.198883E-05,-11.59127,2.193451E-05" rotation="2.642656E-05,90.00001,-6.852978E-06" name="CZ-5 Fairing Sep" activationStage="3" stageOverride="true" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage4" textureOffset="0,0.95">
+          <Drag drag="3.018804,3.018804,0,0.8451762,2.982659,2.684828" area="3.871095,3.871095,0,0.8451762,3.871095,3.318082" />
+          <AttachPoints>
+            <AttachPoint id="0" position="5.922321E-08,-0.45,-5.185181E-08" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Rigid" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="1" position="-5.922321E-08,0.45,5.185181E-08" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="5.31588E-09,-2.661504E-09,1.025172E-07" heatShield="-0" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-5.922321E-08,0.45,5.185181E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="2.6,2.6" volume="18.8958626" volumeInner="18.612606" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing jettisonSpin="2.5" jettisonVelocity="1" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <Payload payloadId="CZ-5 Long Fairing" />
+        </Part>
+        <Part id="7863" partType="Fairing1" position="-2.193451E-05,-10.84129,-9.536743E-07" rotation="5.612967E-05,90.00001,-1.545996E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage4" textureTiling="1.1,1" textureOffset="0,0.95">
+          <Drag drag="3.018804,3.018804,0,0,2.982659,2.768683" area="3.871095,3.871095,0,0,3.871095,3.440974" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.350109E-11,-0.3,-9.805427E-12" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.350109E-11,0.3,9.805427E-12" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="8.934918E-09,-1.700405E-09,1.1304E-07" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.350109E-11,0.3,9.805427E-12" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.6,2.6" volume="12.5972433" volumeInner="12.3384151" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7864" partType="Fairing1" position="-2.193451E-05,-10.5363,-1.907349E-06" rotation="8.137077E-05,90.00001,-2.591515E-05" materials="16,16,0,0,1" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" style="Fairing-2" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-2.156626E-06,-0.005,-8.934115E-07" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="2.156626E-06,0.005,8.934115E-07" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="1.983151E-08,4.061134E-12,6.404245E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="2.156626E-06,0.005,8.934115E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.6,2.6" volume="0.209954008" volumeInner="0.139154866" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7865" partType="Fairing1" position="-2.193451E-05,-10.5213,-2.861023E-06" rotation="8.060519E-05,90.00001,-3.668745E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.575325E-08,-0.01,-9.164099E-09" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.575325E-08,0.01,9.164099E-09" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="2.466845E-08,-1.998078E-10,1.412538E-07" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.575325E-08,0.01,9.164099E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.6,2.6" volume="0.419908017" volumeInner="0.278309762" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7866" partType="Fairing1" position="-2.193451E-05,-10.50633,-4.768372E-06" rotation="0.0001296875,90.00001,-1.635688E-05" materials="16,16,0,0,1" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" style="Fairing-2" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-2.156626E-06,-0.005,-8.934115E-07" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="2.156626E-06,0.005,8.934115E-07" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="1.983151E-08,4.061134E-12,6.404245E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="2.156626E-06,0.005,8.934115E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.6,2.6" volume="0.209954008" volumeInner="0.139154866" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7867" partType="Fairing1" position="-1.144409E-05,-5.751361,-8.583069E-06" rotation="0.0001370805,90.00001,-3.420502E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="38.23813,38.23813,0,0,37.7803,37.48246" area="49.03406,49.03406,0,0,49.03406,48.48104" />
+          <AttachPoints>
+            <AttachPoint id="0" position="5.807704E-07,-4.75,-2.144053E-06" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-5.807704E-07,4.75,2.144053E-06" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="1.099289E-08,1.287982E-07,8.838064E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-5.807704E-07,4.75,2.144053E-06" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.6,2.6" volume="199.456284" volumeInner="198.47261" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7868" partType="Fairing1" position="2.861023E-05,0.09854102,1.716614E-05" rotation="0.0001103083,90.00001,-4.529442E-05" materials="0,11,11,0,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" style="Fairing-2" texture="Default">
+          <Drag drag="9.056416,9.056417,0,0,8.947976,8.947977" area="11.61331,11.61331,0,0,11.61331,11.61331" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-2.156628E-06,-1.1,-8.93423E-07" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="2.156628E-06,1.1,8.93423E-07" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="-1.618198E-08,-5.766597E-09,7.436087E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="2.156628E-06,1.1,8.93423E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.6,2.6" volume="46.1898537" volumeInner="45.8007355" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7869" partType="Fairing1" position="8.583069E-06,1.698496,-9.536743E-07" rotation="0.0001370805,90.00001,-3.420502E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="4.025072,4.025072,0.1207394,0,3.976879,3.976879" area="5.161465,5.161465,0.1207394,0,5.161465,5.161465" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.574755E-08,-0.5,-9.148859E-09" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.574755E-08,0.5,9.148859E-09" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="2.157168E-08,-8.295023E-09,6.556174E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.574755E-08,0.5,9.148859E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.6,2.6" volume="20.9953976" volumeInner="20.70399" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7870" partType="Fairing1" position="-1.144409E-05,2.203491,-2.479553E-05" rotation="0.0001029153,90.00001,-2.744628E-05" materials="16,16,0,0,1" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" style="Fairing-2" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-2.156626E-06,-0.005,-8.934115E-07" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="2.156626E-06,0.005,8.934115E-07" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="1.983151E-08,4.061134E-12,6.404245E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="2.156626E-06,0.005,8.934115E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.6,2.6" volume="0.209954008" volumeInner="0.139154866" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7871" partType="Fairing1" position="-1.144409E-05,2.218502,-2.288818E-05" rotation="0.0001103083,90.00001,-4.529442E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.575325E-08,-0.01,-9.164099E-09" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.575325E-08,0.01,9.164099E-09" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="2.466845E-08,-1.998078E-10,1.412538E-07" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.575325E-08,0.01,9.164099E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.6,2.6" volume="0.419908017" volumeInner="0.278309762" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7872" partType="Fairing1" position="-1.144409E-05,2.233471,-2.479553E-05" rotation="0.0001549286,90.00001,-2.681206E-05" materials="16,16,0,0,1" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" style="Fairing-2" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-2.156626E-06,-0.005,-8.934115E-07" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="2.156626E-06,0.005,8.934115E-07" rotation="-90,180,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="1.983151E-08,4.061134E-12,6.404245E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" fuelPercentage="-0" meshMassMultiplier="0.8" offset="2.156626E-06,0.005,8.934115E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.6,2.6" volume="0.209954008" volumeInner="0.139154866" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7873" partType="Fairing1" position="-1.144409E-05,2.648987,-2.670288E-05" rotation="0.0001525675,90.00001,-2.492814E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="3.924349,3.924349,0.2170942,0.1163991,3.880493,3.880494" area="5.161465,5.161465,1.629983,1.54949,4.977126,4.977126" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.574755E-08,-0.4105121,-9.148859E-09" rotation="90,0,0" scale="3.224903" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.574755E-08,0.4105121,9.148859E-09" rotation="-90,180,0" scale="3.159362" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="-3.192229E-08,-0.007490307,6.087484E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.6,2.6" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" flattenNormals="Both" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.574755E-08,0.4105121,9.148859E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.495392,2.495392" volume="16.55349" volumeInner="16.2857742" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7874" partType="Fairing1" position="2.861023E-05,3.469961,5.722046E-06" rotation="0.0001525675,90.00001,-2.492814E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="2.730851,2.730852,0.6011719,0.3626918,2.733502,2.733984" area="3.502419,3.502419,2.253803,1.972078,3.625311,3.625311" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.574755E-08,-0.4105121,-9.148859E-09" rotation="90,0,0" scale="3.159362" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.574755E-08,0.4105121,9.148859E-09" rotation="-90,180,0" scale="3.06705785" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="5.301781E-08,-0.01081343,4.363873E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.495392,2.495392" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" flattenNormals="Both" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.574755E-08,0.4105121,9.148859E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.351711,2.351711" volume="14.9818392" volumeInner="14.7359924" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7875" partType="Fairing1" position="3.814697E-05,4.290941,3.814697E-05" rotation="0.0001882639,90.00001,-1.014224E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="2.525791,2.525791,1.044515,0.8245793,2.517116,2.517116" area="3.379528,3.379528,3.139226,2.8575,3.318082,3.318082" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.574755E-08,-0.4105121,-9.148859E-09" rotation="90,0,0" scale="3.06705785" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.574755E-08,0.4105121,9.148859E-09" rotation="-90,180,0" scale="2.9285028" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="1.487953E-08,-0.01684442,1.097167E-07" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.351711,2.351711" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" flattenNormals="Both" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.574755E-08,0.4105121,9.148859E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.144032,2.144032" volume="12.8939295" volumeInner="12.6770525" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7876" partType="Fairing1" position="2.861023E-05,5.111959,3.71933E-05" rotation="0.0001756898,90.00001,-2.711267E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="2.24338,2.243621,1.023997,1.142685,2.233019,2.233019" area="3.010852,3.010852,3.058733,3.320335,3.010852,3.010852" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.574755E-08,-0.4105121,-9.148859E-09" rotation="90,0,0" scale="2.9285028" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.574755E-08,0.4105121,9.148859E-09" rotation="-90,180,0" scale="2.738672" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="1.284968E-08,-0.02438195,8.073387E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.144032,2.144032" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" flattenNormals="Both" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.574755E-08,0.4105121,9.148859E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="1.875081,1.875081" volume="10.3129253" volumeInner="10.1325912" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7877" partType="Fairing1" position="4.863739E-05,5.932987,1.811981E-05" rotation="0.0001399935,90.00001,-4.189858E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="2.464344,2.464345,1.454476,1.425041,2.443622,2.443622" area="3.440974,3.440974,3.642307,3.481321,3.379528,3.379528" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.574755E-08,-0.4105121,-9.148859E-09" rotation="90,0,0" scale="2.738672" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.574755E-08,0.4105121,9.148859E-09" rotation="-90,180,0" scale="2.477268" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="3.963444E-08,-0.03636209,1.201355E-07" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.875081,1.875081" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" flattenNormals="Both" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.574755E-08,0.4105121,9.148859E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="1.534214,1.534214" volume="7.4344244" volumeInner="7.295861" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7878" partType="Fairing1" position="1.811981E-05,6.643167,6.67572E-06" rotation="0.0001756898,90.00001,-2.711267E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0.9633764,0.9633764,1.15168,1.135424,0.9600029,0.9600029" area="1.351811,1.351811,2.515405,2.495282,1.351811,1.351811" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.572921E-08,-0.2996739,-9.150896E-09" rotation="90,0,0" scale="2.477268" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.572921E-08,0.2996739,9.150896E-09" rotation="-90,180,0" scale="2.22958827" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="1.74187E-08,-0.02785437,8.636012E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.534214,1.534214" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" flattenNormals="Both" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.572921E-08,0.2996739,9.150896E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="1.242766,1.242766" volume="3.60191441" volumeInner="3.5124383" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7879" partType="Fairing1" position="-1.907349E-06,7.242485,-6.67572E-06" rotation="0.0001756898,90.00001,-2.711267E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="1.070365,1.070365,1.218679,1.071582,1.077353,1.077353" area="1.536149,1.536149,2.253803,2.153187,1.597595,1.597595" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.572921E-08,-0.2996739,-9.150896E-09" rotation="90,0,0" scale="2.22958827" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.572921E-08,0.2996739,9.150896E-09" rotation="-90,180,0" scale="1.83034444" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="-6.588132E-09,-0.04013004,5.357699E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.242766,1.242766" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" flattenNormals="Both" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.572921E-08,0.2996739,9.150896E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.9151722,0.9151722" volume="2.18372464" volumeInner="2.12369251" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7880" partType="Fairing1" position="8.583069E-06,7.816864,0" rotation="0.0001756898,90.00001,-2.711267E-05" materials="0,7,7,7,7" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0.4510857,0.2802418,0.8727965,0.6033027,0.2549405,0.4318085" area="0.7373515,0.4915677,1.569613,1.126902,0.4301217,0.6759055" />
+          <AttachPoints>
+            <AttachPoint id="0" position="2.572921E-08,-0.2746739,-9.150896E-09" rotation="90,0,0" scale="1.83034444" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.572921E-08,0.2746739,9.150896E-09" rotation="-90,180,0" scale="1.078562" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="4.521593E-09,-0.06172543,3.432824E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.9151722,0.9151722" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" flattenNormals="Both" fuelPercentage="-0" meshMassMultiplier="0.8" offset="-2.572921E-08,0.2746739,9.150896E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.539281,0.539281" volume="0.9224175" volumeInner="0.889772" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7881" partType="FairingNoseCone1" position="-1.907349E-06,8.138025,5.722046E-06" rotation="0.0001525675,90.00001,-2.492814E-05" materials="0,0,2,3,4" groupId="c92e390f-6fd7-4779-b109-1a9cd484a4f2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0.0877111,0.2703623,0.6706169,0.9206185,0.2715671,0.07686769" area="0.1843379,0.4301217,0.8250529,1.207394,0.4301217,0.1843379" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-2.662729E-11,-0.2412339,-1.061555E-10" rotation="90,0,0" scale="1.23651242" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config buoyancyBaseScale="-0" centerOfMass="-7.242599E-08,-0.0950999,-3.545151E-08" heatShield="-0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.6182562,0.6182562" buoyancy="-0" deadWeight="-0" deformations="0,0,0" depthCurve="0" flattenNormals="Both" fuelPercentage="-0" meshMassMultiplier="1.5" offset="2.662729E-11,0.2412339,1.061555E-10" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolResizeBottom="false" toolResizeHeight="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.15,0.15" volume="0.343977064" volumeInner="0.328395367" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Fairing inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="7863" partB="7862" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7864" partB="7863" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7865" partB="7864" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7866" partB="7865" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7866" partB="7867" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="7868" partB="7867" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7869" partB="7868" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7870" partB="7869" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7871" partB="7870" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7872" partB="7871" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7873" partB="7872" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7874" partB="7873" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7875" partB="7874" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7876" partB="7875" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7877" partB="7876" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7878" partB="7877" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7879" partB="7878" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7880" partB="7879" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7881" partB="7880" attachPointsA="0" attachPointsB="1" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

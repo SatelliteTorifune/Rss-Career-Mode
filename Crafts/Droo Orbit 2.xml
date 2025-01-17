@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Craft name="Komodo" parent="" initialBoundsMin="-2.53498,-4.304245,-3.078421" initialBoundsMax="2.53498,2.801029,2.483942" removeInvalidParts="true" price="3054223" xmlVersion="14" activeCommandPod="6" localCenterOfMass="-5.177855E-08,-1.005278,0.05103687">
+  <Assembly>
+    <Parts>
+      <Part id="6" partType="CommandPod2" position="5.177855E-08,1.005278,-0.05103687" rotation="0,0,0" name="Rapture Capsule" rootPart="true" commandPodId="6" materials="0,2,19,18,2">
+        <Drag drag="8.475262,7.26155,4.565302,0.3908901,7.387572,7.391564" area="10.52995,9.147872,9.84134,0.7309477,10.20778,10.21245" />
+        <Config centerOfMass="0,-0.2375,0" heatShield="639.371155" heatShieldMass="1.59842789" heatShieldScale="1" stageActivationType="None" />
+        <CommandPod activationGroupNames=",,,,,,,,," activationGroupStates="false,false,false,false,false,false,false,false,false,false" pidPitch="10,0,25" pidRoll="10,0,25" pilotSeatRotation="270,0,0" powerConsumption="60" stageCalculationVersion="1">
+          <Controls />
+        </CommandPod>
+        <Gyroscope power="732.620239" />
+        <FuelTank capacity="36554.819458007813" fuel="36554.819458007813" subPriority="10" />
+        <CrewCompartment capacity="5" crewExitPosition="4.021449E-07,0,2.224999" />
+        <Engine fuelConsumption="58.393322" thrust="131421.547" />
+        <InputController inputId="Throttle" />
+        <ScalablePod heightStretch="1.09375" mass="43.1132126" radiusPercent="1.9" />
+      </Part>
+      <Part id="7" partType="RotatingNoseCone1" position="5.177855E-08,2.654788,-0.05103687" rotation="-1.024528E-05,5.008957E-06,-4.478356E-13" name="Rapture Capsule Nose Cone" commandPodId="6" materials="0,3,0,0,0">
+        <Drag drag="0.003111684,0.8590474,2.185766,1.453058,0.6549792,0.6549792" area="0.003111684,1.417382,3.176471,1.943707,1.137316,1.137316" />
+        <Config heatShield="30.2389584" heatShieldMass="0.07559739" heatShieldScale="0.1" />
+        <SubPartRotator currentEnabledPercent="1" startEnabled="true" />
+        <KomodoNoseCone scale="1.9" />
+      </Part>
+      <Part id="8" partType="HeatShield1" position="-4.250587E-07,-0.8222385,-0.05103687" rotation="1.024528E-05,-4.072455E-14,180" name="Capsule Heat Shield" commandPodId="6" materials="2,2,2,2,2">
+        <Drag drag="0.2308109,0.1449496,0,0.4774772,0.138409,0.2250786" area="0.3889613,0.230264,0,0.7614843,0.2232628,0.3780703" />
+        <Config centerOfMass="0,-0.06980609,0" heatShield="4760.69043" heatShieldBaseScale="17.68" heatShieldMass="11.9017258" heatShieldScale="0.5" />
+        <Fuselage bottomScale="1.9,1.9" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.175,0" topScale="0.1,0.1" version="2" />
+      </Part>
+      <Part id="9" partType="DockingPort1" position="5.177855E-08,2.657789,-0.05103691" rotation="-1.024528E-05,5.008956E-06,-4.478356E-13" commandPodId="6" materials="15,1,2,3,4">
+        <Drag drag="0.08552556,0.06260588,0.8491424,0,0.07915577,0.07916187" area="0.1711424,0.13847,0.8855395,0,0.1594737,0.1594737" />
+        <Config heatShieldScale="0" massScale="0.4" />
+        <DockingPort scale="1" version="2" />
+        <CameraVantage />
+        <CrossFeed />
+      </Part>
+      <Part id="10" partType="Detacher1" position="5.177855E-08,-0.8442349,-0.05103685" rotation="1.024528E-05,-5.008957E-06,-1.110923E-12" name="Service Module Interstage" commandPodId="6" materials="0,0,0,0,0" style="Interstage-1" texture="Fuselage4" textureOffset="0,0.25">
+        <Drag drag="0.8070064,0.0704644,0,9.883302,0.5184743,0.7822715" area="1.053296,0.08245972,0,9.883302,0.6557854,0.9972836" />
+        <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" stageActivationType="None" />
+        <Fuselage autoResize="false" bottomScale="1.83,1.83" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="1.5" offset="-1.27055E-21,0.2,-2.486901E-14" topScale="1.83,1.83" version="2" />
+        <Detacher force="0.5" version="2" />
+        <CoverEngine />
+        <CrossFeed />
+      </Part>
+      <Part id="11" partType="CargoBay1" position="5.177857E-08,-2.518093,-0.05103794" rotation="2.049057E-05,-1.001791E-05,-3.943269E-12" name="SolarPanel" commandPodId="6" materials="20,20,20,20,20" partStyle="CargoBay-5" outsideTexture="SolarPanel3" outsideTextureTiling="6,4" insideTexture="Default">
+        <Drag drag="0,9.836435,0,0.2824542,4.955052,0.417821" area="0,12.62642,0,0.2824542,6.385479,0.6970141" />
+        <Config heatShieldScale="0" supportsActivation="false" />
+        <Fuselage bottomScale="1.835,1.835" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="2" offset="-8.987358E-17,1.784,2.741785E-09" topScale="1.835,1.835" version="2" />
+        <CargoBay hasBase="false" openAngle="0" openSpeed="0" soundVolume="0" />
+        <SubPartRotator enabledRotation="0,0,0" />
+        <SubPartRotator enabledRotation="0,270,0" />
+      </Part>
+      <Part id="12" partType="Inlet1" position="5.177857E-08,-2.674229,-0.05103685" rotation="9.878622E-28,1.366735E-12,-2.55976E-13" name="Service Module" commandPodId="6" materials="0,0,18,18,0" texture="Fuselage4" textureOffset="0,0.8500001">
+        <Drag drag="8.938451,0,0,0.2624157,4.496911,8.642127" area="11.67857,0,0,0.2624157,5.834075,11.03422" />
+        <Config heatShieldScale="0" />
+        <Fuselage bottomScale="1.83,1.83" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" offset="-1.058796E-21,1.630016,-1.29277E-29" topScale="1.83,1.83" version="2" />
+      </Part>
+      <Part id="13" partType="Fin1" position="-1.824979,-3.504083,-0.02603692" rotation="270,90.00005,0" name="Stabilization Fin" commandPodId="6" materials="0,1,2,3,4" symmetryId="0e81deb0-de03-4e1d-9d18-6e7d03a460d1">
+        <Drag drag="1.517738,0,0.02671871,0.03053568,0.0715688,0" area="1.517738,0,0.02671871,0.03053568,0.1726983,0" />
+        <Config centerOfMass="0,0.294845,0.3635001" heatShieldScale="0" symmetryId="c1b66302-74a0-4eeb-bf77-77b5505c4c2f" />
+        <Wing airfoil="Fin" rootLeadingOffset="2.30000019" rootTrailingOffset="0.8" thickness="0.05" tipLeadingOffset="1.3" tipPosition="0,0.71,-0.673" tipTrailingOffset="0" symmetryId="861ae4c9-5148-4433-a824-e42e7df57f23" version="2" />
+      </Part>
+      <Part id="14" partType="Fin1" position="2.078334E-06,-3.504083,1.773942" rotation="270,180,0" name="Stabilization Fin" commandPodId="6" materials="0,1,2,3,4">
+        <Drag drag="0.1431375,0,0.05439169,0.06297985,1.535632,1.535632" area="0.3360621,0,0.05439169,0.06297985,1.535632,1.535632" />
+        <Config centerOfMass="-6.217249E-14,0.2948449,0.3635001" heatShieldScale="0" symmetryId="cd7f0233-28fa-4e9e-8a82-5a87d5e7dc6c" />
+        <Wing airfoil="Fin" rootLeadingOffset="2.30000019" rootTrailingOffset="0.8" thickness="0.1" tipLeadingOffset="1.3" tipPosition="0,0.71,-0.673" tipTrailingOffset="0" symmetryId="556d2ca3-e9ad-4a35-98f2-afafb6ba55a9" version="2" />
+      </Part>
+      <Part id="15" partType="Fin1" position="1.82498,-3.504083,-0.07603681" rotation="270,270,0" name="SolarPanel" commandPodId="6" materials="20,20,20,20,20" symmetryId="2362f924-7e65-4a60-aa46-98c6dc908105">
+        <Drag drag="1.517738,0,0.02671871,0.03053568,0,0.03578437" area="1.517738,0,0.02671871,0.03053568,0,0.08401556" />
+        <Config centerOfMass="0,0.2948449,0.3635001" heatShieldScale="0" symmetryId="ce06c72b-8e3e-461c-b7c6-f294457fd897" />
+        <Wing airfoil="Fin" rootLeadingOffset="2.30000019" rootTrailingOffset="0.8" thickness="0.05" tipLeadingOffset="1.3" tipPosition="0,0.71,-0.673" tipTrailingOffset="0" symmetryId="dfe5ca82-a8c3-4108-b3de-ec03e946a931" version="2" />
+      </Part>
+      <Part id="16" partType="Fin1" position="-1.974775E-06,-3.504081,-1.876017" rotation="270,1.366038E-05,0" name="SolarPanel" commandPodId="6" materials="20,20,20,20,20">
+        <Drag drag="0,0.1431375,0,0.06107137,1.584643,1.584643" area="0,0.3453973,0,0.06107137,1.584643,1.584643" />
+        <Config centerOfMass="9.947598E-14,0.294845,0.3635002" heatShieldScale="0" symmetryId="cd7f0233-28fa-4e9e-8a82-5a87d5e7dc6c" />
+        <Wing airfoil="Fin" rootLeadingOffset="2.30000019" rootTrailingOffset="0.8" thickness="0.1" tipLeadingOffset="1.3" tipPosition="0,0.71,-0.673" tipTrailingOffset="0" symmetryId="556d2ca3-e9ad-4a35-98f2-afafb6ba55a9" version="2" />
+      </Part>
+      <Part id="17" partType="Fin1" position="-1.82498,-3.504083,-0.07603744" rotation="270,89.99997,0" name="SolarPanel" commandPodId="6" materials="20,20,20,20,20" symmetryId="2362f924-7e65-4a60-aa46-98c6dc908105" mirrored="true">
+        <Drag drag="0,1.604092,0.02671871,0.03053568,0.03578437,0" area="0,1.604092,0.02671871,0.03053568,0.08634933,0" />
+        <Config centerOfMass="5.960467E-08,0.2948448,0.3635001" heatShieldScale="0" symmetryId="ce06c72b-8e3e-461c-b7c6-f294457fd897" />
+        <Wing airfoil="Fin" rootLeadingOffset="2.30000019" rootTrailingOffset="0.8" thickness="0.05" tipLeadingOffset="1.3" tipPosition="0,0.71,-0.673" tipTrailingOffset="0" symmetryId="dfe5ca82-a8c3-4108-b3de-ec03e946a931" version="2" />
+      </Part>
+      <Part id="18" partType="Fin1" position="1.824979,-3.504083,-0.02603629" rotation="270,269.9999,0" name="Stabilization Fin" commandPodId="6" materials="0,1,2,3,4" symmetryId="0e81deb0-de03-4e1d-9d18-6e7d03a460d1" mirrored="true">
+        <Drag drag="0,1.604092,0.02671871,0.03053568,0,0.0715688" area="0,1.604092,0.02671871,0.03053568,0,0.1680308" />
+        <Config centerOfMass="0,0.294845,0.3635001" heatShieldScale="0" symmetryId="c1b66302-74a0-4eeb-bf77-77b5505c4c2f" />
+        <Wing airfoil="Fin" rootLeadingOffset="2.30000019" rootTrailingOffset="0.8" thickness="0.05" tipLeadingOffset="1.3" tipPosition="0,0.71,-0.673" tipTrailingOffset="0" symmetryId="861ae4c9-5148-4433-a824-e42e7df57f23" version="2" />
+      </Part>
+      <Part id="19" partType="Eva" position="5.177855E-08,0.7677779,-0.05103687" rotation="0,0,0" name="Drood" commandPodId="19" materials="15,17,15,4,9">
+        <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+        <Config heatShieldScale="0" />
+        <CommandPod activationGroupNames=",,,,,,,Landing Gear,Solar Panels,RCS" activationGroupStates="false,false,false,false,false,false,false,true,false,true" pidPitch="10,0,0" pidRoll="0.6,0,0" stageCalculationVersion="2">
+          <Controls />
+        </CommandPod>
+        <Eva crewName="Unassigned" />
+        <Payload payloadId="DROOD1" />
+        <CameraVantage nightVisionColor="#80FF8080" />
+        <FuelTank />
+      </Part>
+      <Part id="20" partType="Eva" position="5.177855E-08,0.7677779,-0.05103687" rotation="0,0,0" name="Drood" commandPodId="20" materials="15,17,15,4,9">
+        <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+        <Config heatShieldScale="0" />
+        <CommandPod activationGroupNames=",,,,,,,Landing Gear,Solar Panels,RCS" activationGroupStates="false,false,false,false,false,false,false,true,false,true" pidPitch="10,0,0" pidRoll="0.6,0,0" stageCalculationVersion="2">
+          <Controls />
+        </CommandPod>
+        <Eva crewName="Unassigned" />
+        <Payload payloadId="DROOD2" />
+        <CameraVantage nightVisionColor="#80FF8080" />
+        <FuelTank />
+      </Part>
+      <Part id="22" partType="Parachute1" position="0.3364483,2.257335,0.9187431" rotation="306.1389,187.4998,-3.619251E-06" name="Main Chute" commandPodId="6" materials="15,6,6,15,15" symmetryId="2aa9cfe3-436e-49b2-87c7-f834d1f9d3c2" mirrored="true" baseStyle="Small">
+        <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+        <Config autoActivateIfNoStageOrActivationGroup="true" heatShieldScale="0" stageActivationType="None" symmetryId="eab30343-f93d-435c-9ea7-a50f2ed4007a" />
+        <Parachute autocutASL="-0" baseSize="0.5" chuteHeight="1" chuteRadius="10" chuteRadiusDeflated="0.5" cordLength="10" deploymentASL="2000.01953" deploymentDensity="0.79" inflationASL="988.7479" inflationDensity="0.89" maxDeploymentSpeed="200" referenceDensity="1.2" symmetryId="6c665971-0507-4387-a0be-bd4b511a9a66" />
+      </Part>
+      <Part id="24" partType="Parachute1" position="0.7104028,2.222516,0.6522579" rotation="291.1387,202.5007,15.00001" name="Main Chute" commandPodId="6" materials="15,6,6,15,15" symmetryId="eeceffa0-1f27-4fc3-9f32-aa505b9aed3f" mirrored="true" baseStyle="Small">
+        <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+        <Config autoActivateIfNoStageOrActivationGroup="true" heatShieldScale="0" stageActivationType="None" symmetryId="160d0cc3-1b3f-4284-8894-b5a26a585e2c" />
+        <Parachute autocutASL="-0" baseSize="0.5" chuteHeight="1" chuteRadius="10" chuteRadiusDeflated="0.5" cordLength="10" deploymentASL="2000.01953" deploymentDensity="0.79" inflationASL="988.7479" inflationDensity="0.89" maxDeploymentSpeed="200" referenceDensity="1.2" symmetryId="a418b458-3c41-4b00-9260-3ad5e08c62ce" />
+      </Part>
+      <Part id="25" partType="Parachute1" position="-0.2456749,2.437411,0.8642143" rotation="305.8287,165.929,350.8249" name="Drogue Chute" commandPodId="6" materials="15,5,5,15,15" symmetryId="58716786-17d7-4300-a0fc-60b1db692232" baseStyle="Small">
+        <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+        <Config autoActivateIfNoStageOrActivationGroup="true" heatShieldScale="0" stageActivationType="None" symmetryId="d14b5557-07fe-42a6-9c86-9165e811c60f" />
+        <Parachute autocutASL="2000.01953" autocutDensity="0.79" baseSize="0.25" chuteHeight="1" chuteRadius="10" chuteRadiusDeflated="0.5" cordLength="10" deploymentASL="4055.963" deploymentDensity="0.62" inflationASL="2328.49854" inflationDensity="0.76" maxDeploymentSpeed="1000" referenceDensity="1.2" symmetryId="fb7b83b7-c33c-4d13-b1a7-c4d353de00a2" />
+      </Part>
+      <Part id="26" partType="Parachute1" position="0.245675,2.437411,0.8642143" rotation="305.8287,194.071,9.175118" name="Drogue Chute" commandPodId="6" materials="15,5,5,15,15" symmetryId="58716786-17d7-4300-a0fc-60b1db692232" mirrored="true" baseStyle="Small">
+        <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+        <Config autoActivateIfNoStageOrActivationGroup="true" heatShieldScale="0" stageActivationType="None" symmetryId="d14b5557-07fe-42a6-9c86-9165e811c60f" />
+        <Parachute autocutASL="2000.01953" autocutDensity="0.79" baseSize="0.25" chuteHeight="1" chuteRadius="10" chuteRadiusDeflated="0.5" cordLength="10" deploymentASL="4055.963" deploymentDensity="0.62" inflationASL="2328.49854" inflationDensity="0.76" maxDeploymentSpeed="1000" referenceDensity="1.2" symmetryId="fb7b83b7-c33c-4d13-b1a7-c4d353de00a2" />
+      </Part>
+      <Part id="27" partType="Parachute1" position="-0.3364482,2.257335,0.9187431" rotation="306.1389,172.5002,6.514653E-06" name="Main Chute" commandPodId="6" materials="15,6,6,15,15" symmetryId="2aa9cfe3-436e-49b2-87c7-f834d1f9d3c2" baseStyle="Small">
+        <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+        <Config autoActivateIfNoStageOrActivationGroup="true" heatShieldScale="0" stageActivationType="None" symmetryId="eab30343-f93d-435c-9ea7-a50f2ed4007a" />
+        <Parachute autocutASL="-0" baseSize="0.5" chuteHeight="1" chuteRadius="10" chuteRadiusDeflated="0.5" cordLength="10" deploymentASL="2000.01953" deploymentDensity="0.79" inflationASL="988.7479" inflationDensity="0.89" maxDeploymentSpeed="200" referenceDensity="1.2" symmetryId="6c665971-0507-4387-a0be-bd4b511a9a66" />
+      </Part>
+      <Part id="28" partType="Parachute1" position="-0.7104027,2.222516,0.6522579" rotation="291.1387,157.4993,345" name="Main Chute" commandPodId="6" materials="15,6,6,15,15" symmetryId="eeceffa0-1f27-4fc3-9f32-aa505b9aed3f" baseStyle="Small">
+        <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+        <Config autoActivateIfNoStageOrActivationGroup="true" heatShieldScale="0" stageActivationType="None" symmetryId="160d0cc3-1b3f-4284-8894-b5a26a585e2c" />
+        <Parachute autocutASL="-0" baseSize="0.5" chuteHeight="1" chuteRadius="10" chuteRadiusDeflated="0.5" cordLength="10" deploymentASL="2000.01953" deploymentDensity="0.79" inflationASL="988.7479" inflationDensity="0.89" maxDeploymentSpeed="200" referenceDensity="1.2" symmetryId="a418b458-3c41-4b00-9260-3ad5e08c62ce" />
+      </Part>
+      <Part id="29" partType="BeaconLight1" position="0.8429643,2.608466,-0.05103686" rotation="0,90,0" name="Docking Light" commandPodId="6" materials="13,0,1,2,3">
+        <Drag drag="0.01038754,0.01038143,0.02095398,0,0,0.01072616" area="0.01400258,0.01400258,0.02290175,0,0,0.01400258" />
+        <Config autoActivateIfNoStageOrActivationGroup="true" heatShieldScale="0" symmetryId="965df76e-5675-4724-95c7-f23665747803" />
+        <BeaconLight blinkOffset="1" blinkStyle="Blink" hideBase="false" symmetryId="b3702515-99b4-4637-a99d-a28535cfc7f0" />
+        <InputController input="1" inputId="BeaconLightIntensity" symmetryId="3ca17936-1659-45f7-8e3f-ea4215920515" />
+      </Part>
+      <Part id="30" partType="BeaconLight1" position="-0.8429642,2.608466,-0.0510368" rotation="0,270,0" name="Docking Light" commandPodId="6" materials="14,0,1,2,3">
+        <Drag drag="0.01038143,0.01038754,0.02095398,0,0.01472864,0" area="0.01400258,0.01400258,0.02290175,0,0.0186701,0" />
+        <Config autoActivateIfNoStageOrActivationGroup="true" heatShieldScale="0" symmetryId="965df76e-5675-4724-95c7-f23665747803" />
+        <BeaconLight blinkStyle="Blink" hideBase="false" symmetryId="b3702515-99b4-4637-a99d-a28535cfc7f0" />
+        <InputController input="1" inputId="BeaconLightIntensity" symmetryId="3ca17936-1659-45f7-8e3f-ea4215920515" />
+      </Part>
+    </Parts>
+    <Connections>
+      <Connection partA="8" partB="6" attachPointsA="0" attachPointsB="3" />
+      <Connection partA="12" partB="10" attachPointsA="1" attachPointsB="0" />
+      <Connection partA="10" partB="11" attachPointsA="1" attachPointsB="0" />
+      <Connection partA="13" partB="11" attachPointsA="1" attachPointsB="0" symmetryId="f2ba6edd-437f-46a1-9aea-8d26befde42c" />
+      <Connection partA="14" partB="11" attachPointsA="1" attachPointsB="0" symmetryId="f2ba6edd-437f-46a1-9aea-8d26befde42c" />
+      <Connection partA="15" partB="11" attachPointsA="1" attachPointsB="0" symmetryId="f2ba6edd-437f-46a1-9aea-8d26befde42c" />
+      <Connection partA="16" partB="11" attachPointsA="1" attachPointsB="0" symmetryId="f2ba6edd-437f-46a1-9aea-8d26befde42c" />
+      <Connection partA="9" partB="6" attachPointsA="0" attachPointsB="1" />
+      <Connection partA="7" partB="6" attachPointsA="0" attachPointsB="0" />
+      <Connection partA="17" partB="11" attachPointsA="1" attachPointsB="0" symmetryId="f2ba6edd-437f-46a1-9aea-8d26befde42c" />
+      <Connection partA="18" partB="11" attachPointsA="1" attachPointsB="0" symmetryId="f2ba6edd-437f-46a1-9aea-8d26befde42c" />
+      <Connection partA="19" partB="6" attachPointsA="0" attachPointsB="4">
+        <BodyJoint body="3" connectedBody="1" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0,0,0" connectedPosition="8.780663E-08,-0.1441007,3.72529E-09" axis="-8.742278E-08,0,-1" secondaryAxis="0,1,0" />
+      </Connection>
+      <Connection partA="20" partB="6" attachPointsA="0" attachPointsB="4">
+        <BodyJoint body="4" connectedBody="1" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0,0,0" connectedPosition="8.780663E-08,-0.1441007,3.72529E-09" axis="-8.742278E-08,0,-1" secondaryAxis="0,1,0" />
+      </Connection>
+      <Connection partA="22" partB="6" attachPointsA="0" attachPointsB="5" symmetryId="2fbf251a-1e90-4382-9f52-6234b309d152">
+        <BodyJoint body="1" connectedBody="5" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0.3364483,1.345456,0.96978" connectedPosition="0,0,0" axis="0,0,1" secondaryAxis="0,1,0" />
+      </Connection>
+      <Connection partA="24" partB="6" attachPointsA="0" attachPointsB="5" symmetryId="9f0bc903-5abf-4c3e-8bd0-f7ed4e442307">
+        <BodyJoint body="1" connectedBody="6" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0.7104028,1.310637,0.7032948" connectedPosition="5.960464E-08,0,-5.960464E-08" axis="0,0,1" secondaryAxis="0,1,0" />
+      </Connection>
+      <Connection partA="25" partB="6" attachPointsA="0" attachPointsB="5" symmetryId="2373e3b1-fd32-4423-8fdb-1c253098415a">
+        <BodyJoint body="1" connectedBody="7" breakTorque="1E+07" breakForce="0" jointType="Normal" position="-0.2456749,1.525532,0.9152512" connectedPosition="-1.490116E-08,0,0" axis="0,0,1" secondaryAxis="0,1,0" />
+      </Connection>
+      <Connection partA="26" partB="6" attachPointsA="0" attachPointsB="5" symmetryId="2373e3b1-fd32-4423-8fdb-1c253098415a">
+        <BodyJoint body="1" connectedBody="8" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0.245675,1.525532,0.9152512" connectedPosition="0,0,0" axis="0,0,1" secondaryAxis="0,1,0" />
+      </Connection>
+      <Connection partA="10" partB="6" attachPointsA="2" attachPointsB="2">
+        <BodyJoint body="1" connectedBody="2" breakTorque="1E+07" breakForce="0" jointType="Normal" position="8.780663E-08,-1.556113,5.960464E-08" connectedPosition="7.228742E-10,1.650913,6.332994E-07" axis="0,0,1" secondaryAxis="0,1,0" />
+      </Connection>
+      <Connection partA="27" partB="6" attachPointsA="0" attachPointsB="5" symmetryId="2fbf251a-1e90-4382-9f52-6234b309d152">
+        <BodyJoint body="1" connectedBody="9" breakTorque="1E+07" breakForce="0" jointType="Normal" position="-0.3364482,1.345456,0.96978" connectedPosition="0,0,0" axis="0,0,1" secondaryAxis="0,1,0" />
+      </Connection>
+      <Connection partA="28" partB="6" attachPointsA="0" attachPointsB="5" symmetryId="9f0bc903-5abf-4c3e-8bd0-f7ed4e442307">
+        <BodyJoint body="1" connectedBody="10" breakTorque="1E+07" breakForce="0" jointType="Normal" position="-0.7104027,1.310637,0.7032948" connectedPosition="0,0,-5.960464E-08" axis="0,0,1" secondaryAxis="0,1,0" />
+      </Connection>
+      <Connection partA="29" partB="6" attachPointsA="0" attachPointsB="5" symmetryId="7ea23424-50a2-4d84-9c2f-773e01d15ff7" />
+      <Connection partA="30" partB="6" attachPointsA="0" attachPointsB="5" symmetryId="7ea23424-50a2-4d84-9c2f-773e01d15ff7" />
+    </Connections>
+    <Collisions>
+      <Collision partA="8" partB="10" colliderNameA="Collider" colliderNameB="Collider" />
+      <Collision partA="6" partB="22" />
+      <Collision partA="6" partB="24" />
+      <Collision partA="6" partB="25" />
+      <Collision partA="6" partB="26" />
+      <Collision partA="6" partB="27" />
+      <Collision partA="6" partB="28" />
+      <Collision partA="22" partB="26" />
+      <Collision partA="25" partB="27" />
+    </Collisions>
+    <Bodies>
+      <Body id="1" partIds="6,8,9,7,29,30" mass="75.8436356" position="-3.602807E-08,0.9118786,-0.05103688" rotation="0,0,0" centerOfMass="0,0,0" />
+      <Body id="2" partIds="10,12,11,13,14,15,16,17,18" mass="42.61171" position="5.105568E-08,-2.295147,-0.05103745" rotation="0,0,0" centerOfMass="0,0,0" />
+      <Body id="3" partIds="19" mass="1.16126" position="5.177855E-08,0.7677779,-0.05103687" rotation="0,0,0" centerOfMass="0,0,0" />
+      <Body id="4" partIds="20" mass="1.16126" position="5.177855E-08,0.7677779,-0.05103687" rotation="0,0,0" centerOfMass="0,0,0" />
+      <Body id="5" partIds="22" mass="1.6255" position="0.3364483,2.257335,0.9187431" rotation="0,0,0" centerOfMass="0,0,0" />
+      <Body id="6" partIds="24" mass="1.6255" position="0.7104027,2.222516,0.652258" rotation="0,0,0" centerOfMass="0,0,0" />
+      <Body id="7" partIds="25" mass="0.61143744" position="-0.2456749,2.437411,0.8642143" rotation="0,0,0" centerOfMass="0,0,0" />
+      <Body id="8" partIds="26" mass="0.61143744" position="0.245675,2.437411,0.8642143" rotation="0,0,0" centerOfMass="0,0,0" />
+      <Body id="9" partIds="27" mass="1.6255" position="-0.3364482,2.257335,0.9187431" rotation="0,0,0" centerOfMass="0,0,0" />
+      <Body id="10" partIds="28" mass="1.6255" position="-0.7104027,2.222516,0.652258" rotation="0,0,0" centerOfMass="0,0,0" />
+    </Bodies>
+  </Assembly>
+  <DesignerSettings themeName="Custom">
+    <Theme name="Custom" id="c004577f-63f1-4c4a-ba27-7e1f2960d1c4">
+      <Material name="Base Color" color="FFFFFF" m="0.3" s="0" />
+      <Material name="Detail Color" color="178BFF" m="0" s="0.3" />
+      <Material name="Light Metal" color="CBCDCE" m="0.85" s="0.8" />
+      <Material name="Heavy Metal" color="76736F" m="0.85" s="0.5" />
+      <Material name="Ablative" color="000000" m="0" s="0" d="0" />
+      <Material name="Accent Color 1" color="FF0000" m="0.1" s="0.08" />
+      <Material name="Accent Color 2" color="FF8000" m="0.1" s="0.08" />
+      <Material name="Accent Color 3" color="FFFFFF" m="0.1" s="0.08" />
+      <Material name="Accent Color 4" color="FFFFFF" m="0.1" s="0.08" />
+      <Material name="Accent Color 5" color="000000" m="0.81" s="0.63" />
+      <Material name="Gauge Color 1" color="000000" m="0.85" s="0" />
+      <Material name="Gauge Color 2" color="FF8000" m="0" s="0.5" e="1" />
+      <Material name="Gauge Color 3" color="FFFFFF" m="0" s="0" e="1" />
+      <Material name="Gauge Color 4" color="FF0000" m="0" s="0" e="1" />
+      <Material name="Gauge Color 5" color="68D100" m="0" s="0" e="1" />
+      <Material name="Fabric Base" color="FFFFFF" m="0" s="0" d="0.2" />
+      <Material name="Fabric Detail" color="178BFF" m="0" s="0" d="0.1" />
+      <Material name="Brushed Light Metal" color="CBCDCE" m="0.85" s="0.3" d="0.5" />
+      <Material name="Brushed Heavy Metal" color="515151" m="1" s="0.3" d="0.3" />
+      <Material name="Sun Insulation" color="574204" m="0.95" s="0.95" d="0.2" />
+      <Material name="Solar Cells" color="040425" m="1" s="0.7" d="0.3" />
+      <Material name="Light" color="FFEEB9" m="0" s="1" />
+      <Material name="Display" color="FFFFFF" m="0.1" s="0.08" />
+      <Material name="Glass Exterior" color="FFFFFF" m="1" s="1" t="0.8" />
+      <Material name="Glass Interior" color="808080" m="1" s="0" t="0.9" />
+    </Theme>
+  </DesignerSettings>
+  <Themes>
+    <Theme name="Custom" id="c004577f-63f1-4c4a-ba27-7e1f2960d1c4">
+      <Material name="Base Color" color="FFFFFF" m="0.3" s="0" />
+      <Material name="Detail Color" color="178BFF" m="0" s="0.3" />
+      <Material name="Light Metal" color="CBCDCE" m="0.85" s="0.8" />
+      <Material name="Heavy Metal" color="76736F" m="0.85" s="0.5" />
+      <Material name="Ablative" color="000000" m="0" s="0" d="0" />
+      <Material name="Accent Color 1" color="FF0000" m="0.1" s="0.08" />
+      <Material name="Accent Color 2" color="FF8000" m="0.1" s="0.08" />
+      <Material name="Accent Color 3" color="FFFFFF" m="0.1" s="0.08" />
+      <Material name="Accent Color 4" color="FFFFFF" m="0.1" s="0.08" />
+      <Material name="Accent Color 5" color="000000" m="0.81" s="0.63" />
+      <Material name="Gauge Color 1" color="000000" m="0.85" s="0" />
+      <Material name="Gauge Color 2" color="FF8000" m="0" s="0.5" e="1" />
+      <Material name="Gauge Color 3" color="FFFFFF" m="0" s="0" e="1" />
+      <Material name="Gauge Color 4" color="FF0000" m="0" s="0" e="1" />
+      <Material name="Gauge Color 5" color="68D100" m="0" s="0" e="1" />
+      <Material name="Fabric Base" color="FFFFFF" m="0" s="0" d="0.2" />
+      <Material name="Fabric Detail" color="178BFF" m="0" s="0" d="0.1" />
+      <Material name="Brushed Light Metal" color="CBCDCE" m="0.85" s="0.3" d="0.5" />
+      <Material name="Brushed Heavy Metal" color="515151" m="1" s="0.3" d="0.3" />
+      <Material name="Sun Insulation" color="574204" m="0.95" s="0.95" d="0.2" />
+      <Material name="Solar Cells" color="040425" m="1" s="0.7" d="0.3" />
+      <Material name="Light" color="FFEEB9" m="0" s="1" />
+      <Material name="Display" color="FFFFFF" m="0.1" s="0.08" />
+      <Material name="Glass Exterior" color="FFFFFF" m="1" s="1" t="0.8" />
+      <Material name="Glass Interior" color="808080" m="1" s="0" t="0.9" />
+    </Theme>
+  </Themes>
+  <Symmetry>
+    <Group mode="Mirror" rootPartId="11" attachPointId="0">
+      <Slice angle="0" rootPartId="13" parts="13" />
+      <Slice angle="0" rootPartId="18" parts="18" />
+    </Group>
+    <Group mode="Mirror" rootPartId="11" attachPointId="0">
+      <Slice angle="0" rootPartId="15" parts="15" />
+      <Slice angle="0" rootPartId="17" parts="17" />
+    </Group>
+    <Group mode="Mirror" rootPartId="6" attachPointId="5">
+      <Slice angle="0" rootPartId="22" parts="22" />
+      <Slice angle="0" rootPartId="27" parts="27" />
+    </Group>
+    <Group mode="Mirror" rootPartId="6" attachPointId="5">
+      <Slice angle="0" rootPartId="24" parts="24" />
+      <Slice angle="0" rootPartId="28" parts="28" />
+    </Group>
+    <Group mode="Mirror" rootPartId="6" attachPointId="5">
+      <Slice angle="0" rootPartId="25" parts="25" />
+      <Slice angle="0" rootPartId="26" parts="26" />
+    </Group>
+  </Symmetry>
+</Craft>

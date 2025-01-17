@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Exploration>
+   <Planet name="Earth">
+      <Landmark id="droo-droneship" name="Drone Ship" latLonAgl="0,-124.75,0" research="100" range="50" grounded="true" description="A conveniently placed barge to try to land your rocket boosters when launching from the DSC." />
+   </Planet>
+   <Planet name="Moon" indent="1">
+      <Landmark id="CE-5" name="CE-5 landing sites" latLonAgl="43.09592606,-51.83872704,0" research="0" range="50" grounded="true" description="CE-5 landing sites." />
+      <Landmark id="Apollo 11" name="Apollo 11 Landing sites" latLonAgl="-0.00594755,-22.99350619,0" research="0" range="50" grounded="true" description="Apollo 11 landing sites." />
+   </Planet>
+</Exploration>

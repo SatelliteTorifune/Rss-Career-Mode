@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Contracts>
+ <!--
+ <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="NumCompletions > 0 ? 0 : 100" />
+      </Params>      
+      <Contract customer="ussr" id="ussr-test" money="100e4" name="Molniya Orbit" priority="5" probability="@Probability" difficulty="2" flairText="TEST">
+         <Description
+            short="TODO."
+            long="TODO." />
+         <Requirements>
+            <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+              <Expression expression="50 > AltitudeAGL" description="Start Grounded." displayExpression="AltitudeAGL" displayFormat="distance" visibility="HiddenWhenPassed" />
+                 <Planet name="Earth" description="Be in Droo's SOI">
+                  <Orbit tolerance="0.1" property="inclination" value="64.3" alwaysEvaluateChildren="true">
+                     <Orbit tolerance="10e3" property="apoapsis" value="40e6" alwaysEvaluateChildren="true">
+                        <Orbit tolerance="5000" property="periapsis" value="600e3">
+                           <Timer min="5" description="Hold it for 5 seconds" listedInMenu="false" />
+                        </Orbit>
+                     </Orbit>
+                  </Orbit>
+               </Planet>
+            </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+   -->
+</Contracts>

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameState xmlVersion="6" companyName="Rss Career" mode="Career" type="Default" lastModifiedTime="2024-02-02T03:44:47.8411026+08:00" createdTime="2024-02-02T03:42:03.6839419+08:00" menuTutorialComplete="false" editorCraftId="__editor_27981fe1-d99c-4186-b82d-552e59a2ccf3__">
+  <Career path="RSS career" money="50000" moneyReceived="0" moneySpent="0" moneyRecovered="0" numCraftsRecovered="0" customersMet="" unlockedLocations="&lt;color=#21FF00&gt;very start">
+    <Contracts nextContractNumber="0" numContractsNotSeen="0" />
+    <TechTree researchPoints="999999">
+      <Node id="start" />
+      <Node id="choose" />
+    </TechTree>
+    <Milestones>
+      <Milestone id="contracts" value="0" tier="0" />
+      <Milestone id="money-spent" value="0" tier="0" />
+      <Milestone id="launched-crafts" value="0" tier="0" />
+      <Milestone id="recovery" value="0" tier="0" />
+      <Milestone id="explosion-count" value="0" tier="0" />
+      <Milestone id="top-altitude" value="0" tier="0" />
+      <Milestone id="top-speed" value="0" tier="0" />
+      <Milestone id="docks" value="0" tier="0" />
+      <Milestone id="astronauts" value="0" tier="0" />
+      <Milestone id="Vulco.Vulco-flyby" value="0" tier="0" />
+      <Milestone id="Vulco.Vulco-orbit" value="0" tier="0" />
+      <Milestone id="Vulco.Vulco-landing" value="0" tier="0" />
+      <Milestone id="Vulco.Vulco-height" value="0" tier="0" />
+      <Milestone id="Vulco.Vulco-distance-land" value="0" tier="0" />
+      <Milestone id="Vulco.Vulco-distance-walk" value="0" tier="0" />
+      <Milestone id="Vulco.Vulco-speed-land" value="0" tier="0" />
+      <Milestone id="Sergeaa.Sergeaa-flyby" value="0" tier="0" />
+      <Milestone id="Sergeaa.Sergeaa-orbit" value="0" tier="0" />
+      <Milestone id="Sergeaa.Sergeaa-landing" value="0" tier="0" />
+      <Milestone id="Sergeaa.Sergeaa-height" value="0" tier="0" />
+      <Milestone id="Sergeaa.Sergeaa-distance-land" value="0" tier="0" />
+      <Milestone id="Sergeaa.Sergeaa-distance-air" value="0" tier="0" />
+      <Milestone id="Sergeaa.Sergeaa-distance-walk" value="0" tier="0" />
+      <Milestone id="Sergeaa.Sergeaa-speed-land" value="0" tier="0" />
+      <Milestone id="Sergeaa.Sergeaa-speed-air" value="0" tier="0" />
+      <Milestone id="Droo.Droo-orbit" value="0" tier="0" />
+      <Milestone id="Droo.Droo-flyby" value="0" tier="0" />
+      <Milestone id="Droo.Droo-height" value="0" tier="0" />
+      <Milestone id="Droo.Droo-depth" value="0" tier="0" />
+      <Milestone id="Droo.Droo-distance-land" value="0" tier="0" />
+      <Milestone id="Droo.Droo-distance-air" value="0" tier="0" />
+      <Milestone id="Droo.Droo-distance-water" value="0" tier="0" />
+      <Milestone id="Droo.Droo-distance-walk" value="0" tier="0" />
+      <Milestone id="Droo.Droo-distance-swim" value="0" tier="0" />
+      <Milestone id="Droo.Droo-speed-land" value="0" tier="0" />
+      <Milestone id="Droo.Droo-speed-water" value="0" tier="0" />
+      <Milestone id="Droo.Droo-speed-air" value="0" tier="0" />
+      <Milestone id="Brigo.Brigo-flyby" value="0" tier="0" />
+      <Milestone id="Brigo.Brigo-orbit" value="0" tier="0" />
+      <Milestone id="Brigo.Brigo-landing" value="0" tier="0" />
+      <Milestone id="Brigo.Brigo-depth" value="100000" tier="0" />
+      <Milestone id="Brigo.Brigo-distance-land" value="0" tier="0" />
+      <Milestone id="Brigo.Brigo-distance-walk" value="0" tier="0" />
+      <Milestone id="Brigo.Brigo-speed-land" value="0" tier="0" />
+      <Milestone id="Luna.Luna-flyby" value="0" tier="0" />
+      <Milestone id="Luna.Luna-orbit" value="0" tier="0" />
+      <Milestone id="Luna.Luna-landing" value="0" tier="0" />
+      <Milestone id="Luna.Luna-distance-land" value="0" tier="0" />
+      <Milestone id="Luna.Luna-distance-walk" value="0" tier="0" />
+      <Milestone id="Luna.Luna-speed-land" value="0" tier="0" />
+      <Milestone id="T.T..TT-flyby" value="0" tier="0" />
+      <Milestone id="T.T..TT-orbit" value="0" tier="0" />
+      <Milestone id="T.T..TT-landing" value="0" tier="0" />
+      <Milestone id="T.T..TT-distance-land" value="0" tier="0" />
+      <Milestone id="T.T..TT-distance-walk" value="0" tier="0" />
+      <Milestone id="Cylero.Cylero-flyby" value="0" tier="0" />
+      <Milestone id="Cylero.Cylero-orbit" value="0" tier="0" />
+      <Milestone id="Cylero.Cylero-landing" value="0" tier="0" />
+      <Milestone id="Cylero.Cylero-height" value="0" tier="0" />
+      <Milestone id="Cylero.Cylero-distance-land" value="0" tier="0" />
+      <Milestone id="Cylero.Cylero-distance-air" value="0" tier="0" />
+      <Milestone id="Cylero.Cylero-distance-walk" value="0" tier="0" />
+      <Milestone id="Cylero.Cylero-speed-land" value="0" tier="0" />
+      <Milestone id="Cylero.Cylero-speed-air" value="0" tier="0" />
+      <Milestone id="Niobe.Niobe-flyby" value="0" tier="0" />
+      <Milestone id="Niobe.Niobe-orbit" value="0" tier="0" />
+      <Milestone id="Niobe.Niobe-landing" value="0" tier="0" />
+      <Milestone id="Niobe.Niobe-distance-land" value="0" tier="0" />
+      <Milestone id="Niobe.Niobe-distance-walk" value="0" tier="0" />
+      <Milestone id="Herma.Herma-flyby" value="0" tier="0" />
+      <Milestone id="Herma.Herma-orbit" value="0" tier="0" />
+      <Milestone id="Herma.Herma-landing" value="0" tier="0" />
+      <Milestone id="Herma.Herma-distance-land" value="0" tier="0" />
+      <Milestone id="Herma.Herma-distance-walk" value="0" tier="0" />
+      <Milestone id="Handrew's Comet.Comet-flyby" value="0" tier="0" />
+      <Milestone id="Handrew's Comet.Comet-orbit" value="0" tier="0" />
+      <Milestone id="Handrew's Comet.Comet-landing" value="0" tier="0" />
+      <Milestone id="Handrew's Comet.Comet-distance-land" value="0" tier="0" />
+      <Milestone id="Handrew's Comet.Comet-distance-walk" value="0" tier="0" />
+      <Milestone id="Tydos.Tydos-flyby" value="0" tier="0" />
+      <Milestone id="Tydos.Tydos-orbit" value="0" tier="0" />
+      <Milestone id="Tydos.Tydos-aerobrake" value="0" tier="0" />
+      <Milestone id="Tydos.Tydos-depth" value="3000000" tier="0" />
+      <Milestone id="Nebra.Nebra-flyby" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-orbit" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-landing" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-height" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-depth" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-distance-land" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-distance-water" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-distance-air" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-distance-walk" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-distance-swim" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-speed-land" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-speed-water" value="0" tier="0" />
+      <Milestone id="Nebra.Nebra-speed-air" value="0" tier="0" />
+      <Milestone id="Miros.Miros-flyby" value="0" tier="0" />
+      <Milestone id="Miros.Miros-orbit" value="0" tier="0" />
+      <Milestone id="Miros.Miros-landing" value="0" tier="0" />
+      <Milestone id="Miros.Miros-distance-land" value="0" tier="0" />
+      <Milestone id="Miros.Miros-distance-walk" value="0" tier="0" />
+      <Milestone id="Miros.Miros-speed-land" value="0" tier="0" />
+      <Milestone id="Orcus.Orcus-flyby" value="0" tier="0" />
+      <Milestone id="Orcus.Orcus-orbit" value="0" tier="0" />
+      <Milestone id="Orcus.Orcus-landing" value="0" tier="0" />
+      <Milestone id="Orcus.Orcus-distance-land" value="0" tier="0" />
+      <Milestone id="Orcus.Orcus-distance-walk" value="0" tier="0" />
+      <Milestone id="Orcus.Orcus-speed-land" value="0" tier="0" />
+      <Milestone id="Urados.Urados-flyby" value="0" tier="0" />
+      <Milestone id="Urados.Urados-orbit" value="0" tier="0" />
+      <Milestone id="Urados.Urados-aerobrake" value="0" tier="0" />
+      <Milestone id="Urados.Urados-depth" value="900000" tier="0" />
+      <Milestone id="Jastrus.Jastrus-flyby" value="0" tier="0" />
+      <Milestone id="Jastrus.Jastrus-orbit" value="0" tier="0" />
+      <Milestone id="Jastrus.Jastrus-landing" value="0" tier="0" />
+      <Milestone id="Jastrus.Jastrus-distance-land" value="0" tier="0" />
+      <Milestone id="Jastrus.Jastrus-distance-walk" value="0" tier="0" />
+      <Milestone id="Jastrus.Jastrus-speed-land" value="0" tier="0" />
+      <Milestone id="Boreas.Boreas-flyby" value="0" tier="0" />
+      <Milestone id="Boreas.Boreas-orbit" value="0" tier="0" />
+      <Milestone id="Boreas.Boreas-landing" value="0" tier="0" />
+      <Milestone id="Boreas.Boreas-depth" value="5000" tier="0" />
+      <Milestone id="Boreas.Boreas-distance-land" value="0" tier="0" />
+      <Milestone id="Boreas.Boreas-distance-walk" value="0" tier="0" />
+      <Milestone id="Boreas.Boreas-speed-land" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-flyby" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-orbit" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-landing" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-height" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-depth" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-distance-land" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-distance-water" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-distance-air" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-distance-walk" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-distance-swim" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-speed-land" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-speed-water" value="0" tier="0" />
+      <Milestone id="Taurus.Taurus-speed-air" value="0" tier="0" />
+      <Milestone id="Hypatchion.Hypatchion-flyby" value="0" tier="0" />
+      <Milestone id="Hypatchion.Hypatchion-orbit" value="0" tier="0" />
+      <Milestone id="Hypatchion.Hypatchion-landing" value="0" tier="0" />
+      <Milestone id="Hypatchion.Hypatchion-distance-land" value="0" tier="0" />
+      <Milestone id="Hypatchion.Hypatchion-distance-walk" value="0" tier="0" />
+      <Milestone id="Hypatchion.Hypatchion-speed-land" value="0" tier="0" />
+    </Milestones>
+    <Exploration>
+      <Planet name="Earth" orbitIds="" flybyIds="" contactIds="">
+        <Landmark id="droo-droneship" complete="false" />
+      </Planet>
+      <Planet name="Moon" orbitIds="" flybyIds="" contactIds="">
+        <Landmark id="CE-5" complete="false" />
+        <Landmark id="Apollo 11" complete="false" />
+      </Planet>
+    </Exploration>
+  </Career>
+  <CrewMembers nextId="3">
+  </CrewMembers>
+</GameState>

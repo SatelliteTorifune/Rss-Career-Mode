@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Craft name="Astronaut" parent="" initialBoundsMin="-0.1600001,-0.8930001,-0.16" initialBoundsMax="0.1600001,0.8870001,0.16" price="1578" xmlVersion="13" localCenterOfMass="0,0,0">
+  <Assembly>
+    <Parts>
+      <Part id="12" partType="Eva" position="0,0,0" rotation="0,0,0" name="Drood" rootPart="true" commandPodId="12" materials="15,16,17,18,19">
+        <Drag drag="0.5464509,0.5825101,0.139617,0.1266737,0.3746657,0.3734189" area="0.753575,0.7538093,0.2286118,0.2286118,0.5103035,0.5103035" />
+        <Config heatShieldScale="0" />
+        <CommandPod activationGroupNames=",,,,,,,Landing Gear,Solar Panels,RCS" activationGroupStates="false,false,false,false,false,false,false,true,false,true" pidPitch="10,0,0" pidRoll="0.6,0,0">
+          <Controls />
+        </CommandPod>
+        <Eva crewName="Unassigned" />
+        <Payload payloadId="DROOD" />
+        <CameraVantage />
+        <FuelTank />
+      </Part>
+    </Parts>
+    <Connections />
+    <Collisions />
+    <Bodies>
+      <Body id="1" partIds="12" mass="1.16126" position="0,0,0" rotation="0,0,0" centerOfMass="0,0,0" />
+    </Bodies>
+  </Assembly>
+  <DesignerSettings themeName="Custom">
+    <Theme name="Custom" id="25a9195c-c404-4c77-9ea1-eef798ccc505">
+      <Material color="FFFFFF" m="0.3" s="0" />
+      <Material color="178BFF" m="0" s="0.3" />
+      <Material color="CBCDCE" m="0.85" s="0.8" />
+      <Material color="76736F" m="0.85" s="0.5" />
+      <Material color="000000" m="0.85" s="0" d="0.5" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="000000" m="0.85" s="0" />
+      <Material color="FF8000" m="0" s="0.5" e="1" />
+      <Material color="FFFFFF" m="0" s="0" e="1" />
+      <Material color="FF0000" m="0" s="0" e="1" />
+      <Material color="68D100" m="0" s="0" e="1" />
+      <Material color="FFFFFF" m="0" s="0" d="0.2" />
+      <Material color="178BFF" m="0" s="0" d="0.1" />
+      <Material color="CBCDCE" m="0.85" s="0.3" d="0.5" />
+      <Material color="76736F" m="0.85" s="0.3" d="0.5" />
+      <Material color="574204" m="0.95" s="0.95" d="0.2" />
+      <Material color="000046" m="0.85" s="0.5" d="0.1" />
+      <Material color="FFEEB9" m="0" s="1" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="FFFFFF" m="1" s="1" t="0.8" />
+      <Material color="808080" m="1" s="0" t="0.9" />
+    </Theme>
+  </DesignerSettings>
+  <Themes>
+    <Theme name="Custom" id="25a9195c-c404-4c77-9ea1-eef798ccc505">
+      <Material color="FFFFFF" m="0.3" s="0" />
+      <Material color="178BFF" m="0" s="0.3" />
+      <Material color="CBCDCE" m="0.85" s="0.8" />
+      <Material color="76736F" m="0.85" s="0.5" />
+      <Material color="000000" m="0.85" s="0" d="0.5" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="000000" m="0.85" s="0" />
+      <Material color="FF8000" m="0" s="0.5" e="1" />
+      <Material color="FFFFFF" m="0" s="0" e="1" />
+      <Material color="FF0000" m="0" s="0" e="1" />
+      <Material color="68D100" m="0" s="0" e="1" />
+      <Material color="FFFFFF" m="0" s="0" d="0.2" />
+      <Material color="178BFF" m="0" s="0" d="0.1" />
+      <Material color="CBCDCE" m="0.85" s="0.3" d="0.5" />
+      <Material color="76736F" m="0.85" s="0.3" d="0.5" />
+      <Material color="574204" m="0.95" s="0.95" d="0.2" />
+      <Material color="000046" m="0.85" s="0.5" d="0.1" />
+      <Material color="FFEEB9" m="0" s="1" />
+      <Material color="FFFFFF" m="0.1" s="0.08" />
+      <Material color="FFFFFF" m="1" s="1" t="0.8" />
+      <Material color="808080" m="1" s="0" t="0.9" />
+    </Theme>
+  </Themes>
+  <Symmetry />
+</Craft>

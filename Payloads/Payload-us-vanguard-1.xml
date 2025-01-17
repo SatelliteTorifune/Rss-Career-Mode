@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Vanguard" category="Payloads" description="the satellite for this mission" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="6" partType="Detacher1" position="0,-0.1304953,-1.788139E-07" rotation="-2.049057E-05,180,1.017778E-12" activationStage="0" materials="0,3,4,2,0" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" style="Interstage-4">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" priceScale="0" stageActivationType="Payload" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.05,0.05" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.3" offset="6.001678E-16,0.03378645,-4.680865E-09" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.05,0.05" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <Detacher force="0.53125" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <CoverEngine partPropertiesEnabled="false" />
+          <CrossFeed inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="5" partType="Fuselage1" position="0,-0.09153128,-5.960464E-08" rotation="-1.024528E-05,180,4.071111E-13" materials="18,4,4,0,0" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" massScale="0.900000036" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+		  <Payload payloadId="Payload-us-vanguard-1" />
+          <Fuselage autoResize="false" bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="3.679041E-17,0.005177788,9.258603E-10" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.05,0.05" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="0.04473288357257843" fuel="0.04473288357257843" fuelType="None" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="4" partType="Fuselage1" position="0,-0.07148623,-5.960464E-08" rotation="-1.024528E-05,180,4.071111E-13" materials="18,4,4,0,0" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" includeInDrag="false" massScale="0.900000036" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.04102172,0.04102172" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="-2.646978E-22,0.01486727,6.439294E-15" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.04102172,0.04102172" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="0.086457245051860809" fuel="0.086457245051860809" fuelType="None" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="3" partType="Fuselage1" position="0,-0.03370535,-5.960464E-08" rotation="-1.024528E-05,180,4.071111E-13" materials="18,4,4,0,0" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="1.310419E-23,0.002750365,9.526937E-17" heatShieldScale="0" ignoreValidation="true" massScale="0.900000036" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.04102172,0.04102172" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="2.382288E-21,0.02291369,1.731958E-14" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.04903309,0.04903309" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="0.16096648573875427" fuel="0.16096648573875427" fuelType="None" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="2" partType="Ball1" position="0,0.02808243,2.384186E-07" rotation="0,0,0" materials="18,1,2,3,4" groupId="f543beab-72bd-4307-9519-d381bbe9db9f">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config ignoreValidation="true" massScale="0.025" partScale="0.3,0.3,0.3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <GenericPart inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="9" partType="SolarPanel1" position="-0.07089591,0.05258274,0.002791226" rotation="291.3935,93.18601,1.885934" materials="0,20,2,3,4" symmetryId="88f7c247-a1e4-480e-8452-476f7bc78a13" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" style="Advanced">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.05,0.05,0.05" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="2088119c-59c8-4a3d-8aaa-50babd6f6fbe" />
+          <SolarPanel efficiency="0.4" length="0.5" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="920cd1a7-81d8-4fd0-b524-bf02e4299987" version="2" />
+        </Part>
+        <Part id="16" partType="SolarPanel1" position="0.03786492,0.05258274,0.06000203" rotation="291.3935,213.1861,1.885893" materials="0,20,2,3,4" symmetryId="88f7c247-a1e4-480e-8452-476f7bc78a13" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" style="Advanced">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.05,0.05,0.05" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="2088119c-59c8-4a3d-8aaa-50babd6f6fbe" />
+          <SolarPanel efficiency="0.4" length="0.5" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="920cd1a7-81d8-4fd0-b524-bf02e4299987" version="2" />
+        </Part>
+        <Part id="17" partType="SolarPanel1" position="0.03303099,0.05258274,-0.06279325" rotation="291.3935,333.186,1.885899" materials="0,20,2,3,4" symmetryId="88f7c247-a1e4-480e-8452-476f7bc78a13" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" style="Advanced">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.05,0.05,0.05" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="2088119c-59c8-4a3d-8aaa-50babd6f6fbe" />
+          <SolarPanel efficiency="0.4" length="0.5" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="920cd1a7-81d8-4fd0-b524-bf02e4299987" version="2" />
+        </Part>
+        <Part id="19" partType="Fuselage1" position="-0.1188929,-0.09188265,0.06864315" rotation="315,300,0" materials="18,4,4,0,0" symmetryId="07fa79a4-d777-4c80-a556-4681a1555646" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="4.461786E-08,0.18,-2.548097E-07" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.2,0.2,0.2" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="52d217b3-033c-41fe-ba3e-a43a509b2adc" />
+          <Fuselage autoResize="false" bottomScale="0.0125,0.0125" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.239385E-07,0.6,-7.078047E-07" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.025,0.025" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="75cff2e3-ab73-4e68-9063-7a2a60931678" version="2" />
+          <FuelTank capacity="0.75594580173492432" fuel="0.75594580173492432" fuelType="None" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="44ee22e2-f0c2-41e8-a499-ccfa58cd71f0" />
+        </Part>
+        <Part id="22" partType="Fuselage1" position="-0.01717997,0.1559211,0.1266215" rotation="315,195,165" materials="18,4,4,0,0" symmetryId="ab25b16c-8de5-4190-98bc-dac3445d8990" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="4.461786E-08,0.18,-2.548097E-07" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.2,0.2,0.2" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="0d011bb1-d6ae-40b9-80d0-61c226f7e3b2" />
+          <Fuselage bottomScale="0.0125,0.0125" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.239385E-07,0.6,-7.078047E-07" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.025,0.025" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="0d58447e-5f6d-4e14-b1d5-97edbbeaae62" version="2" />
+          <FuelTank capacity="0.75594580173492432" fuel="0.75594580173492432" fuelType="None" subPriority="2" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="4d9be00b-0c7c-426f-be2d-ad8db8ad1cf7" />
+        </Part>
+        <Part id="24" partType="Fuselage1" position="0.1188929,-0.09188265,0.06864262" rotation="315,59.99998,2.414836E-05" materials="18,4,4,0,0" symmetryId="07fa79a4-d777-4c80-a556-4681a1555646" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="4.461786E-08,0.18,-2.548097E-07" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.2,0.2,0.2" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="52d217b3-033c-41fe-ba3e-a43a509b2adc" />
+          <Fuselage autoResize="false" bottomScale="0.0125,0.0125" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.239385E-07,0.6,-7.078047E-07" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.025,0.025" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="75cff2e3-ab73-4e68-9063-7a2a60931678" version="2" />
+          <FuelTank capacity="0.75594580173492432" fuel="0.75594580173492432" fuelType="None" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="44ee22e2-f0c2-41e8-a499-ccfa58cd71f0" />
+        </Part>
+        <Part id="25" partType="Fuselage1" position="0,-0.09188265,-0.1372859" rotation="315,180,1.213865E-05" materials="18,4,4,0,0" symmetryId="07fa79a4-d777-4c80-a556-4681a1555646" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="4.461786E-08,0.18,-2.548097E-07" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.2,0.2,0.2" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="52d217b3-033c-41fe-ba3e-a43a509b2adc" />
+          <Fuselage autoResize="false" bottomScale="0.0125,0.0125" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.239385E-07,0.6,-7.078047E-07" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.025,0.025" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="75cff2e3-ab73-4e68-9063-7a2a60931678" version="2" />
+          <FuelTank capacity="0.75594580173492432" fuel="0.75594580173492432" fuelType="None" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="44ee22e2-f0c2-41e8-a499-ccfa58cd71f0" />
+        </Part>
+        <Part id="26" partType="Fuselage1" position="0.1182475,0.1559211,-0.04843253" rotation="315,315,165" materials="18,4,4,0,0" symmetryId="ab25b16c-8de5-4190-98bc-dac3445d8990" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="4.461786E-08,0.18,-2.548097E-07" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.2,0.2,0.2" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="0d011bb1-d6ae-40b9-80d0-61c226f7e3b2" />
+          <Fuselage bottomScale="0.0125,0.0125" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.239385E-07,0.6,-7.078047E-07" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.025,0.025" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="0d58447e-5f6d-4e14-b1d5-97edbbeaae62" version="2" />
+          <FuelTank capacity="0.75594580173492432" fuel="0.75594580173492432" fuelType="None" subPriority="2" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="4d9be00b-0c7c-426f-be2d-ad8db8ad1cf7" />
+        </Part>
+        <Part id="27" partType="Fuselage1" position="-0.1010675,0.1559211,-0.07818907" rotation="315,75.00001,165" materials="18,4,4,0,0" symmetryId="ab25b16c-8de5-4190-98bc-dac3445d8990" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="4.461786E-08,0.18,-2.548097E-07" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.2,0.2,0.2" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="0d011bb1-d6ae-40b9-80d0-61c226f7e3b2" />
+          <Fuselage bottomScale="0.0125,0.0125" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.239385E-07,0.6,-7.078047E-07" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.025,0.025" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="0d58447e-5f6d-4e14-b1d5-97edbbeaae62" version="2" />
+          <FuelTank capacity="0.75594580173492432" fuel="0.75594580173492432" fuelType="None" subPriority="2" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="4d9be00b-0c7c-426f-be2d-ad8db8ad1cf7" />
+        </Part>
+        <Part id="11" partType="SolarPanel1" position="-0.03158689,-0.01690829,-0.05114168" rotation="300.5111,208.5264,181.7059" materials="0,20,2,3,4" symmetryId="440e1095-a877-4e6e-91d4-c31968a03ca6" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" style="Advanced">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.05,0.05,0.05" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="ac6ab362-a838-4157-a74e-fd236f4f3262" />
+          <SolarPanel efficiency="0.4" length="0.5" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="9e2be320-1112-4d3b-b30a-6f02ac78363a" version="2" />
+        </Part>
+        <Part id="14" partType="SolarPanel1" position="-0.02849698,-0.01690829,0.05292583" rotation="300.5111,328.5264,181.7059" materials="0,20,2,3,4" symmetryId="440e1095-a877-4e6e-91d4-c31968a03ca6" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" style="Advanced">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.05,0.05,0.05" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="ac6ab362-a838-4157-a74e-fd236f4f3262" />
+          <SolarPanel efficiency="0.4" length="0.5" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="9e2be320-1112-4d3b-b30a-6f02ac78363a" version="2" />
+        </Part>
+        <Part id="15" partType="SolarPanel1" position="0.06008291,-0.01690829,-0.001784265" rotation="300.5111,88.52637,181.7059" materials="0,20,2,3,4" symmetryId="440e1095-a877-4e6e-91d4-c31968a03ca6" groupId="f543beab-72bd-4307-9519-d381bbe9db9f" style="Advanced">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.05,0.05,0.05" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="ac6ab362-a838-4157-a74e-fd236f4f3262" />
+          <SolarPanel efficiency="0.4" length="0.5" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="9e2be320-1112-4d3b-b30a-6f02ac78363a" version="2" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="6" partB="5" attachPointsA="2" attachPointsB="5">
+          <BodyJoint body="2" connectedBody="1" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0,-0.07271509,-2.384186E-07" connectedPosition="0,0.03378645,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="5" partB="4" attachPointsA="2,4" attachPointsB="1,5" />
+        <Connection partA="11" partB="5" attachPointsA="0" attachPointsB="0" symmetryId="cc9332b0-3cd0-45e8-91fa-6a88f01b2617" />
+        <Connection partA="14" partB="5" attachPointsA="0" attachPointsB="0" symmetryId="cc9332b0-3cd0-45e8-91fa-6a88f01b2617" />
+        <Connection partA="15" partB="5" attachPointsA="0" attachPointsB="0" symmetryId="cc9332b0-3cd0-45e8-91fa-6a88f01b2617" />
+        <Connection partA="4" partB="3" attachPointsA="2,4" attachPointsB="1,5" />
+        <Connection partA="9" partB="4" attachPointsA="0" attachPointsB="0" symmetryId="c1a910cf-c106-4d4e-8b61-347a9c4172a8" />
+        <Connection partA="16" partB="4" attachPointsA="0" attachPointsB="0" symmetryId="c1a910cf-c106-4d4e-8b61-347a9c4172a8" />
+        <Connection partA="17" partB="4" attachPointsA="0" attachPointsB="0" symmetryId="c1a910cf-c106-4d4e-8b61-347a9c4172a8" />
+        <Connection partA="19" partB="4" attachPointsA="3" attachPointsB="0" symmetryId="e3a126c3-7734-4145-8e01-12a0847780bc" />
+        <Connection partA="22" partB="4" attachPointsA="3" attachPointsB="0" symmetryId="d73e3715-5232-45ee-ab5e-73e5bee2f276" />
+        <Connection partA="24" partB="4" attachPointsA="3" attachPointsB="0" symmetryId="e3a126c3-7734-4145-8e01-12a0847780bc" />
+        <Connection partA="25" partB="4" attachPointsA="3" attachPointsB="0" symmetryId="e3a126c3-7734-4145-8e01-12a0847780bc" />
+        <Connection partA="26" partB="4" attachPointsA="3" attachPointsB="0" symmetryId="d73e3715-5232-45ee-ab5e-73e5bee2f276" />
+        <Connection partA="27" partB="4" attachPointsA="3" attachPointsB="0" symmetryId="d73e3715-5232-45ee-ab5e-73e5bee2f276" />
+        <Connection partA="3" partB="2" attachPointsA="2" attachPointsB="1" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

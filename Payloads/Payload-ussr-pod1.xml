@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Test Space Pod" category="Payloads" description="Bring this" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="7" partType="Parachute1" position="0.4456072,0.7371712,0.4457035" rotation="330.6101,225.0037,-7.839074E-06" activationStage="2" commandPodId="5" materials="15,16,16,18,15" groupId="3b17c66a-c8e8-4d8e-a2cd-737b6a5154b2" parachuteStyle="ParachuteStripedVertical">
+          <Drag drag="0.01587805,0,0.02625095,0,0,0.01851374" area="0.02036671,0,0.03705843,0,0,0.02444006" />
+          <Config heatShieldScale="0" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="26141c2d-4aa1-415d-ab8f-e04e77c4c05c" />
+          <Parachute autocutASL="NaN" baseSize="0.65" chuteHeight="1" cordLength="5.125" deploymentASL="5381.77148" deploymentDensity="0.530000031" inflationASL="1083.62524" inflationDensity="0.88" maxDeploymentSpeed="600" referenceDensity="1.2" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="c861bd31-5d4b-4d21-910c-b0004baa3994" />
+        </Part>
+        <Part id="11" partType="Parachute1" position="0.163187,0.7371712,-0.6087599" rotation="330.6101,345.0037,-2.939653E-06" activationStage="2" commandPodId="5" materials="15,16,16,18,15" groupId="42d987c1-54de-4963-9bc9-069928d20093" parachuteStyle="ParachuteStripedVertical">
+          <Drag drag="0,0.006501375,0.004956368,0,0.004057369,0.01166094" area="0,0.01222003,0.008368044,0,0.008146686,0.02036671" />
+          <Config heatShieldScale="0" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="26141c2d-4aa1-415d-ab8f-e04e77c4c05c" />
+          <Parachute autocutASL="NaN" baseSize="0.65" chuteHeight="1" cordLength="5.125" deploymentASL="5381.77148" deploymentDensity="0.530000031" inflationASL="1083.62524" inflationDensity="0.88" maxDeploymentSpeed="600" referenceDensity="1.2" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="c861bd31-5d4b-4d21-910c-b0004baa3994" />
+        </Part>
+        <Part id="12" partType="Parachute1" position="-0.6087952,0.7371712,0.1630545" rotation="330.6101,105.0037,-9.798843E-06" activationStage="2" commandPodId="5" materials="15,16,16,18,15" groupId="f19cabc5-ad19-43b2-a048-0ab342e6b134" parachuteStyle="ParachuteStripedVertical">
+          <Drag drag="0.0137695,0.005590863,0.004455341,0,0.004999829,0" area="0.02444006,0.01222003,0.007770326,0,0.008146686,0" />
+          <Config heatShieldScale="0" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="26141c2d-4aa1-415d-ab8f-e04e77c4c05c" />
+          <Parachute autocutASL="NaN" baseSize="0.65" chuteHeight="1" cordLength="5.125" deploymentASL="5381.77148" deploymentDensity="0.530000031" inflationASL="1083.62524" inflationDensity="0.88" maxDeploymentSpeed="600" referenceDensity="1.2" inspectorEnabled="false" partPropertiesEnabled="false" symmetryId="c861bd31-5d4b-4d21-910c-b0004baa3994" />
+        </Part>
+        <Part id="5" partType="CommandPod5" position="0,0.02140522,-9.536743E-07" rotation="0,0,0" name="Command Pos" rootPart="true" commandPodId="5" materials="3,1,19,3,4" groupId="563d347c-1dd8-4c2e-b701-c5f988d17897" texture="Fuselage10">
+          <Drag drag="2.995538,2.995394,1.039666,0,2.999388,3.06009" area="4.032634,4.044853,2.260165,0,4.101877,4.154828" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,-1.030219,0" rotation="90,0,0" scale="1.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="0,-1.030219,0" rotation="90,0,0" scale="1.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="0,-0.15,0" collisionDisconnectImpulse="2500" collisionExplodeImpulse="3000" heatShieldScale="0" priceScale="0" partPropertiesEnabled="false" />
+          <CommandPod activationGroupNames=",,,,,,,Landing Gear,Solar Panels,RCS" activationGroupStates="false,false,false,false,false,false,false,true,false,true" autoRecalculateStages="false" pidPitch="10,0,25" pidRoll="10,0,25" pilotSeatRotation="270,0,0" powerConsumption="60" stageCalculationVersion="2" inspectorEnabled="false" partPropertiesEnabled="false">
+            <Controls />
+          </CommandPod>
+          <Payload payloadId="Payload-ussr-pod1" />
+          <Gyroscope electricalConsumption="0" power="174.023438" powerScale="10" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <FuelTank capacity="8683.0734375000011" fuel="8683.0734375000011" />
+          <CrewCompartment crewExitPosition="0,0,-1.5" />
+          <ScalablePod heightStretch="1.03125" mass="16.18332" radiusPercent="1.2" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1">
+            <Program name="New Program">
+              <Variables />
+              <Instructions>
+                <Event event="ReceiveMessage" id="0" style="receive-msg" pos="-43.37581,-249.1488">
+                  <Constant canReplace="false" text="anrinima" />
+                </Event>
+                <WaitUntil id="1" style="wait-until">
+                  <Comparison op="l" style="op-lt">
+                    <CraftProperty property="Vel.VerticalSurfaceVelocity" style="prop-velocity" />
+                    <Constant number="0" />
+                  </Comparison>
+                </WaitUntil>
+                <LockNavSphere indicatorType="None" id="2" style="lock-nav-sphere" />
+                <While id="3" style="while">
+                  <Comparison op="l" style="op-lt">
+                    <CraftProperty property="Misc.Stage" style="prop-misc" />
+                    <CraftProperty property="Misc.NumStages" style="prop-misc" />
+                  </Comparison>
+                  <Instructions>
+                    <ActivateStage id="4" style="activate-stage" />
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Expressions />
+            </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="6" partType="HeatShield1" position="0,-1.108813,-9.536743E-07" rotation="1.024528E-05,-4.072455E-14,180" commandPodId="5" materials="4,4,4,4,4" groupId="563d347c-1dd8-4c2e-b701-c5f988d17897">
+          <Drag drag="0.008562007,0,0,0,0,0.008274477" area="0.01629337,0,0,0,0,0.01629337" />
+          <Config centerOfMass="-6.58186E-08,-0.03186137,-1.253225E-08" heatShield="3143.28271" heatShieldBaseScale="17.68" heatShieldMass="7.85820675" heatShieldScale="0.5" />
+          <Fuselage bottomScale="1.1962,1.1962" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.1,0" topScale="0.1,0.1" volume="0.5991572" volumeInner="0.5531228" version="3" />
+        </Part>
+        <Part id="10" partType="Detacher1" position="0,-1.124106,-9.536743E-07" rotation="1.024528E-05,-5.008957E-06,-1.238829E-12" name="command pod seperation" activationStage="1" stageOverride="true" commandPodId="5" materials="0,3,4,2,0" groupId="563d347c-1dd8-4c2e-b701-c5f988d17897" texture="Default">
+          <Drag drag="0.3483428,0.3638056,0.004184022,0.01423154,0.3559943,0.3397329" area="0.4521413,0.4684347,0.004184022,0.01882811,0.4643614,0.448068" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" centerOfMass="1.023967E-08,1.921171E-08,2.551213E-08" heatShieldScale="0" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="1.2,1.2" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="1.5" offset="7.928871E-15,0.1152927,9.859428E-08" toolIgnore="true" topScale="1.2,1.200001" volume="1.03126872" volumeInner="0.977876961" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <Detacher force="0.5" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <CoverEngine partPropertiesEnabled="false" />
+          <CrossFeed inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="7" partB="5" attachPointsA="0" attachPointsB="4" symmetryId="cf3593bc-5402-43ee-8cd9-9603f5290e91">
+          <BodyJoint body="1" connectedBody="2" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0.4456071,1.194322,0.4457041" connectedPosition="0,2.384186E-07,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="11" partB="5" attachPointsA="0" attachPointsB="4" symmetryId="cf3593bc-5402-43ee-8cd9-9603f5290e91">
+          <BodyJoint body="1" connectedBody="4" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0.163187,1.194322,-0.6087593" connectedPosition="0,2.384186E-07,-1.192093E-07" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="12" partB="5" attachPointsA="0" attachPointsB="4" symmetryId="cf3593bc-5402-43ee-8cd9-9603f5290e91">
+          <BodyJoint body="1" connectedBody="5" breakTorque="1E+07" breakForce="0" jointType="Normal" position="-0.6087947,1.194322,0.1630553" connectedPosition="0,2.384186E-07,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="6" partB="5" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="10" partB="5" attachPointsA="2" attachPointsB="2">
+          <BodyJoint body="1" connectedBody="3" breakTorque="1E+07" breakForce="0" jointType="Normal" position="-2.980232E-08,-0.5516624,1.192093E-07" connectedPosition="0,0.1152927,1.192093E-07" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

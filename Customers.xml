@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Customers>
+    <!--USA line-->
+   <Customer id="nasa" name="NASA" hello="Are you ready making history?" smallImage="NASAsm.png" largeImage="NASAbi.png" longBio="NASA,the National Aeronautics and Space Administration" />
+   <Customer id="naca" name="NACA" hello="Em'go till launch" smallImage="NACAsm.png" largeImage="heyforgetit.png" longBio="National Advisory Committee for Aeronautics" />
+   <Customer id="usaf" name="USAF" hello="We got job to do" smallImage="USAFsm.png" largeImage="USAFbi.png" longBio="United States Air Force" />
+   <Customer id="nro" name="NRO" hello="We got job to do" smallImage="NROsm.png" largeImage="NRObi.png" longBio="National Reconnaissance Office" />
+   <Customer id="noaa" name="NOAA" hello="We got job to do" smallImage="NOAAsm.png" largeImage="NOAAbi.png" longBio="National Oceanic and Atmospheric Administration" />
+   <Customer id="jpl" name="JPL" hello="We got job to do" smallImage="JPLsm.png" largeImage="JPLbi.png" longBio="Jet Propulsion Laboratory" />
+   <Customer id="spacex" name="Space X" hello="" smallImage="sxsm.png" largeImage="sxbi.png" longBio="&lt;b&gt;&lt;margin=1em&gt;&lt;size=30&gt;&lt;align=center&gt;&lt;color=#FFFFFF&gt;Space Exploration Technologies Inc" />
+      <!--USSR line-->
+   <Customer id="ussr" name="USSR" hello="Glory to the USSR!" smallImage="ussrsm.png" largeImage="ussrbi.png" longBio="USSR" />
+   <Customer id="CADB" name="Chemical Automatics Design Bureau" hello="TODO" smallImage="CADBs.png" largeImage="CADB.png" longBio="TODO" />
+   <Customer id="TsSKB-Progress" name="Progress State Research and Production Center" hello="TODO" smallImage="TsSKB-Progress.png" largeImage="TsSKB-Progress.png" longBio="TODO" />
+   <Customer id="roscosmos" name="Russian Federal Space Agency" hello="TODO" smallImage="roscosmos.png" largeImage="roscosmos.png" longBio="TODO" />
+   <!--PRC line-->
+   <Customer id="CNSA-0" name="Fifth Research Institute of MOD" hello="&lt;size=17&gt;&lt;color=#FF3030&gt;&lt;b&gt;Hello,Comrade!" smallImage="CNSA-0sm.png" largeImage="CNSA-0bi.png" longBio="&lt;b&gt;&lt;margin=1em&gt;&lt;size=30&gt;&lt;align=center&gt;&lt;color=#FFFFFF&gt;Qian Xuesen&lt;br&gt;&lt;br&gt;&lt;size=16&gt;Qian Xuesen was a prominent Chinese aerodynamicist and cyberneticist who contributed to rocket science and established engineering cybernetics and made important contributions to China's missile and space program.&lt;br&gt;&lt;br&gt;Qian Xuesen's &quot;Opinions on the Establishment of China's National Defense Aviation Industry&quot; immediately attracted the attention of the central government. On March 14, 1956, Premier Zhou Enlai personally presided over a meeting of the Central Military Commission to study and decide that Premier Zhou Enlai, Marshal Nie Rongzhen, and Qian Xuesen would prepare to establish the leading institution for missile aviation scientific research.The committee would establish design institutions, scientific institutions, and production institutions." />
+   <Customer id="CNSA-1" name="Ministry of Aerospace Industry of China" hello="" smallImage="" largeImage="" longBio="" />
+   <Customer id="CNSA" name="China National Space Administration" hello="" smallImage="CNSAsm.png" largeImage="CNSAbi.png" longBio="" />
+   <Customer id="CASC" name="China Aerospace Science and Technology Corporation" hello="" smallImage="CASCsm.png" largeImage="CASCbi.png" longBio="" />
+   <Customer id="CAAPT-0" name="Engine Design Department of the Fifth Research Institute of MOD" hello="proceed!" smallImage="CAAPT-0sm.png" largeImage="CAAPT-0bi.png" longBio="&lt;b&gt;&lt;margin=1em&gt;&lt;size=30&gt;&lt;align=center&gt;&lt;color=#FFFFFF&gt;Zhu senyuan&lt;br&gt;&lt;br&gt;&lt;size=16&gt;Zhu is an expert in liquid rocket engines,after graduated from the Bauman Moscow State Technical University in December 1960,he was appointed as a designer of Engine Design Department of the Fifth Research Institute of MOD,completed research on the critical heat flux and supercritical heat transfer of flow boiling heat transfer in pipes. Zhu also prticipated in the development of liquid rocket engines for various short-range, medium range, and intercontinental missiles." />
+
+   <!--这里是秘封，你来看什么？-->
+   <Customer id="Maribel" name="Maeriberi Hearn" hello="hey!" smallImage="mh.png" largeImage="mhb.png" longBio="basiclly you're not supposed to see me in your contract list,because I am here to test some contracts,anyway,since you saw me,why not help me testing something?" />
+</Customers>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContractLocations>
+   <ContractLocation id="Droo.Village" name="Village" latLonAgl="25.59,-164.45,0" planet="Droo" range="500" loadDistance="50000" />
+   <ContractLocation id="Earth.LaunchComplex39A" name="Launch Complex 39A" latLonAgl="28.57726848,-80.64402122293518,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.LaunchComplex39B" name="Launch Complex 39B" latLonAgl="28.58735074,-80.653125083598439,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.LaunchComplex39C" name="Launch Complex 39C" latLonAgl="28.586085147247925,-80.651652455127476,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.LaunchComplex18" name="Launch Complex 39C" latLonAgl="28.486875370603411,-80.620673073405456,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.LaunchComplex26A" name="Launch Complex 26A" latLonAgl="28.48238255400124,-80.626984531225564,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.LaunchComplex26B" name="Launch Complex 26B" latLonAgl="28.483888313576337,-80.625660059395315,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.LaunchComplex17" name="Launch Complex 17" latLonAgl="28.485190100010573,-80.6244567964383,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.LaunchComplex14" name="Launch Complex 14" latLonAgl="28.514387866740829,-80.613621557981631,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.LaunchComplex11" name="Launch Complex 11" latLonAgl="28.504277648640446,-80.608636828809921,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.Vandenberg AFB 73-3-5" name="Vandenberg AFB 73-3-5" latLonAgl="34.756111,-120.626389,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.Vandenberg AFB 73-3-4" name="Vandenberg AFB 73-3-4" latLonAgl="34.757784226503688,-120.63014118892063,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.LaunchComplex5" name="Launch Complex 5" latLonAgl="28.481205330056948,-80.629587910985109,0" planet="Earth" range="100" loadDistance="50000" />
+   <ContractLocation id="Earth.Baikonur Cosmodrome LC1/5" name="Baikonur Cosmodrome LC1/5" latLonAgl="45.691588181184251,63.31581454,100" planet="Earth" range="500" loadDistance="50000" />
+   <ContractLocation id="Earth.Kapustin Yar Cosmodrome / LC1" name="Kapustin Yar Cosmodrome / LC1" latLonAgl="48.3947399,45.782869,0" planet="Earth" range="500" loadDistance="50000" />
+   <ContractLocation id="Earth.Base 603" name="Base 603" latLonAgl="30.883817582348026,119.42740001538759,0" planet="Earth" range="500" loadDistance="50000" />
+   <ContractLocation id="Earth.JSLC 43/91" name="JSLC 43/91" latLonAgl="42.490718081345044,101.57024942191796,52" planet="Earth" range="500" loadDistance="50000" />
+   <ContractLocation id="Earth.WSLC 101" name="WSLC 101" latLonAgl="19.608857965877007,110.88353167623582,58" planet="Earth" range="200" loadDistance="50000" />
+</ContractLocations>

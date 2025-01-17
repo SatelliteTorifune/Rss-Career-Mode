@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Tourist" category="Payloads" description="They pay money to go places, but sadly they lack jetpacks and grappling hooks, how useless..." order="0" showInDesigner="true" snapshotDistanceScaler="0.7" snapshotPartRotation="0,180,0" snapshotPartOffset="0,0.85,0" snapshotRotation="-5,10,0">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="1" partType="Eva-Tourist" position="0,0,0" rotation="0,0,0" name="Tourist" commandPodId="1" materials="15,16,17,0,19">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config />
+          <CommandPod activationGroupNames=",,,,,,,Landing Gear,Solar Panels,RCS" activationGroupStates="false,false,false,false,false,false,false,true,false,true" pidPitch="10,0,0" pidRoll="0.6,0,0" stageCalculationVersion="2">
+            <Controls />
+          </CommandPod>
+          <Eva />
+          <CameraVantage />
+          <Payload payloadId="Tourist" />
+        </Part>
+      </Parts>
+      <Connections />
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

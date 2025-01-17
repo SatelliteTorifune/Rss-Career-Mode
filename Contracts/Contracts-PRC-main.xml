@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Contracts>
+  <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="NumCompletions > 0 ? 0 : 100" />
+      </Params>
+      <Prereqs techNodes="PRC" />
+      <Contract customer="CNSA-0" id="prc-0" money="10000" name="You choosed PRC" unlockLocations="&lt;color=#FF4936&gt;Base 603" priority="5"  research="-50" probability="@Probability" difficulty="2" flairText="Progression">
+         <Description
+            short=""
+            long="launch the payload from the &quot;Very Start &quot; to process " />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+              <PartCount op="greater" num="1" payloadId="Payload-PRC-0" description="Launch with Payload." listedInMenu="false" showValue="false" />
+              <Timer min="184550400" description="Wait it for 6 years">
+               <Tutorial pause="true" description="Save and Exit for Process" visibility="HiddenWhenPassed" listedInMenu="false">
+                <Button pause="true" highlight="false" stepText="The history of China's aerospace industry began in February 1956, when the famous scientist Qian Xuesen submitted the &quot;Opinions on the Establishment of China's National Defense Aviation Industry &quot; to the central government.&lt;br&gt;&lt;br&gt; the time in Real Solar System starts from 1950, so the game will time warp 6 years" />
+               </Tutorial>
+             </Timer>
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+  </ContractTemplate>
+
+   <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="NumCompletions > 0 ? 0 : 100" />
+      </Params>
+      <Prereqs  contracts="prc-0" />
+      <Contract customer="CNSA-0" id="prc-pro-1" money="2e4" name="First Rocket" priority="5" unlockLocations="&lt;color=#FF4936&gt;JSLC 43/91" probability="@Probability" difficulty="2" flairText="Progression">
+         <Description
+            short="Reach 25 km with 15km downrange"
+            long="&lt;size=20&gt;If foreigners can make missiles,can't the Chinese people make it? Difficulties are like mice, scared away by the sound of footsteps.&lt;br&gt;We are here to prove that the industrious and brave Chinese people could make it even better!&lt;br&gt;&lt;br&gt; Launch a rocket ,fly it to at least 25km above ground and make its downrange up to 15km&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;size=25&gt;&lt;color=#FF3030&gt;The majestic pass is as iron as the road, but now we are stepping from the beginning."/>
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+             <Expression expression="50 > AltitudeAGL" description="Start Grounded." displayExpression="AltitudeAGL" displayFormat="distance" visibility="HiddenWhenPassed" />
+             <Expression expression="AltitudeAGL > 25e3" description="Reach 25km AGL." displayExpression="max(displayValue, AltitudeASL)" displayFormat="distance" visibility="HiddenWhenPassed" />
+             <SurfaceDistance min="15e3" description="Downrange more than 15km" visibility="HiddenWhenPassed" /> 
+             <Expression expression="50 > AltitudeAGL" description="Hit the Ground." displayExpression="AltitudeASL" displayFormat="distance" visibility="HiddenWhenPassed" />
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate><!--部件测试任务-->
+      <Params>
+         <Expression name="Probability" value="NumCompletions > 2 ? 0 : 100" />
+         <Expression name="Index" value="NumCompletions" />
+         <Expression name="cnm" value="@Index + 1" />
+         <List name="longDes" index="@Index" values="&lt;size=17&gt;Developing Aerospace,propulsion goes first,the rocket engine decide how big our rocket could be,and here is our new made YF-1 Rocket Engine,before putting it into use,we need to test it out to find potential issues about the engine itself,so here is it.&lt;color=#EEAD0E&gt;&lt;br&gt;&lt;br&gt;Bring the given payload when launch ,and keep the nozzle up to sky or horizontally to prevent a unexpected lift off;&lt;size=17&gt;It seemed that we didn't go well on the engine,don't give up! the failure will help us improve the engines.&lt;br&gt;&lt;br&gt;We have did some tweaks to the engines like nozzle adjustment and inject unit arrangement which should help reduce combustion instability, however we still need to test it out.&lt;size=17&gt;&lt;br&gt;&lt;br&gt;&lt;color=#EEAD0E&gt;Bring the given payload when launch,You should know what to do now;&lt;size=17&gt;We took some time dive in the data gathered,which shown there was some problem caused the leak of UDMH,We managed to rebuilded a new set of turbo pump which improved effiency and reliability of the engine&lt;br&gt;&lt;br&gt;&lt;color=#EEAD0E&gt;Now we are sure that everything is ready to run this time so it's your time to get everything done;" />
+         <Expression name="Progression" value="NumCompletions > 0" valueFalse="Progression" valueTrue="@cnm/3 Engine Test" />
+      </Params>
+      <Prereqs contracts="prc-pro-1" />
+      <Contract customer="CAAPT-0" id="prc-partTest-1" money="10000" name="YF-1 Engine Test Fire" priority="500" research="5" probability="@Probability" difficulty="2" flairText="@Progression">
+         <Description
+            short="Test Fire the Engine"
+            long="@longDes" />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+              <PartCount active="true" num="1" payloadId="Payload-PRC-parttest-1-@Index" description="Start Up the Engine." listedInMenu="false" showValue="false" />
+              <CraftExpression expression="Grounded" description="Make sure rocket engine is grounded" visibility="HiddenWhenPassed">
+               <Timer min="45" description="keep engine running for 45 seconds" />
+              </CraftExpression>
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate><!--亚轨道高度-->
+      <Params>
+         <Completions name="side" contractID="prc-pro-3" />
+         <Expression name="Index" value="NumCompletions" />
+         <Expression name="isSideComplete" value="@side > 2 ? 1 : 0" />
+         <Expression name="isSelfComplete" value="@Index > 2 ? 1 : 0" />
+         <Expression name="p1" value="@Index > 5 ? -100 : 0" />
+         <Expression name="p2" value="@isSideComplete + @isSelfComplete = 2 ? 100 : 0" />
+         <Expression name="Probability" value="@p1 = -100 | @p2 = 100 ? 0 : 100" />
+         <Expression name="fT" value="NumCompletions > 2" valueFalse="Progression" valueTrue="" />                 
+         <List name="height" index="@Index" values="40e3;60e3;123e3;200e3;1000e3" />
+         <List name="time" index="@Index" values="30;60;75;100;120" />
+         <Expression name="money" value="(@Index + 1 ) * sqrt(@height * @time) * 10e3 * 0.007" />                  
+         <List name="R" index="@Index" values="0;5;5;10;30" />
+         <List name="desLong" index="@Index" values="With the new aerospace tech,what's above the cloud is no longer a mistery,as we could bring our science equipment,and bring them up to sky&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Launch with the given payload and reach and stay above @height:distance for @time:time;The lower atomosphere data couldn't meet our need,We need to reach higher!If you feel like need more tech support,why not check out the Engine Design Department?&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Launch with the given payload and reach and stay above @height:distance for @time:time;We have had enough about the air itself,now time to move forward!We have already prepared a new science equipment which allows us collecting data from vacumm space,and noww it's your turn to bring this payload out of air!&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Launch with the given payload and reach and stay above @height:distance for @time:time;Some of the equipments may need more time to collect the needed science data,so we are considering getting some of the payload running in orbit, but now you need to get them out of air for a longer time&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Launch with the given payload and reach and stay above @height:distance for @time:time;Our research time found that there is more data in higher place of the space which is higher than you think to reach, if you are interested in getting more sciecnce data,this is your changce. now you can do a real orbit launch! but you may need more tech like &lt;size=200%&gt;Staging&lt;/size&gt;&lt;size=200%&gt;Gas Generator Liquid Rocket Engine&lt;/size&gt;&lt;size=200%&gt;Fairing&lt;/size&gt; to build a real rocket which could reach the orbit&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Launch with the given payload and reach and stay above @height:distance for @time:time"/>   
+         <List name="name" index="@Index" values="Above the Cloud;Reaching Higher;Out of Air;Orbit Time;Higher than you think" />   
+      </Params>
+      <Prereqs contracts="prc-pro-1" />
+      <Contract customer="CNSA-0" id="prc-pro-2" money="@money" name="@name" subtitle="@height:distance Early Sounding Rocket" research="@R" priority="5" probability="@Probability" difficulty="2" flairText="@fT">
+         <Description
+            short="Stay above @height:distance for @time:time"
+            long="@desLong" />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" visibility="HiddenWhenPassed" />
+             <Expression expression="Grounded" description="Start Grounded." displayExpression="AltitudeAGL" displayFormat="distance" visibility="HiddenWhenPassed" />
+             <PartCount num="1" payloadId="prc-pro-1-@Index" description="Launch with the Science Equipment" showValue="false" onFail="Warn">
+              <Expression expression="AltitudeAGL > @height" description="Reach @height:distance AGL." displayExpression="max(displayValue, AltitudeASL)" displayFormat="distance" visibility="HiddenWhenPassed" />
+              <Timer min="@time" description="stay above @height:distance for @time:time" visibility="HiddenWhenPassed"  />
+             </PartCount>
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate><!--亚轨道射程-->
+      <Params>
+         <Expression name="Index" value="NumCompletions" />   
+         <Completions name="SubOrbit" contractID="prc-pro-2" />
+         <Expression name="isSubOrbitComplete" value="@SubOrbit > 2 ? 1 : 0" />
+         <Expression name="isSelfComplete" value="@Index > 2 ? 1 : 0" />
+         <Expression name="p3" value="(@isSelfComplete + @isSubOrbitComplete) = 2 ? 1 : 0" />
+         <Expression name="Probability" value="@Index > 4 | @p3 = 1 ? 0 : 100" />
+         <Expression name="fT" value="NumCompletions > 2" valueFalse="Progression" valueTrue="" />              
+         <List name="distance" index="@Index" values="3000e3;4500e3;6000e3;7500e3" />
+         <Expression name="money"  value="(@Index + 1 ) * sqrt(@distance) * 10e3 * 0.003" />                  
+         <List name="R" index="@Index" values="5;5;10;10" />  
+         <List name="name" index="@Index" values="Sideway Launch;Distant Downrange;Orbital Velocity;Intercontinental Launch" />
+         <List name="height" index="@Index" values="130e3;150e3;200e3;200e3;250e3" />
+         <List name="LC" index="@Index" values="Earth.Base 603;Earth.Base 603;Earth.JSLC 43/91;Earth.JSLC 43/91" /> 
+         <List name="LCname" index="@Index" values="Base 603;Base 603;JSLC 43/91;JSLC 43/91" /> 
+         <List name="desLong" index="@Index" values="For reaching orbit,what you need most is velocity instead of height,now with the tech we have,we need to find out the way to get the orbit&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Launch a rocket from Base 603, Reach @height:distance,and make sure its downrange is more than @distance:distance.;Your getting good! But it's still not enough to reach the orbit,you will need more fuel to gain much velocity.&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Launch a rocket from Base 603, Reach @height:distance,and make sure its downrange is more than @distance:distance.;Now You are getting close to reach an orbit!This time we are going to launch from our new launch site for testing the launch facility.&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Launch a new rocket from &lt;/size&gt;&lt;size=200%&gt;@LCname&lt;/size&gt;&lt;size=125%&gt;and reach @height:distance,and make sure its downrange is more than @distance:distance.;Almost there! now you can do a real orbit launch! but you may need more tech like &lt;size=200%&gt;Staging&lt;/size&gt;&lt;size=200%&gt;Gas Generator Liquid Rocket Engine&lt;/size&gt;&lt;size=200%&gt;Fairing&lt;/size&gt; to build a real rocket which could reach the orbit&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Launch a rocket from @LCname, Reach @height:distance,and make sure its downrange is more than @distance:distance."/>       
+      </Params>
+      <Prereqs contracts="prc-pro-2" />
+      <Contract customer="CNSA-0" id="prc-pro-3" money="@money" name="@name" subtitle="@distance:distance Downrange Launch" research="@R" priority="5" probability="@Probability" difficulty="2" flairText="@fT">
+         <Description
+            short="Rocket Downrange of @distance:distance"
+            long="@desLong" />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" listedInMenu="false" visibility="HiddenWhenPassed" />
+             <Expression expression="Grounded" description="Start Grounded." displayExpression="AltitudeAGL" displayFormat="distance" listedInMenu="false" visibility="HiddenWhenPassed" />
+             <Location locationId="@LC" range="100" description="Launch From @LCname." distanceMode="GreatCircle" showTargetButton="false" />
+             <Expression expression="AltitudeAGL > @height" description="Reach @height:distance AGL." displayExpression="max(displayValue, AltitudeASL)" displayFormat="distance" visibility="HiddenWhenPassed" />
+             <SurfaceDistance min="@distance" description="Downrange more than @distance:distance" /> 
+             <Expression expression="Grounded | IsDestroyed" description="Hit the Ground." displayExpression="AltitudeASL" displayFormat="distance" visibility="HiddenWhenPassed" />
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate><!--部件测试2-->
+      <Params>
+         <Completions name="test" contractID="prc-partTest-1" />
+         <Expression name="Index" value="NumCompletions" />
+         <Expression name="Index2" value="@Index + 1" />  
+         <Expression name="temp" value="@test + @Index" />
+         <Expression name="isFinish" value="@test = 3 ? 100 : 0" />
+         <Expression name="p2" value="@Index = 3 ? -100 : 0" />
+         <Expression name="Probability" value="@isFinish + @p2" />            
+         <List name="height" index="@Index" values="70e3;150e3;350e3" />
+         <Expression name="money" value="(@Index + 1 ) * sqrt(@height) * 10e3 * 0.01" />                  
+         <List name="R" index="@Index" values="5;5;10" />  
+         <List name="name" index="@Index" values="Fairing;Kick Stage;Heat Shield" />
+         <List name="name1" index="@Index" values="Active the Fairing;Active the Kick Stage&lt;br&gt;and make sure angular is above 1000deg/s;Active Heat Shield Monitor Program" />
+         <List name="desLong" index="@Index" values="During the launch,the payload need to be protected from the heat and air,so that's where fairing come to use,we now have a prototype fairing which needs to be tested.&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Bring the fairing and reach @height:distance,then active it;Self-Spin Stabilizing is a usefull skill when you want to make a satellite not rotate randomly ,there is a kickstage for the coming orbital launch,again,it's your turn to get it to space and test it out&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Bring the kick stage up to @height:distance and active it, the program will show the data we need;Re-entry will heat the whole spacecarft up,which means if we want to recover a spacecraft,they need to survive the heat so that's why we need to test this heat shield out&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;This time we need bring the heat shield out of atomsphere and reach 1500m/s and get in the air to test it out."/>
+         <Expression name="fT" value="NumCompletions > 1" valueFalse="Progression" valueTrue="" /> 
+         <List name="ex" index="@Index" values="AltitudeAGL > 0;AltitudeAGL > 0;abs(SurfaceVelocityVertical) > 15e2 AND 120e3 > AltitudeAGL"/>
+      </Params>
+      <Prereqs contracts="prc-partTest-1" techNodes="prc-soildengine-1" />
+      <Contract customer="CAAPT-0" id="prc-partTest-2" money="@money" name="@name Testing" subtitle="@Index2/3" research="@R" priority="5" probability="@Probability" difficulty="2" flairText="@fT">
+         <Description
+            short=""
+            long="@desLong" />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" visibility="HiddenWhenPassed" />
+             <Expression expression="Grounded" description="Start Grounded." displayExpression="AltitudeAGL" displayFormat="distance" visibility="HiddenWhenPassed" />
+             <PartCount num="1" payloadId="prc-partTest-2-@Index" description="Launch with the @name" showValue="false" onFail="Warn">
+             <Expression expression="AltitudeAGL > @height" description="Reach @height:distance AGL." displayExpression="max(displayValue, AltitudeASL)" displayFormat="distance" visibility="HiddenWhenPassed" />
+               <PartCount active="true" num="1" payloadId="prc-partTest-2-@Index" description="@name1" showValue="false" />
+               <Expression expression="@ex" description="Reach 1500m/s and get in to air." displayExpression="SurfaceVelocityVertical" displayFormat="velocity" listedInMenu="false" visibility="HiddenWhenPassed" />              
+             </PartCount> 
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate><!--首颗卫星-->
+      <Params>
+        <Expression name="Index" value="NumCompletions" />
+        <Completions name="side" contractID="prc-pro-3" />
+        <Completions name="SubOrbit" contractID="prc-pro-2" />
+        <Completions name="PartTest" contractID="prc-partTest-2" />
+        <Expression name="p1" value="@SubOrbit > 2 ? 1 : 0" />
+        <Expression name="p2" value="@side > 2 ? 1 : 0" />
+        <Expression name="p3" value="@PartTest > 1 ? 1 : 0" />
+        <Expression name="isReady" value="(@p1 + @p2 + @p3) = 3 ? 100 : 0" /> 
+        <Expression name="isCompleted" value="@Index > 0 ? -100 : 0" />        
+        <Expression name="p4" value="@isReady + @isCompleted" />
+      </Params>
+      <Prereqs techNodes="prc-fairing,prc-staging-1,prc-soildengine-2" contracts="prc-pro-3,prc-partTest-2" />
+      <Contract customer="CNSA-0" id="prc-pro-4" money="2e5" name="&lt;color=#FF3030&gt;DongFangHong I" subtitle="First Orbit" research="30" priority="100" probability="@p4" difficulty="3" flairText="Progression">
+         <Description
+            short="Launch DFH-1 to Orbit"
+            long="&lt;size=17&gt;Now it is the time to prove that Chinese people could overcome numerous difficulties, broken through technological barriers, and ultimately achieved this feat.The Launch of Dong Fang Hong-1  is not just the launch of a satellite; it carries the hopes and dreams of the Chinese people for thousands years and symbolizes China's confidence and strength in the field of science and technology. It will provide us with valuable scientific data, promote the development of our country's space technology. Now,It is the time!&lt;color=#EEAD0E&gt;&lt;br&gt;&lt;br&gt;We have prepared a soild motor powerd kickstage with the DFH-1 which would provide about 1.77 km/s Delta-V,when active the kickstage interstage,the main motor and self-spin motor will auto active,so check the stage before launch" />
+            
+            <!--&lt;size=17&gt;Now it is the time to prove that Chinese people could overcome numerous difficulties, broken through technological barriers, and ultimately achieved this feat.The Launch of Dong Fang Hong-1  is not just the launch of a satellite; it carries the hopes and dreams of the Chinese people for thousands years and symbolizes China's confidence and strength in the field of science and technology. It will provide us with valuable scientific data, promote the development of our country's space technology. Now,It is the time!&lt;color=#EEAD0E&gt;&lt;br&gt;&lt;br&gt;We have prepared a soild motor powerd kickstage with the DFH-1 which would provide about 1.77 km/s Delta-V,when active the kickstage interstage,the main motor and self-spin motor will auto active,so check the stage before launch-->
+            
+            <!--&lt;size=17&gt;是时候向全世界展示中华人民能够克服重重困难，突破技术瓶颈，实现卫星发射这一壮举了，东方红一号若能成功发射，不仅能为我们收集科学数据，推进航天技术发展，更实现了中华民族千年以来的飞天梦，现在,是时候了！&lt;color=#EEAD0E&gt;&lt;br&gt;&lt;br&gt;我们为东方红一号准备了一个能提供约1.77km/s速度增量的固体上面级，分离此上面级的同时，固体发动机与自旋发动机均会自动启动,所以发射前请先检查分级！-->
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" visibility="HiddenWhenPassed" />
+             <Expression expression="Grounded" description="Start Grounded." displayExpression="AltitudeAGL" displayFormat="distance" visibility="HiddenWhenPassed" />
+             <Location locationId="Earth.JSLC 43/91" range="500" description="Launch From JSLC 43/91." distanceMode="GreatCircle" showTargetButton="false" />
+             <Payload payloadId="DFH-1" payloadName="DongFangHong-1" allowWarp="true" description="Launch with DongfangHong-1." showValue="False">
+              <Orbit property="periapsis" value="441e3" op="Greater">
+                <CraftExpression expression="PayloadActivated" description="Release DFH-1" showValue="false" visibility="HiddenWhenPassed"/>
+              </Orbit>
+            </Payload>
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+   
+</Contracts>

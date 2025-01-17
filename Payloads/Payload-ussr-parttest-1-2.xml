@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Heat Shield" category="Payloads" description="Bring this" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="5" partType="HeatShield1" position="-2.980232E-08,-1.192093E-07,4.768372E-07" rotation="0,0,180" materials="4,4,4,4,4">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Payload payloadId="Payload-ussr-parttest-1-2" />
+          <Config centerOfMass="-1.392548E-09,-0.07964445,0" heatShield="3903.63867" heatShieldBaseScale="17.68" heatShieldMass="9.759096" heatShieldScale="0.5" />
+          <Fuselage bottomScale="1.5,1.5" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="8.742278E-09,0.2,0" topScale="0.1,0.1" version="2" />
+        </Part>
+      </Parts>
+      <Connections />
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

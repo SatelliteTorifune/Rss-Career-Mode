@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Payload" category="Payloads" description="bring it" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="6" partType="CommandDisc1" position="0,0,0" rotation="0,0,0" name="Command Disc" rootPart="true" commandPodId="6" materials="2,2,2,2,2" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage10">
+          <Drag drag="0.004426806,0.004426806,0.009350687,0.009348408,0.00442483,0.00442483" area="0.005078331,0.005078331,0.009350687,0.009350687,0.005058475,0.005058475" />
+          <Config centerOfMass="-1.78541E-09,-4.051066E-11,2.6209E-09" ignoreValidation="true" priceScale="0" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.05,0.05" deformations="0,0,0" depthCurve="0" offset="0,0.01218587,0" shellDensityOverride="-1" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.05,0.05" volume="0.000227761047" volumeInner="0.000108594351" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <FuelTank capacity="312.52005583167193" fuel="312.52005583167193" utilization="0.55" />
+          <Gyroscope maxAcceleration="1" utilization="0" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <CommandPod activationGroupNames=",,,,,,,Landing Gear,Solar Panels,RCS" activationGroupStates="false,false,false,false,false,false,false,true,false,true" configureBattery="1" pidPitch="10,0,25" pidRoll="10,0,25" pilotSeatRotation="270,0,0" stageCalculationVersion="2" inspectorEnabled="false" partPropertiesEnabled="false">
+            <Controls />
+          </CommandPod>
+          <FlightProgram broadcastPowerConsumptionPerByte="0.1" inspectorEnabled="false" partPropertiesEnabled="false">
+            <Program name="New Program">
+              <Variables />
+              <Instructions>
+                <Event event="FlightStart" id="0" style="flight-start" pos="-61.05263,90.52632" />
+                <WaitSeconds id="1" style="wait-seconds">
+                  <Constant text="2" />
+                </WaitSeconds>
+                <DisplayMessage id="2" style="display">
+                  <Constant text="&lt;size=250%&gt;&lt;color=yellow&gt;Time Warp Starts in 3 Seconds&lt;/size&gt;&lt;/color&gt;" />
+                  <Constant number="7" />
+                </DisplayMessage>
+                <WaitSeconds id="3" style="wait-seconds">
+                  <Constant text="1" />
+                </WaitSeconds>
+                <DisplayMessage id="4" style="display">
+                  <Constant text="&lt;size=250%&gt;&lt;color=yellow&gt;Time Warp Starts in 2 Seconds&lt;/size&gt;&lt;/color&gt;" />
+                  <Constant number="7" />
+                </DisplayMessage>
+                <WaitSeconds id="5" style="wait-seconds">
+                  <Constant text="1" />
+                </WaitSeconds>
+                <DisplayMessage id="6" style="display">
+                  <Constant text="&lt;size=250%&gt;&lt;color=yellow&gt;Time Warp Starts in 1 Seconds&lt;/size&gt;&lt;/color&gt;" />
+                  <Constant number="7" />
+                </DisplayMessage>
+                <WaitSeconds id="7" style="wait-seconds">
+                  <Constant text="1" />
+                </WaitSeconds>
+                <While id="8" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <If id="9" style="if">
+                      <Comparison op="le" style="op-lte">
+                        <CraftProperty property="Time.TotalTime" style="prop-time" />
+                        <BinaryOp op="*" style="op-mul">
+                          <Constant text="6" />
+                          <BinaryOp op="*" style="op-mul">
+                            <BinaryOp op="*" style="op-mul">
+                              <Constant text="3600" />
+                              <Constant text="24" />
+                            </BinaryOp>
+                            <Constant text="365" />
+                          </BinaryOp>
+                        </BinaryOp>
+                      </Comparison>
+                      <Instructions>
+                        <DisplayMessage id="10" style="display">
+                          <StringOp op="join" style="join">
+                            <Constant text="&lt;size=350%&gt;&lt;color=yellow&gt;" />
+                            <Constant text="TIme Warp Finishes in" />
+                            <StringOp op="friendly" subOp="date" style="friendly">
+                              <BinaryOp op="-" style="op-sub">
+                                <BinaryOp op="*" style="op-mul">
+                                  <Constant text="6" />
+                                  <BinaryOp op="*" style="op-mul">
+                                    <BinaryOp op="*" style="op-mul">
+                                      <Constant text="3600" />
+                                      <Constant text="24" />
+                                    </BinaryOp>
+                                    <Constant text="365" />
+                                  </BinaryOp>
+                                </BinaryOp>
+                                <CraftProperty property="Time.TotalTime" style="prop-time" />
+                              </BinaryOp>
+                            </StringOp>
+                            <Constant text="" />
+                          </StringOp>
+                          <Constant number="7" />
+                        </DisplayMessage>
+                        <SetTimeMode mode="TimeWarp10" id="11" style="set-time-mode" />
+                      </Instructions>
+                    </If>
+                    <If id="12" style="if">
+                      <Comparison op="ge" style="op-gte">
+                        <CraftProperty property="Time.TotalTime" style="prop-time" />
+                        <BinaryOp op="*" style="op-mul">
+                          <Constant text="6" />
+                          <BinaryOp op="*" style="op-mul">
+                            <BinaryOp op="*" style="op-mul">
+                              <Constant text="3600" />
+                              <Constant text="24" />
+                            </BinaryOp>
+                            <Constant text="365" />
+                          </BinaryOp>
+                        </BinaryOp>
+                      </Comparison>
+                      <Instructions>
+                        <SetTimeMode mode="Paused" id="13" style="set-time-mode" />
+                        <DisplayMessage id="14" style="display">
+                          <Constant text="&lt;size=250%&gt;&lt;color=green&gt;Time Warp Completed!&lt;br&gt;Now Exit the Flight to Contine Your Career Progress" />
+                          <Constant number="7" />
+                        </DisplayMessage>
+                        <Break id="15" style="break" />
+                      </Instructions>
+                    </If>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Expressions>
+                <StringOp op="friendly" subOp="date" style="friendly" pos="832.3667,-362.7582">
+                  <Constant text="" />
+                </StringOp>
+              </Expressions>
+            </Program>
+          </FlightProgram>
+          <Payload payloadId="Payload-PRC-0" />
+        </Part>
+      </Parts>
+      <Connections />
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

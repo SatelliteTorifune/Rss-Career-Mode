@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Vanguard" category="Payloads" description="the satellite for this mission" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="3" partType="Detacher1" position="2.384186E-07,-0.3119748,-0.001536489" rotation="1.024528E-05,-5.008957E-06,-7.270401E-13" name="Paylaod Deployer" activationStage="0" materials="2,2,2,2,2" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052" style="Interstage-4">
+          <Drag drag="0.0652747,0.06449511,0.06418897,0.1224421,0.06428465,0.06509938" area="0.09584972,0.09435289,0.09067889,0.1224421,0.0942139,0.09583902" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" centerOfMass="-3.343588E-18,-0.02239947,-1.909895E-15" heatShieldScale="0" ignoreValidation="true" stageActivationType="Payload" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.307404,0.307404" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.3" offset="7.463548E-17,0.1050002,4.263262E-14" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.21,0.21" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <Detacher force="0.09375" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <CoverEngine partPropertiesEnabled="false" />
+          <CrossFeed inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="13" partType="Fuselage1" position="4.768372E-07,-0.1342833,-0.001303673" rotation="75.00005,180,1.267788E-05" materials="0,4,4,0,0" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.3093332,0" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,0.3093332,0" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0.3093332,0" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Payload payloadId="Payload-us-vanguard-2" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0.25,0.25,0.25" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.3093332,0" toolIgnore="true" topScale="0.05,0.05" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank autoFuelType="false" capacity="6667.2214165013283" fuel="6667.2214165013283" fuelType="Battery" subPriority="1" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="1" partType="Ball1" position="2.384186E-07,-0.04677045,-0.001536608" rotation="-1.366038E-05,-3.865111E-07,2.435914E-06" name="main body" materials="2,2,2,2,2" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052">
+          <Drag drag="0.1167556,0.116595,0.1236607,0,0.1177036,0.1179423" area="0.1753493,0.1757553,0.1867875,0,0.1756164,0.1752959" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0.25,0" rotation="270,0,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <GenericPart inspectorEnabled="false" partPropertiesEnabled="false" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1" inspectorEnabled="false" partPropertiesEnabled="false">
+            <Program name="New Program">
+            <Variables>
+              <Variable name="what" number="0" />
+            </Variables>
+            <Instructions>
+              <Event event="FlightStart" id="0" style="flight-start" pos="-10,-20" />
+              <WaitUntil id="1" style="wait-until">
+                <Comparison op="=" style="op-eq">
+                  <CraftProperty property="Part.Activated" style="part">
+                    <CraftProperty property="Part.NameToID" style="part-id">
+                      <Constant text="Paylaod Deployer" />
+                    </CraftProperty>
+                  </CraftProperty>
+                  <Constant style="true" bool="true" />
+                </Comparison>
+              </WaitUntil>
+              <SetVariable id="2" style="set-variable">
+                <Variable list="false" local="false" variableName="what" />
+                <Constant text="1" />
+              </SetVariable>
+            </Instructions>
+            <Expressions />
+          </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="5" partType="HingeRotator1" position="0.2605004,-0.04677033,-0.001536608" rotation="270,270,0" materials="2,2,2,2,2" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052">
+          <Drag drag="0.0007935127,0.0007656399,0.0014202,0,0,0.001463714" area="0.0008550422,0.0008016021,0.001614948,0,0,0.001966592" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <JointRotator baseMode="None" scale="0.25" consumptionMultiplier="1" range="105" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <InputController input="main body.VZ.what" inputId="Rotator" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="6" partType="Fuselage1" position="0.2221088,0.1700273,-0.001538038" rotation="345,89.99997,180" materials="2,2,2,2,2" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052" texture="Default">
+          <Drag drag="0.006856374,0.006907759,0.0007185368,0,0,0.005627285" area="0.008849615,0.008903055,0.002445494,0,0,0.007246437" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="1.55431E-06,-0.2250042,-1.344833E-06" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="3.705764E-12,-1.190923E-06,-3.206332E-12" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.01000004,0.01000004" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="-1.55431E-06,0.2250042,1.344833E-06" toolIgnore="true" topScale="0.009999974,0.009999974" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="0.077755972743034363" fuel="0.077755972743034363" fuelType="None" subPriority="4" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7" partType="HingeRotator1" position="2.384186E-07,-0.04677081,-0.2537013" rotation="270,-3.710111E-06,0" materials="2,2,2,2,2" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052">
+          <Drag drag="0,0.001293083,0.001215053,0,0.0007015118,0.000623091" area="0,0.001752833,0.001407312,0,0.0007374739,0.0006840337" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <JointRotator baseMode="None" scale="0.25" consumptionMultiplier="1" range="105" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <InputController input="main body.VZ.what" inputId="Rotator" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="8" partType="Fuselage1" position="-1.192093E-06,0.1700281,-0.215309" rotation="345,180,180" materials="2,2,2,2,2" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052" texture="Default">
+          <Drag drag="0,0.006644657,0.0007075417,0,0.006902016,0.00686157" area="0,0.008614482,0.002387817,0,0.008892367,0.008849615" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="1.55431E-06,-0.2250042,-1.344833E-06" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="3.705764E-12,-1.190923E-06,-3.206332E-12" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.01000004,0.01000004" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="-1.55431E-06,0.2250042,1.344833E-06" toolIgnore="true" topScale="0.009999974,0.009999974" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="0.077755972743034363" fuel="0.077755972743034363" fuelType="None" subPriority="4" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="9" partType="HingeRotator1" position="-0.2604998,-0.04677045,-0.001536489" rotation="270,90.00002,0" materials="2,2,2,2,2" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052">
+          <Drag drag="0.0007935127,0.00076564,0.001420205,0,0.001320243,0" area="0.0008550422,0.0008016021,0.001614948,0,0.001806273,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <JointRotator baseMode="None" scale="0.25" consumptionMultiplier="1" range="105" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <InputController input="main body.VZ.what" inputId="Rotator" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="10" partType="Fuselage1" position="-0.2221082,0.1700273,-0.001537919" rotation="345,270,180" materials="2,2,2,2,2" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052" texture="Default">
+          <Drag drag="0.006856374,0.006908011,0.0007185362,0,0.006627926,0" area="0.008849615,0.008903055,0.002445494,0,0.008614482,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-1.55431E-06,-0.2250042,-1.344833E-06" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-3.705764E-12,-1.190923E-06,-3.206332E-12" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.01000004,0.01000004" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.55431E-06,0.2250042,1.344833E-06" toolIgnore="true" topScale="0.009999974,0.009999974" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="0.07775598019361496" fuel="0.07775598019361496" fuelType="None" subPriority="4" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="11" partType="HingeRotator1" position="2.384186E-07,-0.0467701,0.2589636" rotation="270,180,0" materials="2,2,2,2,2" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052">
+          <Drag drag="0.001484545,0,0.001420202,0,0.0006876802,0.0007054517" area="0.001987969,0,0.001614948,0,0.0007267859,0.000769538" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <JointRotator baseMode="None" scale="0.25" consumptionMultiplier="1" range="105" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <InputController input="main body.VZ.what" inputId="Rotator" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="12" partType="Fuselage1" position="-1.311302E-06,0.1700273,0.2205721" rotation="345,2.305421E-05,180" materials="2,2,2,2,2" groupId="d655a8c8-16af-40fa-9ecc-de4ab5145052" texture="Default">
+          <Drag drag="0.005679642,0,0.0007185345,0,0.006897239,0.006856373" area="0.007289188,0,0.002445494,0,0.008870991,0.00882824" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-1.55431E-06,-0.2250042,-1.344833E-06" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-3.705764E-12,-1.190923E-06,-3.206332E-12" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.01000004,0.01000004" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.55431E-06,0.2250042,1.344833E-06" toolIgnore="true" topScale="0.009999974,0.009999974" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="0.07775598019361496" fuel="0.07775598019361496" fuelType="None" subPriority="4" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="13" partB="3" attachPointsA="5" attachPointsB="2" />
+        <Connection partA="1" partB="13" attachPointsA="3" attachPointsB="0" />
+        <Connection partA="5" partB="1" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="7" partB="1" attachPointsA="1" attachPointsB="4" />
+        <Connection partA="9" partB="1" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="11" partB="1" attachPointsA="1" attachPointsB="4" />
+        <Connection partA="6" partB="5" attachPointsA="2" attachPointsB="0" />
+        <Connection partA="8" partB="7" attachPointsA="2" attachPointsB="0" />
+        <Connection partA="10" partB="9" attachPointsA="2" attachPointsB="0" />
+        <Connection partA="12" partB="11" attachPointsA="2" attachPointsB="0" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

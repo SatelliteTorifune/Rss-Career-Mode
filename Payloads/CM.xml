@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="CM" category="Payloads" description="TODO" order="1" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="3" partType="CommandPod4" position="-0.0003929138,-1.019508,-0.03832722" rotation="-3.415094E-06,3.415094E-06,-1.017777E-13" name="Bruno Capsule" rootPart="true" commandPodId="3" materials="2,17,21,3,2" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0.3380113,0.01901331,0,0,0.3380113" area="0,0.3763881,0.04658471,0,0,0.3763881" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,-1.155375,0" rotation="90,0,0" scale="2.4375" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="0,1.155375,0" rotation="270,180,0" scale="2.4375" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="0,-1.155375,0" rotation="90,0,0" scale="2.4375" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Eva" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="0,-0.24375,0" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <CommandPod activationGroupNames=",,,,,,Abort,,,RCS" activationGroupStates="false,false,false,false,false,false,false,false,false,false" autoRecalculateStages="false" pidPitch="10,0,25" pidRoll="10,0,25" pilotSeatRotation="270,-3.415094E-06,0" powerConsumption="60" replicateStageActivations="true" partPropertiesEnabled="false">
+            <Controls />
+          </CommandPod>
+          <Gyroscope power="543.081665" partPropertiesEnabled="false" />
+          <FuelTank capacity="27097.602758789064" fuel="27097.602758789064" />
+          <CrewCompartment capacity="5" crewExitPosition="3.766631E-07,-0.06469727,1.871017" crewExitRotation="15,180,1.580521E-13" partPropertiesEnabled="false" />
+          <ScalablePod heightStretch="0.75" mass="33.7070274" radiusPercent="1.95" partPropertiesEnabled="false" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1" partPropertiesEnabled="false">
+            <Program name="SimpleBeast Abort v2">
+            <Variables />
+            <Instructions>
+              <Event event="PartExplode" id="0" style="part-explode" pos="-16.62524,237.8308" />
+              <Comment id="1" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Detects when a part has exploded, and initiates an abort" />
+              </Comment>
+              <SetActivationGroup id="2" style="set-ag">
+                <Constant text="7" />
+                <Constant style="true" bool="true" />
+              </SetActivationGroup>
+            </Instructions>
+            <Instructions>
+              <Event event="FlightStart" id="3" style="flight-start" pos="-16.83889,81.84291" />
+              <Comment id="4" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Waits until an abort is triggered, or the abort tower is jettisoned" />
+              </Comment>
+              <WaitUntil id="5" style="wait-until">
+                <BoolOp op="or" style="op-or">
+                  <ActivationGroup style="activation-group">
+                    <Constant text="7" />
+                  </ActivationGroup>
+                  <CraftProperty property="Part.Activated" style="part">
+                    <CraftProperty property="Part.NameToID" style="part-id">
+                      <Constant text="Launch Escape Jettison" />
+                    </CraftProperty>
+                  </CraftProperty>
+                </BoolOp>
+              </WaitUntil>
+              <Comment id="6" style="comment">
+                <Constant style="comment-text" canReplace="false" text="If an abort is not triggered, then the tower must have been jettisoned. So, the abort is then disarmed" />
+              </Comment>
+              <If id="7" style="if">
+                <Not style="op-not">
+                  <ActivationGroup style="activation-group">
+                    <Constant text="7" />
+                  </ActivationGroup>
+                </Not>
+                <Instructions>
+                  <DisplayMessage id="8" style="display">
+                    <Constant text="&lt;size=200%&gt;&lt;b&gt;Abort disarmed&lt;/b&gt;&lt;/size&gt;" />
+                    <Constant number="7" />
+                  </DisplayMessage>
+                </Instructions>
+              </If>
+              <Comment id="9" style="comment">
+                <Constant style="comment-text" canReplace="false" text="If an abort is triggered, and the craft is not in orbit, then the abort will occur" />
+              </Comment>
+              <ElseIf id="10" style="else-if">
+                <Comparison op="le" style="op-lte">
+                  <CraftProperty property="Orbit.Periapsis" style="prop-orbit" />
+                  <Constant text="80000" />
+                </Comparison>
+                <Instructions>
+                  <Comment id="11" style="comment">
+                    <Constant style="comment-text" canReplace="false" text="Initiates the abort" />
+                  </Comment>
+                  <CallCustomInstruction call="Abort Sequence" id="12" style="call-custom-instruction" />
+                </Instructions>
+              </ElseIf>
+            </Instructions>
+            <Instructions>
+              <CustomInstruction callFormat="Abort Sequence" format="Abort Sequence" name="Abort Sequence" id="13" style="custom-instruction" pos="-16.26301,-399.1091" />
+              <Comment id="14" style="comment">
+                <Constant style="comment-text" canReplace="false" text="This Displays that an abort has been triggered" />
+              </Comment>
+              <Comment id="15" style="comment">
+                <Constant style="comment-text" canReplace="false" text="This block uses Rich Text Formatting, here is a link to a guide for it:" />
+              </Comment>
+              <Comment id="16" style="comment">
+                <Constant style="comment-text" canReplace="false" text="http://digitalnativestudios.com/textmeshpro/docs/rich-text/" />
+              </Comment>
+              <DisplayMessage id="17" style="display">
+                <Constant text="&lt;size=200%&gt;&lt;b&gt;Abort Triggered&lt;/b&gt;&lt;/size&gt;" />
+                <Constant number="7" />
+              </DisplayMessage>
+              <Comment id="18" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Activates the 4 abort motors." />
+              </Comment>
+              <For var="i" id="19" style="for">
+                <Constant number="1" />
+                <Constant text="4" />
+                <Constant number="1" />
+                <Instructions>
+                  <SetCraftProperty property="Part.SetActivated" id="20" style="set-part">
+                    <CraftProperty property="Part.NameToID" style="part-id">
+                      <StringOp op="join" style="join">
+                        <Constant text="Launch Escape Motor " />
+                        <Variable list="false" local="true" variableName="i" />
+                        <Constant text="" />
+                      </StringOp>
+                    </CraftProperty>
+                    <Constant style="true" bool="true" />
+                  </SetCraftProperty>
+                </Instructions>
+              </For>
+              <Comment id="21" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Separates the capsule from the rest of the rocket, or whatever remains of it" />
+              </Comment>
+              <SetCraftProperty property="Part.SetActivated" id="22" style="set-part">
+                <CraftProperty property="Part.NameToID" style="part-id">
+                  <Constant text="Juno Module-Bruno Capsule Interstage" />
+                </CraftProperty>
+                <Constant style="true" bool="true" />
+              </SetCraftProperty>
+              <Comment id="23" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Locks the heading, so the aborting capsule doesn't go all over the place" />
+              </Comment>
+              <LockNavSphere indicatorType="Current" id="24" style="lock-nav-sphere" />
+              <Comment id="25" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Waits a bit before setting the pitch" />
+              </Comment>
+              <WaitSeconds id="26" style="wait-seconds">
+                <Constant text=".5" />
+              </WaitSeconds>
+              <SetTargetHeading property="pitch" id="27" style="set-heading">
+                <Constant text="45" />
+              </SetTargetHeading>
+              <Comment id="28" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Waits until the motors are almost burnt out" />
+              </Comment>
+              <WaitUntil id="29" style="wait-until">
+                <Comparison op="l" style="op-lt">
+                  <CraftProperty property="Fuel.FuelInStage" style="prop-fuel" />
+                  <Constant text=".1" />
+                </Comparison>
+              </WaitUntil>
+              <Comment id="30" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Separates the abort tower" />
+              </Comment>
+              <SetCraftProperty property="Part.SetActivated" id="31" style="set-part">
+                <CraftProperty property="Part.NameToID" style="part-id">
+                  <Constant text="Launch Escape Jettison" />
+                </CraftProperty>
+                <Constant style="true" bool="true" />
+              </SetCraftProperty>
+              <WaitSeconds id="32" style="wait-seconds">
+                <Constant text=".5" />
+              </WaitSeconds>
+              <Comment id="33" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Locks the capsule prograde" />
+              </Comment>
+              <LockNavSphere indicatorType="Prograde" id="34" style="lock-nav-sphere" />
+              <Comment id="35" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Waits until the capsule is starting to fall" />
+              </Comment>
+              <WaitUntil id="36" style="wait-until">
+                <Comparison op="l" style="op-lt">
+                  <CraftProperty property="Vel.VerticalSurfaceVelocity" style="prop-velocity" />
+                  <Constant text="0" />
+                </Comparison>
+              </WaitUntil>
+              <Comment id="37" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Locks the capsule retrograde" />
+              </Comment>
+              <LockNavSphere indicatorType="Retrograde" id="38" style="lock-nav-sphere" />
+              <Comment id="39" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Waits until the capsule is below 20km" />
+              </Comment>
+              <WaitUntil id="40" style="wait-until">
+                <Comparison op="l" style="op-lt">
+                  <CraftProperty property="Altitude.AGL" style="prop-altitude" />
+                  <Constant text="20000" />
+                </Comparison>
+              </WaitUntil>
+              <Comment id="41" style="comment">
+                <Constant style="comment-text" canReplace="false" text="Activates all the stages, ending with the parachutes being deployed" />
+              </Comment>
+              <While id="42" style="while">
+                <Comparison op="l" style="op-lt">
+                  <CraftProperty property="Misc.Stage" style="prop-misc" />
+                  <CraftProperty property="Misc.NumStages" style="prop-misc" />
+                </Comparison>
+                <Instructions>
+                  <ActivateStage id="43" style="activate-stage" />
+                </Instructions>
+              </While>
+            </Instructions>
+            <Expressions />
+          </Program>
+          </FlightProgram>
+          <Payload payloadId="CM" />
+        </Part>
+        <Part id="13" partType="Fuselage1" position="6.198883E-05,0.1467743,-0.04022741" rotation="1.707547E-05,180,-6.830187E-06" name="Bruno Capsule" commandPodId="3" materials="2,2,2,2,2" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="1.49011E-08,-0.009559632,-4.161939E-08" rotation="90,0,0" scale="1.9305" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-1.49011E-08,0.009559632,4.161939E-08" rotation="-90,180,0" scale="1.9105" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.96025" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-1.49011E-08,0.009559632,4.161939E-08" rotation="-90,180,0" scale="1.9105" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="1.49011E-08,-0.009559632,-4.161939E-08" rotation="90,0,0" scale="1.9305" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="1.241011E-09,-4.424567E-05,4.092793E-08" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.96525,0.96525" deformations="0,0,0" depthCurve="0" flattenNormals="Both" offset="-1.49011E-08,0.009559632,4.161939E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.95525,0.95525" volume="0.0547546558" volumeInner="0.03585493" partPropertiesEnabled="false" version="3" />
+          <FuelTank autoFuelType="false" capacity="75996.237178465817" fuel="75996.237178465817" fuelType="Battery" subPriority="11" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="370" partType="Parachute1" position="0.3855734,0.2459259,-0.2628045" rotation="-2.390566E-05,29.99999,310" name="Main Parachute 1" activationStage="15" stageOverride="true" commandPodId="3" materials="15,6,6,15,15" symmetryId="e7933860-d2df-448c-86e3-a31c82729a60" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false" baseStyle="Small">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="3dd77f0e-db65-4a33-b84c-5f914b8b6e2b" />
+          <Parachute autocutASL="-0" baseSize="1" chuteHeight="1" chuteRadius="10" cordLength="10" deploymentASL="4919.55273" deploymentDensity="0.56" inflationASL="2000.01953" inflationDensity="0.79" maxDeploymentSpeed="360" referenceDensity="1.2" partPropertiesEnabled="false" symmetryId="03f13ef6-5828-4054-b4f5-b687f9e7e55a" />
+        </Part>
+        <Part id="824" partType="Parachute1" position="-0.3854504,0.2459259,-0.2628012" rotation="3.415095E-06,150,310" name="Main Parachute 2" activationStage="15" stageOverride="true" commandPodId="3" materials="15,6,6,15,15" symmetryId="e7933860-d2df-448c-86e3-a31c82729a60" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false" baseStyle="Small">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="3dd77f0e-db65-4a33-b84c-5f914b8b6e2b" />
+          <Parachute autocutASL="-0" baseSize="1" chuteHeight="1" chuteRadius="10" cordLength="10" deploymentASL="4919.55273" deploymentDensity="0.56" inflationASL="2000.01953" inflationDensity="0.79" maxDeploymentSpeed="360" referenceDensity="1.2" partPropertiesEnabled="false" symmetryId="03f13ef6-5828-4054-b4f5-b687f9e7e55a" />
+        </Part>
+        <Part id="825" partType="Parachute1" position="6.389618E-05,0.2459259,0.4049234" rotation="0,270,310.0001" name="Main Parachute 3" activationStage="15" stageOverride="true" commandPodId="3" materials="15,6,6,15,15" symmetryId="e7933860-d2df-448c-86e3-a31c82729a60" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false" baseStyle="Small">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="3dd77f0e-db65-4a33-b84c-5f914b8b6e2b" />
+          <Parachute autocutASL="-0" baseSize="1" chuteHeight="1" chuteRadius="10" cordLength="10" deploymentASL="4919.55273" deploymentDensity="0.56" inflationASL="2000.01953" inflationDensity="0.79" maxDeploymentSpeed="360" referenceDensity="1.2" partPropertiesEnabled="false" symmetryId="03f13ef6-5828-4054-b4f5-b687f9e7e55a" />
+        </Part>
+        <Part id="1388" partType="FairingBase1" position="6.198883E-05,0.3523331,-0.04022741" rotation="3.234114E-05,180,-6.830182E-06" name="Parachute Bay Cover" activationStage="14" stageOverride="true" commandPodId="3" materials="2,2,2,2,2" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="1.276563E-08,-0.01835961,5.584782E-08" heatShield="297.947021" heatShieldMass="0.744867563" heatShieldScale="1" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.95525,0.95525" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" flattenNormals="Bottom" meshMassMultiplier="0.8" offset="0,0.196,-5.170817E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.7725,0.7725" volume="0.911973" volumeInner="0.876848936" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+        </Part>
+        <Part id="1389" partType="FairingBase1" position="6.198883E-05,0.5533218,-0.04022741" rotation="2.209586E-05,180,180" name="Parachute Bay Cover Top" activationStage="14" stageOverride="true" commandPodId="3" materials="2,2,2,2,2" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="2.438948E-09,0.001139454,1.366223E-08" heatShield="231.750275" heatShieldMass="0.5793757" heatShieldScale="1" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.4515001,0.4515001" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" flattenNormals="None" meshMassMultiplier="0.8" offset="0,0.005,-5.170817E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.7725,0.7725" volume="0.0118993847" volumeInner="0.00165065867" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+        </Part>
+        <Part id="4" partType="HeatShield1" position="-0.0002260208,-2.374916,-0.03910637" rotation="6.830189E-06,2.988208E-06,180" name="Bruno Heat Shield" commandPodId="3" materials="4,4,4,4,4" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="-1.173518E-07,-0.05307353,4.836564E-08" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="1.95,1.95" deadWeight="5395.71533" deadWeightPercentage="0.14" deformations="0,0,0" depthCurve="0" offset="1.748421E-08,0.2,5.959876E-09" shellDensityOverride="-1" supportsXZOffset="false" toolResizeBottom="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.5,0.5" volume="3.39866161" volumeInner="3.27376842" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="1385" partType="Strut1" position="6.198883E-05,0.3572998,-0.04022741" rotation="2.390566E-05,180,-8.537733E-06" name="Crew Tunnel" commandPodId="3" materials="2,4,4,2,2" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage3" textureTiling="1,0.05">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="4.331764E-09,-0.03284536,2.796517E-08" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.5827501,0.5827501" cornerRadiuses="1,1,1,1,1,1,1,1" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="-2.670479E-09,0.2009969,-1.22773E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.4,0.4" volume="0.304930151" volumeInner="0.290384561" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="1384" partType="DockingPort1" position="6.198883E-05,0.6298218,-0.04022741" rotation="3.073585E-05,180,-8.537733E-06" name="Bruno Capsule Docking Port" commandPodId="3" materials="3,2,2,2,2" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="1" position="-1.750688E-11,0.07160187,6.824763E-12" rotation="270,180,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Rigid" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <DockingPort partPropertiesEnabled="false" version="2" />
+          <CameraVantage />
+          <CrossFeed partPropertiesEnabled="false" />
+        </Part>
+        <Part id="368" partType="Parachute1" position="-0.4203482,0.3084717,0.1996236" rotation="294.2621,127.5002,-0.0001828426" name="Drogue Chute 1" activationStage="15" stageOverride="true" commandPodId="3" materials="15,7,7,15,15" symmetryId="9b420dc4-3843-4b03-9236-67e7e87d58ec" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" partConnectionsEnabled="false" partStyleEnabled="false" baseStyle="Small" parachuteStyle="ParachuteStripedVertical">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="2a6c6126-e839-4486-9193-eafcc9ade315" />
+          <Parachute autocutASL="4919.55273" autocutDensity="0.56" baseSize="0.75" chuteHeight="1" chuteRadius="4.9333334" cordLength="10" deploymentASL="16096.3848" deploymentDensity="0.15" inflationASL="6588.569" inflationDensity="0.46" maxDeploymentSpeed="480" referenceDensity="1.2" partPropertiesEnabled="false" symmetryId="c9e631ff-eee2-4486-a744-363112006a4c" />
+        </Part>
+        <Part id="1387" partType="Parachute1" position="0.4204721,0.3084717,0.1996236" rotation="294.2621,232.4998,0.0001495985" name="Drogue Chute 2" activationStage="15" stageOverride="true" commandPodId="3" materials="15,7,7,15,15" symmetryId="9b420dc4-3843-4b03-9236-67e7e87d58ec" groupId="6ab1aa4f-7a3f-47d2-989f-7617eecbab53" mirrored="true" partConnectionsEnabled="false" partStyleEnabled="false" baseStyle="Small" parachuteStyle="ParachuteStripedVertical">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" symmetryId="2a6c6126-e839-4486-9193-eafcc9ade315" />
+          <Parachute autocutASL="4919.55273" autocutDensity="0.56" baseSize="0.75" chuteHeight="1" chuteRadius="4.9333334" cordLength="10" deploymentASL="16096.3848" deploymentDensity="0.15" inflationASL="6588.569" inflationDensity="0.46" maxDeploymentSpeed="480" referenceDensity="1.2" partPropertiesEnabled="false" symmetryId="c9e631ff-eee2-4486-a744-363112006a4c" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="13" partB="3" attachPointsA="1" attachPointsB="1" />
+        <Connection partA="4" partB="3" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="1385" partB="3" attachPointsA="1" attachPointsB="4" />
+        <Connection partA="370" partB="13" attachPointsA="0" attachPointsB="0" symmetryId="055f0361-db56-4035-9e1e-6819327beb9c">
+          <BodyJoint body="1" connectedBody="10" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0.3858366,2.000931,-0.2238898" connectedPosition="0,0,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="824" partB="13" attachPointsA="0" attachPointsB="0" symmetryId="055f0361-db56-4035-9e1e-6819327beb9c">
+          <BodyJoint body="1" connectedBody="15" breakTorque="1E+07" breakForce="0" jointType="Normal" position="-0.3851869,2.000931,-0.2238865" connectedPosition="2.384186E-07,0,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="825" partB="13" attachPointsA="0" attachPointsB="0" symmetryId="055f0361-db56-4035-9e1e-6819327beb9c">
+          <BodyJoint body="1" connectedBody="16" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0.0003275871,2.000931,0.4438381" connectedPosition="0,0,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="1388" partB="13" attachPointsA="0" attachPointsB="4">
+          <BodyJoint body="1" connectedBody="24" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0.0003256798,1.911339,-0.001312733" connectedPosition="0,-0.2543716,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="1389" partB="1388" attachPointsA="1" attachPointsB="1" />
+        <Connection partA="1384" partB="1385" attachPointsA="0" attachPointsB="2" />
+        <Connection partA="368" partB="1385" attachPointsA="0" attachPointsB="0" symmetryId="47648fd2-a2b1-4247-8ceb-863d72a24d5e">
+          <BodyJoint body="1" connectedBody="9" breakTorque="1E+07" breakForce="0" jointType="Normal" position="-0.4200845,2.063477,0.2385383" connectedPosition="0,0,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="1387" partB="1385" attachPointsA="0" attachPointsB="0" symmetryId="47648fd2-a2b1-4247-8ceb-863d72a24d5e">
+          <BodyJoint body="1" connectedBody="23" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0.4207358,2.063477,0.2385383" connectedPosition="0,0,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

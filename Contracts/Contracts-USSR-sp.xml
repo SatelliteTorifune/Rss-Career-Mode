@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Contracts>
+   <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="1000" />
+         <Completions name="paraa" contractID="ussr-tp-buy-10" />
+         <Completions name="parab" contractID="ussr-tp-buy-20" />
+         <Completions name="para1" contractID="ussr-pro-2" />
+         <Expression name="basicMoney" value="-10e3" />
+         <Expression name="Money" value="(@para1 + (@paraa / 2) + (@parab / 4 )+ NumCompletions + 1) * @basicMoney" />
+      </Params>
+      <Prereqs contracts="ussr-pro-2" />
+      <Contract customer="TsSKB-Progress" id="ussr-tp-buy-5" money="@Money" name="Buy 5 Tech Points" priority="-6" research="5" probability="@Probability" difficulty="1" flairText="TP">
+         <Description
+            short=""
+            long="Need tech points?Money helps.&lt;br&gt;&lt;br&gt;NOTE:the price will get higher by the time you bought TPs, us it wisely" />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="1000" />
+         <Completions name="paraa" contractID="ussr-tp-buy-5" />
+         <Completions name="parab" contractID="ussr-tp-buy-20" />
+         <Completions name="para1" contractID="ussr-pro-2" />
+         <Expression name="basicMoney" value="-20e3" />
+         <Expression name="Money" value="(@para1 + (@paraa * 2) + (@parab / 2) + NumCompletions + 1) * @basicMoney" />
+      </Params>
+      <Prereqs contracts="ussr-pro-2" />
+      <Contract customer="TsSKB-Progress" id="ussr-tp-buy-10" money="@Money" name="Buy 10 Tech Points" priority="-7" research="10" probability="@Probability" difficulty="1" flairText="TP">
+         <Description
+            short=""
+            long="Need tech points?Money helps.&lt;br&gt;&lt;br&gt;NOTE:the price will get higher by the time you bought TPs, us it wisely." />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+      <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="1000" />
+         <Completions name="paraa" contractID="ussr-tp-buy-5" />
+         <Completions name="parab" contractID="ussr-tp-buy-10" />
+         <Completions name="para1" contractID="ussr-pro-2" />
+         <Expression name="basicMoney" value="-40e3" />
+         <Expression name="Money" value="(@para1 + (@paraa / 4) + (@parab / 2) + NumCompletions + 1) * @basicMoney" />
+      </Params>
+      <Prereqs contracts="ussr-pro-2" />
+      <Contract customer="TsSKB-Progress" id="ussr-tp-buy-20" money="@Money" name="Buy 20 Tech Points" priority="-8" research="20" probability="@Probability" difficulty="1" flairText="TP">
+         <Description
+            short=""
+            long="Need tech points?Money helps.&lt;br&gt;&lt;br&gt;NOTE:the price will get higher by the time you bought TPs, us it wisely." />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="500" />
+         <Expression name="cost" value="250000" />
+      </Params>
+      <Prereqs contracts="ussr-pro-2" />
+      <Contract customer="TsSKB-Progress" id="ussr-tp-sell-5" money="@cost" name="Sell 5 Tech Points" priority="-9" research="-5" probability="@Probability" difficulty="1" flairText="TP">
+         <Description
+            short=""
+            long="Need some money urgently? or just want to dealing the excess Tps? Here you can get money from TPs!." />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="500" />
+         <Expression name="cost" value="500000" />
+      </Params>
+      <Prereqs contracts="ussr-pro-2" />
+      <Contract customer="TsSKB-Progress" id="ussr-tp-sell-10" money="@cost" name="Sell 10 Tech Points" priority="-10" research="-10" probability="@Probability" difficulty="1" flairText="TP">
+         <Description
+            short=""
+            long="Need some money urgently? or just want to dealing the excess Tps? Here you can get money from TPs!" />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="500" />
+         <Expression name="cost" value="100000" />
+      </Params>
+      <Prereqs contracts="ussr-pro-2" />
+      <Contract customer="TsSKB-Progress" id="ussr-tp-sell-20" money="@cost" name="Sell 20 Tech Points" priority="-20" research="-10" probability="@Probability" difficulty="1" flairText="TP">
+         <Description
+            short=""
+            long="Need some money urgently? or just want to dealing the excess Tps? Here you can get money from TPs!" />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+  </Contracts>

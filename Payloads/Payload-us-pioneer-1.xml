@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Pioneer" category="Payloads" description="TODO" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="1" partType="Detacher1" position="0,-0.2027886,-4.768372E-07" rotation="2.049057E-05,-1.001791E-05,-3.623342E-12" name="Pionnerdeployer" activationStage="0" materials="0,3,4,2,0" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" style="Interstage-4">
+          <Drag drag="0.2050669,0.2040664,0.02337805,0,0.202862,0.2041312" area="0.2679443,0.2662353,0.0561523,0,0.2673339,0.2681884" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" partScale="0.9,0.9,0.9" stageActivationType="Payload" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.3864145,0.3864145" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.3" offset="0,0.25,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.3864145,0.3864145" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <Detacher force="0.40625" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <CoverEngine partPropertiesEnabled="false" />
+          <CrossFeed partPropertiesEnabled="false" />
+        </Part>
+        <Part id="2" partType="Fuselage1" position="0,-0.08599877,-4.768372E-07" rotation="1.024528E-05,-5.008957E-06,-8.549463E-13" materials="18,4,4,0,0" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" texture="Fuselage4">
+          <Drag drag="0.01121221,0.01105424,0,0,0.01116601,0.01119258" area="0.03295894,0.03253169,0,0,0.03283687,0.03295894" />
+          <Config centerOfMass="-1.965163E-17,0.01452404,-2.354961E-10" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.1579734,0.1579734" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="-6.765208E-16,0.04533825,-8.107111E-09" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.354011,0.354011" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="7.8321290016174316" fuel="7.8321290016174316" fuelType="Solid" subPriority="1" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="3" partType="Fuselage1" position="0,0.06276703,-4.768372E-07" rotation="0,0,0" materials="18,4,4,0,0" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" texture="Fuselage5">
+          <Drag drag="0.1136493,0.1140461,0.2460937,0,0.1140458,0.1136488" area="0.1450195,0.1455078,0.2460937,0,0.1455078,0.1450195" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partSelectionEnabled="false" partPropertiesEnabled="false" />
+		  <Payload payloadId="Payload-us-pioneer-1" />
+          <Fuselage bottomScale="0.3625,0.3625" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.1034277,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.3625,0.3625" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="34.158027648925781" fuel="34.158027648925781" fuelType="Solid" subPriority="2" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1" inspectorEnabled="false" partPropertiesEnabled="false">
+            <Program name="New Program">
+              <Variables />
+              <Instructions>
+                <Event event="FlightStart" id="0" style="flight-start" pos="-10,-20" />
+                <WaitUntil id="1" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="Pionnerdeployer" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant style="true" bool="true" />
+                  </Comparison>
+                </WaitUntil>
+                <SetCraftProperty property="Part.SetActivated" id="2" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="IDKengin1" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <SetCraftProperty property="Part.SetActivated" id="3" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="IDKengin2" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <SetCraftProperty property="Part.SetActivated" id="4" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="IDKengin3" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <SetCraftProperty property="Part.SetActivated" id="5" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="IDKengin4" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <SetCraftProperty property="Part.SetActivated" id="6" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="IDKengin5" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <SetCraftProperty property="Part.SetActivated" id="7" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="IDKengin6" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+              </Instructions>
+              <Expressions />
+            </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="4" partType="Fuselage1" position="0,0.2003653,-4.768372E-07" rotation="0,0,0" materials="18,4,4,0,0" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" texture="Fuselage10">
+          <Drag drag="0.0114123,0.0114123,0.1353641,0,0.01141182,0.01141181" area="0.03027339,0.03027339,0.1462402,0,0.03027339,0.03027339" />
+          <Config centerOfMass="0,-0.009406457,0" heatShieldScale="0" ignoreValidation="true" massScale="0" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.2784404,0.2784404" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.03417075,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.1554797,0.1554797" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="4.1507396697998047" fuel="4.1507396697998047" fuelType="Solid" subPriority="4" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="5" partType="Fuselage1" position="0,0.268707,-4.768372E-07" rotation="0,0,0" materials="18,4,4,0,0" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" texture="Default">
+          <Drag drag="0.004802368,0.004802368,0,0,0.004804282,0.004804282" area="0.005859345,0.005859345,0,0,0.005859344,0.005859344" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.03417075,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.05,0.05" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="0.21470116078853607" fuel="0.21470116078853607" fuelType="Solid" subPriority="4" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="6" partType="Fuselage1" position="0,0.3504946,-4.768372E-07" rotation="0,0,0" materials="18,4,4,0,0" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" texture="Default">
+          <Drag drag="0.009321823,0.009321823,0.01562496,0,0.009321582,0.009321582" area="0.01232906,0.01232906,0.01562496,0,0.01226802,0.01226802" />
+          <Config centerOfMass="0,0.009731955,0" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.05,0.05" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.04761696,0" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.07149792,0.07149792" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="0.44626009464263916" fuel="0.44626009464263916" fuelType="Solid" subPriority="5" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7" partType="RocketEngine1" position="-0.03789687,-0.09892392,0.1186352" rotation="337.3857,355.735,355.9759" name="IDKengin1" materials="0,1,2,3,4" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.00109049,0.001067273,0,0,0.001963648,0.001583795" area="0.002075187,0.002075187,0,0,0.002746571,0.002075186" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="2.6,2.6,2.6" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <RocketEngine chamberPressure="0.1" engineSubTypeId="Model" engineTypeId="Solid" fuelType="Solid" nozzleSize="0.53" nozzleThroatSize="0.61" nozzleTypeId="Cone" fuelGrain="Star" size="0.25" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="0.0100295637" price="15" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="8" partType="RocketEngine1" position="0.0837934,-0.09892392,0.0921371" rotation="337.3857,55.73499,355.9759" name="IDKengin2" materials="0,1,2,3,4" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.002536659,0.002700137,0,0,0.001997157,0.002193666" area="0.003662095,0.003540025,0,0,0.002624501,0.003173815" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="2.6,2.6,2.6" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <RocketEngine chamberPressure="0.1" engineSubTypeId="Model" engineTypeId="Solid" fuelType="Solid" nozzleSize="0.53" nozzleThroatSize="0.61" nozzleTypeId="Cone" fuelGrain="Star" size="0.25" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="0.0100295637" price="15" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="9" partType="RocketEngine1" position="0.12169,-0.09892392,-0.02649879" rotation="337.3857,115.735,355.9759" name="IDKengin5" materials="0,1,2,3,4" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.001952877,0.002135983,0,0,0.001144344,0.001165407" area="0.002624501,0.002868641,0,0,0.001892082,0.001892082" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="2.6,2.6,2.6" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <RocketEngine chamberPressure="0.1" engineSubTypeId="Model" engineTypeId="Solid" fuelType="Solid" nozzleSize="0.53" nozzleThroatSize="0.61" nozzleTypeId="Cone" fuelGrain="Star" size="0.25" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="0.0100295637" price="15" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="10" partType="RocketEngine1" position="0.03789639,-0.09892392,-0.1186359" rotation="337.3857,175.735,355.9759" name="IDKengin3" materials="0,1,2,3,4" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.001067273,0.001438748,0,0,0.001568955,0.001918889" area="0.002075187,0.002502432,0,0,0.002014152,0.002563466" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="2.6,2.6,2.6" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <RocketEngine chamberPressure="0.1" engineSubTypeId="Model" engineTypeId="Solid" fuelType="Solid" nozzleSize="0.53" nozzleThroatSize="0.61" nozzleTypeId="Cone" fuelGrain="Star" size="0.25" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="0.0100295637" price="15" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="11" partType="RocketEngine1" position="-0.08379292,-0.09892392,-0.09213781" rotation="337.3857,235.735,355.9759" name="IDKengin6" materials="0,1,2,3,4" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.002689366,0.003411014,0,0,0.003091478,0.002025161" area="0.003540025,0.004760721,0,0,0.004333477,0.002807606" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="2.6,2.6,2.6" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <RocketEngine chamberPressure="0.1" engineSubTypeId="Model" engineTypeId="Solid" fuelType="Solid" nozzleSize="0.53" nozzleThroatSize="0.61" nozzleTypeId="Cone" fuelGrain="Star" size="0.25" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="0.0100295637" price="15" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="12" partType="RocketEngine1" position="-0.1216896,-0.09892392,0.02649808" rotation="337.3857,295.735,355.9759" name="IDKengin4" materials="0,1,2,3,4" groupId="71c1d268-c8ea-4a67-910a-b9a0e2caaca7" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0.002029231,0.001952877,0,0,0.001302077,0.001132855" area="0.002746571,0.002624501,0,0,0.001953117,0.001708977" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="2.6,2.6,2.6" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <RocketEngine chamberPressure="0.1" engineSubTypeId="Model" engineTypeId="Solid" fuelType="Solid" nozzleSize="0.53" nozzleThroatSize="0.61" nozzleTypeId="Cone" fuelGrain="Star" size="0.25" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="0.0100295637" price="15" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="1" partB="2" attachPointsA="2" attachPointsB="5" />
+        <Connection partA="2" partB="3" attachPointsA="2,4" attachPointsB="1,5" />
+        <Connection partA="7" partB="2" attachPointsA="0" attachPointsB="0" symmetryId="dbd8e925-9e4b-49f3-be30-4b6f7bf22949" />
+        <Connection partA="8" partB="2" attachPointsA="0" attachPointsB="0" symmetryId="dbd8e925-9e4b-49f3-be30-4b6f7bf22949" />
+        <Connection partA="9" partB="2" attachPointsA="0" attachPointsB="0" symmetryId="dbd8e925-9e4b-49f3-be30-4b6f7bf22949" />
+        <Connection partA="10" partB="2" attachPointsA="0" attachPointsB="0" symmetryId="dbd8e925-9e4b-49f3-be30-4b6f7bf22949" />
+        <Connection partA="11" partB="2" attachPointsA="0" attachPointsB="0" symmetryId="dbd8e925-9e4b-49f3-be30-4b6f7bf22949" />
+        <Connection partA="12" partB="2" attachPointsA="0" attachPointsB="0" symmetryId="dbd8e925-9e4b-49f3-be30-4b6f7bf22949" />
+        <Connection partA="4" partB="3" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="5" partB="4" attachPointsA="1,5" attachPointsB="2,4" />
+        <Connection partA="6" partB="5" attachPointsA="1,5" attachPointsB="2,4" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

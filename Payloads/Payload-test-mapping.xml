@@ -1,0 +1,1567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Planet Mapping Device" category="Payloads" description="the device for this mission" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="1" partType="Fuselage1" position="0.1019496,-0.7140193,0.01287317" rotation="-5.970338E-06,1.024528E-05,3.822099E-13" name="Main Body" materials="3,1,1,1,1" groupId="d37f71a7-cadf-4fd7-a09f-0e39a6eea4f8" texture="Default">
+          <Drag drag="1.984406,1.984406,3.968811,0.8590699,1.984406,1.984406" area="1.984406,1.984406,3.968811,0.8590699,1.984406,1.984406" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-8.809258E-17,-0.5,-1.725673E-08" rotation="90,0,0" scale="2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="8.809258E-17,0.5,1.725673E-08" rotation="-90,180,0" scale="2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,1" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="8.809258E-17,0.5,1.725673E-08" rotation="-90,180,0" scale="2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="-8.809258E-17,-0.5,-1.725673E-08" rotation="90,0,0" scale="2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0.1" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="1,1" cornerRadiuses="0,0,0,0,0,0,0,0" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="8.809258E-17,0.5,1.725673E-08" toolIgnore="true" topScale="1,1" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank autoFuelType="false" capacity="5488560.107421875" fuel="5488560.107421875" fuelType="Battery" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <Payload payloadId="Payload-test-mapping" />
+        </Part>
+        <Part id="2" partType="Camera1" position="-0.506611,3.211648,-0.064363" rotation="90,90.00005,0" name="Mapping monitor" materials="0,1,19,3,4" groupId="d37f71a7-cadf-4fd7-a09f-0e39a6eea4f8">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" includeInDrag="true" massScale="0" partScale="0,0,0" priceScale="0" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <CameraVantage cameraOffset="0,0.065,0" fieldOfView="0.26" fieldOfViewMax="1" fieldOfViewMin="0" nightVisionColor="#80FF8080" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <InputController inputId="Zoom" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="3" partType="ToggleSwitch1" position="0.09881294,-0.8235354,0.01287222" rotation="-1.026306E-05,90.00002,7.914971E-06" name="Active Mapping" activationStage="0" materials="3,2,2,2,2" groupId="d37f71a7-cadf-4fd7-a09f-0e39a6eea4f8">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partScale="0,1,1" partSelectionEnabled="false" stageActivationType="Payload" />
+          <SubPartRotator />
+        </Part>
+        <Part id="5" partType="Fuselage1" position="0.1019496,-0.7175965,0.0128727" rotation="1.024528E-05,-7.400887E-07,8.537733E-07" name="datagathering device" materials="0,4,4,0,0" groupId="d37f71a7-cadf-4fd7-a09f-0e39a6eea4f8">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="1.332268E-14,-5,-2.980236E-07" rotation="90,0,0" scale="6.3245554" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-1.332268E-14,5,2.980236E-07" rotation="-90,180,0" scale="6.3245554" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,10" rotation="0,0,0" scale="4.472136" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-1.332268E-14,5,2.980236E-07" rotation="-90,180,0" scale="6.3245554" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="1.332268E-14,-5,-2.980236E-07" rotation="90,0,0" scale="6.3245554" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partScale="0.05,0.05,0.05" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="10,10" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="-1.332268E-14,5,2.980236E-07" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolIgnore="true" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="10,10" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FuelTank capacity="1727876.125" fuelType="Xenon" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="6" partType="IonEngine1" position="0.1019496,-0.7302923,0.01287317" rotation="1.366038E-05,180,180" name="trigger" materials="0,1,2,3,4" groupId="d37f71a7-cadf-4fd7-a09f-0e39a6eea4f8">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partScale="0.5,0.5,0.5" partSelectionEnabled="false" stageActivationType="None" partPropertiesEnabled="false" />
+          <Engine fuelConsumptionScale="-9.999999E+27" thrust="0" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <InputController input="screen.VZ.hey" inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7" partType="Mfd1" position="0.1019496,-0.2262053,0.01287317" rotation="90,4.829672E-06,0" name="screen" materials="10,3,2,3,4" groupId="d37f71a7-cadf-4fd7-a09f-0e39a6eea4f8">
+          <Drag drag="0.04882813,0.04882813,8.53119,8.53119,0.09765626,0.09765626" area="0.04882813,0.04882813,8.53119,8.53119,0.09765626,0.09765626" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <Mfd height="5" maxTextureSize="4320" maxWidgets="200" mfdProgram="Custom" width="2.5" wattsperm2="40" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <FlightProgram maxInstructionsPerFrame="10000" powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1" inspectorEnabled="false" partPropertiesEnabled="false">
+            <Program name="test1" requiresMfd="true">
+              <Variables>
+                <Variable name="cameraSpeedX" number="0" />
+                <Variable name="cameraSpeedY" number="0" />
+                <Variable name="currentLocation" number="0" />
+                <Variable name="previousDrag" number="0" />
+                <Variable name="targetUpdate" number="0" />
+                <Variable name="targetLocation" number="0" />
+                <Variable name="isFollowing" number="0" />
+                <Variable name="n" number="0" />
+                <Variable name="size" number="0" />
+                <Variable name="bRcirclenumber" number="0" />
+                <Variable name="speed" number="0" />
+                <Variable name="RadarDistance" number="0" />
+                <Variable name="NearbyCraftIDs">
+                  <Items />
+                </Variable>
+                <Variable name="bLlinenumber" number="0" />
+                <Variable name="totalcolor" number="0" />
+                <Variable name="mapPixelNumber" number="0" />
+                <Variable name="mappixelcolor" number="0" />
+                <Variable name="mappixelx" number="0" />
+                <Variable name="mappixely" number="0" />
+                <Variable name="mapheight" number="0" />
+                <Variable name="BasicHeight" number="0" />
+                <Variable name="BH" number="0" />
+                <Variable name="flag" number="0" />
+                <Variable name="dap" number="0" />
+                <Variable name="dpe" number="0" />
+                <Variable name="di" number="0" />
+                <Variable name="dplanet" number="0" />
+                <Variable name="hey" number="0" />
+              </Variables>
+              <Instructions>
+                <DisplayMessage id="0" style="display" pos="-1802.725,-1273.472">
+                  <Constant text="" />
+                  <Constant number="7" />
+                </DisplayMessage>
+              </Instructions>
+              <Instructions>
+                <SetCraftProperty property="Mfd.SetPosition" id="1" style="set-mfd-widget" pos="-27.30281,1130.268">
+                  <Constant text="map1" />
+                  <Vector style="vec">
+                    <Constant text="" />
+                    <BinaryOp op="*" style="op-mul">
+                      <Constant text="0.5" />
+                      <VectorOp op="x" style="vec-op-1">
+                        <CraftProperty property="Mfd.Size" style="prop-mfd-widget">
+                          <Constant text="_Screen" />
+                        </CraftProperty>
+                      </VectorOp>
+                    </BinaryOp>
+                    <Constant number="0" />
+                  </Vector>
+                </SetCraftProperty>
+              </Instructions>
+              <Instructions>
+                <Event event="ReceiveMessage" id="2" style="receive-msg" pos="-2542.128,1119.299">
+                  <Constant canReplace="false" text="startstage1" />
+                </Event>
+                <Repeat id="3" style="repeat">
+                  <Constant text="4" />
+                  <Instructions>
+                    <DisplayMessage id="4" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;align=left&gt;&lt;size=150%&gt;&lt;color=green&gt;" />
+                        <Constant text="Planet Mapping Program Initializing" />
+                        <Constant text="&lt;/color&gt;&lt;/size&gt;&lt;br&gt;" />
+                        <Constant text="&lt;color=blue&gt;&lt;size=125%&gt;Current Ap=" />
+                        <StringOp op="format" style="format">
+                          <Constant text="{0:n2}" />
+                          <BinaryOp op="/" style="op-div">
+                            <CraftProperty property="Orbit.Apoapsis" style="prop-orbit" />
+                            <Constant text="1000" />
+                          </BinaryOp>
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="Km" />
+                        <Constant text=" Current Pe=" />
+                        <StringOp op="format" style="format">
+                          <Constant text="{0:n2}" />
+                          <BinaryOp op="/" style="op-div">
+                            <CraftProperty property="Orbit.Periapsis" style="prop-orbit" />
+                            <Constant text="1000" />
+                          </BinaryOp>
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="Orbit Inclination=" />
+                        <StringOp op="format" style="format">
+                          <Constant text="{0:n1}" />
+                          <MathFunction function="rad2deg" style="op-math">
+                            <CraftProperty property="Orbit.Inclination" style="prop-orbit" />
+                          </MathFunction>
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="5" style="wait-seconds">
+                      <Constant number="1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <BroadcastMessage global="false" local="true" id="6" style="broadcast-msg">
+                  <Constant text="startsrtage2" />
+                  <Constant number="0" />
+                </BroadcastMessage>
+                <SetCameraProperty property="mode" id="7" style="set-camera">
+                  <Constant text="Mapping monitor" />
+                </SetCameraProperty>
+              </Instructions>
+              <Instructions>
+                <UserInput id="8" style="user-input" pos="-1614.492,390.0843">
+                  <Constant text="" />
+                  <Constant text="Please set basic height." />
+                </UserInput>
+              </Instructions>
+              <Instructions>
+                <ElseIf id="9" style="else-if" pos="-2777.412,1854.966">
+                  <Comparison op="g" style="op-gt">
+                    <BinaryOp op="-" style="op-sub">
+                      <CraftProperty property="Orbit.Periapsis" style="prop-orbit" />
+                      <Variable list="false" local="false" variableName="dpe" />
+                    </BinaryOp>
+                    <Constant text="5000" />
+                  </Comparison>
+                </ElseIf>
+                <ElseIf id="10" style="else-if">
+                  <Comparison op="g" style="op-gt">
+                    <BinaryOp op="-" style="op-sub">
+                      <CraftProperty property="Orbit.Apoapsis" style="prop-orbit" />
+                      <Variable list="false" local="false" variableName="dap" />
+                    </BinaryOp>
+                    <Constant text="5000" />
+                  </Comparison>
+                </ElseIf>
+              </Instructions>
+              <Instructions>
+                <While id="11" style="while" pos="-2643.819,2353.037">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <If id="12" style="if">
+                      <Comparison op="=" style="op-eq">
+                        <CraftProperty property="Part.Activated" style="part">
+                          <CraftProperty property="Part.NameToID" style="part-id">
+                            <Constant text="Active Mapping" />
+                          </CraftProperty>
+                        </CraftProperty>
+                        <Constant style="true" bool="true" />
+                      </Comparison>
+                      <Instructions>
+                        <If id="13" style="if">
+                          <BoolOp op="and" style="op-and">
+                            <Comparison op="=" style="op-eq">
+                              <CraftProperty property="Orbit.Planet" style="prop-name" />
+                              <Variable list="false" local="false" variableName="dplanet" />
+                            </Comparison>
+                            <BoolOp op="and" style="op-and">
+                              <Comparison op="l" style="op-lt">
+                                <BinaryOp op="-" style="op-sub">
+                                  <CraftProperty property="Orbit.Apoapsis" style="prop-orbit" />
+                                  <Variable list="false" local="false" variableName="dap" />
+                                </BinaryOp>
+                                <Constant text="5000" />
+                              </Comparison>
+                              <BoolOp op="and" style="op-and">
+                                <Comparison op="l" style="op-lt">
+                                  <BinaryOp op="-" style="op-sub">
+                                    <CraftProperty property="Orbit.Periapsis" style="prop-orbit" />
+                                    <Variable list="false" local="false" variableName="dpe" />
+                                  </BinaryOp>
+                                  <Constant text="5000" />
+                                </Comparison>
+                                <Comparison op="l" style="op-lt">
+                                  <BinaryOp op="-" style="op-sub">
+                                    <MathFunction function="rad2deg" style="op-math">
+                                      <CraftProperty property="Orbit.Inclination" style="prop-orbit" />
+                                    </MathFunction>
+                                    <Variable list="false" local="false" variableName="di" />
+                                  </BinaryOp>
+                                  <Constant text="4" />
+                                </Comparison>
+                              </BoolOp>
+                            </BoolOp>
+                          </BoolOp>
+                          <Instructions>
+                            <BroadcastMessage global="false" local="true" id="14" style="broadcast-msg">
+                              <Constant text="startstage1" />
+                              <Constant number="0" />
+                            </BroadcastMessage>
+                            <Break id="15" style="break" />
+                          </Instructions>
+                        </If>
+                        <If id="16" style="if">
+                          <Comparison op="=" style="op-eq">
+                            <CraftProperty property="Orbit.Planet" style="prop-name" />
+                            <Not style="op-not">
+                              <Variable list="false" local="false" variableName="dplanet" />
+                            </Not>
+                          </Comparison>
+                          <Instructions>
+                            <DisplayMessage id="17" style="display">
+                              <StringOp op="join" style="join">
+                                <Constant text="&lt;size=150&gt;&lt;color=red&gt;Planet Mapping Program Initializing Failed! " />
+                                <Constant text="&lt;/size&gt;&lt;size=120%&gt;&lt;br&gt;" />
+                                <Constant text="Craft is in" />
+                                <CraftProperty property="Orbit.Planet" style="prop-name" />
+                                <Constant text="'s " />
+                                <Constant text="SOI" />
+                                <Constant text="" />
+                                <Constant text="&lt;/color&gt;&lt;br&gt;Retry When Craft is in" />
+                                <Constant text="&lt;size=250%&gt;&lt;color=RED&gt;" />
+                                <Variable list="false" local="false" variableName="dplanet" />
+                                <Constant text="&lt;/color&gt;&lt;/size&gt;'s SOI" />
+                                <Constant text="" />
+                              </StringOp>
+                              <Constant number="7" />
+                            </DisplayMessage>
+                            <WaitSeconds id="18" style="wait-seconds">
+                              <Constant number="1" />
+                            </WaitSeconds>
+                            <SetCraftProperty property="Part.SetActivated" id="19" style="set-part">
+                              <CraftProperty property="Part.NameToID" style="part-id">
+                                <Constant text="Active Mapping" />
+                              </CraftProperty>
+                              <Constant style="false" bool="false" />
+                            </SetCraftProperty>
+                          </Instructions>
+                        </If>
+                      </Instructions>
+                    </If>
+                    <WaitSeconds id="20" style="wait-seconds">
+                      <Constant text="0" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="21" style="flight-start" pos="-2589.887,2723.712" />
+                <SetVariable id="22" style="set-variable">
+                  <Variable list="false" local="false" variableName="dplanet" />
+                  <Constant text="Moon" />
+                </SetVariable>
+                <SetVariable id="23" style="set-variable">
+                  <Variable list="false" local="false" variableName="dpe" />
+                  <BinaryOp op="*" style="op-mul">
+                    <Constant text="7" />
+                    <Constant text="1000" />
+                  </BinaryOp>
+                </SetVariable>
+                <SetVariable id="24" style="set-variable">
+                  <Variable list="false" local="false" variableName="dap" />
+                  <BinaryOp op="*" style="op-mul">
+                    <Constant text="200" />
+                    <Constant text="1000" />
+                  </BinaryOp>
+                </SetVariable>
+                <SetVariable id="25" style="set-variable">
+                  <Variable list="false" local="false" variableName="di" />
+                  <Constant number="0" />
+                </SetVariable>
+                <WaitUntil id="26" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="Active Mapping" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant style="true" bool="true" />
+                  </Comparison>
+                </WaitUntil>
+                <BroadcastMessage global="false" local="true" id="27" style="broadcast-msg">
+                  <Constant text="startstage1" />
+                  <Constant number="0" />
+                </BroadcastMessage>
+              </Instructions>
+              <Instructions>
+                <Event event="ReceiveMessage" id="28" style="receive-msg" pos="-2499.064,630.8984">
+                  <Constant canReplace="false" text="startsrtage2" />
+                </Event>
+                <SetVariable id="29" style="set-variable">
+                  <Variable list="false" local="false" variableName="RadarDistance" />
+                  <MathFunction function="deg2rad" style="op-math">
+                    <BinaryOp op="*" style="op-mul">
+                      <Constant text="360" />
+                      <Planet op="radius" style="planet">
+                        <CraftProperty property="Orbit.Planet" style="prop-name" />
+                      </Planet>
+                    </BinaryOp>
+                  </MathFunction>
+                </SetVariable>
+                <SetVariable id="30" style="set-variable">
+                  <Variable list="false" local="false" variableName="size" />
+                  <Constant text="1" />
+                </SetVariable>
+                <SetVariable id="31" style="set-variable">
+                  <Variable list="false" local="false" variableName="totalcolor" />
+                  <VectorOp op="hex" style="vec-op-color">
+                    <Constant text="#D16800" />
+                  </VectorOp>
+                </SetVariable>
+                <SetVariable id="32" style="set-variable">
+                  <Variable list="false" local="false" variableName="flag" />
+                  <Constant number="0" />
+                </SetVariable>
+                <SetVariable id="33" style="set-variable">
+                  <Variable list="false" local="false" variableName="mapPixelNumber" />
+                  <Constant text="1080" />
+                </SetVariable>
+                <SetVariable id="34" style="set-variable">
+                  <Variable list="false" local="false" variableName="BH" />
+                  <Constant text="10" />
+                </SetVariable>
+                <SetVariable id="35" style="set-variable">
+                  <Variable list="false" local="false" variableName="BasicHeight" />
+                  <BinaryOp op="*" style="op-mul">
+                    <Constant text="-1" />
+                    <Variable list="false" local="false" variableName="BH" />
+                  </BinaryOp>
+                </SetVariable>
+                <SetCraftProperty property="Mfd.Create.Texture" id="36" style="create-mfd-widget">
+                  <Constant text="map1" />
+                </SetCraftProperty>
+                <SetCraftProperty property="Mfd.Texture.Initialize" id="37" style="set-mfd-texture-initialize">
+                  <Constant text="map1" />
+                  <Variable list="false" local="false" variableName="mapPixelNumber" />
+                  <Variable list="false" local="false" variableName="mapPixelNumber" />
+                </SetCraftProperty>
+                <SetCraftProperty property="Mfd.SetSize" id="38" style="set-mfd-widget">
+                  <Constant text="map1" />
+                  <BinaryOp op="*" style="op-mul">
+                    <Variable list="false" local="false" variableName="size" />
+                    <Vector style="vec">
+                      <VectorOp op="y" style="vec-op-1">
+                        <CraftProperty property="Mfd.Size" style="prop-mfd-widget">
+                          <Constant text="_Screen" />
+                        </CraftProperty>
+                      </VectorOp>
+                      <VectorOp op="y" style="vec-op-1">
+                        <CraftProperty property="Mfd.Size" style="prop-mfd-widget">
+                          <Constant text="_Screen" />
+                        </CraftProperty>
+                      </VectorOp>
+                      <Constant number="0" />
+                    </Vector>
+                  </BinaryOp>
+                </SetCraftProperty>
+                <For var="i" id="39" style="for">
+                  <Constant number="1" />
+                  <BinaryOp op="*" style="op-mul">
+                    <Variable list="false" local="false" variableName="mapPixelNumber" />
+                    <Variable list="false" local="false" variableName="mapPixelNumber" />
+                  </BinaryOp>
+                  <Constant number="1" />
+                  <Instructions>
+                    <ChangeVariable id="40" style="change-variable">
+                      <Variable list="false" local="false" variableName="flag" />
+                      <Constant text="1" />
+                    </ChangeVariable>
+                    <LogMessage id="41" style="log">
+                      <Variable list="false" local="false" variableName="flag" />
+                    </LogMessage>
+                    <DisplayMessage id="42" style="display">
+                      <StringOp op="join" style="join">
+                        <StringOp op="join" style="join">
+                          <Constant text="&lt;color=blue&gt;" />
+                          <Constant text="Mapping started" />
+                          <Constant text="&lt;/color&gt;" />
+                          <Constant text="&lt;br&gt;" />
+                          <Constant text="&lt;size=150%&gt;&lt;color=green&gt;Progress:" />
+                          <StringOp op="format" style="format">
+                            <Constant text="{0:n2}" />
+                            <BinaryOp op="*" style="op-mul">
+                              <BinaryOp op="/" style="op-div">
+                                <Variable list="false" local="false" variableName="flag" />
+                                <BinaryOp op="^" style="op-exp">
+                                  <Variable list="false" local="false" variableName="mapPixelNumber" />
+                                  <Constant text="2" />
+                                </BinaryOp>
+                              </BinaryOp>
+                              <Constant text="100" />
+                            </BinaryOp>
+                            <Constant text="" />
+                          </StringOp>
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="%" />
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <SetVariable id="43" style="set-variable">
+                      <Variable list="false" local="false" variableName="mappixelx" />
+                      <BinaryOp op="%" style="op-mod">
+                        <Variable list="false" local="true" variableName="i" />
+                        <Variable list="false" local="false" variableName="mapPixelNumber" />
+                      </BinaryOp>
+                    </SetVariable>
+                    <SetVariable id="44" style="set-variable">
+                      <Variable list="false" local="false" variableName="mappixely" />
+                      <MathFunction function="ceiling" style="op-math">
+                        <BinaryOp op="/" style="op-div">
+                          <Variable list="false" local="true" variableName="i" />
+                          <Variable list="false" local="false" variableName="mapPixelNumber" />
+                        </BinaryOp>
+                      </MathFunction>
+                    </SetVariable>
+                    <SetVariable id="45" style="set-variable">
+                      <Variable list="false" local="false" variableName="mapheight" />
+                      <CraftProperty property="Terrain.Height" style="terrain-query">
+                        <Vector style="vec">
+                          <BinaryOp op="*" style="op-mul">
+                            <BinaryOp op="-" style="op-sub">
+                              <Variable list="false" local="false" variableName="mappixelx" />
+                              <BinaryOp op="/" style="op-div">
+                                <Variable list="false" local="false" variableName="mapPixelNumber" />
+                                <Constant text="2" />
+                              </BinaryOp>
+                            </BinaryOp>
+                            <BinaryOp op="/" style="op-div">
+                              <MathFunction function="rad2deg" style="op-math">
+                                <BinaryOp op="/" style="op-div">
+                                  <Variable list="false" local="false" variableName="RadarDistance" />
+                                  <Planet op="radius" style="planet">
+                                    <CraftProperty property="Orbit.Planet" style="prop-name" />
+                                  </Planet>
+                                </BinaryOp>
+                              </MathFunction>
+                              <Variable list="false" local="false" variableName="mapPixelNumber" />
+                            </BinaryOp>
+                          </BinaryOp>
+                          <BinaryOp op="*" style="op-mul">
+                            <BinaryOp op="-" style="op-sub">
+                              <Variable list="false" local="false" variableName="mappixely" />
+                              <BinaryOp op="/" style="op-div">
+                                <Variable list="false" local="false" variableName="mapPixelNumber" />
+                                <Constant text="2" />
+                              </BinaryOp>
+                            </BinaryOp>
+                            <BinaryOp op="/" style="op-div">
+                              <MathFunction function="rad2deg" style="op-math">
+                                <BinaryOp op="/" style="op-div">
+                                  <Variable list="false" local="false" variableName="RadarDistance" />
+                                  <Planet op="radius" style="planet">
+                                    <CraftProperty property="Orbit.Planet" style="prop-name" />
+                                  </Planet>
+                                </BinaryOp>
+                              </MathFunction>
+                              <Variable list="false" local="false" variableName="mapPixelNumber" />
+                            </BinaryOp>
+                          </BinaryOp>
+                          <Constant number="0" />
+                        </Vector>
+                      </CraftProperty>
+                    </SetVariable>
+                    <SetVariable id="46" style="set-variable">
+                      <Variable list="false" local="false" variableName="mappixelcolor" />
+                      <BinaryOp op="/" style="op-div">
+                        <Conditional style="conditional">
+                          <Comparison op="ge" style="op-gte">
+                            <BinaryOp op="+" style="op-add">
+                              <Variable list="false" local="false" variableName="mapheight" />
+                              <Variable list="false" local="false" variableName="BasicHeight" />
+                            </BinaryOp>
+                            <Constant text="4500" />
+                          </Comparison>
+                          <Vector style="vec">
+                            <Constant text="255" />
+                            <Constant text="255" />
+                            <Constant text="255" />
+                          </Vector>
+                          <Conditional style="conditional">
+                            <Comparison op="ge" style="op-gte">
+                              <BinaryOp op="+" style="op-add">
+                                <Variable list="false" local="false" variableName="mapheight" />
+                                <Variable list="false" local="false" variableName="BasicHeight" />
+                              </BinaryOp>
+                              <Constant text="4000" />
+                            </Comparison>
+                            <Vector style="vec">
+                              <BinaryOp op="+" style="op-add">
+                                <BinaryOp op="*" style="op-mul">
+                                  <BinaryOp op="/" style="op-div">
+                                    <Constant text="-7" />
+                                    <Constant text="100" />
+                                  </BinaryOp>
+                                  <BinaryOp op="-" style="op-sub">
+                                    <Constant text="4500" />
+                                    <BinaryOp op="+" style="op-add">
+                                      <Variable list="false" local="false" variableName="mapheight" />
+                                      <Variable list="false" local="false" variableName="BasicHeight" />
+                                    </BinaryOp>
+                                  </BinaryOp>
+                                </BinaryOp>
+                                <Constant text="255" />
+                              </BinaryOp>
+                              <BinaryOp op="+" style="op-add">
+                                <BinaryOp op="*" style="op-mul">
+                                  <BinaryOp op="/" style="op-div">
+                                    <Constant text="-7" />
+                                    <Constant text="50" />
+                                  </BinaryOp>
+                                  <BinaryOp op="-" style="op-sub">
+                                    <Constant text="4500" />
+                                    <BinaryOp op="+" style="op-add">
+                                      <Variable list="false" local="false" variableName="mapheight" />
+                                      <Variable list="false" local="false" variableName="BasicHeight" />
+                                    </BinaryOp>
+                                  </BinaryOp>
+                                </BinaryOp>
+                                <Constant text="255" />
+                              </BinaryOp>
+                              <Constant text="255" />
+                            </Vector>
+                            <Conditional style="conditional">
+                              <Comparison op="ge" style="op-gte">
+                                <BinaryOp op="+" style="op-add">
+                                  <Variable list="false" local="false" variableName="mapheight" />
+                                  <Variable list="false" local="false" variableName="BasicHeight" />
+                                </BinaryOp>
+                                <Constant text="3500" />
+                              </Comparison>
+                              <Vector style="vec">
+                                <BinaryOp op="+" style="op-add">
+                                  <BinaryOp op="*" style="op-mul">
+                                    <BinaryOp op="/" style="op-div">
+                                      <Constant text="3" />
+                                      <Constant text="125" />
+                                    </BinaryOp>
+                                    <BinaryOp op="-" style="op-sub">
+                                      <Constant text="4000" />
+                                      <BinaryOp op="+" style="op-add">
+                                        <Variable list="false" local="false" variableName="mapheight" />
+                                        <Variable list="false" local="false" variableName="BasicHeight" />
+                                      </BinaryOp>
+                                    </BinaryOp>
+                                  </BinaryOp>
+                                  <Constant text="220" />
+                                </BinaryOp>
+                                <BinaryOp op="+" style="op-add">
+                                  <BinaryOp op="*" style="op-mul">
+                                    <BinaryOp op="/" style="op-div">
+                                      <Constant text="-69" />
+                                      <Constant text="500" />
+                                    </BinaryOp>
+                                    <BinaryOp op="-" style="op-sub">
+                                      <Constant text="4000" />
+                                      <BinaryOp op="+" style="op-add">
+                                        <Variable list="false" local="false" variableName="mapheight" />
+                                        <Variable list="false" local="false" variableName="BasicHeight" />
+                                      </BinaryOp>
+                                    </BinaryOp>
+                                  </BinaryOp>
+                                  <Constant text="185" />
+                                </BinaryOp>
+                                <BinaryOp op="+" style="op-add">
+                                  <BinaryOp op="*" style="op-mul">
+                                    <BinaryOp op="/" style="op-div">
+                                      <Constant text="-51" />
+                                      <Constant text="100" />
+                                    </BinaryOp>
+                                    <BinaryOp op="-" style="op-sub">
+                                      <Constant text="4000" />
+                                      <BinaryOp op="+" style="op-add">
+                                        <Variable list="false" local="false" variableName="mapheight" />
+                                        <Variable list="false" local="false" variableName="BasicHeight" />
+                                      </BinaryOp>
+                                    </BinaryOp>
+                                  </BinaryOp>
+                                  <Constant text="255" />
+                                </BinaryOp>
+                              </Vector>
+                              <Conditional style="conditional">
+                                <Comparison op="ge" style="op-gte">
+                                  <BinaryOp op="+" style="op-add">
+                                    <Variable list="false" local="false" variableName="mapheight" />
+                                    <Variable list="false" local="false" variableName="BasicHeight" />
+                                  </BinaryOp>
+                                  <Constant text="3000" />
+                                </Comparison>
+                                <Vector style="vec">
+                                  <BinaryOp op="+" style="op-add">
+                                    <BinaryOp op="*" style="op-mul">
+                                      <BinaryOp op="/" style="op-div">
+                                        <Constant text="23" />
+                                        <Constant text="500" />
+                                      </BinaryOp>
+                                      <BinaryOp op="-" style="op-sub">
+                                        <Constant text="3500" />
+                                        <BinaryOp op="+" style="op-add">
+                                          <Variable list="false" local="false" variableName="mapheight" />
+                                          <Variable list="false" local="false" variableName="BasicHeight" />
+                                        </BinaryOp>
+                                      </BinaryOp>
+                                    </BinaryOp>
+                                    <Constant text="232" />
+                                  </BinaryOp>
+                                  <BinaryOp op="+" style="op-add">
+                                    <BinaryOp op="*" style="op-mul">
+                                      <BinaryOp op="/" style="op-div">
+                                        <Constant text="23" />
+                                        <Constant text="250" />
+                                      </BinaryOp>
+                                      <BinaryOp op="-" style="op-sub">
+                                        <Constant text="3500" />
+                                        <BinaryOp op="+" style="op-add">
+                                          <Variable list="false" local="false" variableName="mapheight" />
+                                          <Variable list="false" local="false" variableName="BasicHeight" />
+                                        </BinaryOp>
+                                      </BinaryOp>
+                                    </BinaryOp>
+                                    <Constant text="116" />
+                                  </BinaryOp>
+                                  <BinaryOp op="*" style="op-mul">
+                                    <BinaryOp op="/" style="op-div">
+                                      <Constant text="7" />
+                                      <Constant text="50" />
+                                    </BinaryOp>
+                                    <BinaryOp op="-" style="op-sub">
+                                      <Constant text="3500" />
+                                      <BinaryOp op="+" style="op-add">
+                                        <Variable list="false" local="false" variableName="mapheight" />
+                                        <Variable list="false" local="false" variableName="BasicHeight" />
+                                      </BinaryOp>
+                                    </BinaryOp>
+                                  </BinaryOp>
+                                </Vector>
+                                <Conditional style="conditional">
+                                  <Comparison op="ge" style="op-gte">
+                                    <BinaryOp op="+" style="op-add">
+                                      <Variable list="false" local="false" variableName="mapheight" />
+                                      <Variable list="false" local="false" variableName="BasicHeight" />
+                                    </BinaryOp>
+                                    <Constant text="2500" />
+                                  </Comparison>
+                                  <Vector style="vec">
+                                    <BinaryOp op="+" style="op-add">
+                                      <BinaryOp op="*" style="op-mul">
+                                        <BinaryOp op="/" style="op-div">
+                                          <Constant text="-23" />
+                                          <Constant text="500" />
+                                        </BinaryOp>
+                                        <BinaryOp op="-" style="op-sub">
+                                          <Constant text="3000" />
+                                          <BinaryOp op="+" style="op-add">
+                                            <Variable list="false" local="false" variableName="mapheight" />
+                                            <Variable list="false" local="false" variableName="BasicHeight" />
+                                          </BinaryOp>
+                                        </BinaryOp>
+                                      </BinaryOp>
+                                      <Constant text="255" />
+                                    </BinaryOp>
+                                    <BinaryOp op="+" style="op-add">
+                                      <BinaryOp op="*" style="op-mul">
+                                        <BinaryOp op="/" style="op-div">
+                                          <Constant text="3" />
+                                          <Constant text="125" />
+                                        </BinaryOp>
+                                        <BinaryOp op="-" style="op-sub">
+                                          <Constant text="3000" />
+                                          <BinaryOp op="+" style="op-add">
+                                            <Variable list="false" local="false" variableName="mapheight" />
+                                            <Variable list="false" local="false" variableName="BasicHeight" />
+                                          </BinaryOp>
+                                        </BinaryOp>
+                                      </BinaryOp>
+                                      <Constant text="162" />
+                                    </BinaryOp>
+                                    <BinaryOp op="+" style="op-add">
+                                      <BinaryOp op="*" style="op-mul">
+                                        <BinaryOp op="/" style="op-div">
+                                          <Constant text="-7" />
+                                          <Constant text="50" />
+                                        </BinaryOp>
+                                        <BinaryOp op="-" style="op-sub">
+                                          <Constant text="3000" />
+                                          <BinaryOp op="+" style="op-add">
+                                            <Variable list="false" local="false" variableName="mapheight" />
+                                            <Variable list="false" local="false" variableName="BasicHeight" />
+                                          </BinaryOp>
+                                        </BinaryOp>
+                                      </BinaryOp>
+                                      <Constant number="0" />
+                                    </BinaryOp>
+                                  </Vector>
+                                  <Conditional style="conditional">
+                                    <Comparison op="ge" style="op-gte">
+                                      <BinaryOp op="+" style="op-add">
+                                        <Variable list="false" local="false" variableName="mapheight" />
+                                        <Variable list="false" local="false" variableName="BasicHeight" />
+                                      </BinaryOp>
+                                      <Constant text="2000" />
+                                    </Comparison>
+                                    <Vector style="vec">
+                                      <Constant text="232" />
+                                      <BinaryOp op="+" style="op-add">
+                                        <BinaryOp op="*" style="op-mul">
+                                          <BinaryOp op="/" style="op-div">
+                                            <Constant text="29" />
+                                            <Constant text="250" />
+                                          </BinaryOp>
+                                          <BinaryOp op="-" style="op-sub">
+                                            <Constant text="2500" />
+                                            <BinaryOp op="+" style="op-add">
+                                              <Variable list="false" local="false" variableName="mapheight" />
+                                              <Variable list="false" local="false" variableName="BasicHeight" />
+                                            </BinaryOp>
+                                          </BinaryOp>
+                                        </BinaryOp>
+                                        <Constant text="174" />
+                                      </BinaryOp>
+                                      <Constant text="0" />
+                                    </Vector>
+                                    <Conditional style="conditional">
+                                      <Comparison op="ge" style="op-gte">
+                                        <BinaryOp op="+" style="op-add">
+                                          <Variable list="false" local="false" variableName="mapheight" />
+                                          <Variable list="false" local="false" variableName="BasicHeight" />
+                                        </BinaryOp>
+                                        <Constant text="1500" />
+                                      </Comparison>
+                                      <Vector style="vec">
+                                        <BinaryOp op="+" style="op-add">
+                                          <BinaryOp op="*" style="op-mul">
+                                            <BinaryOp op="/" style="op-div">
+                                              <Constant text="-29" />
+                                              <Constant text="500" />
+                                            </BinaryOp>
+                                            <BinaryOp op="-" style="op-sub">
+                                              <Constant text="2000" />
+                                              <BinaryOp op="+" style="op-add">
+                                                <Variable list="false" local="false" variableName="mapheight" />
+                                                <Variable list="false" local="false" variableName="BasicHeight" />
+                                              </BinaryOp>
+                                            </BinaryOp>
+                                          </BinaryOp>
+                                          <Constant text="232" />
+                                        </BinaryOp>
+                                        <BinaryOp op="+" style="op-add">
+                                          <BinaryOp op="*" style="op-mul">
+                                            <BinaryOp op="/" style="op-div">
+                                              <Constant text="23" />
+                                              <Constant text="500" />
+                                            </BinaryOp>
+                                            <BinaryOp op="-" style="op-sub">
+                                              <Constant text="2000" />
+                                              <BinaryOp op="+" style="op-add">
+                                                <Variable list="false" local="false" variableName="mapheight" />
+                                                <Variable list="false" local="false" variableName="BasicHeight" />
+                                              </BinaryOp>
+                                            </BinaryOp>
+                                          </BinaryOp>
+                                          <Constant text="232" />
+                                        </BinaryOp>
+                                        <BinaryOp op="+" style="op-add">
+                                          <BinaryOp op="*" style="op-mul">
+                                            <BinaryOp op="/" style="op-div">
+                                              <Constant text="23" />
+                                              <Constant text="250" />
+                                            </BinaryOp>
+                                            <BinaryOp op="-" style="op-sub">
+                                              <Constant text="2000" />
+                                              <BinaryOp op="+" style="op-add">
+                                                <Variable list="false" local="false" variableName="mapheight" />
+                                                <Variable list="false" local="false" variableName="BasicHeight" />
+                                              </BinaryOp>
+                                            </BinaryOp>
+                                          </BinaryOp>
+                                          <Constant text="0" />
+                                        </BinaryOp>
+                                      </Vector>
+                                      <Conditional style="conditional">
+                                        <Comparison op="ge" style="op-gte">
+                                          <BinaryOp op="+" style="op-add">
+                                            <Variable list="false" local="false" variableName="mapheight" />
+                                            <Variable list="false" local="false" variableName="BasicHeight" />
+                                          </BinaryOp>
+                                          <Constant text="1000" />
+                                        </Comparison>
+                                        <Vector style="vec">
+                                          <BinaryOp op="+" style="op-add">
+                                            <BinaryOp op="*" style="op-mul">
+                                              <BinaryOp op="/" style="op-div">
+                                                <Constant text="-29" />
+                                                <Constant text="500" />
+                                              </BinaryOp>
+                                              <BinaryOp op="-" style="op-sub">
+                                                <Constant text="1500" />
+                                                <BinaryOp op="+" style="op-add">
+                                                  <Variable list="false" local="false" variableName="mapheight" />
+                                                  <Variable list="false" local="false" variableName="BasicHeight" />
+                                                </BinaryOp>
+                                              </BinaryOp>
+                                            </BinaryOp>
+                                            <Constant text="203" />
+                                          </BinaryOp>
+                                          <Constant text="255" />
+                                          <BinaryOp op="+" style="op-add">
+                                            <BinaryOp op="*" style="op-mul">
+                                              <BinaryOp op="/" style="op-div">
+                                                <Constant text="47" />
+                                                <Constant text="500" />
+                                              </BinaryOp>
+                                              <BinaryOp op="-" style="op-sub">
+                                                <Constant text="1500" />
+                                                <BinaryOp op="+" style="op-add">
+                                                  <Variable list="false" local="false" variableName="mapheight" />
+                                                  <Variable list="false" local="false" variableName="BasicHeight" />
+                                                </BinaryOp>
+                                              </BinaryOp>
+                                            </BinaryOp>
+                                            <Constant text="46" />
+                                          </BinaryOp>
+                                        </Vector>
+                                        <Conditional style="conditional">
+                                          <Comparison op="ge" style="op-gte">
+                                            <BinaryOp op="+" style="op-add">
+                                              <Variable list="false" local="false" variableName="mapheight" />
+                                              <Variable list="false" local="false" variableName="BasicHeight" />
+                                            </BinaryOp>
+                                            <Constant text="500" />
+                                          </Comparison>
+                                          <Vector style="vec">
+                                            <BinaryOp op="+" style="op-add">
+                                              <BinaryOp op="*" style="op-mul">
+                                                <BinaryOp op="/" style="op-div">
+                                                  <Constant text="-7" />
+                                                  <Constant text="100" />
+                                                </BinaryOp>
+                                                <BinaryOp op="-" style="op-sub">
+                                                  <Constant text="1000" />
+                                                  <BinaryOp op="+" style="op-add">
+                                                    <Variable list="false" local="false" variableName="mapheight" />
+                                                    <Variable list="false" local="false" variableName="BasicHeight" />
+                                                  </BinaryOp>
+                                                </BinaryOp>
+                                              </BinaryOp>
+                                              <Constant text="174" />
+                                            </BinaryOp>
+                                            <BinaryOp op="+" style="op-add">
+                                              <BinaryOp op="*" style="op-mul">
+                                                <BinaryOp op="/" style="op-div">
+                                                  <Constant text="-7" />
+                                                  <Constant text="50" />
+                                                </BinaryOp>
+                                                <BinaryOp op="-" style="op-sub">
+                                                  <Constant text="1000" />
+                                                  <BinaryOp op="+" style="op-add">
+                                                    <Variable list="false" local="false" variableName="mapheight" />
+                                                    <Variable list="false" local="false" variableName="BasicHeight" />
+                                                  </BinaryOp>
+                                                </BinaryOp>
+                                              </BinaryOp>
+                                              <Constant text="255" />
+                                            </BinaryOp>
+                                            <BinaryOp op="+" style="op-add">
+                                              <BinaryOp op="*" style="op-mul">
+                                                <BinaryOp op="/" style="op-div">
+                                                  <Constant text="-93" />
+                                                  <Constant text="500" />
+                                                </BinaryOp>
+                                                <BinaryOp op="-" style="op-sub">
+                                                  <Constant text="1000" />
+                                                  <BinaryOp op="+" style="op-add">
+                                                    <Variable list="false" local="false" variableName="mapheight" />
+                                                    <Variable list="false" local="false" variableName="BasicHeight" />
+                                                  </BinaryOp>
+                                                </BinaryOp>
+                                              </BinaryOp>
+                                              <Constant text="93" />
+                                            </BinaryOp>
+                                          </Vector>
+                                          <Conditional style="conditional">
+                                            <Comparison op="ge" style="op-gte">
+                                              <BinaryOp op="+" style="op-add">
+                                                <Variable list="false" local="false" variableName="mapheight" />
+                                                <Variable list="false" local="false" variableName="BasicHeight" />
+                                              </BinaryOp>
+                                              <Constant text="0" />
+                                            </Comparison>
+                                            <Vector style="vec">
+                                              <BinaryOp op="+" style="op-add">
+                                                <BinaryOp op="*" style="op-mul">
+                                                  <BinaryOp op="/" style="op-div">
+                                                    <Constant text="-139" />
+                                                    <Constant text="500" />
+                                                  </BinaryOp>
+                                                  <BinaryOp op="-" style="op-sub">
+                                                    <Constant text="500" />
+                                                    <BinaryOp op="+" style="op-add">
+                                                      <Variable list="false" local="false" variableName="mapheight" />
+                                                      <Variable list="false" local="false" variableName="BasicHeight" />
+                                                    </BinaryOp>
+                                                  </BinaryOp>
+                                                </BinaryOp>
+                                                <Constant text="139" />
+                                              </BinaryOp>
+                                              <BinaryOp op="+" style="op-add">
+                                                <BinaryOp op="*" style="op-mul">
+                                                  <BinaryOp op="/" style="op-div">
+                                                    <Constant text="-69" />
+                                                    <Constant text="500" />
+                                                  </BinaryOp>
+                                                  <BinaryOp op="-" style="op-sub">
+                                                    <Constant text="500" />
+                                                    <BinaryOp op="+" style="op-add">
+                                                      <Variable list="false" local="false" variableName="mapheight" />
+                                                      <Variable list="false" local="false" variableName="BasicHeight" />
+                                                    </BinaryOp>
+                                                  </BinaryOp>
+                                                </BinaryOp>
+                                                <Constant text="185" />
+                                              </BinaryOp>
+                                              <Constant text="0" />
+                                            </Vector>
+                                            <Conditional style="conditional">
+                                              <Comparison op="ge" style="op-gte">
+                                                <BinaryOp op="+" style="op-add">
+                                                  <Variable list="false" local="false" variableName="mapheight" />
+                                                  <Variable list="false" local="false" variableName="BasicHeight" />
+                                                </BinaryOp>
+                                                <Constant text="-500" />
+                                              </Comparison>
+                                              <Vector style="vec">
+                                                <BinaryOp op="+" style="op-add">
+                                                  <BinaryOp op="*" style="op-mul">
+                                                    <BinaryOp op="/" style="op-div">
+                                                      <Constant text="-139" />
+                                                      <Constant text="500" />
+                                                    </BinaryOp>
+                                                    <BinaryOp op="-" style="op-sub">
+                                                      <Constant text="0" />
+                                                      <BinaryOp op="+" style="op-add">
+                                                        <Variable list="false" local="false" variableName="mapheight" />
+                                                        <Variable list="false" local="false" variableName="BasicHeight" />
+                                                      </BinaryOp>
+                                                    </BinaryOp>
+                                                  </BinaryOp>
+                                                  <Constant text="209" />
+                                                </BinaryOp>
+                                                <BinaryOp op="+" style="op-add">
+                                                  <BinaryOp op="*" style="op-mul">
+                                                    <BinaryOp op="/" style="op-div">
+                                                      <Constant text="-34" />
+                                                      <Constant text="500" />
+                                                    </BinaryOp>
+                                                    <BinaryOp op="-" style="op-sub">
+                                                      <Constant text="0" />
+                                                      <BinaryOp op="+" style="op-add">
+                                                        <Variable list="false" local="false" variableName="mapheight" />
+                                                        <Variable list="false" local="false" variableName="BasicHeight" />
+                                                      </BinaryOp>
+                                                    </BinaryOp>
+                                                  </BinaryOp>
+                                                  <Constant text="243" />
+                                                </BinaryOp>
+                                                <Constant text="255" />
+                                              </Vector>
+                                              <Conditional style="conditional">
+                                                <Comparison op="ge" style="op-gte">
+                                                  <BinaryOp op="+" style="op-add">
+                                                    <Variable list="false" local="false" variableName="mapheight" />
+                                                    <Variable list="false" local="false" variableName="BasicHeight" />
+                                                  </BinaryOp>
+                                                  <Constant text="-1000" />
+                                                </Comparison>
+                                                <Vector style="vec">
+                                                  <Constant text="70" />
+                                                  <BinaryOp op="+" style="op-add">
+                                                    <BinaryOp op="*" style="op-mul">
+                                                      <BinaryOp op="/" style="op-div">
+                                                        <Constant text="-139" />
+                                                        <Constant text="500" />
+                                                      </BinaryOp>
+                                                      <BinaryOp op="-" style="op-sub">
+                                                        <Constant text="-500" />
+                                                        <BinaryOp op="+" style="op-add">
+                                                          <Variable list="false" local="false" variableName="mapheight" />
+                                                          <Variable list="false" local="false" variableName="BasicHeight" />
+                                                        </BinaryOp>
+                                                      </BinaryOp>
+                                                    </BinaryOp>
+                                                    <Constant text="209" />
+                                                  </BinaryOp>
+                                                  <Constant text="255" />
+                                                </Vector>
+                                                <Conditional style="conditional">
+                                                  <Comparison op="ge" style="op-gte">
+                                                    <BinaryOp op="+" style="op-add">
+                                                      <Variable list="false" local="false" variableName="mapheight" />
+                                                      <Variable list="false" local="false" variableName="BasicHeight" />
+                                                    </BinaryOp>
+                                                    <Constant text="-1500" />
+                                                  </Comparison>
+                                                  <Vector style="vec">
+                                                    <BinaryOp op="+" style="op-add">
+                                                      <BinaryOp op="*" style="op-mul">
+                                                        <BinaryOp op="/" style="op-div">
+                                                          <Constant text="-7" />
+                                                          <Constant text="50" />
+                                                        </BinaryOp>
+                                                        <BinaryOp op="-" style="op-sub">
+                                                          <Constant text="-1000" />
+                                                          <BinaryOp op="+" style="op-add">
+                                                            <Variable list="false" local="false" variableName="mapheight" />
+                                                            <Variable list="false" local="false" variableName="BasicHeight" />
+                                                          </BinaryOp>
+                                                        </BinaryOp>
+                                                      </BinaryOp>
+                                                      <Constant text="70" />
+                                                    </BinaryOp>
+                                                    <BinaryOp op="+" style="op-add">
+                                                      <BinaryOp op="*" style="op-mul">
+                                                        <BinaryOp op="/" style="op-div">
+                                                          <Constant text="-7" />
+                                                          <Constant text="50" />
+                                                        </BinaryOp>
+                                                        <BinaryOp op="-" style="op-sub">
+                                                          <Constant text="-1000" />
+                                                          <BinaryOp op="+" style="op-add">
+                                                            <Variable list="false" local="false" variableName="mapheight" />
+                                                            <Variable list="false" local="false" variableName="BasicHeight" />
+                                                          </BinaryOp>
+                                                        </BinaryOp>
+                                                      </BinaryOp>
+                                                      <Constant text="70" />
+                                                    </BinaryOp>
+                                                    <BinaryOp op="+" style="op-add">
+                                                      <BinaryOp op="*" style="op-mul">
+                                                        <BinaryOp op="/" style="op-div">
+                                                          <Constant text="-93" />
+                                                          <Constant text="500" />
+                                                        </BinaryOp>
+                                                        <BinaryOp op="-" style="op-sub">
+                                                          <Constant text="-1000" />
+                                                          <BinaryOp op="+" style="op-add">
+                                                            <Variable list="false" local="false" variableName="mapheight" />
+                                                            <Variable list="false" local="false" variableName="BasicHeight" />
+                                                          </BinaryOp>
+                                                        </BinaryOp>
+                                                      </BinaryOp>
+                                                      <Constant text="255" />
+                                                    </BinaryOp>
+                                                  </Vector>
+                                                  <Conditional style="conditional">
+                                                    <Comparison op="ge" style="op-gte">
+                                                      <BinaryOp op="+" style="op-add">
+                                                        <Variable list="false" local="false" variableName="mapheight" />
+                                                        <Variable list="false" local="false" variableName="BasicHeight" />
+                                                      </BinaryOp>
+                                                      <Constant text="-4500" />
+                                                    </Comparison>
+                                                    <Vector style="vec">
+                                                      <Constant text="0" />
+                                                      <Constant text="0" />
+                                                      <BinaryOp op="+" style="op-add">
+                                                        <BinaryOp op="*" style="op-mul">
+                                                          <BinaryOp op="/" style="op-div">
+                                                            <Constant text="-139" />
+                                                            <Constant text="3000" />
+                                                          </BinaryOp>
+                                                          <BinaryOp op="-" style="op-sub">
+                                                            <Constant text="-1500" />
+                                                            <BinaryOp op="+" style="op-add">
+                                                              <Variable list="false" local="false" variableName="mapheight" />
+                                                              <Variable list="false" local="false" variableName="BasicHeight" />
+                                                            </BinaryOp>
+                                                          </BinaryOp>
+                                                        </BinaryOp>
+                                                        <Constant text="255" />
+                                                      </BinaryOp>
+                                                    </Vector>
+                                                    <Vector style="vec">
+                                                      <Constant text="0" />
+                                                      <Constant text="0" />
+                                                      <Constant text="23" />
+                                                    </Vector>
+                                                  </Conditional>
+                                                </Conditional>
+                                              </Conditional>
+                                            </Conditional>
+                                          </Conditional>
+                                        </Conditional>
+                                      </Conditional>
+                                    </Conditional>
+                                  </Conditional>
+                                </Conditional>
+                              </Conditional>
+                            </Conditional>
+                          </Conditional>
+                        </Conditional>
+                        <Constant text="255" />
+                      </BinaryOp>
+                    </SetVariable>
+                    <SetCraftProperty property="Mfd.Texture.SetPixel" id="47" style="set-mfd-texture-setpixel">
+                      <Constant text="map1" />
+                      <Variable list="false" local="false" variableName="mappixely" />
+                      <Variable list="false" local="false" variableName="mappixelx" />
+                      <Variable list="false" local="false" variableName="mappixelcolor" />
+                    </SetCraftProperty>
+                    <SetCraftProperty property="Mfd.SetRotation" id="48" style="set-mfd-widget">
+                      <Constant text="map1" />
+                      <Constant text="270" />
+                    </SetCraftProperty>
+                  </Instructions>
+                </For>
+                <SetCraftProperty property="Part.SetActivated" id="49" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="trigger" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <DisplayMessage id="50" style="display">
+                  <Constant text="Mapping Complete" />
+                  <Constant number="7" />
+                </DisplayMessage>
+                <SetVariable id="51" style="set-variable">
+                  <Variable list="false" local="false" variableName="hey" pos="-2364.822,-527.5521" />
+                  <Constant text="1" />
+                </SetVariable>
+                <SetTimeMode mode="TimeWarp1" id="52" style="set-time-mode" />
+                <WaitSeconds id="53" style="wait-seconds">
+                  <Constant number="1" />
+                </WaitSeconds>
+                <SetTimeMode mode="Normal" id="54" style="set-time-mode" />
+                <SetVariable id="55" style="set-variable" pos="-2486.161,-694.8116">
+                  <Variable list="false" local="false" variableName="hey" />
+                  <Constant text="0" />
+                </SetVariable>
+              </Instructions>
+              <Instructions>
+                <Event event="ReceiveMessage" id="56" style="receive-msg" pos="-3202.308,542.6018">
+                  <Constant canReplace="false" text="startsrtage2" />
+                </Event>
+                <WaitSeconds id="57" style="wait-seconds">
+                  <Constant text="3" />
+                </WaitSeconds>
+                <WaitUntil id="58" style="wait-until">
+                  <MathFunction function="abs" style="op-math">
+                    <BinaryOp op="-" style="op-sub">
+                      <Variable list="false" local="false" variableName="flag" />
+                      <BinaryOp op="^" style="op-exp">
+                        <Variable list="false" local="false" variableName="mapPixelNumber" />
+                        <Constant text="2" />
+                      </BinaryOp>
+                    </BinaryOp>
+                  </MathFunction>
+                </WaitUntil>
+                <BroadcastMessage global="false" local="false" id="59" style="broadcast-msg-craft">
+                  <Constant text="rsscareer-mapping-contract-finished" />
+                  <Constant number="0" />
+                </BroadcastMessage>
+              </Instructions>
+              <Expressions>
+                <MathFunction function="rad2deg" style="op-math" pos="1529.738,-2537.226">
+                  <Constant text="" />
+                </MathFunction>
+                <MathFunction function="asin" style="op-math" pos="2264.06,-2541.773">
+                  <MathFunction function="rad2deg" style="op-math">
+                    <MathFunction function="acos" style="op-math">
+                      <Constant text="" />
+                    </MathFunction>
+                  </MathFunction>
+                </MathFunction>
+                <MathFunction function="deg2rad" style="op-math" pos="1350.467,-1919.672">
+                  <Constant text="" />
+                </MathFunction>
+                <BinaryOp op="*" style="op-mul" pos="-3013.322,-578.3668">
+                  <Constant text="2" />
+                  <BinaryOp op="*" style="op-mul">
+                    <Variable list="false" local="false" variableName="size" />
+                    <Constant text="" />
+                  </BinaryOp>
+                </BinaryOp>
+                <CraftProperty property="Craft.Position" style="craft" pos="-2615.314,-1728.286">
+                  <Constant number="0" />
+                </CraftProperty>
+                <BinaryOp op="-" style="op-sub" pos="4864.845,-3627.149">
+                  <CraftProperty property="Target.Position" style="prop-nav" />
+                  <CraftProperty property="Nav.Position" style="prop-nav" />
+                </BinaryOp>
+                <BinaryOp op="-" style="op-sub" pos="3281.684,-3751.948">
+                  <CraftProperty property="Target.Position" style="prop-nav" />
+                  <CraftProperty property="Nav.Position" style="prop-nav" />
+                </BinaryOp>
+                <BinaryOp op="-" style="op-sub" pos="2742.16,-1388.439">
+                  <Variable list="false" local="true" variableName="i" />
+                  <Constant text="1" />
+                </BinaryOp>
+                <BinaryOp op="%" style="op-mod" pos="2143.128,-1268.525">
+                  <Constant text="" />
+                  <Constant text="" />
+                </BinaryOp>
+                <Variable list="false" local="true" variableName="n" pos="311.944,-1403.01" />
+                <Variable list="false" local="true" variableName="n" pos="1944.403,-1067.262" />
+                <Variable list="false" local="true" variableName="n" pos="3479.718,-1279.606" />
+                <BinaryOp op="%" style="op-mod" pos="750.2977,-1392.133">
+                  <Constant text="" />
+                  <Constant text="5" />
+                </BinaryOp>
+                <BinaryOp op="*" style="op-mul" pos="2989.709,-1292.068">
+                  <Variable list="false" local="false" variableName="speed" />
+                  <CraftProperty property="Time.TimeSinceLaunch" style="prop-time" />
+                </BinaryOp>
+                <MathFunction function="sin" style="op-math" pos="1795.674,-1300.942">
+                  <MathFunction function="deg2rad" style="op-math">
+                    <Constant text="" />
+                  </MathFunction>
+                </MathFunction>
+                <CraftProperty property="Time.TimeSinceLaunch" style="prop-time" pos="1015.494,-529.1364" />
+                <MathFunction function="rad2deg" style="op-math" pos="1629.738,-2487.226">
+                  <Constant text="" />
+                </MathFunction>
+                <MathFunction function="asin" style="op-math" pos="2364.06,-2491.773">
+                  <MathFunction function="rad2deg" style="op-math">
+                    <MathFunction function="acos" style="op-math">
+                      <Constant text="" />
+                    </MathFunction>
+                  </MathFunction>
+                </MathFunction>
+                <MathFunction function="deg2rad" style="op-math" pos="1450.467,-1869.672">
+                  <Constant text="" />
+                </MathFunction>
+                <BinaryOp op="-" style="op-sub" pos="4964.845,-3577.149">
+                  <CraftProperty property="Target.Position" style="prop-nav" />
+                  <CraftProperty property="Nav.Position" style="prop-nav" />
+                </BinaryOp>
+                <BinaryOp op="-" style="op-sub" pos="3381.684,-3701.948">
+                  <CraftProperty property="Target.Position" style="prop-nav" />
+                  <CraftProperty property="Nav.Position" style="prop-nav" />
+                </BinaryOp>
+                <CraftProperty property="Mfd.Size" style="prop-mfd-widget" pos="1917.656,-2823.578">
+                  <Constant text="round1" />
+                </CraftProperty>
+                <MathFunction function="deg2rad" style="op-math" pos="2997.912,-1377.395">
+                  <Constant text="" />
+                </MathFunction>
+                <BinaryOp op="%" style="op-mod" pos="4451.427,-1554.256">
+                  <BinaryOp op="+" style="op-add">
+                    <Constant text="0" />
+                    <BinaryOp op="*" style="op-mul">
+                      <Variable list="false" local="false" variableName="speed" />
+                      <BinaryOp op="-" style="op-sub">
+                        <CraftProperty property="Time.TimeSinceLaunch" style="prop-time" />
+                        <BinaryOp op="/" style="op-div">
+                          <BinaryOp op="*" style="op-mul">
+                            <Variable list="false" local="true" variableName="i" />
+                            <Variable list="false" local="true" variableName="tz" />
+                          </BinaryOp>
+                          <Variable list="false" local="true" variableName="n" />
+                        </BinaryOp>
+                      </BinaryOp>
+                    </BinaryOp>
+                  </BinaryOp>
+                  <Constant text="90" />
+                </BinaryOp>
+                <BinaryOp op="%" style="op-mod" pos="6482.744,-1884.187">
+                  <BinaryOp op="+" style="op-add">
+                    <Constant text="0" />
+                    <BinaryOp op="*" style="op-mul">
+                      <Variable list="false" local="false" variableName="speed" />
+                      <BinaryOp op="-" style="op-sub">
+                        <CraftProperty property="Time.TimeSinceLaunch" style="prop-time" />
+                        <BinaryOp op="/" style="op-div">
+                          <BinaryOp op="*" style="op-mul">
+                            <Variable list="false" local="true" variableName="i" />
+                            <Variable list="false" local="true" variableName="tz" />
+                          </BinaryOp>
+                          <Variable list="false" local="true" variableName="n" />
+                        </BinaryOp>
+                      </BinaryOp>
+                    </BinaryOp>
+                  </BinaryOp>
+                  <Constant text="90" />
+                </BinaryOp>
+                <MathFunction function="sin" style="op-math" pos="-1203.434,-1225.605">
+                  <MathFunction function="deg2rad" style="op-math">
+                    <Constant text="" />
+                  </MathFunction>
+                </MathFunction>
+                <BinaryOp op="/" style="op-div" pos="34.22385,-1247.92">
+                  <Constant text="" />
+                  <Variable list="false" local="true" variableName="tz" />
+                </BinaryOp>
+                <Variable list="false" local="true" variableName="i" pos="-198.9691,-1313.166" />
+                <Variable list="false" local="true" variableName="n" pos="371.5217,-1216.758" />
+                <Variable list="false" local="true" variableName="tz" pos="-166.6726,-1226.496" />
+                <Variable list="false" local="true" variableName="i" pos="-72.61666,-1261.72" />
+                <Variable list="false" local="true" variableName="n" pos="519.3069,-1219.036" />
+                <BinaryOp op="/" style="op-div" pos="-2576.204,-1354.663">
+                  <Constant text="" />
+                  <Constant text="640" />
+                </BinaryOp>
+                <BinaryOp op="/" style="op-div" pos="-2531.192,-1434.494">
+                  <Constant text="" />
+                  <Constant text="640" />
+                </BinaryOp>
+                <BinaryOp op="%" style="op-mod" pos="-481.1126,-1731.77">
+                  <Variable list="false" local="true" variableName="i" />
+                  <Variable list="false" local="false" variableName="mapPixelNumber" />
+                </BinaryOp>
+                <BinaryOp op="-" style="op-sub" pos="-275.1898,-1772.973">
+                  <Constant text="0" />
+                  <Constant text="0" />
+                </BinaryOp>
+                <CraftProperty property="Craft.Position" style="craft" pos="-2611.819,-1656.84">
+                  <Constant number="0" />
+                </CraftProperty>
+                <Conditional style="conditional" pos="-4459.205,-2810.879">
+                  <Comparison op="ge" style="op-gte">
+                    <Variable list="false" local="false" variableName="mapheight" />
+                    <Constant text="3500" />
+                  </Comparison>
+                  <Vector style="vec">
+                    <BinaryOp op="+" style="op-add">
+                      <BinaryOp op="*" style="op-mul">
+                        <BinaryOp op="/" style="op-div">
+                          <Constant text="6" />
+                          <Constant text="250" />
+                        </BinaryOp>
+                        <BinaryOp op="-" style="op-sub">
+                          <Constant text="4000" />
+                          <Variable list="false" local="false" variableName="mapheight" />
+                        </BinaryOp>
+                      </BinaryOp>
+                      <Constant text="220" />
+                    </BinaryOp>
+                    <BinaryOp op="+" style="op-add">
+                      <BinaryOp op="*" style="op-mul">
+                        <BinaryOp op="/" style="op-div">
+                          <Constant text="-69" />
+                          <Constant text="500" />
+                        </BinaryOp>
+                        <BinaryOp op="-" style="op-sub">
+                          <Constant text="4000" />
+                          <Variable list="false" local="false" variableName="mapheight" />
+                        </BinaryOp>
+                      </BinaryOp>
+                      <Constant text="185" />
+                    </BinaryOp>
+                    <BinaryOp op="+" style="op-add">
+                      <BinaryOp op="*" style="op-mul">
+                        <BinaryOp op="/" style="op-div">
+                          <Constant text="-51" />
+                          <Constant text="100" />
+                        </BinaryOp>
+                        <BinaryOp op="-" style="op-sub">
+                          <Constant text="4000" />
+                          <Variable list="false" local="false" variableName="mapheight" />
+                        </BinaryOp>
+                      </BinaryOp>
+                      <Constant text="255" />
+                    </BinaryOp>
+                  </Vector>
+                  <Constant number="0" />
+                </Conditional>
+                <BinaryOp op="*" style="op-mul" pos="16371.35,-3500.787">
+                  <BinaryOp op="/" style="op-div">
+                    <Constant text="51" />
+                    <Constant text="100" />
+                  </BinaryOp>
+                  <BinaryOp op="-" style="op-sub">
+                    <Constant text="500" />
+                    <Variable list="false" local="false" variableName="mapheight" />
+                  </BinaryOp>
+                </BinaryOp>
+                <BinaryOp op="-" style="op-sub" pos="2944.452,-3103.197">
+                  <Constant text="" />
+                  <Constant text="" />
+                </BinaryOp>
+                <BinaryOp op="*" style="op-mul" pos="1993.037,-3137.294">
+                  <Variable list="false" local="false" variableName="RadarDistance" />
+                  <BinaryOp op="/" style="op-div">
+                    <Constant text="3" />
+                    <Constant text="2" />
+                  </BinaryOp>
+                </BinaryOp>
+                <BinaryOp op="*" style="op-mul" pos="3579.604,-3171.163">
+                  <Constant text="" />
+                  <BinaryOp op="/" style="op-div">
+                    <Constant text="3" />
+                    <Constant text="2" />
+                  </BinaryOp>
+                </BinaryOp>
+                <Variable list="false" local="false" variableName="mappixely" pos="1663.155,-3096.256" />
+                <Variable list="false" local="false" variableName="mappixelx" pos="3331.639,-3144.554" />
+                <BinaryOp op="+" style="op-add" pos="1568.416,-3198.675">
+                  <Constant text="" />
+                  <Constant text="" />
+                </BinaryOp>
+                <BinaryOp op="+" style="op-add" pos="3563.307,-3076.876">
+                  <Constant text="" />
+                  <Constant text="" />
+                </BinaryOp>
+                <BinaryOp op="+" style="op-add" pos="1055.787,-3563.786">
+                  <Constant text="" />
+                  <BinaryOp op="/" style="op-div">
+                    <Variable list="false" local="false" variableName="mapPixelNumber" />
+                    <Constant text="2" />
+                  </BinaryOp>
+                </BinaryOp>
+                <BinaryOp op="+" style="op-add" pos="625.8438,-3622.677">
+                  <Constant text="" />
+                  <BinaryOp op="/" style="op-div">
+                    <Variable list="false" local="false" variableName="mapPixelNumber" />
+                    <Constant text="2" />
+                  </BinaryOp>
+                </BinaryOp>
+                <BinaryOp op="+" style="op-add" pos="-181.0056,580.9172">
+                  <VectorOp op="y" style="vec-op-1">
+                    <Planet op="toLatLongAgl" style="planet-to-lat-long-agl">
+                      <CraftProperty property="Nav.Position" style="prop-nav" />
+                    </Planet>
+                  </VectorOp>
+                  <Constant text="" />
+                </BinaryOp>
+                <BinaryOp op="*" style="op-mul" pos="1019.279,356.1731">
+                  <Constant text="2" />
+                  <Constant text="" />
+                </BinaryOp>
+                <BinaryOp op="*" style="op-mul" pos="-1525.698,611.1242">
+                  <Constant text="2" />
+                  <Constant text="" />
+                </BinaryOp>
+                <Vector style="vec" pos="18489.3,325.917">
+                  <Constant text="0" />
+                  <Constant text="0" />
+                  <Constant text="162" />
+                </Vector>
+                <BinaryOp op="*" style="op-mul" pos="-1631.476,-299.9413">
+                  <Constant text="2" />
+                  <Constant text="" />
+                </BinaryOp>
+                <Variable list="false" local="false" variableName="flag" pos="-1435.994,201.1422" />
+                <StringOp op="length" style="length" pos="-1978.645,197.4974">
+                  <MathFunction function="round" style="op-math">
+                    <BinaryOp op="-" style="op-sub">
+                      <BinaryOp op="^" style="op-exp">
+                        <Variable list="false" local="false" variableName="mapPixelNumber" />
+                        <Constant text="2" />
+                      </BinaryOp>
+                      <Variable list="false" local="false" variableName="flag" />
+                    </BinaryOp>
+                  </MathFunction>
+                </StringOp>
+                <BinaryOp op="/" style="op-div" pos="-927.4683,187.2334">
+                  <Constant text="1" />
+                  <CraftProperty property="Time.FrameDeltaTime" style="prop-time" />
+                </BinaryOp>
+                <BinaryOp op="-" style="op-sub" pos="-3275.874,13.9702">
+                  <Constant text="" />
+                  <BinaryOp op="-" style="op-sub">
+                    <StringOp op="length" style="length">
+                      <BinaryOp op="-" style="op-sub">
+                        <BinaryOp op="^" style="op-exp">
+                          <Variable list="false" local="false" variableName="mapPixelNumber" />
+                          <Constant text="2" />
+                        </BinaryOp>
+                        <Variable list="false" local="false" variableName="flag" />
+                      </BinaryOp>
+                    </StringOp>
+                    <Constant text="2" />
+                  </BinaryOp>
+                </BinaryOp>
+                <BinaryOp op="-" style="op-sub" pos="-1237.016,105.7665">
+                  <StringOp op="length" style="length">
+                    <BinaryOp op="-" style="op-sub">
+                      <BinaryOp op="^" style="op-exp">
+                        <Variable list="false" local="false" variableName="mapPixelNumber" />
+                        <Constant text="2" />
+                      </BinaryOp>
+                      <Variable list="false" local="false" variableName="flag" />
+                    </BinaryOp>
+                  </StringOp>
+                  <Constant text="" />
+                </BinaryOp>
+                <Comparison op="g" style="op-gt" pos="-2141.606,1843.099">
+                  <Comparison op="l" style="op-lt">
+                    <BinaryOp op="-" style="op-sub">
+                      <MathFunction function="rad2deg" style="op-math">
+                        <CraftProperty property="Orbit.Inclination" style="prop-orbit" />
+                      </MathFunction>
+                      <Variable list="false" local="false" variableName="di" />
+                    </BinaryOp>
+                    <Constant text="4" />
+                  </Comparison>
+                  <Constant text="4" />
+                </Comparison>
+                <Constant style="true" pos="-3693.376,2393.668" bool="true" />
+                <Comparison op="l" style="op-lt" pos="-2909.222,797.831">
+                  <Constant text="" />
+                  <Constant text="1" />
+                </Comparison>
+              </Expressions>
+            </Program>
+          </FlightProgram>
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="2" partB="1" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="3" partB="1" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="5" partB="1" attachPointsA="3" attachPointsB="0" />
+        <Connection partA="7" partB="1" attachPointsA="0" attachPointsB="2" />
+        <Connection partA="6" partB="5" attachPointsA="0" attachPointsB="2" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+   <DesignerPart name="Heat Shield" category="Payloads" description="Bring this" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="6" partType="HeatShield1" position="-9.536743E-07,0,0" rotation="-1.282974E-05,5.008957E-06,-3.077316E-13" activationStage="1" materials="4,4,4,4,4" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0.3245254,0.3245254,11.85747,9.316407,0.3245254,0.3245254" area="0.9748847,0.9748847,12.42285,9.316407,0.9748847,0.9748847" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" centerOfMass="-2.719103E-07,-0.04932763,2.068883E-08" heatShield="10309.123" heatShieldBaseScale="17.68" heatShieldMass="25.7728062" heatShieldScale="1" ignoreValidation="true" maxTemperature="3000" priceScale="0" stageActivationType="Payload" supportsActivation="true" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="2,2" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.7345E-16,0.15,4.510734E-09" shellDensityOverride="-1" supportsXZOffset="false" toolResizeBottom="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.1,0.1" volume="2.48149157" volumeInner="2.35363" partPropertiesEnabled="false" version="3" />
+          <FlightProgram partPropertiesEnabled="false">
+            <Program name="New Program">
+              <Variables />
+              <Instructions>
+                <Event event="FlightStart" id="0" style="flight-start" pos="-10,-20" />
+                <WaitUntil id="1" style="wait-until">
+                  <Comparison op="ge" style="op-gte">
+                    <CraftProperty property="Altitude.AGL" style="prop-altitude" />
+                    <Constant text="325e3" />
+                  </Comparison>
+                </WaitUntil>
+                <While id="2" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <DisplayMessage id="3" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;size=150%&gt;&lt;color=red&gt;" />
+                        <Constant text="Heat Shield Temperature: " />
+                        <StringOp op="friendly" subOp="temperature" style="friendly">
+                          <CraftProperty property="Part.Temperature" style="part">
+                            <Constant text="" />
+                          </CraftProperty>
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="4" style="wait-seconds">
+                      <Constant text="0" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Expressions />
+            </Program>
+          </FlightProgram>
+          <Payload payloadId="prc-partTest-2-2" />
+        </Part>
+      </Parts>
+      <Connections />
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="StarLink V1" category="Payloads" description="" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="617" partType="Fuselage1" position="-0.001944065,-0.0003237724,-0.01850271" rotation="270,-0.0001863126,0" name="starlink main body" materials="3,4,4,0,0" groupId="3e1ebdf2-0687-4fc1-8408-c74995e22110" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage9" textureTiling="30,50">
+          <Drag drag="0.360702,0.3486786,4.818779,0.7973885,0.1082106,0.1082106" area="0.360702,0.3486786,4.818779,0.7973885,0.1082106,0.1082106" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.60025,0" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,0.60025,0" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.05" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0.60025,0" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-0.60025,0" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" centerOfMass="1.783494E-09,-2.794841E-09,3.341724E-09" fuelLine="true" heatShieldScale="0" ignoreValidation="true" massScale="0.26" priceScale="0" supportsActivation="true" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.01455,0.05" cornerRadiuses="0,0,0,0,0,0,0,0" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.60025,0" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="2.01455,0.05" volume="0.483693242" volumeInner="0.430094361" partPropertiesEnabled="false" version="3" />
+          <FuelTank autoFuelType="false" capacity="663694.85162506253" fuel="663694.85162506253" fuelType="Battery" partPropertiesEnabled="false" />
+          <Gyroscope electricalConsumption="0.01" power="5" partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.StarLinkV1.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+          <Payload payloadId="StarLinkV1" setCraftNameOnActive="Star Link V1"/>
+        </Part>
+        <Part id="618" partType="SolarPanelArray" position="-0.001944542,0.01196337,-0.01864672" rotation="0.0001738681,269.9999,-0.0001496632" name="StarLinkV1 Solar Panels" materials="3,20,4,3,3" groupId="3e1ebdf2-0687-4fc1-8408-c74995e22110" partConnectionsEnabled="false" partStyleEnabled="false" panelTexture="SolarPanelHex">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="90,0,0" scale="1.35" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Rigid" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" includeInDrag="false" massScale="0" maxDragActive="1" partCollisionHandling="Never" partCollisionResponse="None" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <SolarPanelArray deploySpeed="0.5" efficiency="0.1" folds="-2" hideBase="true" invert="true" length="3" rows="12" rowSize="1" scale="1.35" inspectorEnabled="false" partPropertiesEnabled="false" version="2" />
+          <FlightProgram maxThreads="300" inspectorEnabled="false" partPropertiesEnabled="false">
+            <Program name="New Program">
+            <Variables>
+              <Variable name="direction" number="0" />
+              <Variable name="temp" number="0" />
+            </Variables>
+            <Instructions>
+              <Event event="ReceiveMessage" id="0" style="receive-msg" pos="1046.99,-248.733">
+                <Constant canReplace="false" text="roll" />
+              </Event>
+              <SetVariable id="1" style="set-variable">
+                <Variable list="false" local="false" variableName="direction" />
+                <Constant text="1" />
+              </SetVariable>
+              <While id="2" style="while">
+                <Constant style="true" bool="true" />
+                <Instructions>
+                  <LockNavSphere indicatorType="Vector" id="3" style="lock-nav-sphere-vector">
+                    <VectorOp op="cross" style="vec-op-2">
+                      <BinaryOp op="*" style="op-mul">
+                        <Variable list="false" local="false" variableName="direction" />
+                        <CraftProperty property="Vel.OrbitVelocity" style="prop-velocity" />
+                      </BinaryOp>
+                      <VectorOp op="cross" style="vec-op-2">
+                        <CraftProperty property="Nav.Position" style="prop-nav" />
+                        <BinaryOp op="*" style="op-mul">
+                          <Variable list="false" local="false" variableName="direction" />
+                          <CraftProperty property="Vel.OrbitVelocity" style="prop-velocity" />
+                        </BinaryOp>
+                      </VectorOp>
+                    </VectorOp>
+                  </LockNavSphere>
+                  <SetInput input="roll" id="4" style="set-input">
+                    <BinaryOp op="+" style="op-add">
+                      <BinaryOp op="*" style="op-mul">
+                        <VectorOp op="dot" style="vec-op-2">
+                          <CraftProperty property="Vel.AngularVelocity" style="prop-velocity" />
+                          <Constant text="(0, 0, 1)" />
+                        </VectorOp>
+                        <Constant text="-2" />
+                      </BinaryOp>
+                      <BinaryOp op="*" style="op-mul">
+                        <BinaryOp op="*" style="op-mul">
+                          <VectorOp op="dot" style="vec-op-2">
+                            <BinaryOp op="*" style="op-mul">
+                              <Variable list="false" local="false" variableName="direction" />
+                              <VectorOp op="norm" style="vec-op-1">
+                                <CraftProperty property="Vel.OrbitVelocity" style="prop-velocity" />
+                              </VectorOp>
+                            </BinaryOp>
+                            <CraftProperty property="Nav.CraftRight" style="prop-nav" />
+                          </VectorOp>
+                          <Constant text="1" />
+                        </BinaryOp>
+                        <Constant text="-1" />
+                      </BinaryOp>
+                    </BinaryOp>
+                  </SetInput>
+                  <WaitSeconds id="5" style="wait-seconds">
+                    <Constant text="0" />
+                  </WaitSeconds>
+                </Instructions>
+              </While>
+            </Instructions>
+            <Instructions>
+              <Event event="FlightStart" id="6" style="flight-start" pos="410.68,-260.9384" />
+              <WaitUntil id="8" style="wait-until">
+                <Comparison op="=" style="op-eq">
+                  <EvaluateExpression style="evaluate-expression">
+                    <Constant text="[*.StarLinkV1.Value]" />
+                  </EvaluateExpression>
+                  <Constant text="1" />
+                </Comparison>
+              </WaitUntil>
+              <WaitSeconds id="7" style="wait-seconds">
+                <BinaryOp op="rand" style="op-rand">
+                  <Constant text="2" />
+                  <Constant text="4" />
+                </BinaryOp>
+              </WaitSeconds>
+              <BroadcastMessage global="false" local="true" id="10" style="broadcast-msg">
+                <Constant text="roll" />
+                <Constant number="0" />
+              </BroadcastMessage>
+              <WaitSeconds id="11" style="wait-seconds">
+                <BinaryOp op="rand" style="op-rand">
+                  <Constant text="3" />
+                  <Constant text="5" />
+                </BinaryOp>
+              </WaitSeconds>
+              <SetCraftProperty property="Part.SetActivated" id="12" style="set-part">
+                <CraftProperty property="Part.ThisID" style="part">
+                  <Constant number="0" />
+                </CraftProperty>
+                <Constant style="true" bool="true" />
+              </SetCraftProperty>
+              <WaitSeconds id="13" style="wait-seconds">
+                <BinaryOp op="rand" style="op-rand">
+                  <Constant text="8" />
+                  <Constant text="10" />
+                </BinaryOp>
+              </WaitSeconds>
+              <SetVariable id="14" style="set-variable">
+                <Variable list="false" local="false" variableName="temp" />
+                <VectorOp op="length" style="vec-op-1">
+                  <CraftProperty property="Vel.OrbitVelocity" style="prop-velocity" />
+                </VectorOp>
+              </SetVariable>
+              <SetInput input="throttle" id="15" style="set-input">
+                <Constant text="1" />
+              </SetInput>
+              <BroadcastMessage global="true" local="true" id="16" style="broadcast-msg-all-crafts">
+                <Constant text="StarLink Deployed" />
+                <CraftProperty property="Craft.NameToID" style="craft-id">
+                  <CraftProperty property="Name.Craft" style="prop-name" />
+                </CraftProperty>
+              </BroadcastMessage>
+            </Instructions>
+            <Instructions>
+              <WaitSeconds id="17" style="wait-seconds" pos="1054.218,-960.0651">
+                <Constant text="3" />
+              </WaitSeconds>
+              <If id="18" style="if">
+                <Comparison op="l" style="op-lt">
+                  <VectorOp op="length" style="vec-op-1">
+                    <CraftProperty property="Vel.OrbitVelocity" style="prop-velocity" />
+                  </VectorOp>
+                  <Variable list="false" local="false" variableName="temp" />
+                </Comparison>
+                <Instructions>
+                  <SetInput input="throttle" id="19" style="set-input">
+                    <Constant text="0" />
+                  </SetInput>
+                  <SetVariable id="20" style="set-variable">
+                    <Variable list="false" local="false" variableName="direction" />
+                    <Constant text="0" />
+                  </SetVariable>
+                  <WaitSeconds id="21" style="wait-seconds">
+                    <Constant text="5" />
+                  </WaitSeconds>
+                  <SetVariable id="22" style="set-variable">
+                    <Variable list="false" local="false" variableName="direction" />
+                    <Constant text="-1" />
+                  </SetVariable>
+                  <WaitSeconds id="23" style="wait-seconds">
+                    <Constant text="5" />
+                  </WaitSeconds>
+                  <SetInput input="throttle" id="24" style="set-input">
+                    <Constant text="1" />
+                  </SetInput>
+                </Instructions>
+              </If>
+              <WaitSeconds id="25" style="wait-seconds">
+                <BinaryOp op="rand" style="op-rand">
+                  <Constant text="1" />
+                  <Constant text="8" />
+                </BinaryOp>
+              </WaitSeconds>
+            </Instructions>
+            <Instructions>
+              <WaitSeconds id="26" style="wait-seconds" pos="424.2507,-1028.656">
+                <Constant text="5" />
+              </WaitSeconds>
+              <SetVariable id="27" style="set-variable">
+                <Variable list="false" local="false" variableName="temp" />
+                <VectorOp op="length" style="vec-op-1">
+                  <CraftProperty property="Vel.OrbitVelocity" style="prop-velocity" />
+                </VectorOp>
+              </SetVariable>
+              <If id="28" style="if">
+                <Comparison op="l" style="op-lt">
+                  <VectorOp op="length" style="vec-op-1">
+                    <CraftProperty property="Vel.OrbitVelocity" style="prop-velocity" />
+                  </VectorOp>
+                  <Variable list="false" local="false" variableName="temp" />
+                </Comparison>
+                <Instructions>
+                  <SetInput input="throttle" id="29" style="set-input">
+                    <Constant text="0" />
+                  </SetInput>
+                  <SetVariable id="30" style="set-variable">
+                    <Variable list="false" local="false" variableName="direction" />
+                    <Constant text="0" />
+                  </SetVariable>
+                  <WaitSeconds id="31" style="wait-seconds">
+                    <Constant text="5" />
+                  </WaitSeconds>
+                  <SetVariable id="32" style="set-variable">
+                    <Variable list="false" local="false" variableName="direction" />
+                    <Constant text="-1" />
+                  </SetVariable>
+                  <WaitSeconds id="33" style="wait-seconds">
+                    <Constant text="5" />
+                  </WaitSeconds>
+                  <SetInput input="throttle" id="34" style="set-input">
+                    <Constant text="1" />
+                  </SetInput>
+                </Instructions>
+              </If>
+              <WaitSeconds id="35" style="wait-seconds">
+                <Constant text="5" />
+              </WaitSeconds>
+              <SetVariable id="36" style="set-variable">
+                <Variable list="false" local="false" variableName="temp" />
+                <VectorOp op="length" style="vec-op-1">
+                  <CraftProperty property="Vel.OrbitVelocity" style="prop-velocity" />
+                </VectorOp>
+              </SetVariable>
+              <If id="37" style="if">
+                <Comparison op="l" style="op-lt">
+                  <VectorOp op="length" style="vec-op-1">
+                    <CraftProperty property="Vel.OrbitVelocity" style="prop-velocity" />
+                  </VectorOp>
+                  <Variable list="false" local="false" variableName="temp" />
+                </Comparison>
+                <Instructions>
+                  <SetInput input="throttle" id="38" style="set-input">
+                    <Constant text="0" />
+                  </SetInput>
+                  <SetVariable id="39" style="set-variable">
+                    <Variable list="false" local="false" variableName="direction" />
+                    <Constant text="0" />
+                  </SetVariable>
+                  <WaitSeconds id="40" style="wait-seconds">
+                    <Constant text="5" />
+                  </WaitSeconds>
+                  <SetVariable id="41" style="set-variable">
+                    <Variable list="false" local="false" variableName="direction" />
+                    <Constant text="-1" />
+                  </SetVariable>
+                  <WaitSeconds id="42" style="wait-seconds">
+                    <Constant text="5" />
+                  </WaitSeconds>
+                  <SetInput input="throttle" id="43" style="set-input">
+                    <Constant text="1" />
+                  </SetInput>
+                </Instructions>
+              </If>
+            </Instructions>
+            <Expressions />
+          </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="619" partType="IonEngine1" position="-0.0009503365,0.005828381,-0.6666126" rotation="270,180.0002,0" stageOverride="true" materials="3,3,3,3,3" groupId="3e1ebdf2-0687-4fc1-8408-c74995e22110" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0.01489958,0.003498972,0,0.003779904,0.003779904" area="0,0.01603119,0.004706418,0,0.004007798,0.004007798" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0.1334,0" rotation="270,0,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.3,0" rotation="90,0,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Legacy" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" fuelLine="true" heatShieldScale="0" ignoreValidation="true" massScale="0" partCollisionHandling="Never" partCollisionResponse="None" partScale="0.45,0.45,0.45" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <Engine scale="0.5" thrust="40" partPropertiesEnabled="false" version="2" />
+          <InputController inputId="Throttle" partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.StarLinkV1.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController input="1" id="Solar" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="620" partType="Block1" position="-0.001841784,0.01347637,-0.01864576" rotation="8.046988E-05,2.101397E-06,0.0001605094" materials="0,1,2,3,4" groupId="3e1ebdf2-0687-4fc1-8408-c74995e22110" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0.004007798,0,0,0,0.006011697,0.006011697" area="0.004007798,0,0,0,0.006011697,0.006011697" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0.0625,0" rotation="270,0,0" scale="0.125" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="0,-0.0625,0" rotation="90,180,0" scale="0.125" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="0.0625,0,0" rotation="0,90,0" scale="0.125" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="3" position="-0.0625,0,0" rotation="0,270,0" scale="0.125" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="4" position="0,0,0.0625" rotation="0,0,0" scale="0.125" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="5" position="0,0,-0.0625" rotation="0,180,0" scale="0.125" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" fuelLine="true" heatShieldScale="0" ignoreValidation="true" partCollisionHandling="Never" partCollisionResponse="None" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <GenericPart scale="0.25" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="621" partType="Fuselage1" position="-0.001940489,-0.0003266335,0.7595525" rotation="-0.0002390566,89.99993,90.00022" materials="3,4,4,0,0" groupId="3e1ebdf2-0687-4fc1-8408-c74995e22110" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage9" textureTiling="25.40004,50">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="5.149832E-06,-0.1777838,-2.600253E-06" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="-5.149832E-06,0.1777838,2.600253E-06" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,1.842275" rotation="0,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="-5.149832E-06,0.1777838,2.600253E-06" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="5.149832E-06,-0.1777838,-2.600253E-06" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="2.143424E-07,-0.007388861,-7.220989E-08" fuelLine="true" heatShieldScale="0" ignoreValidation="true" includeInDrag="false" massScale="0" partCollisionHandling="Never" partCollisionResponse="None" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.05,2.01455" cornerRadiuses="0,0,0,0,0,0,0,0" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" flattenNormals="Both" offset="-5.149832E-06,0.1777838,2.600253E-06" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.05,1.67" volume="0.131010652" volumeInner="0.113729917" partPropertiesEnabled="false" version="3" />
+          <FuelTank autoFuelType="false" capacity="72.055862426757813" fuel="72.055862426757813" fuelType="Xenon" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="622" partType="CommandChip1" position="-0.001944065,-0.0003194809,-0.01864672" rotation="0.0002185661,270,269.9998" name="StarLinkV1 CPU" commandPodId="622" materials="0,1,2,3,4" groupId="3e1ebdf2-0687-4fc1-8408-c74995e22110" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="90,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,0.0275,0" rotation="270,180,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Legacy" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partScale="0.1,0.1,0.1" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <CommandPod activationGroupNames=",,,,,,,,," activationGroupStates="false,false,false,false,false,false,false,true,false,true" pidPitch="10,0,25" pidRoll="10,0,25" pilotSeatRotation="8.210444E-05,269.9999,180" powerConsumption="10" reorientCraftOnConfigChange="false" replicateActivationGroups="All" stageCalculationVersion="1" useDefaultPilotSeatRotation="false" partPropertiesEnabled="false">
+            <Controls />
+          </CommandPod>
+        </Part>
+        <Part id="623" partType="DetacherSide1" position="0.01056457,-0.03030062,-0.01850176" rotation="5.028442E-05,2.101334E-06,270.0001" stageOverride="true" materials="0,1,2,3,4" groupId="3e1ebdf2-0687-4fc1-8408-c74995e22110" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-0.01775,-0.0115,0" rotation="0,270,0" scale="0.25" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Rigid" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partCollisionHandling="Never" partCollisionResponse="None" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <Detacher force="1" scale="0.25" partPropertiesEnabled="false" version="2" />
+          <CrossFeed partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.StarLinkV1.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="618" partB="617" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="619" partB="617" attachPointsA="0" attachPointsB="2" />
+        <Connection partA="620" partB="617" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="621" partB="617" attachPointsA="5" attachPointsB="5" />
+        <Connection partA="623" partB="617" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="622" partB="621" attachPointsA="0" attachPointsB="2" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

@@ -1,0 +1,1038 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Rover" category="Payloads" description="TODO" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="1" partType="CommandDisc1" position="0.0132606,-0.1396252,0.517863" rotation="-1.366038E-05,180,4.829675E-06" name="Main" CommandPod="1" materials="8,2,2,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0.8757005,0.6404087,2.397362,5.130765,0.682403,0.682403" area="0.8757005,0.6404087,2.397362,5.130765,0.682403,0.682403" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="0,-0.08247583,0" rotation="90,0,0" scale="0.6" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="0,0.08247583,0" rotation="-90,180,0" scale="0.6" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="3" position="0,0.08247583,0" rotation="-90,180,0" scale="0.6" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="4" position="0,-0.08247583,0" rotation="90,0,0" scale="0.6" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="2.048739E-09,-7.460844E-11,2.866413E-08" ignoreValidation="true" partScale="3,3,3" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.3,0.5" cornerRadiuses="0,0,0,0,0,0,0,0" deformations="0,0,0" depthCurve="0" offset="0,0.08247583,0" shellDensityOverride="-1" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="0.3,0.5" volume="0.098971" volumeInner="0.09033175" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <FuelTank capacity="25802.395082792733" fuel="25802.395082792733" utilization="0.1045" inspectorEnabled="true" />
+          <Gyroscope maxAcceleration="1" utilization="0" partPropertiesEnabled="false" />
+          <CommandPod activationGroupNames=",,,,,,,,," activationGroupStates="false,false,false,false,false,false,false,false,false,false" configureBattery="0.19" pidPitch="10,0,25" pidRoll="10,0,25" pilotSeatRotation="270.0198,180,0" replicateStageActivations="true" stageCalculationVersion="2" partPropertiesEnabled="false">
+            <Controls />
+          </CommandPod>
+          <FlightProgram maxThreads="300" partPropertiesEnabled="false">
+            <Program name="New Program">
+              <Variables>
+                <Variable name="R1" number="0" />
+                <Variable name="R2" number="0" />
+                <Variable name="R3" number="0" />
+                <Variable name="D" number="0" />
+                <Variable name="DrillHeadVector" number="0" />
+                <Variable name="DrillAngle" number="0" />
+                <Variable name="ArmVector" number="0" />
+                <Variable name="Loadingtime" number="0" />
+                <Variable name="Time" number="0" />
+                <Variable name="CompositionList">
+                  <Items />
+                </Variable>
+                <Variable name="Sum" number="0" />
+                <Variable name="PercentageList">
+                  <Items />
+                </Variable>
+                <Variable name="Percentage" number="0" />
+                <Variable name="AnalyzedList">
+                  <Items />
+                </Variable>
+                <Variable name="n" number="0" />
+                <Variable name="Memory">
+                  <Items />
+                </Variable>
+                <Variable name="Temp" number="0" />
+                <Variable name="SortedList">
+                  <Items />
+                </Variable>
+                <Variable name="CameraRight" number="0" />
+                <Variable name="CameraUp" number="0" />
+                <Variable name="AG" number="0" />
+                <Variable name="spin" number="0" />
+                <Variable name="isable" number="0" />
+                <Variable name="sampleInex" number="0" />
+                <Variable name="flag" number="0" />
+              </Variables>
+              <Instructions>
+                <Event event="FlightStart" id="0" style="flight-start" pos="110.9164,-89.26288" />
+                <SetVariable id="1" style="set-variable">
+                  <Variable list="false" local="false" variableName="R1" />
+                  <Constant number="0" />
+                </SetVariable>
+                <SetVariable id="2" style="set-variable">
+                  <Variable list="false" local="false" variableName="R2" />
+                  <Constant number="0" />
+                </SetVariable>
+                <SetVariable id="3" style="set-variable">
+                  <Variable list="false" local="false" variableName="R3" />
+                  <Constant text="0" />
+                </SetVariable>
+                <While id="4" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <WaitUntil id="5" style="wait-until">
+                      <Comparison op="=" style="op-eq">
+                        <Comparison op="=" style="op-eq">
+                          <Variable list="false" local="false" variableName="AG" />
+                          <Constant text="1" />
+                        </Comparison>
+                        <Comparison op="=" style="op-eq">
+                          <Variable list="false" local="false" variableName="isable" />
+                          <Constant text="1" />
+                        </Comparison>
+                      </Comparison>
+                    </WaitUntil>
+                    <SetVariable id="6" style="set-variable">
+                      <Variable list="false" local="false" variableName="DrillHeadVector" />
+                      <VectorOp op="norm" style="vec-op-1">
+                        <BinaryOp op="-" style="op-sub">
+                          <CraftProperty property="Part.Position" style="part">
+                            <CraftProperty property="Part.NameToID" style="part-id">
+                              <Constant text="Drill Head" />
+                            </CraftProperty>
+                          </CraftProperty>
+                          <CraftProperty property="Part.Position" style="part">
+                            <CraftProperty property="Part.NameToID" style="part-id">
+                              <Constant text="DrillMotor" />
+                            </CraftProperty>
+                          </CraftProperty>
+                        </BinaryOp>
+                      </VectorOp>
+                    </SetVariable>
+                    <SetVariable id="7" style="set-variable">
+                      <Variable list="false" local="false" variableName="ArmVector" />
+                      <VectorOp op="norm" style="vec-op-1">
+                        <BinaryOp op="-" style="op-sub">
+                          <CraftProperty property="Part.Position" style="part">
+                            <CraftProperty property="Part.NameToID" style="part-id">
+                              <Constant text="Rotator3" />
+                            </CraftProperty>
+                          </CraftProperty>
+                          <CraftProperty property="Part.Position" style="part">
+                            <CraftProperty property="Part.NameToID" style="part-id">
+                              <Constant text="Rotator2" />
+                            </CraftProperty>
+                          </CraftProperty>
+                        </BinaryOp>
+                      </VectorOp>
+                    </SetVariable>
+                    <SetVariable id="8" style="set-variable">
+                      <Variable list="false" local="false" variableName="D" />
+                      <BinaryOp op="-" style="op-sub">
+                        <VectorOp op="dist" style="vec-op-2">
+                          <CraftProperty property="Part.Position" style="part">
+                            <CraftProperty property="Part.NameToID" style="part-id">
+                              <Constant text="Drill Head" />
+                            </CraftProperty>
+                          </CraftProperty>
+                          <CraftProperty property="Raycast" style="raycast-query">
+                            <CraftProperty property="Part.Position" style="part">
+                              <CraftProperty property="Part.NameToID" style="part-id">
+                                <Constant text="Drill Head" />
+                              </CraftProperty>
+                            </CraftProperty>
+                            <Variable list="false" local="false" variableName="DrillHeadVector" />
+                          </CraftProperty>
+                        </VectorOp>
+                        <Constant text="0.0195" />
+                      </BinaryOp>
+                    </SetVariable>
+                    <SetVariable id="9" style="set-variable">
+                      <Variable list="false" local="false" variableName="DrillAngle" />
+                      <EvaluateExpression style="evaluate-expression">
+                        <Constant text="signedAngle(v:DrillHeadVector,-FD.Position,cross(v:DrillHeadVector,FD.Position))" />
+                      </EvaluateExpression>
+                    </SetVariable>
+                    <WaitSeconds id="10" style="wait-seconds">
+                      <Constant text="0" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <CustomInstruction callFormat="Drill Animation" format="Drill Animation" name="Drill Animation" id="11" style="custom-instruction" pos="-277.1871,-1334.807" />
+                <SetInput input="brake" id="12" style="set-input">
+                  <Constant text="1" />
+                </SetInput>
+                <SetVariable id="13" style="set-variable">
+                  <Variable list="false" local="false" variableName="R1" />
+                  <BinaryOp op="/" style="op-div">
+                    <Constant text="90" />
+                    <Constant text="180" />
+                  </BinaryOp>
+                </SetVariable>
+                <SetVariable id="14" style="set-variable">
+                  <Variable list="false" local="false" variableName="R2" />
+                  <BinaryOp op="/" style="op-div">
+                    <Constant text="-45" />
+                    <Constant text="180" />
+                  </BinaryOp>
+                </SetVariable>
+                <SetVariable id="15" style="set-variable">
+                  <Variable list="false" local="false" variableName="R3" />
+                  <BinaryOp op="/" style="op-div">
+                    <Constant text="90" />
+                    <Constant text="180" />
+                  </BinaryOp>
+                </SetVariable>
+                <WaitUntil id="16" style="wait-until">
+                  <Comparison op="l" style="op-lt">
+                    <VectorOp op="dot" style="vec-op-2">
+                      <Variable list="false" local="false" variableName="DrillHeadVector" />
+                      <VectorOp op="norm" style="vec-op-1">
+                        <CraftProperty property="Part.Position" style="part">
+                          <CraftProperty property="Part.NameToID" style="part-id">
+                            <Constant text="Drill Head" />
+                          </CraftProperty>
+                        </CraftProperty>
+                      </VectorOp>
+                    </VectorOp>
+                    <Constant number="0" />
+                  </Comparison>
+                </WaitUntil>
+                <WaitSeconds id="17" style="wait-seconds">
+                  <Constant text="1" />
+                </WaitSeconds>
+                <Comment id="18" style="comment">
+                  <Constant style="comment-text" canReplace="false" text="Drill" />
+                </Comment>
+                <While id="19" style="while">
+                  <Comparison op="g" style="op-gt">
+                    <Variable list="false" local="false" variableName="D" />
+                    <Constant text="0.084" />
+                  </Comparison>
+                  <Instructions>
+                    <If id="20" style="if">
+                      <Comparison op="l" style="op-lt">
+                        <Variable list="false" local="false" variableName="D" />
+                        <Constant text="0.04" />
+                      </Comparison>
+                      <Instructions>
+                        <SetVariable id="21" style="set-variable">
+                          <Variable list="false" local="false" variableName="spin" />
+                          <Constant text="1" />
+                        </SetVariable>
+                      </Instructions>
+                    </If>
+                    <ChangeVariable id="22" style="change-variable">
+                      <Variable list="false" local="false" variableName="R2" />
+                      <EvaluateExpression style="evaluate-expression">
+                        <Constant text="min(D &lt; 0.01 ? 0.001 : 0.002 , D)" />
+                      </EvaluateExpression>
+                    </ChangeVariable>
+                    <SetVariable id="23" style="set-variable">
+                      <Variable list="false" local="false" variableName="R3" />
+                      <BinaryOp op="/" style="op-div">
+                        <EvaluateExpression style="evaluate-expression">
+                          <Constant text="-signedAngle(v:ArmVector,-FD.Position,cross(v:ArmVector,FD.Position))" />
+                        </EvaluateExpression>
+                        <Constant text="180" />
+                      </BinaryOp>
+                    </SetVariable>
+                    <DisplayMessage id="24" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="Deploying robotic arm: " />
+                        <StringOp op="join" style="join">
+                          <Constant text="Ground Distance: " />
+                          <StringOp op="friendly" subOp="distance" style="friendly">
+                            <Variable list="false" local="false" variableName="D" />
+                          </StringOp>
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="25" style="wait-seconds">
+                      <Constant text="0" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+                <Comment id="26" style="comment">
+                  <Constant style="comment-text" canReplace="false" text="Drilling" />
+                </Comment>
+                <SetVariable id="27" style="set-variable">
+                  <Variable list="false" local="false" variableName="Loadingtime" />
+                  <BinaryOp op="rand" style="op-rand">
+                    <Constant text="2" />
+                    <Constant text="5" />
+                  </BinaryOp>
+                </SetVariable>
+                <WaitSeconds id="28" style="wait-seconds">
+                  <Constant number="1" />
+                </WaitSeconds>
+                <CallCustomInstruction call="Loading" id="29" style="call-custom-instruction">
+                  <Constant text="Collecting Surface Sample: " />
+                  <Variable list="false" local="false" variableName="Loadingtime" />
+                </CallCustomInstruction>
+                <SetVariable id="30" style="set-variable">
+                  <Variable list="false" local="false" variableName="spin" />
+                  <Constant number="0" />
+                </SetVariable>
+                <SetVariable id="31" style="set-variable">
+                  <Variable list="false" local="false" variableName="Loadingtime" />
+                  <BinaryOp op="rand" style="op-rand">
+                    <Constant text="2" />
+                    <Constant text="5" />
+                  </BinaryOp>
+                </SetVariable>
+                <CallCustomInstruction call="Loading" id="32" style="call-custom-instruction">
+                  <Constant text="Packing Surface Sample :" />
+                  <Variable list="false" local="false" variableName="Loadingtime" />
+                </CallCustomInstruction>
+                <WaitSeconds id="33" style="wait-seconds">
+                  <Constant text="0.5" />
+                </WaitSeconds>
+                <SetCraftProperty property="Part.SetActivated" id="34" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <StringOp op="join" style="join">
+                      <Constant text="SampleDetach-" />
+                      <Variable list="false" local="false" variableName="sampleInex" />
+                      <Constant text="" />
+                    </StringOp>
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <DisplayMessage id="35" style="display">
+                  <StringOp op="join" style="join">
+                    <Constant text="&lt;size=150%&gt;" />
+                    <Constant text="Sample Container Detached" />
+                    <Constant text="" />
+                  </StringOp>
+                  <Constant number="7" />
+                </DisplayMessage>
+                <BroadcastMessage global="false" local="true" id="36" style="broadcast-msg">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <StringOp op="join" style="join">
+                      <Constant text="SampleDetach-" />
+                      <Variable list="false" local="false" variableName="sampleInex" />
+                      <Constant text="" />
+                    </StringOp>
+                  </CraftProperty>
+                  <Constant number="0" />
+                </BroadcastMessage>
+                <WaitSeconds id="37" style="wait-seconds">
+                  <Constant text="0.5" />
+                </WaitSeconds>
+                <ChangeVariable id="38" style="change-variable">
+                  <Variable list="false" local="false" variableName="sampleInex" />
+                  <Constant text="1" />
+                </ChangeVariable>
+                <WaitSeconds id="39" style="wait-seconds">
+                  <Constant text="0.5" />
+                </WaitSeconds>
+                <SetInput input="brake" id="40" style="set-input">
+                  <Constant text="0" />
+                </SetInput>
+                <SetTarget id="41" style="set-target">
+                  <Constant text="Sample Location" />
+                </SetTarget>
+                <SetVariable id="42" style="set-variable">
+                  <Variable list="false" local="false" variableName="AG" />
+                  <Constant text="0" />
+                </SetVariable>
+                <SetVariable id="43" style="set-variable">
+                  <Variable list="false" local="false" variableName="flag" />
+                  <Constant number="0" />
+                </SetVariable>
+              </Instructions>
+              <Instructions>
+                <Event event="ReceiveMessage" id="44" style="receive-msg" pos="-619.5239,-108.5714">
+                  <Constant canReplace="false" text="SwichBackToMarsSampleRover" />
+                </Event>
+                <SwitchCraft id="45" style="switch-craft">
+                  <CraftProperty property="Craft.NameToID" style="craft-id">
+                    <Constant text="" />
+                  </CraftProperty>
+                </SwitchCraft>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="46" style="flight-start" pos="-42.71067,-875.6632" />
+                <While id="47" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <WaitUntil id="48" style="wait-until">
+                      <Comparison op="=" style="op-eq">
+                        <Variable list="false" local="false" variableName="AG" />
+                        <Constant text="1" />
+                      </Comparison>
+                    </WaitUntil>
+                    <CallCustomInstruction call="Drill Animation" id="49" style="call-custom-instruction" />
+                    <WaitUntil id="50" style="wait-until">
+                      <EvaluateExpression style="evaluate-expression">
+                        <Constant text="DrillMotor.ElectricMotor.CurrentRpm &lt; 10" />
+                      </EvaluateExpression>
+                    </WaitUntil>
+                    <SetVariable id="51" style="set-variable">
+                      <Variable list="false" local="false" variableName="R1" />
+                      <Constant number="0" />
+                    </SetVariable>
+                    <SetVariable id="52" style="set-variable">
+                      <Variable list="false" local="false" variableName="R2" />
+                      <Constant number="0" />
+                    </SetVariable>
+                    <SetVariable id="53" style="set-variable">
+                      <Variable list="false" local="false" variableName="R3" />
+                      <Constant number="0" />
+                    </SetVariable>
+                    <WaitSeconds id="54" style="wait-seconds">
+                      <Constant text="0" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="55" style="flight-start" pos="-1549.106,27.53651" />
+                <SetVariable id="56" style="set-variable">
+                  <Variable list="false" local="false" variableName="AG" />
+                  <Constant number="0" />
+                </SetVariable>
+                <SetVariable id="57" style="set-variable">
+                  <Variable list="false" local="false" variableName="sampleInex" />
+                  <Constant number="0" />
+                </SetVariable>
+                <SetVariable id="58" style="set-variable">
+                  <Variable list="false" local="false" variableName="isable" />
+                  <Constant text="1" />
+                </SetVariable>
+                <SetVariable id="59" style="set-variable">
+                  <Variable list="false" local="false" variableName="CameraRight" />
+                  <Constant number="0" />
+                </SetVariable>
+                <SetVariable id="60" style="set-variable">
+                  <Variable list="false" local="false" variableName="CameraUp" />
+                  <Constant number="0" />
+                </SetVariable>
+                <WaitUntil id="61" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <EvaluateExpression style="evaluate-expression">
+                      <Constant text="[*.rover.Value]" />
+                    </EvaluateExpression>
+                    <Constant text="1" />
+                  </Comparison>
+                </WaitUntil>
+                <SetCraftProperty property="Part.SetActivated" id="62" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="Rover DeployerA" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <SetCraftProperty property="Part.SetActivated" id="63" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="Rover DeployerB" />
+                  </CraftProperty>
+                  <Constant text="1" />
+                </SetCraftProperty>
+                <WaitSeconds id="64" style="wait-seconds">
+                  <Constant text="0.2" />
+                </WaitSeconds>
+                <SwitchCraft id="65" style="switch-craft">
+                  <CraftProperty property="Craft.NameToID" style="craft-id">
+                    <Constant text="" />
+                  </CraftProperty>
+                </SwitchCraft>
+                <SetTarget id="66" style="set-target">
+                  <Constant text="Sample Location" />
+                </SetTarget>
+                <While id="67" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <If id="68" style="if">
+                      <BoolOp op="and" style="op-and">
+                        <Comparison op="ge" style="op-gte">
+                          <MathFunction function="abs" style="op-math">
+                            <VectorOp op="length" style="vec-op-1">
+                              <BinaryOp op="-" style="op-sub">
+                                <CraftProperty property="Nav.Position" style="prop-nav" />
+                                <CraftProperty property="Target.Position" style="prop-nav" />
+                              </BinaryOp>
+                            </VectorOp>
+                          </MathFunction>
+                          <Constant text="5000" />
+                        </Comparison>
+                        <Comparison op="=" style="op-eq">
+                          <CraftProperty property="Craft.IsPlayer" style="craft">
+                            <CraftProperty property="Craft.NameToID" style="craft-id">
+                              <Constant text="" />
+                            </CraftProperty>
+                          </CraftProperty>
+                          <Constant style="true" bool="true" />
+                        </Comparison>
+                      </BoolOp>
+                      <Instructions>
+                        <SetTarget id="69" style="set-target">
+                          <Constant text="Sample Location" />
+                        </SetTarget>
+                      </Instructions>
+                    </If>
+                    <If id="70" style="if">
+                      <BoolOp op="and" style="op-and">
+                        <BoolOp op="and" style="op-and">
+                          <BoolOp op="and" style="op-and">
+                            <Comparison op="le" style="op-lte">
+                              <MathFunction function="abs" style="op-math">
+                                <VectorOp op="length" style="vec-op-1">
+                                  <BinaryOp op="-" style="op-sub">
+                                    <CraftProperty property="Nav.Position" style="prop-nav" />
+                                    <CraftProperty property="Target.Position" style="prop-nav" />
+                                  </BinaryOp>
+                                </VectorOp>
+                              </MathFunction>
+                              <Constant text="9" />
+                            </Comparison>
+                            <Comparison op="=" style="op-eq">
+                              <Variable list="false" local="false" variableName="flag" />
+                              <Constant number="0" />
+                            </Comparison>
+                          </BoolOp>
+                          <CraftProperty property="Misc.Grounded" style="prop-misc" />
+                        </BoolOp>
+                        <Comparison op="=" style="op-eq">
+                          <Variable list="false" local="false" variableName="AG" />
+                          <Constant number="0" />
+                        </Comparison>
+                      </BoolOp>
+                      <Instructions>
+                        <SetVariable id="71" style="set-variable">
+                          <Variable list="false" local="false" variableName="flag" />
+                          <Constant text="1" />
+                        </SetVariable>
+                        <SetVariable id="72" style="set-variable">
+                          <Variable list="false" local="false" variableName="AG" />
+                          <Constant text="1" />
+                        </SetVariable>
+                      </Instructions>
+                    </If>
+                    <If id="73" style="if">
+                      <Comparison op="=" style="op-eq">
+                        <EvaluateExpression style="evaluate-expression">
+                          <Constant text="[*.rover.Value]" />
+                        </EvaluateExpression>
+                        <Constant text="1" />
+                      </Comparison>
+                      <Instructions>
+                        <ChangeVariable id="74" style="change-variable">
+                          <Variable list="false" local="false" variableName="CameraRight" />
+                          <BinaryOp op="*" style="op-mul">
+                            <CraftProperty property="Input.TranslateRight" style="prop-input" />
+                            <Constant text="0.0075" />
+                          </BinaryOp>
+                        </ChangeVariable>
+                        <ChangeVariable id="75" style="change-variable">
+                          <Variable list="false" local="false" variableName="CameraUp" />
+                          <BinaryOp op="*" style="op-mul">
+                            <CraftProperty property="Input.TranslateUp" style="prop-input" />
+                            <Constant text="0.0075" />
+                          </BinaryOp>
+                        </ChangeVariable>
+                      </Instructions>
+                    </If>
+                    <ElseIf id="76" style="else">
+                      <Constant bool="true" />
+                      <Instructions>
+                        <SetVariable id="77" style="set-variable">
+                          <Variable list="false" local="false" variableName="CameraRight" />
+                          <Constant number="0" />
+                        </SetVariable>
+                        <SetVariable id="78" style="set-variable">
+                          <Variable list="false" local="false" variableName="CameraUp" />
+                          <Constant number="0" />
+                        </SetVariable>
+                      </Instructions>
+                    </ElseIf>
+                    <WaitSeconds id="79" style="wait-seconds">
+                      <CraftProperty property="Time.FrameDeltaTime" style="prop-time" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <CustomInstruction callFormat="Loading (0) (1) " format="Loading |Text| |t| " name="Loading" id="80" style="custom-instruction" pos="-1657.911,-1992.682" />
+                <SetVariable id="81" style="set-variable">
+                  <Variable list="false" local="false" variableName="Time" />
+                  <CraftProperty property="Time.TotalTime" style="prop-time" />
+                </SetVariable>
+                <While id="82" style="while">
+                  <Comparison op="l" style="op-lt">
+                    <BinaryOp op="-" style="op-sub">
+                      <CraftProperty property="Time.TotalTime" style="prop-time" />
+                      <Variable list="false" local="false" variableName="Time" />
+                    </BinaryOp>
+                    <Variable list="false" local="true" variableName="t" />
+                  </Comparison>
+                  <Instructions>
+                    <DisplayMessage id="83" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;size=150%&gt;" />
+                        <StringOp op="join" style="join">
+                          <Variable list="false" local="true" variableName="Text" />
+                          <StringOp op="format" style="format">
+                            <Constant text="{0:n1}" />
+                            <BinaryOp op="*" style="op-mul">
+                              <BinaryOp op="/" style="op-div">
+                                <BinaryOp op="-" style="op-sub">
+                                  <CraftProperty property="Time.TotalTime" style="prop-time" />
+                                  <Variable list="false" local="false" variableName="Time" />
+                                </BinaryOp>
+                                <Variable list="false" local="false" variableName="Loadingtime" />
+                              </BinaryOp>
+                              <Constant text="100" />
+                            </BinaryOp>
+                            <Constant text="" />
+                          </StringOp>
+                          <Constant text=" %" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="84" style="wait-seconds">
+                      <Constant text="0" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="85" style="flight-start" pos="-916.063,-2341.289" />
+              </Instructions>
+              <Instructions>
+                <WaitUntil id="86" style="wait-until" pos="-897.4504,-2432.832">
+                  <Comparison op="=" style="op-eq">
+                    <Variable list="false" local="false" variableName="sampleInex" />
+                    <Constant text="1" />
+                  </Comparison>
+                </WaitUntil>
+                <SetVariable id="87" style="set-variable">
+                  <Variable list="false" local="false" variableName="isable" />
+                  <Constant text="0" />
+                </SetVariable>
+              </Instructions>
+              <Expressions />
+            </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="2" partType="Rotator1" position="-0.5325749,-0.1611019,-1.047826" rotation="-8.347816E-06,7.147428E-05,-5.175892E-06" name="Rotator1"  materials="0,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0.009171274,0,0.01333929,0.00333721,0.003308148" area="0,0.01358617,0,0.01333929,0.004940426,0.004940426" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-6.459066E-09,0.0715,2.320252E-08" rotation="270,0,0" scale="0.57" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Hinge" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="6.323533E-11,-0.0006999969,-2.271566E-10" rotation="90,0,0" scale="0.57" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0.05" partCollisionHandling="Never" partCollisionResponse="None" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <JointRotator baseMode="None" scale="0.95" consumptionMultiplier="1" range="180" soundVolume="0.3" speed="0.7" partPropertiesEnabled="false" version="2" />
+          <InputController input="Main.VZ.R1" invert="true" inputId="Rotator" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="3" partType="Strut1" position="-0.5325749,-0.05765188,-1.045824" rotation="-3.415103E-06,180,5.175896E-06"  materials="8,4,4,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0.002705126,0.002462639,0.0008208795,0.0004431853,0.0004431853" area="0,0.00370532,0.002462639,0.0008208795,0.0006175533,0.0006175533" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-1.024131E-10,-0.01695322,-2.677089E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="1.024131E-10,0.01695322,2.677089E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="9.211759E-10,4.751494E-10,1.988149E-09" heatShieldScale="0" ignoreValidation="true" partCollisionHandling="Never" partCollisionResponse="None" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.06800002,0.06800002" cornerRadiuses="1,1,1,1,1,1,1,1" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.024131E-10,0.01695322,2.677089E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.06800002,0.06800002" volume="0.000486942619" volumeInner="0.000271101919" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="4" partType="Rotator1" position="-0.5325749,0.02470505,-1.016726" rotation="90,180,0" name="Rotator2"  materials="0,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0.008283645,0,0.005441735,0.005441735" area="0,0,0.01108187,0,0.00741064,0.00741064" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-5.85733E-09,0.06700004,7.450581E-09" rotation="270,0,0" scale="0.54" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Hinge" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="1.223914E-10,-0.001399994,-1.164153E-10" rotation="90,0,0" scale="0.54" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0.05" partCollisionHandling="Never" partCollisionResponse="None" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <JointRotator baseMode="None" scale="0.900000036" consumptionMultiplier="1" range="180" soundVolume="0.3" speed="0.7" partPropertiesEnabled="false" version="2" />
+          <InputController input="Main.VZ.R2" invert="true" inputId="Rotator" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="5" partType="Strut1" position="-0.5325749,0.02470505,-1.113481" rotation="270,7.630396E-05,0"  materials="8,4,4,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0.001235107,0.003825943,0.001217638,0.0002591302,0.0002591302" area="0,0.001235107,0.004514838,0.001436539,0.0006175533,0.0006175533" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-1.024131E-10,-0.01695322,-2.677089E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="1.024131E-10,0.01695322,2.677089E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="-4.976313E-10,-2.816128E-10,2.232533E-09" heatShieldScale="0" ignoreValidation="true" partCollisionHandling="Never" partCollisionResponse="None" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.09100004,0.09100004" cornerRadiuses="1,1,1,1,1,1,1,1" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="1.024131E-10,0.01695322,2.677089E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.09100004,0.09100004" volume="0.0008720531" volumeInner="0.0005182023" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="6" partType="Strut1" position="-0.1080577,0.02467334,-1.176483" rotation="270.0198,270,0" name="Rover Deploy" activationStage="0" stageOverride="true"  materials="8,4,4,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0.1349923,0.1343226,0.1310173,0.02531968,0.01173594" area="0,0.1698271,0.1777197,0.1717684,0.02531968,0.01358617" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-3.278255E-07,-0.5,2.20353E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="3.278255E-07,0.5,-2.20353E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" centerOfMass="-1.659324E-09,-0.004939765,2.060618E-09" heatShieldScale="0" ignoreValidation="true" partCollisionHandling="Never" partCollisionResponse="None" priceScale="0" stageActivationType="Payload" supportsActivation="true" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.09100004,0.09100004" cornerRadiuses="1,1,1,1,1,1,1,1" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="3.278255E-07,0.5,-2.20353E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.08899936,0.08899936" volume="0.0251580849" volumeInner="0.0220871139" partPropertiesEnabled="false" version="3" />
+          <InputController input="1" id="rover" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <Payload payloadId="Rover" setCraftNameOnActive="Rover" />
+        </Part>
+        <Part id="7" partType="Rotator1" position="0.4038222,0.02482688,-1.16598" rotation="270,-1.931868E-05,0" name="Rotator3"  materials="8,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0.01056622,0.007952874,0.008105782,0.001632278,0.004155771" area="0,0.01235107,0.01046621,0.01087665,0.002470213,0.006793087" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-1.898114E-08,0.07599998,7.450581E-09" rotation="270,0,0" scale="0.6" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Hinge" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,0,0" rotation="90,0,0" scale="0.6" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0.1" partCollisionHandling="Never" partCollisionResponse="None" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <JointRotator baseMode="None" consumptionMultiplier="1" range="180" soundVolume="0.3" speed="1" partPropertiesEnabled="false" version="2" />
+          <InputController input="Main.VZ.R3" invert="true" inputId="Rotator" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="8" partType="Strut1" position="0.4517946,0.02482808,-1.19548" rotation="90,89.99998,0"  materials="8,4,4,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0.0006148549,0,0,0" area="0,0,0.0006156596,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-5.569283E-07,-0.0271536,-4.097803E-07" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="5.569283E-07,0.0271536,4.097803E-07" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="-3.332908E-10,-2.604838E-10,9.083449E-10" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.02,0.02" cornerRadiuses="0.11,0.11,0.11,0.11,0.11,0.11,0.11,0.11" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="5.569283E-07,0.0271536,4.097803E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.02,0.02" volume="8.570829E-05" volumeInner="2.78225125E-05" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="9" partType="ElectricMotor2" position="0.4652972,0.02482808,-1.19548" rotation="90,89.99998,0" name="DrillMotor"  materials="0,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0.00130776,0.0006124406,0.002469881,0,0" area="0,0.00185266,0.0008208795,0.003078298,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-8.195639E-08,0.1099375,0" rotation="270,0,0" scale="0.25" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Motor" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-2.980232E-08,-0.09275001,0" rotation="90,0,0" scale="0.25" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partScale="0.35,0.35,0.35" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <ElectricMotor rpm="1000" scale="0.25" staticResistance="4" torque="180" partPropertiesEnabled="false" />
+          <InputController input="Main.VZ.spin" inputId="Motor" partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="10" partType="Strut1" position="0.5987499,0.02482808,-1.19548" rotation="270,270,0" name="Drill Head"  materials="2,4,4,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" style="Solid-2" texture="Fuselage11" textureTiling="20,20">
+          <Drag drag="0,0.006441929,0.007196377,0.007394353,0,0.001840551" area="0,0.008645747,0.009234891,0.009440111,0,0.00741064" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-5.997718E-07,-0.1,-4.195571E-07" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="5.997718E-07,0.1,4.195571E-07" rotation="0,180,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="-3.990993E-07,-0.06666666,-2.798585E-07" heatShieldScale="0" ignoreValidation="true" partCollisionHandling="Never" partCollisionResponse="None" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.05,0.05" cornerRadiuses="1,1,1,1,1,1,1,1" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="5.997718E-07,0.1,4.195571E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0,0" volume="0.0005176382" volumeInner="0.000317444152" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="11" partType="Strut1" position="0.01326013,0.1836387,-0.7202344" rotation="-2.390565E-05,180,4.829674E-06"  materials="8,4,4,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0.003109563,0.01149231,0,0.003981403,0.01203624" area="0,0.00370532,0.01149231,0,0.00555798,0.01543884" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-3.28355E-07,-0.02527875,-2.076193E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="3.28355E-07,0.02527875,2.076193E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="3.243965E-10,1.201976E-10,3.729662E-10" heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.02,0.02" cornerRadiuses="1,1,1,1,1,1,1,1" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="3.28355E-07,0.02527875,2.076193E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.02,0.02" volume="6.28091948E-05" volumeInner="1.86619382E-05" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="12" partType="Rotator1" position="0.01325965,0.2018858,-0.7202344" rotation="270,270,0" name="cam rotator"  materials="8,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0,0,0.002470213,0" area="0,0,0,0,0.002470213,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0.008500002,0" rotation="270,0,0" scale="0.15" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Hinge" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.0105,0" rotation="90,0,0" scale="0.15" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <JointRotator baseMode="None" scale="0.25" consumptionMultiplier="1" partPropertiesEnabled="false" version="2" />
+          <InputController input="1" min="0" inputId="Rotator" partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="13" partType="Strut1" position="0.01326036,0.2018858,-0.4503007" rotation="270,180,0"  materials="8,4,4,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0.01111596,0.01312924,0,0.0516347,0.04527754" area="0,0.01111596,0.01641759,0,0.06607816,0.05866751" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-3.288681E-07,-0.09020967,3.470136E-09" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="3.288681E-07,0.09020967,-3.470136E-09" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="6.140566E-10,-1.05405E-09,1.05405E-09" heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.02,0.02" cornerRadiuses="1,1,1,1,1,1,1,1" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="3.288681E-07,0.09020967,-3.470136E-09" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.02,0.02" volume="0.000224140618" volumeInner="9.832617E-05" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="14" partType="Rotator1" position="0.01326036,0.2018856,-0.1481698" rotation="270,180,0"  materials="0,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0,0,0.001884143,0.001884143" area="0,0,0,0,0.002470213,0.002470213" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-1.861701E-09,0.008499981,-9.313226E-10" rotation="270,0,0" scale="0.15" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Hinge" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-4.66831E-10,-0.01050001,9.313226E-10" rotation="90,0,0" scale="0.15" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <JointRotator baseMode="None" scale="0.25" consumptionMultiplier="1" partPropertiesEnabled="false" version="2" />
+          <InputController input="Main.VZ.CameraRight" invert="true" inputId="Rotator" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="15" partType="Rotator1" position="0.01326227,0.2018856,-0.1053813" rotation="90,269.9999,0"  materials="0,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="1.210719E-08,0.008500002,0" rotation="270,0,0" scale="0.15" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Hinge" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="-1.490116E-08,-0.0105,0" rotation="90,0,0" scale="0.15" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <JointRotator baseMode="None" scale="0.25" consumptionMultiplier="1" partPropertiesEnabled="false" version="2" />
+          <InputController input="Main.VZ.CameraUp" inputId="Rotator" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="16" partType="Strut1" position="0.01326036,0.2018856,-0.0599122" rotation="270,89.99996,0"  materials="8,4,4,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0.009880854,0.03087765,0,0,0.02099681,0.02470212" area="0.009880854,0.03087765,0,0,0.02099681,0.02470212" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-3.203741E-07,-0.05594357,-4.389847E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="3.203741E-07,0.05594357,4.389847E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="1.103973E-09,7.34971E-10,8.639377E-10" heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.03,0.02" cornerRadiuses="0,0,0,0,0,0,0,0" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="3.203741E-07,0.05594357,4.389847E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.03,0.02" volume="0.000268529082" volumeInner="0.000132641988" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="17" partType="Camera1" position="0.006783485,0.06107557,-0.159466" rotation="270,179.9999,0" name="Rover Camera"  materials="24,24,19,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0.00307,0" rotation="90,0,0" scale="0.4" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" includeInDrag="true" massScale="0.15" partCollisionHandling="Never" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <CameraVantage cameraOffset="0,0.25,0" dirtIntensity="1" hideBase="true" scale="2" fieldOfView="0.5" fieldOfViewMax="0.38" fieldOfViewMin="0" nightVisionColor="#80FF8080" padPosition="false" variableZoom="true" partPropertiesEnabled="false" version="2" />
+          <InputController input="Slider2" inputId="Zoom" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="18" partType="Strut1" position="-0.07514286,0.2498866,-0.05299878" rotation="-4.48377E-05,269.9999,7.028941E-06"  materials="9,9,4,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0.003012692,0" area="0,0,0,0,0.00370532,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-3.263867E-07,-0.006898926,2.747411E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="3.263867E-07,0.006898926,-2.747411E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="9.648669E-11,-7.668548E-11,2.823891E-10" heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.0125,0.0125" cornerRadiuses="1,1,1,1,1,1,1,1" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="3.263867E-07,0.006898926,-2.747411E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.0125,0.0125" volume="6.69589826E-06" volumeInner="0" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="19" partType="Strut1" position="0.1062601,0.2498866,-0.05299878" rotation="-4.48377E-05,269.9999,7.028941E-06"  materials="9,9,4,2,2" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-3.263867E-07,-0.006898926,2.747411E-08" rotation="90,0,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="3.263867E-07,0.006898926,-2.747411E-08" rotation="-90,180,0" scale="0.2" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="9.648669E-11,-7.668548E-11,2.823891E-10" heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.0125,0.0125" cornerRadiuses="1,1,1,1,1,1,1,1" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="3.263867E-07,0.006898926,-2.747411E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.0125,0.0125" volume="6.69589826E-06" volumeInner="0" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="20" partType="Light1" position="0.01326156,-0.2672247,-0.9821358" rotation="270,357.5,0"  materials="21,0,1,2,3" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0.03537973,0.01859936,0.0223062,0.009348064,0.009607194" area="0,0.03767073,0.02216376,0.02832038,0.01111596,0.01111596" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="90,0,0" scale="0.1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <LightPart scale="0.25" spotLightAngle="140" partPropertiesEnabled="false" />
+          <Light color="1,0.9333333,0.7254902,1" intensity="0.265625" rotationX="270" spotLightAngle="140" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="21" partType="BeaconLight1" position="0.01326013,-0.1188611,2.017863" rotation="270,180,0"  materials="21,0,1,2,3" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0.01081082,0,0.01384228,0.01384228,0.002060933,0.002065776" area="0.01358617,0,0.01764891,0.01764891,0.002470213,0.002470213" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="90,0,0" scale="0.1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <BeaconLight blinkStyle="LongBlink" hideBase="false" scale="0.25" partPropertiesEnabled="false" />
+          <InputController input="1" inputId="BeaconLightIntensity" partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="22" partType="ElectricMotor2" position="0.01442313,0.06317937,1.942158" rotation="-1.366038E-05,180,4.829675E-06" name="DrillMotor"  materials="0,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0.0008234045,0,0,0,0.0009614458,0.001477285" area="0.00185266,0,0,0,0.00185266,0.002470213" />
+          <AttachPoints>
+            <AttachPoint id="0" position="-1.494734E-08,0.1099375,6.552783E-09" rotation="270,0,0" scale="0.25" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Motor" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="7.43216E-09,-0.09275004,-5.528331E-09" rotation="90,0,0" scale="0.25" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="5" partScale="0.75,0.75,0.75" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <ElectricMotor rpm="1000" scale="0.25" staticResistance="4" torque="180" partPropertiesEnabled="false" />
+          <InputController input="Main.VZ.spin" inputId="Motor" partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="23" partType="Fuselage1" position="0.01442313,0.1668547,1.942158" rotation="-1.366038E-05,180,4.829675E-06" name="Rover Power"  materials="0,4,4,0,0" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0.002150539,0,0.002052199,0,0.00189383,0.001285964" area="0.002470213,0,0.002052199,0,0.002470213,0.00185266" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.4244421,0" rotation="90,0,0" scale="1.042" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,0.4244421,0" rotation="-90,180,0" scale="1.042" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,0.521" rotation="0,0,0" scale="0.8488842" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0.4244421,0" rotation="-90,180,0" scale="1.042" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-0.4244421,0" rotation="90,0,0" scale="1.042" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="1.477639E-08,8.052185E-09,3.430312E-08" heatShieldScale="0" ignoreValidation="true" massScale="0.4" partScale="0.05,0.05,0.05" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="0.521,0.521" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.4244421,0" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="0.521,0.521" volume="0.7156515" volumeInner="0.693366468" partPropertiesEnabled="false" version="3" />
+          <FuelTank autoFuelType="false" capacity="981974.09937052429" fuel="981974.09937052429" fuelType="Battery" subPriority="3" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="24" partType="DetacherSide1" position="-0.9399526,0.02687562,0.5178626" rotation="-1.535331E-05,180,180" name="SampleDetach-0"  materials="0,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" mirrored="true" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0.03962753,0.03777487,0.01580192,0.03457355,0,0" area="0.0419936,0.04014094,0.01580192,0.03529785,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <Detacher force="1.5" scale="0.25" partPropertiesEnabled="false" version="2" />
+          <CrossFeed partPropertiesEnabled="false" />
+        </Part>
+        <Part id="25" partType="DetacherSide1" position="0.9664755,0.02687562,0.5178635" rotation="1.366038E-05,-2.414836E-05,180" name="SampleDetach-1"  materials="0,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0.03962753,0.03777487,0.01580192,0.03457355,0,0" area="0.0419936,0.04014094,0.01580192,0.03529785,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partScale="3,3,3" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <Detacher force="1.5" scale="0.25" partPropertiesEnabled="false" version="2" />
+          <CrossFeed partPropertiesEnabled="false" />
+        </Part>
+        <Part id="26" partType="SolarPanelArray" position="-0.5143242,0.1078006,1.505305" rotation="-1.704626E-05,180,4.829674E-06"  materials="0,20,2,3,1" symmetryId="be5085d7-08c0-445d-8eae-71c842ba8bd4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" mirrored="true" partConnectionsEnabled="false" partStyleEnabled="false" panelTexture="SolarPanelHex">
+          <Drag drag="0.01178921,0.01165359,0,0,0.008553719,0" area="0.01235107,0.01235107,0,0,0.008645747,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="90,0,0" scale="0.65" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Rigid" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" massScale="5" maxDragActive="1" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <SolarPanelArray efficiency="0.1" folds="5" hideBase="true" juicyBase="true" length="0.5" scale="0.65" partPropertiesEnabled="false" version="2" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="27" partType="SolarPanelArray" position="0.5408459,0.1078006,1.505305" rotation="-1.704626E-05,180,4.829675E-06"  materials="0,20,2,3,1" symmetryId="be5085d7-08c0-445d-8eae-71c842ba8bd4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" panelTexture="SolarPanelHex">
+          <Drag drag="0.0117432,0.01154703,0,0,0,0.007880465" area="0.01235107,0.01235107,0,0,0,0.008645747" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="90,0,0" scale="0.65" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Rigid" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" ignoreValidation="true" massScale="5" maxDragActive="1" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <SolarPanelArray efficiency="0.1" folds="5" hideBase="true" juicyBase="true" length="0.5" scale="0.65" partPropertiesEnabled="false" version="2" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="28" partType="RoverWheel1" position="-1.030005,-0.3496196,-0.70611" rotation="1.832243E-05,270,-2.116765E-05" name="Car Wheel"  materials="4,8,2,3,4" symmetryId="a375d7ed-f0b5-46f3-aa4c-392bb061825f" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" wheelStyle="LunarRim" tireStyle="RoverTireLunar">
+          <Drag drag="0.02356632,0.3527008,0.366787,0.3615725,0.4393989,0" area="0.04075849,0.4860178,0.4910888,0.4910888,0.5261594,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,-0.0936" rotation="0,180,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Rigid" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" collisionDisconnectImpulse="1E+10" collisionExplodeImpulse="1E+10" collisionPreventExternalDisconnections="true" heatShieldScale="0" ignoreValidation="true" maxTemperature="1000" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <ResizableWheel brakeTorque="1000000" gearRatio="3" size="1" slipForwardAsymptote="10" slipForwardExtremum="8" slipSidewaysAsymptote="20" slipSidewaysExtremum="15" torque="5000" tractionForward="1.5" tractionSideways="1.5" turningAngle="30" width="1.1" partPropertiesEnabled="false" version="3" />
+          <InputController inputId="Turn" partPropertiesEnabled="false" />
+          <InputController input="Pitch" inputId="RPM" partPropertiesEnabled="false" />
+          <InputController input="1" inputId="Torque" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="29" partType="RoverWheel1" position="1.05653,-0.3496196,-0.706109" rotation="2.79818E-05,89.99997,2.116764E-05" name="Car Wheel"  materials="4,8,2,3,4" symmetryId="a375d7ed-f0b5-46f3-aa4c-392bb061825f" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" mirrored="true" partConnectionsEnabled="false" partStyleEnabled="false" wheelStyle="LunarRim" tireStyle="RoverTireLunar">
+          <Drag drag="0.0246101,0.3541369,0.3667042,0.3610188,0,0.4411279" area="0.04137604,0.4860178,0.4910888,0.4910888,0,0.5261594" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,-0.0936" rotation="0,180,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Rigid" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" collisionDisconnectImpulse="-1" collisionDisconnectVelocity="1E+10" collisionExplodeImpulse="-1" collisionExplodeVelocity="1E+10" collisionPreventExternalDisconnections="true" heatShieldScale="0" ignoreValidation="true" maxTemperature="1000" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <ResizableWheel brakeTorque="1000000" direction="Reversed" directionReverse="true" gearRatio="3" size="1" slipForwardAsymptote="10" slipForwardExtremum="8" slipSidewaysAsymptote="20" slipSidewaysExtremum="15" torque="5000" tractionForward="1.5" tractionSideways="1.5" turningAngle="30" width="1.1" partPropertiesEnabled="false" version="3" />
+          <InputController inputId="Turn" partPropertiesEnabled="false" />
+          <InputController input="Pitch" inputId="RPM" partPropertiesEnabled="false" />
+          <InputController input="1" inputId="Torque" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="30" partType="RoverWheel1" position="-1.021004,-0.3496201,1.757359" rotation="5.561661E-05,270,-1.198141E-05" name="Car Wheel"  materials="4,8,2,3,4" symmetryId="4023f92a-7797-4ff7-b20f-56c358a0a795" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false" wheelStyle="LunarRim" tireStyle="RoverTireLunar">
+          <Drag drag="0.3060889,0,0.2870683,0.2891065,0.3502233,0" area="0.3940008,0,0.3921733,0.3921733,0.4230263,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,-0.0936" rotation="0,180,0" scale="0.900000036" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Rigid" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" collisionDisconnectImpulse="1E+10" collisionExplodeImpulse="1E+10" collisionPreventExternalDisconnections="true" heatShieldScale="0" ignoreValidation="true" maxTemperature="1000" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <ResizableWheel brakeTorque="1000000" gearRatio="3" size="0.900000036" slipForwardAsymptote="10" slipForwardExtremum="8" slipSidewaysAsymptote="20" slipSidewaysExtremum="15" torque="5000" tractionForward="1.5" tractionSideways="1.5" width="1.1" partPropertiesEnabled="false" version="3" />
+          <InputController inputId="Turn" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController input="Pitch" inputId="RPM" partPropertiesEnabled="false" />
+          <InputController input="1" inputId="Torque" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="31" partType="RoverWheel1" position="1.047527,-0.3496206,1.757359" rotation="6.5276E-05,89.99989,1.19814E-05" name="Car Wheel"  materials="4,8,2,3,4" symmetryId="4023f92a-7797-4ff7-b20f-56c358a0a795" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" mirrored="true" partConnectionsEnabled="false" partStyleEnabled="false" wheelStyle="LunarRim" tireStyle="RoverTireLunar">
+          <Drag drag="0.3063651,0,0.2861807,0.2879315,0,0.3545268" area="0.3933832,0,0.3917629,0.3917629,0,0.4230263" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,-0.0936" rotation="0,180,0" scale="0.900000036" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Rigid" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" collisionDisconnectImpulse="1E+10" collisionExplodeImpulse="1E+10" collisionPreventExternalDisconnections="true" heatShieldScale="0" ignoreValidation="true" maxTemperature="1000" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <ResizableWheel brakeTorque="1000000" direction="Reversed" directionReverse="true" gearRatio="3" size="0.900000036" slipForwardAsymptote="10" slipForwardExtremum="8" slipSidewaysAsymptote="20" slipSidewaysExtremum="15" torque="5000" tractionForward="1.5" tractionSideways="1.5" width="1.1" partPropertiesEnabled="false" version="3" />
+          <InputController inputId="Turn" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController input="Pitch" inputId="RPM" partPropertiesEnabled="false" />
+          <InputController input="1" inputId="Torque" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputController ignorePartActivationState="true" input="[*.rover.Value]" zeroOnDeactivate="false" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <InputBasedActivator inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="32" partType="DetacherSide1" position="0.01326084,0.2405418,0.517863" rotation="0,270,270" name="Rover DeployerA"  materials="0,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0.05785863,0.03087765,0,0,0,0" area="0.06237283,0.03087765,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <Detacher force="0" partPropertiesEnabled="false" version="2" />
+          <CrossFeed partPropertiesEnabled="false" />
+          <FlightProgram partPropertiesEnabled="false">
+            <Program name="New Program">
+              <Variables />
+              <Instructions>
+                <Event event="FlightStart" id="0" style="flight-start" pos="-99.57931,-462.8921" />
+                <WaitUntil id="1" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="Rover DeployerA" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant style="true" bool="true" />
+                  </Comparison>
+                </WaitUntil>
+                <SetCraftProperty property="Part.SetExplode" id="2" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="Rover DeployerA" />
+                  </CraftProperty>
+                  <Constant text="-1" />
+                </SetCraftProperty>
+              </Instructions>
+              <Expressions />
+            </Program>
+          </FlightProgram>
+        </Part>
+        <Part id="33" partType="DetacherSide1" position="0.01326084,-0.5242949,0.5178628" rotation="5.122642E-06,89.99998,89.99999" name="Rover DeployerB"  materials="0,1,2,3,4" groupId="a9030f38-8f67-4a76-9ff8-ede296616944" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0.07700286,0.08151707,0,0.2953658,0.1143613,0.1143613" area="0.08151707,0.08151707,0,0.2992092,0.1204231,0.1204231" />
+          <Config heatShieldScale="0" ignoreValidation="true" massScale="0" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <Detacher force="0" partPropertiesEnabled="false" version="2" />
+          <CrossFeed partPropertiesEnabled="false" />
+          <FlightProgram partPropertiesEnabled="false">
+            <Program name="New Program">
+              <Variables />
+              <Instructions>
+                <Event event="FlightStart" id="0" style="flight-start" pos="-99.57931,-462.8921" />
+                <WaitUntil id="1" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="Rover DeployerB" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant style="true" bool="true" />
+                  </Comparison>
+                </WaitUntil>
+                <SetCraftProperty property="Part.SetExplode" id="2" style="set-part">
+                  <CraftProperty property="Part.NameToID" style="part-id">
+                    <Constant text="Rover DeployerB" />
+                  </CraftProperty>
+                  <Constant text="-1" />
+                </SetCraftProperty>
+              </Instructions>
+              <Expressions />
+            </Program>
+          </FlightProgram>
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="2" partB="1" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="11" partB="1" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="20" partB="1" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="21" partB="1" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="22" partB="1" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="24" partB="1" attachPointsA="1" attachPointsB="0" symmetryId="323a57d3-699b-453a-a1a7-2683c4cfd6ac" />
+        <Connection partA="25" partB="1" attachPointsA="1" attachPointsB="0" symmetryId="323a57d3-699b-453a-a1a7-2683c4cfd6ac" />
+        <Connection partA="26" partB="1" attachPointsA="0" attachPointsB="0" symmetryId="f1f2f02c-9839-4d40-bf38-002aedb39f44" />
+        <Connection partA="27" partB="1" attachPointsA="0" attachPointsB="0" symmetryId="f1f2f02c-9839-4d40-bf38-002aedb39f44" />
+        <Connection partA="28" partB="1" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="29" partB="1" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="30" partB="1" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="31" partB="1" attachPointsA="0" attachPointsB="0" />
+        <Connection partA="32" partB="1" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="33" partB="1" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="3" partB="2" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="4" partB="3" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="5" partB="4" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="6" partB="5" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="7" partB="6" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="8" partB="7" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="9" partB="8" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="10" partB="9" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="12" partB="11" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="13" partB="12" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="14" partB="13" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="15" partB="14" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="16" partB="15" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="17" partB="16" attachPointsA="0" attachPointsB="2" />
+        <Connection partA="18" partB="16" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="19" partB="16" attachPointsA="1" attachPointsB="0" />
+        <Connection partA="23" partB="22" attachPointsA="1" attachPointsB="0" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

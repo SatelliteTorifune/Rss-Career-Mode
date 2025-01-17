@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Contracts>
+  <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="NumCompletions > 0 ? 0 : 100" />
+      </Params>
+      <Prereqs techNodes="USSR" />
+      <Contract customer="ussr" id="ussr-0" money="10000" name="You Chosed USSR" unlockLocations="&lt;color=#E700F6&gt;Kapustin Yar Cosmodrome / LC1;&lt;color=#E700F6&gt;Kapustin Yar Cosmodrome / LC2" priority="5" probability="@Probability" difficulty="2" flairText="Progression">
+         <Description
+            short=""
+            long="launch anything from the &quot;Very Start &quot; to process " />
+         <Requirements>
+           <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+             <Planet name="Earth" />
+             <Tutorial description="Save and Exit for Process" visibility="HiddenWhenPassed" listedInMenu="false">
+               <Button highlight="false" stepText="You have chosen the USSR side" />
+            </Tutorial>
+           </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="NumCompletions > 0 ? 0 : 100" />
+      </Params>  
+      <Prereqs contracts="ussr-0" />    
+      <Contract customer="ussr" id="ussr-pro-1" money="100e4" name="First Rocket" priority="5" probability="@Probability" difficulty="2" flairText="Progression">
+         <Description
+            short="TODO."
+            long="From the birth of airplanes to our sounding rockets，the highest altitude we fly has been
+refreshed time and time again. Now that we have the strength to look beyond the Karman line and stay there permanently, that would be a stepping stone that will allow us to fly further.&lt;br&gt;More importantly,it will fully prove the superiority of our socialist and challenge our opponents from a higher ground.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;Now its your turn to reach the stars,launch your your first rockets to reach at least 10km." />
+         <Requirements>
+            <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+			   <Location locationId="Earth.Kapustin Yar Cosmodrome / LC1" description="Launch from Kapustin Yar Cosmodrome / LC1" distanceMode="GreatCircle" visibility="HiddenWhenPassed" />
+               <Expression expression="50 > AltitudeAGL" description="Start Grounded." displayExpression="AltitudeAGL" displayFormat="distance" visibility="HiddenWhenPassed" >
+                 <Expression expression="Acceleration > 10" description="Get your rocket's acceleration over 10m/s2" displayExpression="Acceleration" displayFormat="acceleration" visibility="HiddenWhenPassed" />
+               </Expression>
+               <Expression expression="AltitudeAGL > 10e3" description="Reach 10km AGL." displayExpression="max(displayValue, AltitudeASL)" displayFormat="distance" visibility="HiddenWhenPassed" />
+            </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="NumCompletions > 4 ? 0 : 500" />
+         <Expression name="MaxInstances" value="1" />
+         <UniqueString name="Launch" />         
+         <Expression name="Index" value="NumCompletions" />
+         <List name="Height" index="@Index" values="20e3;60e3;100e3;160e3;300e3" />
+         <List name="Reward" index="@Index" values="1;1.2;2;4;6" />
+         <Expression name="Difficulty" value="4 * @Reward / max(1, pow(@Index, 1.5))" />
+         <Expression name="Money" value="ceil(15e5 * max(1, @Index) * @Difficulty * @Difficulty)" />
+         <Expression name="rea" value="(abs((@Index * 1) - 3)) * 5" />
+         <Expression name="Progression" value="NumCompletions > 0" valueFalse="Progression" valueTrue="@Index/5 Launch" />
+         <Random name="re" min="0" max="@rea" round="5" />
+         <List name="Distance" index="@Index" values="-10e3;-25e3;-60e3;-100e3;-120e3" />
+         <List name="Mass" index="@Index" values="10;50;100;500;1e3" />
+         <List name="longDes" index="@Index" values="We have stepped out for space,the other side will not wait us,so we need to go faster!&lt;br&gt;&lt;br&gt;This time we need those high-tech firework fly up to @Height:distance with at least @Mass:mass  to collect the data above the sky,It will be a excited attempt, right? &lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;We have ground stations to receive the collected data, so you dont need to land the sounding rocket in one piece,but for the safety of our launch site, the rocket need to crash at least @Distance:distance away from the launch site.;You are doing well! but science never sleep, so this time we need you to bring more weight up to the higher sky.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;bring @Mass:mass and get least @Height:distance,this time you need to crash your rocket at least @Distance:distance away from the launch site.;You are geting into it! And you may noticed that you can complete this contract with the part test contract together,anyway,this time fly up to @Height:distance with at least @Mass:mass .&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;This time you may need a touch down , so you can check the parachutes;
+         You are geting into it! And you may noticed that you can complete this contract with the part test contract together,anyway,this time fly up to @Height:distance with at least @Mass:mass .&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;This time you may need a touch down , so you can check the parachutes;You have almost gain the velocity of get into an orbit,but this time we still need a sub-obrit.this time fly up to @Height:distance with at least @Mass:mass." />
+      </Params>
+      <Prereqs contracts="ussr-pro-1" />      
+      <Contract customer="ussr" id="ussr-pro-2" money="@Money" name="Early Sounding Rockets" subtitle="Reach  @Height:distance" priority="5" research="@re" probability="@Probability" expiration="30" deadline="3" maxInstances="@MaxInstances" difficulty="2" flairText="@Progression">
+         <Description
+            short="Bring at least @Mass:mass  when launch."
+            long="@longDes." />
+         <Requirements>
+            <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+              <Expression expression="Mass > @Mass" description="Mass always @Mass:mass" displayExpression="Mass" displayFormat="mass" onFail="Stop">
+               <Expression expression="Grounded" description="Start grounded" visibility="HiddenWhenPassed" />
+               <Expression expression="AltitudeAGL > @Height" description="Reach @Height:distance." displayExpression="max(displayValue, AltitudeASL)" displayFormat="distance" visibility="HiddenWhenPassed" />                 
+               <SurfaceDistance min="@Distance" description="Downrange more than @Distance:distance" />
+              </Expression>   
+            </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate>
+      <Params>
+         <Completions name="Sounding" contractID="ussr-pro-2" />
+         <Expression name="Probability" value="@Sounding > 2 ? 0 : 1000" />
+         <Expression name="Scale" value="NumCompletions" />
+         <Expression name="MaxInstances" value="1" />
+         <Expression name="Index" value="NumCompletions" />
+         <List name="Height" index="@Index" values="20e3;50e3;400e3" />
+         <List name="Velocity" index="@Index" values="400;600;4e3" />
+         <List name="Reward" index="@Index" values="1;1.5;2" />
+         <List name="Name" index="@Index" values="Drogue Chute;Parachute;Heat Shield" />
+         <Expression name="Difficulty" value="4 * @Reward / max(1, pow(@Scale, 1.5))" />
+         <Expression name="Money" value="ceil(15e5 * max(1, @Scale) * @Difficulty * @Difficulty)" />
+         <Expression name="re" value="5 * @Index + 5" />     
+         <List name="LongDes" index="@Index" values="Whats a good way to slow a speedy rocket? the anwser is using the air,the Research and Development Department need to test the new small chutes,they cant give you much drags ,so you can bring more of them;Parachutes are a very effective way to recover a rocket,the Research and Development Department has brought some bigger parachute, we have prepared one as a payload so that won't cost you.;When you heat into the atomsphere of the earth ,heat could tear our spacecraft and those precious science equipment apart,thats why Research and Develop department need us to test the heat shield for them." /> 
+         <List name="IDs" index="@Index" values="Parachute1;Parachute1;HeatShield1" />
+      </Params>   
+      <Prereqs contracts="ussr-pro-2" />   
+      <Contract customer="CADB" id="ussr-parttest-1" money="@Money" name="@Name Testing" unlockLocations="&lt;color=#E700F6&gt;Baikonur Cosmodrome LC1/5" priority="3" research="@re" probability="@Probability" expiration="30" deadline="3" maxInstances="@MaxInstances" difficulty="@Difficulty" flairText="Progression">
+         <Description
+            short="Test the Rocket Recovery Part."
+            long="@LongDes" />
+         <Requirements>
+            <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+               <Any num="1" visibility="Hidden">
+                     <PartCount op="greater" num="1" partId="@IDs" visibility="HiddenWhenPassed" showValue="false" onFail="Stop">
+                       <Expression expression="AltitudeAGL > @Height" description="Reach @Height:distance AGL." displayExpression="max(displayValue, AltitudeASL)" displayFormat="distance" visibility="HiddenWhenPassed" />
+                       <Expression expression="SurfaceVelocity > @Velocity" description="Go faster than @Velocity:velocity" displayExpression="SurfaceVelocity" displayFormat="velocity" visibility="HiddenWhenPassed" />
+                       <Expression expression="10 > SurfaceVelocity" description="get slow than 10m/s" displayExpression="SurfaceVelocity" displayFormat="velocity" visibility="HiddenWhenPassed" />
+                       <Expression expression="Grounded" description="Land your craft" visibility="HiddenWhenPassed" />
+                     </PartCount>
+                     <PartCount op="greater" num="1" payloadId="Payload-ussr-parttest-1-@Index" description="Launch with @Name." listedInMenu="false" showValue="false"> 
+                        <Expression expression="AltitudeAGL > @Height" description="Reach @Height:distance AGL." displayExpression="max(displayValue, AltitudeASL)" displayFormat="distance" visibility="Hidden" />
+                        <Expression expression="SurfaceVelocity > @Velocity" description="Go faster than @Velocity:velocity" displayExpression="SurfaceVelocity" displayFormat="velocity" visibility="Hidden" />
+                        <Expression expression="20 > SurfaceVelocity" description="get slow than 20m/s" displayExpression="SurfaceVelocity" displayFormat="velocity" visibility="Hidden" />
+                        <Expression expression="Grounded" description="Land your craft" visibility="Hidden" />      
+                     </PartCount>          
+               </Any>
+            </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+
+   <ContractTemplate>
+      <Params>
+         <Expression name="Probability" value="NumCompletions > 0 ? 0 : 100" />
+      </Params>  
+      <Prereqs contracts="ussr-pro-2" techNodes="USSR-staging,USSR-lqdengine-2,USSR-fairing,USSR-power1"/>    
+      <Contract customer="ussr" id="ussr-pro-3" money="80e5" name="first Orbit" priority="5" probability="@Probability" difficulty="2" flairText="Progression">
+         <Description
+            short="Launch the satellite to orbit."
+            long="Since we fly out the first manned bird, humans try their best to touch higher and higher. Now we are certainly enough to left the karman line behind us.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;size=125%&gt;&lt;color=#E700F6&gt;It is the time to reach a stable orbit ." />
+         <Requirements>
+            <TrackedLaunch listedInMenu="false" visibility="HiddenWhenPassed">
+			   <Location locationId="Earth.Baikonur Cosmodrome LC1/5" description="Launch from Baikonur Cosmodrome LC1/5" distanceMode="GreatCircle" />
+            <PartCount num="1" payloadId="Payload-ussr-sputnik1" description="Launch with Sputnik-1" showValue="false" onFail="Warn">
+             <Orbit op="Greater" property="periapsis" value="30e3" />
+             <PartCount num="0" payloadId="Payload-ussr-sputnik1" description="Detach the Sputnik-1" showValue="false" onFail="Warn" />
+            </PartCount> 
+            </TrackedLaunch>
+         </Requirements>
+      </Contract>
+   </ContractTemplate>
+</Contracts>

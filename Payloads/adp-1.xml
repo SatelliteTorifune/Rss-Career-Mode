@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="adp" category="Payloads" description="TODO" order="4" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="846" partType="CargoBay1" position="0,2.169125,0" rotation="-1.195283E-05,180,5.008956E-06" name="LM Adapter" activationStage="7" stageOverride="true" materials="0,17,0,0,0" groupId="4eb8b2c9-8a0e-4423-a740-420baa504adb" partConnectionsEnabled="false" partStyleEnabled="false" partStyle="CargoBay-3" outsideTexture="Default" insideTexture="Default">
+          <Drag drag="21.15819,0,1.365177,0,10.56839,10.56839" area="27.85275,0,7.406953,0,13.92637,13.92637" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="-1.222134E-11,-2.671402,-4.175149E-11" rotation="90,0,0" scale="3.43915677" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="2" position="1.222134E-11,2.671402,4.175149E-11" rotation="-90,180,0" scale="2.79284883" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,2.453475" rotation="0,0,0" scale="3.13271475" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="4" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="5" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="7.528749E-09,-0.4805391,1.404946E-07" heatShieldScale="0" ignoreValidation="true" priceScale="0" stageActivationType="Fairing" partPropertiesEnabled="false" symmetryId="dc0fa5c7-f20a-4c24-a3fd-60d6e98fb521" />
+          <Fuselage autoResize="false" bottomScale="2.95695,2.95695" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="2" offset="1.222134E-11,2.671402,4.175149E-11" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="1.950001,1.950001" volume="101.289375" volumeInner="100.6768" partPropertiesEnabled="false" symmetryId="27641ca3-0eec-48a3-bbf2-e0760e63e312" version="3" />
+          <CargoBay hasBase="false" hingeStyle="None" openAngle="45" openSpeed="1.9" partPropertiesEnabled="false" symmetryId="206af7b9-bc4a-4b2b-827c-576dad143531" />
+          <SubPartRotator enabledRotation="-1,-1,2" positionOffset="0,-2.6714,-3.1816" symmetryId="dfb8bad8-c27f-4189-b0a5-1e6479017eae" />
+          <SubPartRotator enabledRotation="-1,1,-2" positionOffset="0,-2.6714,-3.1816" symmetryId="3c78b929-4eea-4610-8841-ee4e04a52477" />
+          <Payload payloadId="adp" />
+        </Part>
+        <Part id="847" partType="CargoBay1" position="0,2.169125,0" rotation="-1.878302E-05,-3.870516E-05,-3.301408E-06" name="LM Adapter" activationStage="7" stageOverride="true" materials="17,17,0,0,17" groupId="4eb8b2c9-8a0e-4423-a740-420baa504adb" partConnectionsEnabled="false" partStyleEnabled="false" partStyle="CargoBay-3" outsideTexture="Default" insideTexture="Default">
+          <Drag drag="0,21.15819,1.363856,0,10.58093,10.58093" area="0,27.85275,7.399786,0,13.92637,13.92637" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="1.195133E-11,-2.6714,-1.393801E-10" rotation="90,0,0" scale="3.43915677" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="2" position="-1.195133E-11,2.6714,1.393801E-10" rotation="-90,180,0" scale="2.792848" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,2.453475" rotation="0,0,0" scale="3.13271451" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="4" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="5" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="7.571653E-08,-0.4805393,1.028333E-07" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="Fairing" partPropertiesEnabled="false" symmetryId="dc0fa5c7-f20a-4c24-a3fd-60d6e98fb521" />
+          <Fuselage autoResize="false" bottomScale="2.95695,2.95695" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="2" offset="-1.195133E-11,2.6714,1.393801E-10" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="1.95,1.95" volume="101.289253" volumeInner="100.676682" partPropertiesEnabled="false" symmetryId="27641ca3-0eec-48a3-bbf2-e0760e63e312" version="3" />
+          <CargoBay hasBase="false" hingeStyle="None" openAngle="45" openSpeed="1.9" partPropertiesEnabled="false" symmetryId="206af7b9-bc4a-4b2b-827c-576dad143531" />
+          <SubPartRotator enabledRotation="-1,-1,2" positionOffset="0,-2.6714,-3.1816" symmetryId="dfb8bad8-c27f-4189-b0a5-1e6479017eae" />
+          <SubPartRotator enabledRotation="-1,1,-2" positionOffset="0,-2.6714,-3.1816" symmetryId="3c78b929-4eea-4610-8841-ee4e04a52477" />
+        </Part>
+        <Part id="889" partType="FairingBase1" position="0,-1.474857,0" rotation="-3.585849E-05,-3.998583E-05,180" name="LM Adapter" stageOverride="true" materials="0,17,17,17,17" groupId="4eb8b2c9-8a0e-4423-a740-420baa504adb" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="8.351389,8.351389,0.9844035,0,8.405266,8.405266" area="10.91526,10.91526,7.077278,0,10.91526,10.91526" />
+          <AttachPoints>
+            <AttachPoint id="1" position="-1.907358E-06,0.9726498,-4.386806E-08" rotation="-90,180,0" scale="3.64691663" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="-6.526092E-08,0.05059641,9.10182E-08" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="None" supportsActivation="false" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="2.95695,2.95695" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.8" offset="-1.907358E-06,0.9726498,-4.386806E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="3.325,3.325" volume="59.6745834" volumeInner="59.1723824" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+        </Part>
+        <Part id="886" partType="FairingBase1" position="0,-2.863396,0" rotation="2.90283E-05,180,1.183914E-05" name="LM Adapter" stageOverride="true" materials="1,17,17,17,17" groupId="4eb8b2c9-8a0e-4423-a740-420baa504adb" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="4.473115,4.473115,0.09316941,0,4.517396,4.517396" area="6.022212,6.022212,0.09316941,0,6.022212,6.022212" />
+          <AttachPoints>
+            <AttachPoint id="1" position="-1.258819E-06,0.416,-1.056539E-06" rotation="-90,180,0" scale="3.64691663" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Fairing" crewTraversable="false" />
+          </AttachPoints>
+          <Config centerOfMass="9.309139E-08,-2.999189E-09,3.390387E-08" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="None" supportsActivation="false" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="3.325,3.325" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.8" offset="-1.258819E-06,0.416,-1.056539E-06" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="3.325,3.325" volume="28.568285" volumeInner="28.1382523" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="846" partB="847" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="889" partB="847" attachPointsA="0" attachPointsB="1">
+          <BodyJoint body="17" connectedBody="18" breakTorque="1E+07" breakForce="0" jointType="Normal" position="0,-2.190793,0" connectedPosition="0,1.640429,1.907349E-06" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="889" partB="886" attachPointsA="1" attachPointsB="1" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+ <DesignerPart name="Fairing For Testing" category="Payloads" description="A Fairing needs to test" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="8" partType="FairingNoseCone1" position="0,2.083303,-9.536743E-07" rotation="-3.073585E-05,1.502687E-05,-5.658964E-12" materials="0,4,4,0,0" groupId="7d47f05d-adf6-437b-b9f8-1f422d94ba41" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="-1.141583E-07,-0.7580653,-4.324306E-08" heatShield="55.7217" heatShieldMass="0.13930425" heatShieldScale="0.1" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.5,1.5" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="1.5" offset="2.629188E-14,1.5,5.960393E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolResizeBottom="false" toolResizeHeight="false" toolShapeBottom="false" toolShapeTop="false" topScale="0,0" volume="11.00537" volumeInner="10.86885" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7" partType="Fairing1" position="0,-0.4166603,0" rotation="-2.049057E-05,1.001791E-05,-2.198454E-12" materials="0,4,4,0,0" groupId="7d47f05d-adf6-437b-b9f8-1f422d94ba41" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="2.575508E-10,-1.599268E-08,6.650291E-08" heatShield="53.29053" heatShieldMass="0.13322632" heatShieldScale="0.1" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.5,1.5" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.8" offset="4.500265E-14,1,-1.192098E-07" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="1.5,1.5" volume="13.9762306" volumeInner="13.8123713" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+        </Part>
+        <Part id="6" partType="FairingBase1" position="0,-1.666643,4.768372E-07" rotation="-1.024528E-05,5.008957E-06,-4.478356E-13" activationStage="0" materials="0,4,4,0,0" groupId="7d47f05d-adf6-437b-b9f8-1f422d94ba41" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="7.154405E-09,1.665907E-10,4.704521E-08" heatShield="45.79817" heatShieldMass="0.114495419" heatShieldScale="0.1" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.5,1.5" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.8" offset="-1.954046E-15,0.2499998,4.470345E-08" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="1.5,1.5" volume="3.49405265" volumeInner="3.40067816" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+          <Payload payloadId="prc-partTest-2-0" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="8" partB="7" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="7" partB="6" attachPointsA="0" attachPointsB="1" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

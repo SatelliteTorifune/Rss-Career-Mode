@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="SCORE-1" category="Payloads" description="the satellite into orbit which made in USA" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="20" partType="Detacher1" position="0,-0.08253872,0" rotation="4.098113E-05,-2.003582E-05,-1.245781E-11" name="SCORE Deployer" activationStage="0" materials="0,3,4,2,0" groupId="730ea575-c29c-4e61-ac96-d929e4b746d5" style="Interstage-4">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config ignoreValidation="true" autoActivateIfNoStageOrActivationGroup="false" heatShieldScale="0" massScale="0.025" partScale="0.11,0.11,0.11" partSelectionEnabled="false" priceScale="0" stageActivationType="Payload" partPropertiesEnabled="false" />
+          <Fuselage bottomScale="0.3037508,0.3037508" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.3" offset="2.011709E-20,0.08249314,3.552719E-15" topScale="0.3037508,0.3037508" version="2" />
+          <Detacher force="0" version="2" />
+          <CoverEngine />
+          <CrossFeed />
+        </Part>
+        <Part id="14" partType="Fuselage1" position="0,-0.0212152,0" rotation="3.073584E-05,-1.502687E-05,-6.880296E-12" materials="0,4,4,0,0" groupId="730ea575-c29c-4e61-ac96-d929e4b746d5"  partSelectionEnabled="false" texture="Fuselage2" textureTiling="9,9">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config centerOfMass="-2.917581E-23,0.007654363,3.535196E-16" heatShieldScale="0" />
+		  <Payload payloadId="Payload-us-SCORE1" />
+          <Fuselage bottomScale="0.09869356,0.09869356" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0.25" offset="-1.905827E-21,0.02117899,2.309267E-14" topScale="0.3177593,0.3177593" version="2" />
+          <FuelTank capacity="2.520768404006958" fuel="0.6301921010017395" fuelType="Solid" />
+        </Part>
+        <Part id="12" partType="Fuselage1" position="0,0.1249597,0" rotation="2.049056E-05,-1.001791E-05,-3.419786E-12" materials="0,4,4,0,0" groupId="730ea575-c29c-4e61-ac96-d929e4b746d5"  partSelectionEnabled="false" texture="Fuselage2" textureTiling="9,9">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" />
+          <Fuselage bottomScale="0.3178904,0.3178904" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="-8.999733E-22,0.125,2.842174E-14" topScale="0.3178904,0.3178904" version="2" />
+          <FuelTank capacity="31.74714469909668" fuelType="Solid" subPriority="2" />
+        </Part>
+        <Part id="15" partType="Fuselage1" position="0,-0.1186525,0.3103046" rotation="14.99998,180,1.076698E-12" materials="0,4,4,0,0" groupId="730ea575-c29c-4e61-ac96-d929e4b746d5"  partSelectionEnabled="false" texture="Fuselage2" textureTiling="9,9">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" />
+          <Fuselage bottomScale="0.005,0.005" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="1.588187E-21,0.1970037,3.019807E-14" topScale="0.005,0.005" version="2" />
+          <FuelTank capacity="0.012378106825053692" fuelType="Solid" />
+        </Part>
+        <Part id="16" partType="Fuselage1" position="0.3103044,-0.1186522,0" rotation="15.00001,270,-2.121339E-05" materials="0,4,4,0,0" groupId="730ea575-c29c-4e61-ac96-d929e4b746d5"  partSelectionEnabled="false" texture="Fuselage2" textureTiling="9,9">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" />
+          <Fuselage bottomScale="0.005,0.005" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="1.588187E-21,0.1970037,3.019807E-14" topScale="0.005,0.005" version="2" />
+          <FuelTank capacity="0.012378106825053692" fuelType="Solid" />
+        </Part>
+        <Part id="17" partType="Fuselage1" position="0,-0.1186522,-0.3103042" rotation="15.00002,5.008957E-06,2.897622E-12" materials="0,4,4,0,0" groupId="730ea575-c29c-4e61-ac96-d929e4b746d5"  partSelectionEnabled="false" texture="Fuselage2" textureTiling="9,9">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" />
+          <Fuselage bottomScale="0.005,0.005" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="1.588187E-21,0.1970037,3.019807E-14" topScale="0.005,0.005" version="2" />
+          <FuelTank capacity="0.012378106825053692" fuelType="Solid" />
+          <Payload payloadId="Payload-us-SCORE1" />
+        </Part>
+        <Part id="18" partType="Fuselage1" position="-0.3103046,-0.1186522,0" rotation="15,90,2.121339E-05" materials="0,4,4,0,0" groupId="730ea575-c29c-4e61-ac96-d929e4b746d5"  partSelectionEnabled="false" texture="Fuselage2" textureTiling="9,9">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" />
+          <Fuselage bottomScale="0.005,0.005" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="1.588187E-21,0.1970037,3.019807E-14" topScale="0.005,0.005" version="2" />
+          <FuelTank capacity="0.012378106825053692" fuelType="Solid" />
+        </Part>
+        <Part id="13" partType="Fuselage1" position="0,0.4469602,0" rotation="1.024528E-05,-5.008957E-06,-8.549465E-13" materials="0,4,4,0,0" groupId="730ea575-c29c-4e61-ac96-d929e4b746d5"  partSelectionEnabled="false" texture="Fuselage2" textureTiling="9,9">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" />
+          <Fuselage bottomScale="0.005,0.005" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" fuelPercentage="0" offset="1.588187E-21,0.1970037,3.019807E-14" topScale="0.005,0.005" version="2" />
+          <FuelTank capacity="0.012378106825053692" fuelType="Solid" subPriority="5" />
+        </Part>
+        <Part id="19" partType="RocketEngine1" position="0,0.006445885,0" rotation="3.931296E-05,-1.525424E-05,8.963323E-08" name="Goblin Solid Motor" activationStage="0" materials="0,1,2,3,4" groupId="730ea575-c29c-4e61-ac96-d929e4b746d5"  partSelectionEnabled="false" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" autoActivateIfNoStageOrActivationGroup="true" stageActivationType="None" />
+          <RocketEngine engineSubTypeId="Model" engineTypeId="Solid" fuelType="Solid" nozzleSize="0.45" nozzleThroatSize="1" nozzleTypeId="Cone" fuelGrain="Star" size="0.625" wattsPerFuelFlowOverride="-1" heatTransferOverride="1" mass="0.0141560324" price="469" />
+          <InputController inputId="Throttle" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="20" partB="14" attachPointsA="2" attachPointsB="5">
+          <BodyJoint body="4" connectedBody="5" breakTorque="1E+07" breakForce="0" jointType="Normal" position="1.192093E-07,-0.1212435,-4.768372E-07" connectedPosition="-1.192093E-07,0.08249319,0" axis="0,0,1" secondaryAxis="0,1,0" />
+        </Connection>
+        <Connection partA="14" partB="12" attachPointsA="2,4" attachPointsB="1,5" />
+        <Connection partA="19" partB="14" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="15" partB="12" attachPointsA="3" attachPointsB="0" symmetryId="8c66ae5e-8e4b-4712-98ed-9de547b7917d" />
+        <Connection partA="16" partB="12" attachPointsA="3" attachPointsB="0" symmetryId="8c66ae5e-8e4b-4712-98ed-9de547b7917d" />
+        <Connection partA="17" partB="12" attachPointsA="3" attachPointsB="0" symmetryId="8c66ae5e-8e4b-4712-98ed-9de547b7917d" />
+        <Connection partA="18" partB="12" attachPointsA="3" attachPointsB="0" symmetryId="8c66ae5e-8e4b-4712-98ed-9de547b7917d" />
+        <Connection partA="12" partB="13" attachPointsA="2,4" attachPointsB="1,5" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

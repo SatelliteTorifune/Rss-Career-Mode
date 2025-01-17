@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Parachute" category="Payloads" description="Bring this" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="8" partType="Parachute1" position="0,0,0" rotation="0,0,0" activationStage="0" materials="15,16,16,18,15" partConnectionsEnabled="false" partStyleEnabled="false" parachuteStyle="ParachuteStripedVertical">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="90,0,0" scale="1.25" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="false" allowRotation="true" jointType="Rigid" connectionType="Normal" crewTraversable="false" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <Parachute autocutASL="-0" chuteHeight="1" chuteRadius="6.533334" cordLength="3.20065784" deploymentASL="19518.6816" deploymentDensity="0.100000024" inflationASL="987.8406" inflationDensity="0.89" maxDeploymentSpeed="680" referenceDensity="1.2" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <Payload payloadId="Payload-ussr-parttest-1-1" inspectorEnabled="false" partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections />
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

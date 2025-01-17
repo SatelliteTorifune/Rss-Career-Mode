@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="StarLink Adapter" category="Payloads" description="" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="9" partType="Fuselage1" position="0,-0.2259188,-9.536743E-07" rotation="0,270,0" name="StarLink Adpter Base" activationStage="1" materials="3,4,4,0,0" groupId="256860b8-0de7-4d37-b40a-06c84818ca3e" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="1.479945,1.479945,1.158844,0,1.479843,1.479843" area="2.224337,2.224337,2.255945,0,2.224337,2.224337" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="1" position="0,-0.3381,0" rotation="90,0,0" scale="2.72029424" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="2" position="0,0.3381,0" rotation="-90,180,0" scale="2.403206" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="3" position="0,0,1.646925" rotation="0,0,0" scale="0.6762" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="false" />
+            <AttachPoint id="4" position="0,0.3381,0" rotation="-90,180,0" scale="2.403206" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+            <AttachPoint id="5" position="0,-0.3381,0" rotation="90,0,0" scale="2.72029424" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Shell" crewTraversable="false" />
+          </AttachPoints>
+          <Config autoActivateIfNoStageOrActivationGroup="false" centerOfMass="3.128948E-08,-0.03687055,7.40143E-08" heatShieldScale="0" ignoreValidation="true" priceScale="0" stageActivationType="Payload" supportsActivation="true" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.85,1.85" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.3381,0" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="1.44385,1.44385" volume="5.725269" volumeInner="5.59913874" partPropertiesEnabled="false" version="3" />
+          <FuelTank capacity="3148.89794921875" fuel="3148.89794921875" fuelType="None" partPropertiesEnabled="false" />
+          <InputController input="1" id="StarLinkV1" inputId="Activator" inspectorEnabled="false" partPropertiesEnabled="false" />
+          <FlightProgram maxThreads="300" partPropertiesEnabled="false">
+            <Program name="New Program">
+            <Variables>
+              <Variable name="StarLinkDeployed">
+                <Items />
+              </Variable>
+              <Variable name="StarLinkLoaded">
+                <Items />
+              </Variable>
+              <Variable name="StarLInkLoaded" number="0" />
+            </Variables>
+            <Instructions>
+              <Event event="FlightStart" id="0" style="flight-start" pos="-159.4222,-426.2715" />
+              <For var="i" id="1" style="for">
+                <Constant text="0" />
+                <CraftProperty property="Part.MaxID" style="part">
+                  <Constant number="0" />
+                </CraftProperty>
+                <Constant number="1" />
+                <Instructions>
+                  <If id="2" style="if">
+                    <StringOp op="contains" style="contains">
+                      <CraftProperty property="Part.IDToName" style="part">
+                        <Variable list="false" local="true" variableName="i" />
+                      </CraftProperty>
+                      <Constant text="StarLinkV1 CPU" />
+                    </StringOp>
+                    <Instructions>
+                      <ChangeVariable id="3" style="change-variable">
+                        <Variable list="false" local="false" variableName="StarLInkLoaded" />
+                        <Constant text="1" />
+                      </ChangeVariable>
+                      <LogFlight id="4" style="flightlog">
+                        <StringOp op="join" style="join" pos="-35.03387,-603.5238">
+                          <Constant text="There Are " />
+                          <Variable list="false" local="false" variableName="StarLInkLoaded" />
+                          <Constant text="StarLInks Loaded in THis Craft" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant bool="false" />
+                      </LogFlight>
+                    </Instructions>
+                  </If>
+                </Instructions>
+              </For>
+            </Instructions>
+            <Instructions>
+              <Event event="ReceiveMessage" id="5" style="receive-msg" pos="-190.6946,-96.43461">
+                <Constant canReplace="false" text="StarLink Deployed" />
+              </Event>
+              <SetList op="add" id="6" style="list-add">
+                <Variable list="true" local="false" variableName="StarLinkDeployed" />
+                <Variable list="false" local="true" variableName="data" />
+              </SetList>
+              <DisplayMessage id="7" style="display">
+                <StringOp op="join" style="join">
+                  <Constant text="&lt;color=blue&gt;" />
+                  <Constant text="&lt;size=150%&gt;" />
+                  <StringOp op="join" style="join">
+                    <ListOp op="length" style="list-length">
+                      <Variable list="true" local="false" variableName="StarLinkDeployed" />
+                    </ListOp>
+                    <Constant text="/" />
+                    <Variable list="false" local="false" variableName="StarLInkLoaded" />
+                    <Constant text="  StarLinks have deployed!" />
+                    <Constant text="" />
+                  </StringOp>
+                  <Constant text="" />
+                </StringOp>
+                <Constant number="7" />
+              </DisplayMessage>
+              <WaitUntil id="8" style="wait-until">
+                <Comparison op="=" style="op-eq">
+                  <ListOp op="length" style="list-length">
+                    <Variable list="true" local="false" variableName="StarLinkDeployed" />
+                  </ListOp>
+                  <Variable list="false" local="false" variableName="StarLInkLoaded" />
+                </Comparison>
+              </WaitUntil>
+              <DisplayMessage id="9" style="display">
+                <StringOp op="join" style="join">
+                  <Constant text="&lt;color=green&gt;" />
+                  <Constant text="&lt;size=150%&gt;" />
+                  <Constant text="All StarLinks(" />
+                  <StringOp op="join" style="join">
+                    <ListOp op="length" style="list-length">
+                      <Variable list="true" local="false" variableName="StarLinkDeployed" />
+                    </ListOp>
+                    <Constant text=" of " />
+                    <Variable list="false" local="false" variableName="StarLInkLoaded" />
+                    <Constant text=")" />
+                    <Constant text="" />
+                  </StringOp>
+                  <Constant text="Are Deployed!" />
+                  <Constant text="" />
+                </StringOp>
+                <Constant number="7" />
+              </DisplayMessage>
+            </Instructions>
+            <Instructions>
+              <Event event="ReceiveMessage" id="10" style="receive-msg" pos="-667.9063,-243.8095">
+                <Constant canReplace="false" text="StarLink Direct Changed" />
+              </Event>
+              <DisplayMessage id="11" style="display">
+                <Constant text="text" />
+                <Constant number="7" />
+              </DisplayMessage>
+            </Instructions>
+            <Expressions />
+          </Program>
+          </FlightProgram>
+          <Payload payloadId="StarLink Adp" />
+        </Part>
+        <Part id="10" partType="Strut1" position="0,0.1839609,-9.536743E-07" rotation="1.221333E-12,180,1.086676E-05" materials="2,4,4,2,2" groupId="256860b8-0de7-4d37-b40a-06c84818ca3e" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="0.3445607,0.3445607,3.733081,0,0.3445764,0.3445763" area="0.5250225,0.5250225,3.733081,0,0.5250225,0.5250225" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0,0" rotation="0,0,0" scale="1" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="0,-0.07178104,0" rotation="90,0,0" scale="2.38420558" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="0,0.07178104,0" rotation="-90,180,0" scale="2.459242" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config centerOfMass="4.601549E-08,0.001975892,7.942855E-08" heatShieldScale="0" ignoreValidation="true" massScale="0.15" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="1.421109,1.421109" cornerRadiuses="1,1,1,1,1,1,1,1" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="0,0.07178104,0" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="1.511968,1.511968" volume="0.9592751" volumeInner="0.8846261" partPropertiesEnabled="false" version="3" />
+        </Part>
+        <Part id="11" partType="Block1" position="0,0.02097988,-0.6500044" rotation="270,1.931869E-05,0" materials="0,1,2,3,4" groupId="256860b8-0de7-4d37-b40a-06c84818ca3e" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0.2536499,0,0,0" area="0,0,0.2536499,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0.25,0" rotation="270,0,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="0,-0.25,0" rotation="90,180,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="0.25,0,0" rotation="0,90,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="3" position="-0.25,0,0" rotation="0,270,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="4" position="0,0,0.25" rotation="0,0,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="5" position="0,0,-0.25" rotation="0,180,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <GenericPart partPropertiesEnabled="false" />
+        </Part>
+        <Part id="12" partType="Block1" position="0,0.02097797,0.6500034" rotation="270,1.931869E-05,0" materials="0,1,2,3,4" groupId="256860b8-0de7-4d37-b40a-06c84818ca3e" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,0,0,0,0,0" area="0,0,0,0,0,0" />
+          <AttachPoints>
+            <AttachPoint id="0" position="0,0.25,0" rotation="270,0,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="1" position="0,-0.25,0" rotation="90,180,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="2" position="0.25,0,0" rotation="0,90,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="3" position="-0.25,0,0" rotation="0,270,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="4" position="0,0,0.25" rotation="0,0,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="true" ignoreSurfaces="true" allowRotation="false" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+            <AttachPoint id="5" position="0,0,-0.25" rotation="0,180,0" scale="0.5" positionOffset="0,0,0" rotationOffset="0,0,0" enabled="false" ignoreSurfaces="false" allowRotation="true" jointType="Fused" connectionType="Normal" crewTraversable="true" />
+          </AttachPoints>
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <GenericPart partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="10" partB="9" attachPointsA="1" attachPointsB="2" />
+        <Connection partA="11" partB="10" attachPointsA="5" attachPointsB="0" />
+        <Connection partA="12" partB="10" attachPointsA="5" attachPointsB="0" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

@@ -1,0 +1,1096 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="Data Sending Device" category="Payloads" description="the device for this mission" order="1" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="6" partType="Block1" position="0,0,0" rotation="-5.384024E-06,120,8.872678E-06" name="datasent unit" materials="13,1,2,3,4">
+          <Drag drag="0.185376,0.2475176,0.2499149,0.2499149,0,0.2386402" area="0.2138957,0.3386676,0.2499149,0.2499149,0,0.3208431" />
+          <Payload payloadId="Payload-test-advancedB" />
+          <Config heatShieldScale="0" priceScale="0" partPropertiesEnabled="false" />
+          <GenericPart inspectorEnabled="false" partPropertiesEnabled="false" />
+          <FlightProgram powerConsumptionPerInstruction="0.01" broadcastPowerConsumptionPerByte="0.1" inspectorEnabled="false" partPropertiesEnabled="false">
+            <Program name="test">
+              <Variables>
+                <Variable name="colorapo" number="0" />
+                <Variable name="colorpe" number="0" />
+                <Variable name="dataGather" number="0" />
+                <Variable name="dataS" number="0" />
+                <Variable name="colorR" number="0" />
+                <Variable name="colors" number="0" />
+                <Variable name="controlenabled" number="0" />
+                <Variable name="idkwtfistqhismoyqhetplanet" number="0" />
+                <Variable name="somehowparameter" number="0" />
+                <Variable name="targetpos" number="0" />
+                <Variable name="angle" number="0" />
+                <Variable name="atpmflage" number="0" />
+                <Variable name="temparaforseicvh" number="0" />
+                <Variable name="maxstorage" number="0" />
+                <Variable name="currentstorage" number="0" />
+                <Variable name="datasent" number="0" />
+                <Variable name="targetdata" number="0" />
+                <Variable name="hey" number="0" />
+              </Variables>
+              <Instructions>
+                <Event event="FlightStart" id="0" style="flight-start" pos="-14.10037,140.8242" />
+                <SetVariable id="1" style="set-variable">
+                  <Variable list="false" local="false" variableName="targetdata" />
+                  <Constant text="4096" />
+                </SetVariable>
+                <SetVariable id="2" style="set-variable">
+                  <Variable list="false" local="false" variableName="maxstorage" />
+                  <Constant text="2048" />
+                </SetVariable>
+                <SetVariable id="3" style="set-variable">
+                  <Variable list="false" local="false" variableName="currentstorage" />
+                  <Constant number="0" />
+                </SetVariable>
+                <SetVariable id="4" style="set-variable">
+                  <Variable list="false" local="false" variableName="datasent" />
+                  <Constant number="0" />
+                </SetVariable>
+                <SetVariable id="5" style="set-variable">
+                  <Variable list="false" local="false" variableName="idkwtfistqhismoyqhetplanet" />
+                  <CraftProperty property="Orbit.Planet" style="prop-name" />
+                </SetVariable>
+                <SetVariable id="6" style="set-variable">
+                  <Variable list="false" local="false" variableName="controlenabled" />
+                  <Constant text="0" />
+                </SetVariable>
+                <SetVariable id="7" style="set-variable">
+                  <Variable list="false" local="false" variableName="somehowparameter" />
+                  <Constant text="10000" />
+                </SetVariable>
+                <SetVariable id="8" style="set-variable">
+                  <Variable list="false" local="false" variableName="colorapo" />
+                  <Constant text="green" />
+                </SetVariable>
+                <SetVariable id="9" style="set-variable">
+                  <Variable list="false" local="false" variableName="colorpe" />
+                  <Constant text="green" />
+                </SetVariable>
+                <SetVariable id="10" style="set-variable">
+                  <Variable list="false" local="false" variableName="controlenabled" />
+                  <Constant text="1" />
+                </SetVariable>
+                <WaitUntil id="11" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="dataprocess unit" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant text="1" />
+                  </Comparison>
+                </WaitUntil>
+                <Repeat id="12" style="repeat">
+                  <Constant text="50" />
+                  <Instructions>
+                    <DisplayMessage id="13" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;color=blue&gt;Standard Satellite Remote Control System V 1.55&lt;/color&gt;" />
+                        <Constant text="&lt;br&gt;" />
+                        <StringOp op="join" style="join">
+                          <Constant text="&lt;color=yellow&gt;Program Initializing&lt;/color&gt;" />
+                          <Constant text="&lt;br&gt;" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="14" style="wait-seconds">
+                      <Constant text="0.1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <Repeat id="15" style="repeat">
+                  <Constant text="50" />
+                  <Instructions>
+                    <DisplayMessage id="16" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;color=blue&gt;Standard Satellite Remote Control System V 1.55&lt;/color&gt;" />
+                        <Constant text="&lt;br&gt;" />
+                        <StringOp op="join" style="join">
+                          <Constant text="&lt;color=yellow&gt;Program Self-Checking&lt;/color&gt;" />
+                          <Constant text="&lt;br&gt;" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="17" style="wait-seconds">
+                      <Constant text="0.1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <Repeat id="18" style="repeat">
+                  <Constant text="50" />
+                  <Instructions>
+                    <DisplayMessage id="19" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;color=blue&gt;Standard Satellite Remote Control System V 1.55&lt;/color&gt;" />
+                        <Constant text="&lt;br&gt;" />
+                        <StringOp op="join" style="join">
+                          <Constant text="&lt;color=green&gt;Program Self-Checking Complete&lt;/color&gt;" />
+                          <Constant text="&lt;br&gt;" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="20" style="wait-seconds">
+                      <Constant text="0.1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <SetActivationGroup id="21" style="set-ag">
+                  <Constant text="9" />
+                  <Constant style="true" bool="true" />
+                </SetActivationGroup>
+                <Repeat id="22" style="repeat" pos="-54.10042,-1206.807">
+                  <Constant text="30" />
+                  <Instructions>
+                    <DisplayMessage id="23" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;color=blue&gt;Standard Satellite Remote Control System V 1.55&lt;/color&gt;" />
+                        <Constant text="&lt;br&gt;" />
+                        <StringOp op="join" style="join">
+                          <Constant text="&lt;color=green&gt;Power Up Completed&lt;/color&gt;" />
+                          <Constant text="&lt;br&gt;" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="24" style="wait-seconds">
+                      <Constant text="0.1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <Repeat id="25" style="repeat">
+                  <Constant text="30" />
+                  <Instructions>
+                    <DisplayMessage id="26" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;color=blue&gt;Standard Satellite Remote Control System V 1.55&lt;/color&gt;" />
+                        <Constant text="&lt;br&gt;" />
+                        <StringOp op="join" style="join">
+                          <Constant text="&lt;color=yellow&gt;Connecting Ground Station&lt;/color&gt;" />
+                          <Constant text="&lt;br&gt;" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="27" style="wait-seconds">
+                      <Constant text="0.1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <Repeat id="28" style="repeat">
+                  <Constant text="30" />
+                  <Instructions>
+                    <DisplayMessage id="29" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;color=blue&gt;Standard Satellite Remote Control System V 1.55&lt;/color&gt;" />
+                        <Constant text="&lt;br&gt;" />
+                        <StringOp op="join" style="join" pos="867.0529,-1159.176">
+                          <Constant text="&lt;color=green&gt;Ground Station Connected&lt;/color&gt;" />
+                          <Constant text="&lt;br&gt;" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="30" style="wait-seconds">
+                      <Constant text="0.1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <Repeat id="31" style="repeat">
+                  <Constant text="30" />
+                  <Instructions>
+                    <DisplayMessage id="32" style="display">
+                      <StringOp op="join" style="join">
+                        <Constant text="&lt;color=blue&gt;Standard Satellite Remote Control System V 1.55&lt;/color&gt;" />
+                        <Constant text="&lt;br&gt;" />
+                        <StringOp op="join" style="join">
+                          <Constant text="&lt;color=green&gt;Ready Sending Data&lt;/color&gt;" />
+                          <Constant text="&lt;br&gt;" />
+                          <Constant text="" />
+                        </StringOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant number="7" />
+                    </DisplayMessage>
+                    <WaitSeconds id="33" style="wait-seconds">
+                      <Constant text="0.1" />
+                    </WaitSeconds>
+                  </Instructions>
+                </Repeat>
+                <While id="34" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <If id="35" style="if">
+                      <Comparison op="=" style="op-eq">
+                        <Variable list="false" local="false" variableName="controlenabled" />
+                        <Constant text="1" />
+                      </Comparison>
+                      <Instructions>
+                        <If id="36" style="if">
+                          <Comparison op="le" style="op-lte">
+                            <Planet op="atmosphereHeight" style="planet">
+                              <CraftProperty property="Orbit.Planet" style="prop-name" />
+                            </Planet>
+                            <CraftProperty property="Orbit.Periapsis" style="prop-orbit" />
+                          </Comparison>
+                          <Instructions>
+                            <SetVariable id="37" style="set-variable">
+                              <Variable list="false" local="false" variableName="colorpe" />
+                              <Constant text="green" />
+                            </SetVariable>
+                          </Instructions>
+                        </If>
+                        <If id="38" style="if">
+                          <Comparison op="le" style="op-lte">
+                            <CraftProperty property="Orbit.Periapsis" style="prop-orbit" />
+                            <Planet op="atmosphereHeight" style="planet">
+                              <CraftProperty property="Orbit.Planet" style="prop-name" />
+                            </Planet>
+                          </Comparison>
+                          <Instructions>
+                            <SetVariable id="39" style="set-variable">
+                              <Variable list="false" local="false" variableName="colorpe" />
+                              <Constant text="yellow" />
+                            </SetVariable>
+                          </Instructions>
+                        </If>
+                        <If id="40" style="if">
+                          <Comparison op="le" style="op-lte">
+                            <CraftProperty property="Orbit.Periapsis" style="prop-orbit" />
+                            <Constant text="0" />
+                          </Comparison>
+                          <Instructions>
+                            <SetVariable id="41" style="set-variable">
+                              <Variable list="false" local="false" variableName="colorpe" />
+                              <Constant text="red" />
+                            </SetVariable>
+                          </Instructions>
+                        </If>
+                        <If id="42" style="if">
+                          <Comparison op="g" style="op-gt">
+                            <Constant text="10" />
+                            <Variable list="false" local="false" variableName="dataS" />
+                          </Comparison>
+                          <Instructions>
+                            <SetVariable id="43" style="set-variable">
+                              <Variable list="false" local="false" variableName="colors" />
+                              <Constant text="red" />
+                            </SetVariable>
+                          </Instructions>
+                        </If>
+                        <If id="44" style="if">
+                          <BoolOp op="and" style="op-and">
+                            <Comparison op="g" style="op-gt">
+                              <Variable list="false" local="false" variableName="dataS" />
+                              <Constant text="10" />
+                            </Comparison>
+                            <Comparison op="g" style="op-gt">
+                              <Constant text="50" />
+                              <Variable list="false" local="false" variableName="dataS" />
+                            </Comparison>
+                          </BoolOp>
+                          <Instructions>
+                            <SetVariable id="45" style="set-variable">
+                              <Variable list="false" local="false" variableName="colors" />
+                              <Constant text="yellow" />
+                            </SetVariable>
+                          </Instructions>
+                        </If>
+                        <If id="46" style="if">
+                          <Comparison op="le" style="op-lte">
+                            <Constant text="50" />
+                            <Variable list="false" local="false" variableName="dataS" />
+                          </Comparison>
+                          <Instructions>
+                            <SetVariable id="47" style="set-variable">
+                              <Variable list="false" local="false" variableName="colors" />
+                              <Constant text="green" />
+                            </SetVariable>
+                          </Instructions>
+                        </If>
+                        <If id="48" style="if">
+                          <Comparison op="l" style="op-lt">
+                            <Variable list="false" local="false" variableName="colorR" />
+                            <Constant text="10" />
+                          </Comparison>
+                          <Instructions>
+                            <SetVariable id="49" style="set-variable">
+                              <Variable list="false" local="false" variableName="colorR" />
+                              <Constant text="red" />
+                            </SetVariable>
+                          </Instructions>
+                        </If>
+                        <If id="50" style="if">
+                          <BoolOp op="and" style="op-and">
+                            <Comparison op="g" style="op-gt">
+                              <Variable list="false" local="false" variableName="dataGather" />
+                              <Constant text="10" />
+                            </Comparison>
+                            <Comparison op="g" style="op-gt">
+                              <Constant text="50" />
+                              <Variable list="false" local="false" variableName="dataGather" />
+                            </Comparison>
+                          </BoolOp>
+                          <Instructions>
+                            <SetVariable id="51" style="set-variable">
+                              <Variable list="false" local="false" variableName="colorR" />
+                              <Constant text="yellow" />
+                            </SetVariable>
+                          </Instructions>
+                        </If>
+                        <If id="52" style="if">
+                          <Comparison op="le" style="op-lte">
+                            <Constant text="50" />
+                            <Variable list="false" local="false" variableName="dataGather" />
+                          </Comparison>
+                          <Instructions>
+                            <SetVariable id="53" style="set-variable">
+                              <Variable list="false" local="false" variableName="colorR" />
+                              <Constant text="green" />
+                            </SetVariable>
+                          </Instructions>
+                        </If>
+                        <DisplayMessage id="54" style="display">
+                          <StringOp op="join" style="join">
+                            <Constant text="&lt;color=blue&gt;Standard Satellite Remote Control System V 1.55&lt;/color&gt;" />
+                            <Constant text="&lt;br&gt;" />
+                            <StringOp op="join" style="join">
+                              <Constant text="Orbiting Planet=" />
+                              <CraftProperty property="Orbit.Planet" style="prop-name" />
+                              <Constant text="|" />
+                              <StringOp op="join" style="join">
+                                <Constant text="&lt;color=" />
+                                <Variable list="false" local="false" variableName="colorapo" />
+                                <Constant text="&gt;" />
+                                <StringOp op="join" style="join">
+                                  <Constant text="Apologies=" />
+                                  <StringOp op="format" style="format">
+                                    <Constant text="{0:n3}" />
+                                    <BinaryOp op="/" style="op-div">
+                                      <CraftProperty property="Orbit.Apoapsis" style="prop-orbit" />
+                                      <Constant text="1000" />
+                                    </BinaryOp>
+                                    <Constant text="" />
+                                  </StringOp>
+                                  <Constant text="Km" />
+                                  <Constant text="" />
+                                </StringOp>
+                                <Constant text="&lt;/color&gt;" />
+                                <Constant text=" " />
+                                <Constant text="" />
+                              </StringOp>
+                              <Constant text="" />
+                            </StringOp>
+                            <StringOp op="join" style="join">
+                              <Constant text="&lt;color=" />
+                              <Variable list="false" local="false" variableName="colorpe" />
+                              <Constant text="&gt;" />
+                              <StringOp op="join" style="join">
+                                <Constant text="Periapsis=" />
+                                <StringOp op="format" style="format">
+                                  <Constant text="{0:n3}" />
+                                  <BinaryOp op="/" style="op-div">
+                                    <CraftProperty property="Orbit.Periapsis" style="prop-orbit" />
+                                    <Constant text="1000" />
+                                  </BinaryOp>
+                                  <Constant text="" />
+                                </StringOp>
+                                <Constant text="Km" />
+                                <Constant text="" />
+                              </StringOp>
+                              <Constant text="&lt;/color&gt;" />
+                              <Constant text="" />
+                            </StringOp>
+                            <Constant text="| &lt;color=green&gt;" />
+                            <StringOp op="join" style="join">
+                              <Constant text="Inclination=" />
+                              <StringOp op="format" style="format">
+                                <Constant text="{0:n3}" />
+                                <MathFunction function="rad2deg" style="op-math">
+                                  <CraftProperty property="Orbit.Inclination" style="prop-orbit" />
+                                </MathFunction>
+                                <Constant text="" />
+                              </StringOp>
+                              <Constant text="Deg" />
+                              <Constant text="" />
+                            </StringOp>
+                            <Constant text="&lt;/color&gt;" />
+                            <Constant text="&lt;br&gt;" />
+                            <StringOp op="join" style="join">
+                              <Constant text="&lt;color=green&gt;connected to " />
+                              <CraftProperty property="Target.Name" style="prop-name" />
+                              <Constant text="&lt;/color&gt; |" />
+                              <StringOp op="join" style="join">
+                                <Constant text="&lt;color=" />
+                                <Variable list="false" local="false" variableName="colorR" />
+                                <Constant text="&gt;" />
+                                <StringOp op="join" style="join">
+                                  <Constant text="Data Gathering Speed=" />
+                                  <Variable list="false" local="false" variableName="dataGather" />
+                                  <Constant text="Mb/s" />
+                                  <Constant text="" />
+                                </StringOp>
+                                <Constant text="&lt;/color&gt;" />
+                                <Constant text="" />
+                              </StringOp>
+                              <Constant text="" />
+                            </StringOp>
+                            <Constant text="" />
+                            <Constant text="" />
+                            <Constant text="&lt;/color&gt;" />
+                            <StringOp op="join" style="join">
+                              <Constant text="&lt;color=" />
+                              <Variable list="false" local="false" variableName="colors" />
+                              <Constant text="&gt;" />
+                              <StringOp op="join" style="join">
+                                <Constant text="Data Sending Speed=" />
+                                <Variable list="false" local="false" variableName="dataS" />
+                                <Constant text="Mb/s" />
+                                <Constant text="" />
+                              </StringOp>
+                              <Constant text="&lt;/color&gt;" />
+                              <Constant text="&lt;br&gt;" />
+                              <Constant text="" />
+                            </StringOp>
+                            <StringOp op="join" style="join">
+                              <Constant text="current storage=" />
+                              <StringOp op="format" style="format">
+                                <Constant text="{0:n3}" />
+                                <Variable list="false" local="false" variableName="currentstorage" />
+                                <Constant text="" />
+                              </StringOp>
+                              <Constant text="&lt;br&gt;" />
+                              <Constant text="datasent=" />
+                              <StringOp op="format" style="format">
+                                <Constant text="{0:n3}" />
+                                <Variable list="false" local="false" variableName="datasent" />
+                                <Constant text="" />
+                              </StringOp>
+                              <Constant text="" />
+                            </StringOp>
+                            <Constant text="" />
+                          </StringOp>
+                          <Constant number="7" />
+                        </DisplayMessage>
+                      </Instructions>
+                    </If>
+                    <If id="55" style="if">
+                      <Comparison op="=" style="op-eq">
+                        <Variable list="false" local="false" variableName="controlenabled" />
+                        <Constant text="0" />
+                      </Comparison>
+                      <Instructions>
+                        <LockNavSphere indicatorType="None" id="56" style="lock-nav-sphere" />
+                        <SetInput input="throttle" id="57" style="set-input">
+                          <Constant number="0" />
+                        </SetInput>
+                        <SetInput input="roll" id="58" style="set-input">
+                          <Constant number="0" />
+                        </SetInput>
+                        <SetInput input="pitch" id="59" style="set-input">
+                          <Constant number="0" />
+                        </SetInput>
+                        <SetInput input="yaw" id="60" style="set-input">
+                          <Constant number="0" />
+                        </SetInput>
+                        <SetInput input="translateForward" id="61" style="set-input">
+                          <Constant number="0" />
+                        </SetInput>
+                        <SetInput input="translateRight" id="62" style="set-input">
+                          <Constant number="0" />
+                        </SetInput>
+                        <SetInput input="translateUp" id="63" style="set-input">
+                          <Constant number="0" />
+                        </SetInput>
+                        <SetActivationGroup id="64" style="set-ag">
+                          <Constant text="9" />
+                          <Constant style="true" bool="true" />
+                        </SetActivationGroup>
+                        <DisplayMessage id="65" style="display">
+                          <StringOp op="join" style="join">
+                            <Constant text="&lt;color=blue&gt;Standard Satellite Remote Control System V 1.55&lt;/color&gt;" />
+                            <Constant text="&lt;br&gt;" />
+                            <Constant text="&lt;color=red&gt;Disconnected From Ground Station, Remote control unavailable&lt;/color&gt;" />
+                            <Constant text="&lt;br&gt;" />
+                            <Constant text="&lt;color=yellow&gt;select an unobstructed ground station or a relay satellite which connected to ground station to continue&lt;/color&gt;" />
+                            <Constant text="&lt;br&gt;&lt;color=yellow&gt;Activate Ag8 to auto select a group station&lt;/color&gt;" />
+                            <Constant text="" />
+                          </StringOp>
+                          <Constant number="7" />
+                        </DisplayMessage>
+                        <If id="66" style="if">
+                          <Comparison op="=" style="op-eq">
+                            <Variable list="false" local="false" variableName="atpmflage" />
+                            <Constant number="0" />
+                          </Comparison>
+                          <Instructions>
+                            <Comment id="67" style="comment">
+                              <Constant style="comment-text" canReplace="false" text="if control is disabled attempt swich to another ground station" />
+                            </Comment>
+                            <BroadcastMessage global="false" local="true" id="68" style="broadcast-msg">
+                              <Constant text="atmp" />
+                              <Constant number="0" />
+                            </BroadcastMessage>
+                            <SetVariable id="69" style="set-variable">
+                              <Variable list="false" local="false" variableName="atpmflage" />
+                              <Constant text="1" />
+                            </SetVariable>
+                            <LogMessage id="70" style="log">
+                              <Constant text="atmp bro" />
+                            </LogMessage>
+                          </Instructions>
+                        </If>
+                      </Instructions>
+                    </If>
+                    <WaitSeconds id="71" style="wait-seconds">
+                      <Constant text="0" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <If id="72" style="if" pos="1565.044,494.1448">
+                  <Comparison op="=" style="op-eq">
+                    <Variable list="false" local="false" variableName="dataGather" />
+                    <Constant number="0" />
+                  </Comparison>
+                  <Instructions>
+                    <SetVariable id="73" style="set-variable">
+                      <Variable list="false" local="false" variableName="controlenabled" />
+                      <Constant number="0" />
+                    </SetVariable>
+                  </Instructions>
+                </If>
+                <ElseIf id="74" style="else">
+                  <Constant bool="true" />
+                  <Instructions>
+                    <SetVariable id="75" style="set-variable">
+                      <Variable list="false" local="false" variableName="controlenabled" />
+                      <Constant text="1" />
+                    </SetVariable>
+                  </Instructions>
+                </ElseIf>
+              </Instructions>
+              <Instructions>
+                <ChangeVariable id="76" style="change-variable" pos="159.6646,582.8302">
+                  <Constant text="" />
+                  <Constant number="0" />
+                </ChangeVariable>
+              </Instructions>
+              <Instructions>
+                <Repeat id="77" style="repeat" pos="1773.124,-822.3862">
+                  <ListOp op="length" style="list-length">
+                    <Planet op="structures" style="planet">
+                      <CraftProperty property="Orbit.Planet" style="prop-name" />
+                    </Planet>
+                  </ListOp>
+                </Repeat>
+              </Instructions>
+              <Instructions>
+                <Event event="ReceiveMessage" id="78" style="receive-msg" pos="1913.238,16.98903">
+                  <Constant canReplace="false" text="atmp" />
+                </Event>
+                <SetTarget id="79" style="set-target">
+                  <Constant text="None" />
+                </SetTarget>
+                <LogMessage id="80" style="log">
+                  <Constant text="atmp received " />
+                </LogMessage>
+                <SetVariable id="81" style="set-variable">
+                  <Variable list="false" local="false" variableName="temparaforseicvh" />
+                  <Constant text="1" />
+                </SetVariable>
+                <SetVariable id="82" style="set-variable">
+                  <Variable list="false" local="false" variableName="atpmflage" />
+                  <Constant text="1" />
+                </SetVariable>
+                <While id="83" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <If id="84" style="if">
+                      <Comparison op="=" style="op-eq">
+                        <Variable list="false" local="false" variableName="controlenabled" />
+                        <Constant number="0" />
+                      </Comparison>
+                      <Instructions>
+                        <SetTarget id="85" style="set-target">
+                          <ListOp op="get" style="list-get">
+                            <Planet op="structures" style="planet">
+                              <CraftProperty property="Orbit.Planet" style="prop-name" />
+                            </Planet>
+                            <StringOp op="format" style="format">
+                              <Constant text="{0:n0}" />
+                              <Variable list="false" local="false" variableName="temparaforseicvh" />
+                              <Constant text="" />
+                            </StringOp>
+                          </ListOp>
+                        </SetTarget>
+                        <LogMessage id="86" style="log">
+                          <ListOp op="get" style="list-get">
+                            <Planet op="structures" style="planet">
+                              <CraftProperty property="Orbit.Planet" style="prop-name" />
+                            </Planet>
+                            <StringOp op="format" style="format">
+                              <Constant text="{0:n0}" />
+                              <Variable list="false" local="false" variableName="temparaforseicvh" />
+                              <Constant text="" />
+                            </StringOp>
+                          </ListOp>
+                        </LogMessage>
+                        <ChangeVariable id="87" style="change-variable">
+                          <Variable list="false" local="false" variableName="temparaforseicvh" />
+                          <Constant text="1" />
+                        </ChangeVariable>
+                      </Instructions>
+                    </If>
+                    <If id="88" style="if">
+                      <Comparison op="=" style="op-eq">
+                        <Variable list="false" local="false" variableName="controlenabled" />
+                        <Constant text="1" />
+                      </Comparison>
+                      <Instructions>
+                        <SetVariable id="89" style="set-variable">
+                          <Variable list="false" local="false" variableName="atpmflage" />
+                          <Constant text="0" />
+                        </SetVariable>
+                        <LogMessage id="90" style="log">
+                          <StringOp op="join" style="join">
+                            <Constant text="right one, number is" />
+                            <Variable list="false" local="false" variableName="temparaforseicvh" />
+                            <Constant text="" />
+                          </StringOp>
+                        </LogMessage>
+                        <Break id="91" style="break" />
+                      </Instructions>
+                    </If>
+                    <WaitSeconds id="92" style="wait-seconds">
+                      <Constant text="0.5" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="93" style="flight-start" pos="2551.212,65.98522" />
+                <While id="94" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <If id="95" style="if">
+                      <Comparison op="=" style="op-eq">
+                        <ActivationGroup style="activation-group">
+                          <Constant text="8" />
+                        </ActivationGroup>
+                        <Constant style="true" bool="true" />
+                      </Comparison>
+                      <Instructions>
+                        <BroadcastMessage global="false" local="true" id="96" style="broadcast-msg">
+                          <Constant text="atmp" />
+                          <Constant number="0" />
+                        </BroadcastMessage>
+                        <LogMessage id="97" style="log">
+                          <Constant text="atmp manual start " />
+                        </LogMessage>
+                        <SetActivationGroup id="98" style="set-ag">
+                          <Constant text="8" />
+                          <Constant style="false" bool="false" />
+                        </SetActivationGroup>
+                      </Instructions>
+                    </If>
+                    <WaitSeconds id="99" style="wait-seconds">
+                      <Constant text="0" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <SetTimeMode mode="SlowMotion" id="100" style="set-time-mode" pos="1694.208,-380.7114" />
+              </Instructions>
+              <Instructions>
+                <SetTimeMode mode="Normal" id="101" style="set-time-mode" pos="1762.58,-565.3965" />
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="102" style="flight-start" pos="1592.578,-1294.159" />
+                <Comment id="103" style="comment">
+                  <Constant style="comment-text" canReplace="false" text="the signal checking program" />
+                </Comment>
+                <SetTarget id="104" style="set-target">
+                  <Constant text="WEN" />
+                </SetTarget>
+                <SetVariable id="105" style="set-variable">
+                  <Variable list="false" local="false" variableName="atpmflage" />
+                  <Constant number="0" />
+                </SetVariable>
+                <While id="106" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <SetVariable id="107" style="set-variable">
+                      <Variable list="false" local="false" variableName="targetpos" />
+                      <CraftProperty property="Target.Position" style="prop-nav" />
+                    </SetVariable>
+                    <SetVariable id="108" style="set-variable">
+                      <Variable list="false" local="false" variableName="angle" />
+                      <MathFunction function="rad2deg" style="op-math">
+                        <MathFunction function="tan" style="op-math">
+                          <BinaryOp op="/" style="op-div">
+                            <VectorOp op="length" style="vec-op-1">
+                              <CraftProperty property="Nav.Position" style="prop-nav" />
+                            </VectorOp>
+                            <Planet op="radius" style="planet">
+                              <CraftProperty property="Orbit.Planet" style="prop-name" />
+                            </Planet>
+                          </BinaryOp>
+                        </MathFunction>
+                      </MathFunction>
+                    </SetVariable>
+                    <If id="109" style="if">
+                      <BoolOp op="and" style="op-and">
+                        <EvaluateExpression style="evaluate-expression">
+                          <Constant text="abs(signedAngle(v:targetpos , FD.Position,FD.North) &lt; angle" />
+                        </EvaluateExpression>
+                        <Comparison op="l" style="op-lt">
+                          <VectorOp op="dist" style="vec-op-2">
+                            <CraftProperty property="Nav.Position" style="prop-nav" />
+                            <CraftProperty property="Target.Position" style="prop-nav" />
+                          </VectorOp>
+                          <VectorOp op="length" style="vec-op-1">
+                            <CraftProperty property="Nav.Position" style="prop-nav" />
+                          </VectorOp>
+                        </Comparison>
+                      </BoolOp>
+                      <Instructions>
+                        <SetVariable id="110" style="set-variable">
+                          <Variable list="false" local="false" variableName="controlenabled" />
+                          <Constant text="1" />
+                        </SetVariable>
+                        <SetVariable id="111" style="set-variable">
+                          <Variable list="false" local="false" variableName="atpmflage" />
+                          <Constant text="1" />
+                        </SetVariable>
+                      </Instructions>
+                    </If>
+                    <ElseIf id="112" style="else">
+                      <Constant bool="true" />
+                      <Instructions>
+                        <SetVariable id="113" style="set-variable">
+                          <Variable list="false" local="false" variableName="controlenabled" />
+                          <Constant text="0" />
+                        </SetVariable>
+                      </Instructions>
+                    </ElseIf>
+                    <WaitSeconds id="114" style="wait-seconds">
+                      <Constant text="0" />
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <WaitUntil id="115" style="wait-until" pos="1103.684,915.0648">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="Mage Infinity" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant text="1" />
+                  </Comparison>
+                </WaitUntil>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="116" style="flight-start" pos="1029.015,723.6704" />
+                <WaitUntil id="117" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="dataprocess unit" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant text="1" />
+                  </Comparison>
+                </WaitUntil>
+                <While id="118" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <If id="119" style="if">
+                      <Comparison op="=" style="op-eq">
+                        <Variable list="false" local="false" variableName="controlenabled" />
+                        <Constant text="1" />
+                      </Comparison>
+                      <Instructions>
+                        <SetVariable id="120" style="set-variable">
+                          <Variable list="false" local="false" variableName="dataS" />
+                          <StringOp op="format" style="format">
+                            <Constant text="{0:n3}" />
+                            <BinaryOp op="/" style="op-div">
+                              <BinaryOp op="rand" style="op-rand">
+                                <Constant text="500" />
+                                <Constant text="100" />
+                              </BinaryOp>
+                              <BinaryOp op="/" style="op-div">
+                                <CraftProperty property="Altitude.AGL" style="prop-altitude" />
+                                <Variable list="false" local="false" variableName="somehowparameter" />
+                              </BinaryOp>
+                            </BinaryOp>
+                            <Constant text="" />
+                          </StringOp>
+                        </SetVariable>
+                      </Instructions>
+                    </If>
+                    <SetVariable id="121" style="set-variable">
+                      <Variable list="false" local="false" variableName="dataGather" />
+                      <StringOp op="format" style="format">
+                        <Constant text="{0:n3}" />
+                        <BinaryOp op="rand" style="op-rand">
+                          <Constant text="10" />
+                          <Constant text="1" />
+                        </BinaryOp>
+                        <Constant text="" />
+                      </StringOp>
+                    </SetVariable>
+                    <WaitSeconds id="122" style="wait-seconds">
+                      <BinaryOp op="rand" style="op-rand">
+                        <Constant text="0.5" />
+                        <Constant text="2" />
+                      </BinaryOp>
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <LogFlight id="123" style="flightlog" pos="668.6061,536.3525">
+                  <Constant text="text" />
+                  <Constant style="true" bool="true" />
+                </LogFlight>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="124" style="flight-start" pos="-712.2684,96.12916" />
+                <WaitUntil id="125" style="wait-until">
+                  <Comparison op="=" style="op-eq">
+                    <CraftProperty property="Part.Activated" style="part">
+                      <CraftProperty property="Part.NameToID" style="part-id">
+                        <Constant text="dataprocess unit" />
+                      </CraftProperty>
+                    </CraftProperty>
+                    <Constant text="1" />
+                  </Comparison>
+                </WaitUntil>
+                <While id="126" style="while">
+                  <Constant style="true" bool="true" />
+                  <Instructions>
+                    <Comment id="127" style="comment">
+                      <Constant style="comment-text" canReplace="false" text="recieve" />
+                    </Comment>
+                    <ChangeVariable id="128" style="change-variable">
+                      <Variable list="false" local="false" variableName="currentstorage" />
+                      <Variable list="false" local="false" variableName="dataGather" />
+                    </ChangeVariable>
+                    <Comment id="129" style="comment">
+                      <Constant style="comment-text" canReplace="false" text="send out to droo" />
+                    </Comment>
+                    <ChangeVariable id="130" style="change-variable">
+                      <Variable list="false" local="false" variableName="currentstorage" />
+                      <BinaryOp op="*" style="op-mul">
+                        <Variable list="false" local="false" variableName="dataS" />
+                        <Constant text="-1" />
+                      </BinaryOp>
+                    </ChangeVariable>
+                    <ChangeVariable id="131" style="change-variable">
+                      <Variable list="false" local="false" variableName="datasent" />
+                      <Variable list="false" local="false" variableName="dataS" />
+                    </ChangeVariable>
+                    <If id="132" style="if">
+                      <Comparison op="l" style="op-lt">
+                        <Variable list="false" local="false" variableName="currentstorage" />
+                        <Constant number="0" />
+                      </Comparison>
+                      <Instructions>
+                        <SetVariable id="133" style="set-variable">
+                          <Variable list="false" local="false" variableName="currentstorage" />
+                          <Constant number="0" />
+                        </SetVariable>
+                      </Instructions>
+                    </If>
+                    <If id="134" style="if">
+                      <Comparison op="g" style="op-gt">
+                        <Variable list="false" local="false" variableName="currentstorage" />
+                        <Variable list="false" local="false" variableName="maxstorage" />
+                      </Comparison>
+                      <Instructions>
+                        <SetVariable id="135" style="set-variable">
+                          <Variable list="false" local="false" variableName="currentstorage" />
+                          <Variable list="false" local="false" variableName="maxstorage" />
+                        </SetVariable>
+                      </Instructions>
+                    </If>
+                    <WaitSeconds id="136" style="wait-seconds">
+                      <BinaryOp op="rand" style="op-rand">
+                        <Constant text="0.5" />
+                        <Constant text="2" />
+                      </BinaryOp>
+                    </WaitSeconds>
+                  </Instructions>
+                </While>
+              </Instructions>
+              <Instructions>
+                <Event event="FlightStart" id="137" style="flight-start" pos="-350.9374,435.7797" />
+                <WaitUntil id="138" style="wait-until">
+                  <BoolOp op="and" style="op-and">
+                    <Comparison op="ge" style="op-gte">
+                      <Variable list="false" local="false" variableName="datasent" />
+                      <Variable list="false" local="false" variableName="targetdata" />
+                    </Comparison>
+                    <Comparison op="=" style="op-eq">
+                      <Variable list="false" local="false" variableName="controlenabled" />
+                      <Constant text="1" />
+                    </Comparison>
+                  </BoolOp>
+                </WaitUntil>
+                <SetTimeMode mode="Paused" id="139" style="set-time-mode" />
+                <WaitSeconds id="140" style="wait-seconds">
+                  <Constant text="1" />
+                </WaitSeconds>
+                <SetTimeMode mode="Normal" id="141" style="set-time-mode" />
+                <SetVariable id="142" style="set-variable">
+                  <Variable list="false" local="false" variableName="hey" />
+                  <Constant text="1" />
+                </SetVariable>
+                <SetTimeMode mode="TimeWarp1" id="143" style="set-time-mode" />
+                <WaitSeconds id="144" style="wait-seconds">
+                  <Constant text="0.1" />
+                </WaitSeconds>
+                <SetTimeMode mode="Normal" id="145" style="set-time-mode" />
+              </Instructions>
+              <Expressions>
+                <Constant pos="72.20858,-344.4756" text="{0:n3}" />
+                <StringOp op="join" style="join" pos="3373.191,-159.8154">
+                  <Constant text="&lt;color=" />
+                  <Variable list="false" local="false" variableName="colorpe" />
+                  <Constant text="&gt;" />
+                  <Constant text="" />
+                  <Constant text="&lt;/color&gt;" />
+                  <Constant text="" />
+                </StringOp>
+                <StringOp op="join" style="join" pos="3264.859,-2049.663">
+                  <Constant text="&lt;color=blue&gt;Standard Satellite Remote Control System V 1.55&lt;/color&gt;" />
+                  <Constant text="&lt;br&gt;" />
+                  <StringOp op="join" style="join">
+                    <Constant text="&lt;color=" />
+                    <Variable list="false" local="false" variableName="colorapo" />
+                    <Constant text="&gt;" />
+                    <Constant text="" />
+                    <Constant text="&lt;/color&gt;" />
+                    <Constant text=" " />
+                    <Constant text="" />
+                  </StringOp>
+                  <StringOp op="join" style="join">
+                    <Constant text="&lt;color=" />
+                    <Variable list="false" local="false" variableName="colorpe" />
+                    <Constant text="&gt;" />
+                    <StringOp op="join" style="join">
+                      <Constant text="Periapsis=" />
+                      <StringOp op="format" style="format">
+                        <Constant text="{0:n3}" />
+                        <BinaryOp op="/" style="op-div">
+                          <CraftProperty property="Orbit.Periapsis" style="prop-orbit" />
+                          <Constant text="1000" />
+                        </BinaryOp>
+                        <Constant text="" />
+                      </StringOp>
+                      <Constant text="Km" />
+                      <Constant text="" />
+                    </StringOp>
+                    <Constant text="&lt;/color&gt;" />
+                    <Constant text="" />
+                  </StringOp>
+                  <Constant text="" />
+                </StringOp>
+                <StringOp op="join" style="join" pos="1833.745,1024">
+                  <Constant text="&lt;color=" />
+                  <Variable list="false" local="false" variableName="colorapo" />
+                  <Constant text="&gt;" />
+                  <Constant text="text " />
+                  <Constant text="&lt;/color&gt;" />
+                  <Constant text="" />
+                </StringOp>
+                <StringOp op="join" style="join" pos="1374.32,898.4906">
+                  <Constant text="&lt;color=" />
+                  <Variable list="false" local="false" variableName="colorapo" />
+                  <Constant text="&gt;" />
+                  <StringOp op="join" style="join">
+                    <Constant text="Apologies=" />
+                    <StringOp op="format" style="format">
+                      <Constant text="{0:n3}" />
+                      <BinaryOp op="/" style="op-div">
+                        <CraftProperty property="Orbit.Apoapsis" style="prop-orbit" />
+                        <Constant text="1000" />
+                      </BinaryOp>
+                      <Constant text="" />
+                    </StringOp>
+                    <Constant text="Km" />
+                    <Constant text="" />
+                  </StringOp>
+                  <Constant text="&lt;/color&gt;" />
+                  <Constant text=" " />
+                  <Constant text="" />
+                </StringOp>
+                <Planet op="solarPosition" style="planet" pos="1243.885,812.2897">
+                  <Variable list="false" local="false" variableName="idkwtfistqhismoyqhetplanet" />
+                </Planet>
+                <VectorOp op="length" style="vec-op-1" pos="2177.505,698.0667">
+                  <BinaryOp op="-" style="op-sub">
+                    <CraftProperty property="Nav.Position" style="prop-nav" />
+                    <CraftProperty property="Target.Position" style="prop-nav" />
+                  </BinaryOp>
+                </VectorOp>
+                <VectorOp op="length" style="vec-op-1" pos="1912.019,749.9966">
+                  <BinaryOp op="-" style="op-sub">
+                    <CraftProperty property="Nav.Position" style="prop-nav" />
+                    <CraftProperty property="Target.Position" style="prop-nav" />
+                  </BinaryOp>
+                </VectorOp>
+                <BoolOp op="and" style="op-and" pos="352.7209,-1502.942">
+                  <Constant bool="false" />
+                  <Comparison op="=" style="op-eq">
+                    <Variable list="false" local="false" variableName="controlenabled" />
+                    <Constant number="0" />
+                  </Comparison>
+                </BoolOp>
+                <BoolOp op="and" style="op-and" pos="2112.503,-217.9891">
+                  <Constant bool="false" />
+                  <Comparison op="=" style="op-eq">
+                    <Variable list="false" local="false" variableName="atpmflage" />
+                    <Constant text="1" />
+                  </Comparison>
+                </BoolOp>
+                <BinaryOp op="/" style="op-div" pos="1735.49,705.7666">
+                  <Constant text="" />
+                  <BinaryOp op="/" style="op-div">
+                    <CraftProperty property="Altitude.AGL" style="prop-altitude" />
+                    <Variable list="false" local="false" variableName="somehowparameter" />
+                  </BinaryOp>
+                </BinaryOp>
+              </Expressions>
+            </Program>
+          </FlightProgram>
+        </Part>
+      </Parts>
+      <Connections />
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>

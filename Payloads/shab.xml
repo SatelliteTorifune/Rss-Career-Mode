@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DesignerParts>
+  <DesignerPart name="shab" category="Payloads" description="the satellite for this mission" order="0" showInDesigner="true">
+    <Assembly xmlVersion="15">
+      <Parts>
+        <Part id="6" partType="Fuselage1" position="0,10.75029,7.629395E-06" rotation="1.696014E-05,15,1.814624E-06" commandPodId="5" materials="0,4,4,0,0" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage10">
+          <Drag drag="260.1378,260.0529,0,8.578781,260.0262,260.1378" area="335.2045,335.102,0,8.578781,335.0508,335.2045" />
+          <Config centerOfMass="8.062999E-08,-2.179743E-07,1.364709E-07" heatShieldScale="0" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="3.6,3.6" deadWeightPercentage="0" deformations="0,0,0" depthCurve="0" offset="-1.904257E-12,25,-3.637982E-12" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="3.6,3.6" volume="2012.57739" volumeInner="2006.53479" partPropertiesEnabled="false" version="3" />
+          <FuelTank capacity="1106917.625" fuel="1106917.625" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="7" partType="RocketEngine1" position="0,-14.24965,0" rotation="3.31002E-05,14.99999,6.779348E-06" name="Mage Engine" activationStage="0" commandPodId="5" materials="0,1,2,3,4" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="0.04902719,0.04902719,0,1.639165,0.04902719,0.04902719" area="0.05123743,0.05123743,0,3.82374,0.05123743,0.05123743" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" />
+          <RocketEngine nozzleSize="0.719999969" nozzleThroatSize="0.85" size="1.80000007" thrustOverride="2" massFlowRateOverride="500" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="4" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="25.6705933" price="6970689" partPropertiesEnabled="false" />
+          <InputController inputId="Throttle" partPropertiesEnabled="false" />
+        </Part>
+        <Part id="10" partType="RocketEngine1" position="-1.241146,-14.24969,-2.49361" rotation="-0.000166536,210,-0.0001815596" name="outer8" activationStage="0" commandPodId="5" materials="0,1,2,3,4" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="0,1.80617,0,1.577768,1.469409,0" area="0,2.305684,0,3.752764,1.79331,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="1ccab701-9609-4a97-96d1-10e272fbbf8f" />
+          <RocketEngine gimbalRange="0" nozzleSize="0.719999969" nozzleThroatSize="0.85" size="1.80000007" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="3" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="21.39216" price="4647126" partPropertiesEnabled="false" symmetryId="6fa9cb3d-266f-46e1-a226-007022090524" />
+          <InputController inputId="Throttle" partPropertiesEnabled="false" symmetryId="f3e8d13c-6911-4bb2-9de1-86b1bdad3b4b" />
+        </Part>
+        <Part id="11" partType="RocketEngine1" position="-2.640873,-14.24969,-0.8856277" rotation="-0.0001575319,255,-0.0001910124" name="outer8" activationStage="0" commandPodId="5" materials="0,1,2,3,4" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="0.04601322,1.300828,0,1.603357,1.798132,0" area="0.1024749,1.537123,0,3.76829,2.408159,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="1ccab701-9609-4a97-96d1-10e272fbbf8f" />
+          <RocketEngine gimbalRange="0" nozzleSize="0.719999969" nozzleThroatSize="0.85" size="1.80000007" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="21.39216" price="4647126" partPropertiesEnabled="false" symmetryId="6fa9cb3d-266f-46e1-a226-007022090524" />
+          <InputController inputId="Throttle" partPropertiesEnabled="false" symmetryId="f3e8d13c-6911-4bb2-9de1-86b1bdad3b4b" />
+        </Part>
+        <Part id="12" partType="RocketEngine1" position="-2.493614,-14.24969,1.241146" rotation="-0.000144481,300,-0.0001913298" name="outer8" activationStage="0" commandPodId="5" materials="0,1,2,3,4" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="1.469409,0,0,1.586622,1.80617,0" area="1.79331,0,0,3.761636,2.305684,0" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="1ccab701-9609-4a97-96d1-10e272fbbf8f" />
+          <RocketEngine gimbalRange="0" nozzleSize="0.719999969" nozzleThroatSize="0.85" size="1.80000007" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="21.39216" price="4647126" partPropertiesEnabled="false" symmetryId="6fa9cb3d-266f-46e1-a226-007022090524" />
+          <InputController inputId="Throttle" partPropertiesEnabled="false" symmetryId="f3e8d13c-6911-4bb2-9de1-86b1bdad3b4b" />
+        </Part>
+        <Part id="13" partType="RocketEngine1" position="-0.8856297,-14.24969,2.640869" rotation="-0.0001350282,345,-0.0001823257" name="outer8" activationStage="0" commandPodId="5" materials="0,1,2,3,4" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="1.797731,0,0,1.603355,1.301431,0.04621416" area="2.408159,0,0,3.76829,1.537123,0.1024749" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="1ccab701-9609-4a97-96d1-10e272fbbf8f" />
+          <RocketEngine gimbalRange="0" nozzleSize="0.719999969" nozzleThroatSize="0.85" size="1.80000007" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="21.39216" price="4647126" partPropertiesEnabled="false" symmetryId="6fa9cb3d-266f-46e1-a226-007022090524" />
+          <InputController inputId="Throttle" partPropertiesEnabled="false" symmetryId="f3e8d13c-6911-4bb2-9de1-86b1bdad3b4b" />
+        </Part>
+        <Part id="14" partType="RocketEngine1" position="1.241146,-14.24969,2.49361" rotation="-0.0001347109,30,-0.0001692748" name="outer8" activationStage="0" commandPodId="5" materials="0,1,2,3,4" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="1.80617,0,0,1.586613,0,1.46961" area="2.305684,0,0,3.761636,0,1.79331" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="1ccab701-9609-4a97-96d1-10e272fbbf8f" />
+          <RocketEngine gimbalRange="0" nozzleSize="0.719999969" nozzleThroatSize="0.85" size="1.80000007" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="3" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="21.39216" price="4647126" partPropertiesEnabled="false" symmetryId="6fa9cb3d-266f-46e1-a226-007022090524" />
+          <InputController inputId="Throttle" partPropertiesEnabled="false" symmetryId="f3e8d13c-6911-4bb2-9de1-86b1bdad3b4b" />
+        </Part>
+        <Part id="15" partType="RocketEngine1" position="2.640873,-14.24969,0.8856277" rotation="-0.0001437148,75.00002,-0.000159822" name="outer8" activationStage="0" commandPodId="5" materials="0,1,2,3,4" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="1.300828,0.04601322,0,1.603365,0,1.797731" area="1.537123,0.1024749,0,3.76829,0,2.408159" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="1ccab701-9609-4a97-96d1-10e272fbbf8f" />
+          <RocketEngine gimbalRange="0" nozzleSize="0.719999969" nozzleThroatSize="0.85" size="1.80000007" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="21.39216" price="4647126" partPropertiesEnabled="false" symmetryId="6fa9cb3d-266f-46e1-a226-007022090524" />
+          <InputController inputId="Throttle" partPropertiesEnabled="false" symmetryId="f3e8d13c-6911-4bb2-9de1-86b1bdad3b4b" />
+        </Part>
+        <Part id="16" partType="RocketEngine1" position="2.49361,-14.24969,-1.241142" rotation="-0.0001567658,120,-0.0001595046" name="outer8" activationStage="0" commandPodId="5" materials="0,1,2,3,4" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="0,1.469409,0,1.586648,0,1.80617" area="0,1.79331,0,3.761636,0,2.305684" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="1ccab701-9609-4a97-96d1-10e272fbbf8f" />
+          <RocketEngine gimbalRange="0" nozzleSize="0.719999969" nozzleThroatSize="0.85" size="1.80000007" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="21.39216" price="4647126" partPropertiesEnabled="false" symmetryId="6fa9cb3d-266f-46e1-a226-007022090524" />
+          <InputController inputId="Throttle" partPropertiesEnabled="false" symmetryId="f3e8d13c-6911-4bb2-9de1-86b1bdad3b4b" />
+        </Part>
+        <Part id="17" partType="RocketEngine1" position="0.8856277,-14.24969,-2.640869" rotation="-0.0001662186,165,-0.0001685086" name="outer8" activationStage="0" commandPodId="5" materials="0,1,2,3,4" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" engineTypeTexture="RocketEngine_Type" subTypeTexture="RocketEngine_SubType" nozzleTexture="RocketEngine_Nozzle" nozzleExtensionTexture="RocketEngine_Extension4">
+          <Drag drag="0,1.797731,0,1.612237,0.04581229,1.300627" area="0,2.408159,0,3.777162,0.1024749,1.537123" />
+          <Config heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" supportsTransparency="false" partPropertiesEnabled="false" symmetryId="1ccab701-9609-4a97-96d1-10e272fbbf8f" />
+          <RocketEngine gimbalRange="0" nozzleSize="0.719999969" nozzleThroatSize="0.85" size="1.80000007" wattsPerFuelFlowOverride="-1" ignited="false" ignitionsOverride="1" ignitionsUsed="0" heatTransferOverride="1" exhaustColorExpanded="Default" mass="21.39216" price="4647126" partPropertiesEnabled="false" symmetryId="6fa9cb3d-266f-46e1-a226-007022090524" />
+          <InputController inputId="Throttle" partPropertiesEnabled="false" symmetryId="f3e8d13c-6911-4bb2-9de1-86b1bdad3b4b" />
+        </Part>
+        <Part id="18" partType="FairingBase1" position="0,-14.49969,0" rotation="2.928911E-05,15,180" commandPodId="5" materials="0,4,4,0,0" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="2.394094,2.394094,0.8327641,0.7472835,2.406954,2.406753" area="3.381669,3.381669,3.397882,3.424498,3.381669,3.381669" />
+          <Config centerOfMass="-3.130767E-08,0.008558984,1.145869E-07" heatShield="111.729858" heatShieldMass="0.279324651" heatShieldScale="0.1" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="3.6,3.6" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.8" offset="0,0.25,0" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="3.888568,3.888568" volume="21.7821083" volumeInner="21.2784615" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+        </Part>
+        <Part id="19" partType="Fairing1" position="0,-16.3728,0" rotation="5.720742E-06,14.99999,7.659613E-06" commandPodId="5" materials="0,4,4,0,0" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" texture="Default">
+          <Drag drag="20.48593,20.48593,0,1.011359,20.65471,20.65471" area="26.13099,26.13099,0,1.011359,26.13099,26.13099" />
+          <Config centerOfMass="3.761615E-08,-2.555992E-08,8.366841E-08" heatShield="120.887207" heatShieldMass="0.30221802" heatShieldScale="0.1" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="3.888568,3.888568" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.8" offset="7.815974E-14,1.623101,-7.105433E-15" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" toolSupportsAddSection="false" topScale="3.888568,3.888568" volume="152.451736" volumeInner="151.586624" partPropertiesEnabled="false" version="3" />
+          <Fairing partPropertiesEnabled="false" />
+        </Part>
+        <Part id="20" partType="LandingLeg2" position="-1.452234,-13.92216,-3.261787" rotation="1.64318E-05,24,4.445431E-06" name="Merlin Leg" activationGroup="8" commandPodId="5" materials="0,1,2,3,4" symmetryId="5de663a1-9d5b-4113-b888-0af1d05180f6" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,11.68033,0.8355374,1.602847,9.836182,4.373873" area="0,14.80758,2.435267,2.177978,12.29697,6.097258" />
+          <Config centerOfMass="5.960437E-08,3.261375,-0.3571252" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" symmetryId="013aae2b-2766-4977-a54f-413547717f39" />
+          <LandingLeg deployedAngle="55" deployedExtensionY="5.15" extensionPercentage="0" scale="1.95" soundVolume="0" partPropertiesEnabled="false" symmetryId="60de38b8-5025-46dc-b056-9d30d103abf4" />
+          <LandingLegSuspension damper="2.75" maxSuspensionScale="1" partPropertiesEnabled="false" symmetryId="b2945832-7d8a-4259-b15d-ac7ffdc86bdc" />
+        </Part>
+        <Part id="21" partType="LandingLeg2" position="-3.261791,-13.92216,1.452232" rotation="-4.481093E-06,114,1.646746E-05" name="Merlin Leg" activationGroup="8" commandPodId="5" materials="0,1,2,3,4" symmetryId="5de663a1-9d5b-4113-b888-0af1d05180f6" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="9.719239,4.421092,0.8355463,1.602842,11.67973,0" area="12.24573,6.148495,2.435267,2.177978,14.80758,0" />
+          <Config centerOfMass="0,3.261375,-0.357125" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" symmetryId="013aae2b-2766-4977-a54f-413547717f39" />
+          <LandingLeg deployedAngle="55" deployedExtensionY="5.15" extensionPercentage="0" scale="1.95" soundVolume="0" partPropertiesEnabled="false" symmetryId="60de38b8-5025-46dc-b056-9d30d103abf4" />
+          <LandingLegSuspension damper="2.75" maxSuspensionScale="1" partPropertiesEnabled="false" symmetryId="b2945832-7d8a-4259-b15d-ac7ffdc86bdc" />
+        </Part>
+        <Part id="22" partType="LandingLeg2" position="1.452232,-13.92216,3.261787" rotation="-1.650312E-05,204,-4.445436E-06" name="Merlin Leg" activationGroup="8" commandPodId="5" materials="0,1,2,3,4" symmetryId="5de663a1-9d5b-4113-b888-0af1d05180f6" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="11.67912,0,0.8354936,1.602785,4.421092,9.739333" area="14.80758,0,2.435267,2.177978,6.148495,12.24573" />
+          <Config centerOfMass="1.490116E-08,3.261375,-0.357125" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" symmetryId="013aae2b-2766-4977-a54f-413547717f39" />
+          <LandingLeg deployedAngle="55" deployedExtensionY="5.15" extensionPercentage="0" scale="1.95" soundVolume="0" partPropertiesEnabled="false" symmetryId="60de38b8-5025-46dc-b056-9d30d103abf4" />
+          <LandingLegSuspension damper="2.75" maxSuspensionScale="1" partPropertiesEnabled="false" symmetryId="b2945832-7d8a-4259-b15d-ac7ffdc86bdc" />
+        </Part>
+        <Part id="23" partType="LandingLeg2" position="3.261787,-13.92216,-1.452232" rotation="4.409771E-06,294,-1.646746E-05" name="Merlin Leg" activationGroup="8" commandPodId="5" materials="0,1,2,3,4" symmetryId="5de663a1-9d5b-4113-b888-0af1d05180f6" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="4.421092,9.806243,0.8355279,1.602803,0,11.67932" area="6.148495,12.29697,2.435267,2.177978,0,14.80758" />
+          <Config centerOfMass="4.470348E-08,3.261375,-0.357125" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="None" partPropertiesEnabled="false" symmetryId="013aae2b-2766-4977-a54f-413547717f39" />
+          <LandingLeg deployedAngle="55" deployedExtensionY="5.15" extensionPercentage="0" scale="1.95" soundVolume="0" partPropertiesEnabled="false" symmetryId="60de38b8-5025-46dc-b056-9d30d103abf4" />
+          <LandingLegSuspension damper="2.75" maxSuspensionScale="1" partPropertiesEnabled="false" symmetryId="b2945832-7d8a-4259-b15d-ac7ffdc86bdc" />
+        </Part>
+        <Part id="24" partType="Fin1" position="-0.9317207,32.71439,-3.477325" rotation="90,195,0" activationStage="1" stageOverride="true" commandPodId="5" materials="0,1,0,0,1" symmetryId="ee178684-6a49-4474-8bf5-fce6d844a83e" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="0,1.760358,0.04300105,0.05876992,13.67623,11.93953" area="0,4.970031,1.03132,0.4857189,14.09026,12.55315" />
+          <Config centerOfMass="3.576261E-07,1.146466,-0.2458267" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="LandingLeg" partPropertiesEnabled="false" symmetryId="173f5993-3d68-44f3-be1a-69b2cd8eda71" />
+          <Wing airfoil="Fin" controlSurfacePriceMultiplier="1.17" isFancy="true" isStylish="true" rootLeadingOffset="3.252948" rootTrailingOffset="3.745104" thickness="0.507074654" thicknessDeltaStyle="0.1" thicknessOffsetStyle="0" thicknessTipAuto="0.296121" leadingBulgeStyle="0.6" tipLeadingOffset="1.373364" tipPosition="0,2.572829,0.4244173" tipTrailingOffset="2.7133522" partPropertiesEnabled="false" symmetryId="baf60391-a06c-40c5-89ea-8b95b42140ba" version="2" />
+          <ControlSurface partPropertiesEnabled="false" symmetryId="8ac3e793-8107-461f-9324-c45e770c8647" />
+        </Part>
+        <Part id="25" partType="Fin1" position="-3.477337,32.71438,0.931736" rotation="90,285,0" activationStage="1" stageOverride="true" commandPodId="5" materials="0,1,0,0,1" symmetryId="ee178684-6a49-4474-8bf5-fce6d844a83e" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="13.68949,11.98856,0.04300105,0.05876993,1.760358,0" area="14.1415,12.60439,1.03132,0.4857189,4.970031,0" />
+          <Config centerOfMass="-8.344605E-07,1.146465,-0.2458268" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="LandingLeg" partPropertiesEnabled="false" symmetryId="173f5993-3d68-44f3-be1a-69b2cd8eda71" />
+          <Wing airfoil="Fin" controlSurfacePriceMultiplier="1.17" isFancy="true" isStylish="true" rootLeadingOffset="3.252948" rootTrailingOffset="3.745104" thickness="0.507074654" thicknessDeltaStyle="0.1" thicknessOffsetStyle="0" thicknessTipAuto="0.296121" leadingBulgeStyle="0.6" tipLeadingOffset="1.373364" tipPosition="0,2.572829,0.4244173" tipTrailingOffset="2.7133522" partPropertiesEnabled="false" symmetryId="baf60391-a06c-40c5-89ea-8b95b42140ba" version="2" />
+          <ControlSurface partPropertiesEnabled="false" symmetryId="8ac3e793-8107-461f-9324-c45e770c8647" />
+        </Part>
+        <Part id="26" partType="Fin1" position="0.9317207,32.71438,3.477352" rotation="90,15.00001,0" activationStage="1" stageOverride="true" commandPodId="5" materials="0,1,0,0,1" symmetryId="ee178684-6a49-4474-8bf5-fce6d844a83e" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="1.74569,0,0.04300105,0.05876993,11.98856,13.68949" area="4.918793,0,1.03132,0.4857189,12.60439,14.1415" />
+          <Config centerOfMass="5.960432E-07,1.146465,-0.245827" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="LandingLeg" partPropertiesEnabled="false" symmetryId="173f5993-3d68-44f3-be1a-69b2cd8eda71" />
+          <Wing airfoil="Fin" cLiftOverride="-180,0,0.0525,0.0525|-135,1.17,-0.0001055629,-0.0001055629|-90,0,-0.04083,-0.04083|-13.5,-1.32,-0.00375031,-0.00375031|-11.1,-1.16079,0.09284982,0.09284982|0,0,0,0|11.1,1.16079,0.0897003,0.0897003|13.5,1.32,-0.00471334,-0.00471334|90,0,-0.04083,-0.04083|135,-1.17,3.790731E-05,3.790731E-05|179,-0.0525,0.0525,0.0525" controlSurfacePriceMultiplier="1.17" isFancy="true" isStylish="true" rootLeadingOffset="3.252948" rootTrailingOffset="3.745104" thickness="0.507074654" thicknessDeltaStyle="0.1" thicknessOffsetStyle="0" thicknessTipAuto="0.296121" leadingBulgeStyle="0.6" tipLeadingOffset="1.373364" tipPosition="0,2.572829,0.4244173" tipTrailingOffset="2.7133522" partPropertiesEnabled="false" symmetryId="baf60391-a06c-40c5-89ea-8b95b42140ba" version="2" />
+          <ControlSurface partPropertiesEnabled="false" symmetryId="8ac3e793-8107-461f-9324-c45e770c8647" />
+        </Part>
+        <Part id="27" partType="Fin1" position="3.477337,32.71439,-0.9317093" rotation="90,105,0" activationStage="1" stageOverride="true" commandPodId="5" materials="0,1,0,0,1" symmetryId="ee178684-6a49-4474-8bf5-fce6d844a83e" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false">
+          <Drag drag="11.98856,13.68949,0.04300105,0.05876993,0,1.74569" area="12.60439,14.1415,1.03132,0.4857189,0,4.918793" />
+          <Config centerOfMass="-7.748563E-07,1.146465,-0.2458268" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" stageActivationType="LandingLeg" partPropertiesEnabled="false" symmetryId="173f5993-3d68-44f3-be1a-69b2cd8eda71" />
+          <Wing airfoil="Fin" controlSurfacePriceMultiplier="1.17" isFancy="true" isStylish="true" rootLeadingOffset="3.252948" rootTrailingOffset="3.745104" thickness="0.507074654" thicknessDeltaStyle="0.1" thicknessOffsetStyle="0" thicknessTipAuto="0.296121" leadingBulgeStyle="0.6" tipLeadingOffset="1.373364" tipPosition="0,2.572829,0.4244173" tipTrailingOffset="2.7133522" partPropertiesEnabled="false" symmetryId="baf60391-a06c-40c5-89ea-8b95b42140ba" version="2" />
+          <ControlSurface partPropertiesEnabled="false" symmetryId="8ac3e793-8107-461f-9324-c45e770c8647" />
+        </Part>
+        <Part id="5" partType="CommandDisc1" position="0,35.85028,1.144409E-05" rotation="0,15,0" name="Command Disc" rootPart="true" commandPodId="5" materials="0,0,0,0,0" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" texture="Fuselage10">
+          <Drag drag="1.208601,1.208601,0,0,1.208601,1.208601" area="1.537123,1.537123,0,0,1.537123,1.537123" />
+          <Config centerOfMass="2.957094E-08,-1.699191E-10,1.181191E-07" ignoreValidation="true" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="3.6,3.6" cornerRadiuses="1,1,1,1,1,1,1,1" deformations="0,0,0" depthCurve="0" offset="0,0.09999847,0" shellDensityOverride="-1" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="3.6,3.6" volume="8.050186" volumeInner="7.62511539" inspectorEnabled="false" partPropertiesEnabled="false" version="3" />
+          <FuelTank capacity="883678.61199747026" fuel="883678.61199747026" subPriority="250" utilization="0.044" inspectorEnabled="true" />
+          <Gyroscope maxAcceleration="1" utilization="0" partPropertiesEnabled="false" />
+          <CommandPod activationGroupNames=",,,,,,,Landing Gear,Solar Panels,RCS" activationGroupStates="false,false,false,false,false,false,false,false,false,true" autoRecalculateStages="false" configureBattery="0.08" pidPitch="10,0,25" pidRoll="10,0,25" pilotSeatRotation="270,345,0" stageCalculationVersion="2" partPropertiesEnabled="false">
+            <Controls />
+          </CommandPod>
+          <Payload payloadId="test" />
+        </Part>
+        <Part id="9" partType="Detacher1" position="0,37.35028,1.144409E-05" rotation="2.228797E-07,15.00001,-1.692939E-06" activationStage="1" stageOverride="true" commandPodId="5" materials="0,3,4,2,0" groupId="b0e4b030-419e-4ac6-8d4f-a0c0b12953cb" partConnectionsEnabled="false" partStyleEnabled="false" style="Interstage-4">
+          <Drag drag="3.097755,3.080676,39.60349,0,3.075452,2.957706" area="3.996517,3.996517,40.34576,0,4.047754,4.047754" />
+          <Config autoActivateIfNoStageOrActivationGroup="false" centerOfMass="-2.284971E-09,2.895501E-08,7.060262E-08" heatShieldScale="0" ignoreValidation="true" partSelectionEnabled="false" priceScale="0" partPropertiesEnabled="false" />
+          <Fuselage autoResize="false" bottomScale="3.6,3.6" deadWeightPercentage="-10" deformations="0,0,0" depthCurve="0" meshMassMultiplier="0.3" offset="0,1.4,0" shellDensityOverride="-1" supportsXZOffset="false" toolAutoAdaptBottom="false" toolAutoAdaptTop="false" toolResizeBottom="false" toolResizeHeight="false" toolResizeRadius="false" toolResizeTop="false" toolShapeBottom="false" toolShapeTop="false" topScale="3.6,3.6" volume="112.704323" volumeInner="111.986015" partPropertiesEnabled="false" version="3" />
+          <Detacher force="0" partPropertiesEnabled="false" version="2" />
+          <CoverEngine partPropertiesEnabled="false" />
+          <CrossFeed partPropertiesEnabled="false" />
+        </Part>
+      </Parts>
+      <Connections>
+        <Connection partA="7" partB="6" attachPointsA="0" attachPointsB="1" />
+        <Connection partA="10" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="db038046-7ef7-476d-94e6-ff1c1a959b89" />
+        <Connection partA="11" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="db038046-7ef7-476d-94e6-ff1c1a959b89" />
+        <Connection partA="12" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="db038046-7ef7-476d-94e6-ff1c1a959b89" />
+        <Connection partA="13" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="db038046-7ef7-476d-94e6-ff1c1a959b89" />
+        <Connection partA="14" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="db038046-7ef7-476d-94e6-ff1c1a959b89" />
+        <Connection partA="15" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="db038046-7ef7-476d-94e6-ff1c1a959b89" />
+        <Connection partA="16" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="db038046-7ef7-476d-94e6-ff1c1a959b89" />
+        <Connection partA="17" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="db038046-7ef7-476d-94e6-ff1c1a959b89" />
+        <Connection partA="18" partB="6" attachPointsA="0" attachPointsB="5" />
+        <Connection partA="20" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="266f8e6d-54a2-4f3f-876d-0d088d07235c" />
+        <Connection partA="21" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="266f8e6d-54a2-4f3f-876d-0d088d07235c" />
+        <Connection partA="22" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="266f8e6d-54a2-4f3f-876d-0d088d07235c" />
+        <Connection partA="23" partB="6" attachPointsA="0" attachPointsB="0" symmetryId="266f8e6d-54a2-4f3f-876d-0d088d07235c" />
+        <Connection partA="24" partB="6" attachPointsA="1" attachPointsB="0" symmetryId="ff9b5aa8-6c18-4a36-ae88-ababa95130aa" />
+        <Connection partA="25" partB="6" attachPointsA="1" attachPointsB="0" symmetryId="ff9b5aa8-6c18-4a36-ae88-ababa95130aa" />
+        <Connection partA="26" partB="6" attachPointsA="1" attachPointsB="0" symmetryId="ff9b5aa8-6c18-4a36-ae88-ababa95130aa" />
+        <Connection partA="27" partB="6" attachPointsA="1" attachPointsB="0" symmetryId="ff9b5aa8-6c18-4a36-ae88-ababa95130aa" />
+        <Connection partA="6" partB="5" attachPointsA="2,4" attachPointsB="1,4" />
+        <Connection partA="19" partB="18" attachPointsA="1" attachPointsB="1" />
+        <Connection partA="9" partB="5" attachPointsA="0,1" attachPointsB="3,2" />
+      </Connections>
+      <Collisions />
+      <Bodies />
+    </Assembly>
+  </DesignerPart>
+</DesignerParts>
